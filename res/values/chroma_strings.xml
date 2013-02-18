@@ -20,6 +20,8 @@
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <!-- Navigation bar category -->
     <string name="display_category_navbar_options_title">Navigation bar options</string>
+    <!-- Status bar category -->
+    <string name="display_category_statusbar_options_title">Status bar options</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
@@ -103,13 +105,15 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
-
+    
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Battery icons</string>
+    <string name="status_bar_battery_summary">Change battery icons</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
@@ -131,4 +135,15 @@
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
 
+    <!-- Status bar double-tap to sleep -->
+    <string name="status_bar_double_tap_to_sleep_title">Double tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double tap on the status bar to put the device to sleep</string>
+
+    <!-- Status bar brightness control -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding finger across status bar</string>
+
+    <!-- Show notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 </resources>
