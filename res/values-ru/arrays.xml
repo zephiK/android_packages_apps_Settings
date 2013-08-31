@@ -173,7 +173,7 @@
     <item msgid="1390404486722375028">"Всегда выключать"</item>
   </string-array>
   <string-array name="data_usage_data_range">
-    <item msgid="5013973108901348144">"За последние 30 дней"</item>
+    <item msgid="5013973108901348144">"За последние 30 дней"</item>
     <item msgid="6600989128423965319">"Цикл использования данных"</item>
   </string-array>
   <string-array name="wifi_frequency_band_entries">
@@ -410,23 +410,23 @@
     <item msgid="7169235156349580064">"Специальный"</item>
   </string-array>
   <string-array name="select_logd_size_titles">
-    <item msgid="3100534874529240291">"64 КБ"</item>
-    <item msgid="505611754508988476">"256 КБ"</item>
-    <item msgid="6361286924268716397">"1 МБ"</item>
-    <item msgid="6405203239560695266">"4 МБ"</item>
-    <item msgid="3025431211013424097">"16 МБ"</item>
+    <item msgid="3100534874529240291">"64 КБ"</item>
+    <item msgid="505611754508988476">"256 КБ"</item>
+    <item msgid="6361286924268716397">"1 МБ"</item>
+    <item msgid="6405203239560695266">"4 МБ"</item>
+    <item msgid="3025431211013424097">"16 МБ"</item>
   </string-array>
   <string-array name="select_logd_size_lowram_titles">
-    <item msgid="524799395770610154">"64 КБ"</item>
-    <item msgid="3534782711045262344">"256 КБ"</item>
-    <item msgid="8085867209202153403">"1 МБ"</item>
+    <item msgid="524799395770610154">"64 КБ"</item>
+    <item msgid="3534782711045262344">"256 КБ"</item>
+    <item msgid="8085867209202153403">"1 МБ"</item>
   </string-array>
   <string-array name="select_logd_size_summaries">
-    <item msgid="7346595473588765019">"Буфер: макс. 64 КБ"</item>
-    <item msgid="2822309747675758628">"Буфер: макс. 256 КБ"</item>
-    <item msgid="6699306198357496731">"Буфер: макс. 1 МБ"</item>
-    <item msgid="5748528643937500349">"Буфер: макс. 4 МБ"</item>
-    <item msgid="1978629051085111592">"Буфер: макс. 16 МБ"</item>
+    <item msgid="7346595473588765019">"Буфер: макс. 64 КБ"</item>
+    <item msgid="2822309747675758628">"Буфер: макс. 256 КБ"</item>
+    <item msgid="6699306198357496731">"Буфер: макс. 1 МБ"</item>
+    <item msgid="5748528643937500349">"Буфер: макс. 4 МБ"</item>
+    <item msgid="1978629051085111592">"Буфер: макс. 16 МБ"</item>
   </string-array>
   <string-array name="hdcp_checking_titles">
     <item msgid="441827799230089869">"Никогда не проверять"</item>
@@ -440,7 +440,9 @@
   </string-array>
   <string-array name="window_animation_scale_entries">
     <item msgid="8134156599370824081">"Без анимации"</item>
+    <item>"Анимация (масштаб: 0,25x)"</item>
     <item msgid="6624864048416710414">"Анимация 0,5x"</item>
+    <item>"Анимация (масштаб: 0,75x)"</item>
     <item msgid="2219332261255416635">"Анимация 1x"</item>
     <item msgid="3544428804137048509">"Анимация 1,5x"</item>
     <item msgid="3110710404225974514">"Анимация 2x"</item>
@@ -449,7 +451,9 @@
   </string-array>
   <string-array name="transition_animation_scale_entries">
     <item msgid="8464255836173039442">"Без анимации"</item>
+    <item>"Анимация (масштаб: 0,25x)"</item>
     <item msgid="3375781541913316411">"Анимация 0,5x"</item>
+    <item>"Анимация (масштаб: 0,75x)"</item>
     <item msgid="1991041427801869945">"Анимация 1x"</item>
     <item msgid="4012689927622382874">"Анимация 1,5x"</item>
     <item msgid="3289156759925947169">"Анимация 2x"</item>
@@ -458,7 +462,9 @@
   </string-array>
   <string-array name="animator_duration_scale_entries">
     <item msgid="6039901060648228241">"Без анимации"</item>
+    <item>"Скорость 0,25x"</item>
     <item msgid="1138649021950863198">"Анимация 0,5x"</item>
+    <item>"Скорость 0,75x"</item>
     <item msgid="4394388961370833040">"Анимация 1x"</item>
     <item msgid="8125427921655194973">"Анимация 1,5x"</item>
     <item msgid="3334024790739189573">"Анимация 2x"</item>
@@ -468,16 +474,16 @@
   <string-array name="overlay_display_devices_entries">
     <item msgid="1606809880904982133">"Нет"</item>
     <item msgid="9033194758688161545">"480p"</item>
-    <item msgid="1025306206556583600">"480p (защита)"</item>
+    <item msgid="1025306206556583600">"480p (защита)"</item>
     <item msgid="1853913333042744661">"720p"</item>
-    <item msgid="3414540279805870511">"720p (защита)"</item>
+    <item msgid="3414540279805870511">"720p (защита)"</item>
     <item msgid="9039818062847141551">"1080p"</item>
     <item msgid="4939496949750174834">"1080p (защита)"</item>
     <item msgid="1833612718524903568">"4K"</item>
-    <item msgid="238303513127879234">"4K (защита)"</item>
-    <item msgid="3547211260846843098">"4K (масштабирование)"</item>
-    <item msgid="5411365648951414254">"4K (масштабирование, защита)"</item>
-    <item msgid="1311305077526792901">"720p, 1080p (два экрана)"</item>
+    <item msgid="238303513127879234">"4K (защита)"</item>
+    <item msgid="3547211260846843098">"4K (масштабирование)"</item>
+    <item msgid="5411365648951414254">"4K (масштабирование, защита)"</item>
+    <item msgid="1311305077526792901">"720p, 1080p (два экрана)"</item>
   </string-array>
   <string-array name="enable_opengl_traces_entries">
     <item msgid="3191973083884253830">"Нет"</item>

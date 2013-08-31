@@ -30,34 +30,34 @@
     <item msgid="8392017019801393511">"Tous"</item>
   </string-array>
   <string-array name="screen_timeout_entries">
-    <item msgid="3342301044271143016">"15 secondes"</item>
-    <item msgid="8881760709354815449">"30 secondes"</item>
-    <item msgid="7589406073232279088">"1 minute"</item>
-    <item msgid="7001195990902244174">"2 minutes"</item>
-    <item msgid="7489864775127957179">"5 minutes"</item>
-    <item msgid="2314124409517439288">"10 minutes"</item>
-    <item msgid="6864027152847611413">"30 minutes"</item>
+    <item msgid="3342301044271143016">"15 secondes"</item>
+    <item msgid="8881760709354815449">"30 secondes"</item>
+    <item msgid="7589406073232279088">"1 minute"</item>
+    <item msgid="7001195990902244174">"2 minutes"</item>
+    <item msgid="7489864775127957179">"5 minutes"</item>
+    <item msgid="2314124409517439288">"10 minutes"</item>
+    <item msgid="6864027152847611413">"30 minutes"</item>
   </string-array>
   <string-array name="dream_timeout_entries">
     <item msgid="3149294732238283185">"Jamais"</item>
-    <item msgid="2194151041885903260">"15 secondes"</item>
-    <item msgid="5892295237131074341">"30 secondes"</item>
-    <item msgid="3538441365970038213">"1 minute"</item>
-    <item msgid="412343871668955639">"2 minutes"</item>
-    <item msgid="5076853889688991690">"5 minutes"</item>
-    <item msgid="1903860996174927898">"10 minutes"</item>
-    <item msgid="6415509612413178727">"30 minutes"</item>
+    <item msgid="2194151041885903260">"15 secondes"</item>
+    <item msgid="5892295237131074341">"30 secondes"</item>
+    <item msgid="3538441365970038213">"1 minute"</item>
+    <item msgid="412343871668955639">"2 minutes"</item>
+    <item msgid="5076853889688991690">"5 minutes"</item>
+    <item msgid="1903860996174927898">"10 minutes"</item>
+    <item msgid="6415509612413178727">"30 minutes"</item>
   </string-array>
   <string-array name="lock_after_timeout_entries">
     <item msgid="8929270399652145290">"Immédiatement"</item>
-    <item msgid="6736512735606834431">"5 secondes"</item>
-    <item msgid="8044619388267891375">"15 secondes"</item>
-    <item msgid="1822002388249545488">"30 secondes"</item>
-    <item msgid="8538071621211916519">"1 minute"</item>
-    <item msgid="5663439580228932882">"2 minutes"</item>
-    <item msgid="49888496216106852">"5 minutes"</item>
-    <item msgid="9002737361305019353">"10 minutes"</item>
-    <item msgid="4322676235684793329">"30 minutes"</item>
+    <item msgid="6736512735606834431">"5 secondes"</item>
+    <item msgid="8044619388267891375">"15 secondes"</item>
+    <item msgid="1822002388249545488">"30 secondes"</item>
+    <item msgid="8538071621211916519">"1 minute"</item>
+    <item msgid="5663439580228932882">"2 minutes"</item>
+    <item msgid="49888496216106852">"5 minutes"</item>
+    <item msgid="9002737361305019353">"10 minutes"</item>
+    <item msgid="4322676235684793329">"30 minutes"</item>
   </string-array>
   <string-array name="entries_font_size">
     <item msgid="8166647333858618801">"Petite"</item>
@@ -151,9 +151,9 @@
     <item msgid="2330782789550628803">"Hors de portée"</item>
   </string-array>
   <string-array name="bluetooth_visibility_timeout_entries">
-    <item msgid="8151962652413645395">"Deux minutes"</item>
-    <item msgid="8675215713017289017">"Cinq minutes"</item>
-    <item msgid="477015974247590543">"Une heure"</item>
+    <item msgid="8151962652413645395">"Deux minutes"</item>
+    <item msgid="8675215713017289017">"Cinq minutes"</item>
+    <item msgid="477015974247590543">"Une heure"</item>
     <item msgid="5198271470953124739">"Aucun délai"</item>
   </string-array>
   <string-array name="wifi_signal">
@@ -173,13 +173,13 @@
     <item msgid="1390404486722375028">"Jamais"</item>
   </string-array>
   <string-array name="data_usage_data_range">
-    <item msgid="5013973108901348144">"30 derniers jours"</item>
+    <item msgid="5013973108901348144">"30 derniers jours"</item>
     <item msgid="6600989128423965319">"Définir cycle conso..."</item>
   </string-array>
   <string-array name="wifi_frequency_band_entries">
     <item msgid="1013988753804838790">"Automatique"</item>
-    <item msgid="6670588712989942178">"5 GHz uniquement"</item>
-    <item msgid="2715516524973207876">"2,4 GHz uniquement"</item>
+    <item msgid="6670588712989942178">"5 GHz uniquement"</item>
+    <item msgid="2715516524973207876">"2,4 GHz uniquement"</item>
   </string-array>
   <string-array name="usage_stats_display_order_types">
     <item msgid="2100172576767439288">"Temps d\'utilisation"</item>
@@ -373,7 +373,7 @@
     <item msgid="1319652728542138112">"Par défaut"</item>
     <item msgid="1016452621833735880">"Sans Serif"</item>
     <item msgid="2496277987934654454">"Sans Serif condensé"</item>
-    <item msgid="7247838127505318669">"Sans Serif monospace"</item>
+    <item msgid="7247838127505318669">"Sans Serif monospace"</item>
     <item msgid="4478414822462359763">"Serif"</item>
     <item msgid="7502451783483660829">"Serif monospace"</item>
     <item msgid="639503332147461010">"Scripte"</item>
@@ -396,10 +396,10 @@
     <item msgid="3821418743395480313">"Bord en retrait"</item>
   </string-array>
   <string-array name="captioning_opacity_selector_titles">
-    <item msgid="7622491218136667566">"25 %"</item>
-    <item msgid="2367156416247936773">"50 %"</item>
-    <item msgid="5395560410107149298">"75 %"</item>
-    <item msgid="8342334626783983353">"100 %"</item>
+    <item msgid="7622491218136667566">"25 %"</item>
+    <item msgid="2367156416247936773">"50 %"</item>
+    <item msgid="5395560410107149298">"75 %"</item>
+    <item msgid="8342334626783983353">"100 %"</item>
   </string-array>
   <string-array name="captioning_preset_selector_titles">
     <item msgid="7009918361545506251">"Paramètres par défaut de l\'appli"</item>
@@ -410,23 +410,23 @@
     <item msgid="7169235156349580064">"Personnalisé"</item>
   </string-array>
   <string-array name="select_logd_size_titles">
-    <item msgid="3100534874529240291">"64 Ko"</item>
-    <item msgid="505611754508988476">"256 Ko"</item>
-    <item msgid="6361286924268716397">"1 Mo"</item>
-    <item msgid="6405203239560695266">"4 Mo"</item>
-    <item msgid="3025431211013424097">"16 Mo"</item>
+    <item msgid="3100534874529240291">"64 Ko"</item>
+    <item msgid="505611754508988476">"256 Ko"</item>
+    <item msgid="6361286924268716397">"1 Mo"</item>
+    <item msgid="6405203239560695266">"4 Mo"</item>
+    <item msgid="3025431211013424097">"16 Mo"</item>
   </string-array>
   <string-array name="select_logd_size_lowram_titles">
-    <item msgid="524799395770610154">"64 Ko"</item>
-    <item msgid="3534782711045262344">"256 Ko"</item>
-    <item msgid="8085867209202153403">"1 Mo"</item>
+    <item msgid="524799395770610154">"64 Ko"</item>
+    <item msgid="3534782711045262344">"256 Ko"</item>
+    <item msgid="8085867209202153403">"1 Mo"</item>
   </string-array>
   <string-array name="select_logd_size_summaries">
-    <item msgid="7346595473588765019">"64 Ko/tampon journal"</item>
-    <item msgid="2822309747675758628">"256 Ko/tampon journal"</item>
-    <item msgid="6699306198357496731">"1 Mo/tampon journal"</item>
-    <item msgid="5748528643937500349">"4 Mo/tampon journal"</item>
-    <item msgid="1978629051085111592">"16 Mo/tampon journal"</item>
+    <item msgid="7346595473588765019">"64 Ko/tampon journal"</item>
+    <item msgid="2822309747675758628">"256 Ko/tampon journal"</item>
+    <item msgid="6699306198357496731">"1 Mo/tampon journal"</item>
+    <item msgid="5748528643937500349">"4 Mo/tampon journal"</item>
+    <item msgid="1978629051085111592">"16 Mo/tampon journal"</item>
   </string-array>
   <string-array name="hdcp_checking_titles">
     <item msgid="441827799230089869">"Ne jamais vérifier"</item>
@@ -440,30 +440,36 @@
   </string-array>
   <string-array name="window_animation_scale_entries">
     <item msgid="8134156599370824081">"Animation désactivée"</item>
-    <item msgid="6624864048416710414">"Échelle d\'animation x 0,5"</item>
+    <item>"Échelle d\'animation 0,25x"</item>
+    <item msgid="6624864048416710414">"Échelle d\'animation x 0,5"</item>
+    <item>"Échelle d\'animation 0,75x"</item>
     <item msgid="2219332261255416635">"Échelle d\'animation x 1"</item>
-    <item msgid="3544428804137048509">"Échelle d\'animation x 1,5"</item>
-    <item msgid="3110710404225974514">"Échelle d\'animation x 2"</item>
-    <item msgid="4402738611528318731">"Échelle d\'animation x 5"</item>
-    <item msgid="6189539267968330656">"Échelle d\'animation x 10"</item>
+    <item msgid="3544428804137048509">"Échelle d\'animation x 1,5"</item>
+    <item msgid="3110710404225974514">"Échelle d\'animation x 2"</item>
+    <item msgid="4402738611528318731">"Échelle d\'animation x 5"</item>
+    <item msgid="6189539267968330656">"Échelle d\'animation x 10"</item>
   </string-array>
   <string-array name="transition_animation_scale_entries">
     <item msgid="8464255836173039442">"Animation désactivée"</item>
-    <item msgid="3375781541913316411">"Échelle d\'animation x 0,5"</item>
-    <item msgid="1991041427801869945">"Échelle d\'animation x 1"</item>
-    <item msgid="4012689927622382874">"Échelle d\'animation x 1,5"</item>
-    <item msgid="3289156759925947169">"Échelle d\'animation x 2"</item>
-    <item msgid="7705857441213621835">"Échelle d\'animation x 0,5"</item>
-    <item msgid="6660750935954853365">"Échelle d\'animation x 10"</item>
+    <item>"Échelle d\'animation 0,25x"</item>
+    <item msgid="3375781541913316411">"Échelle d\'animation x 0,5"</item>
+    <item>"Échelle d\'animation 0,75x"</item>
+    <item msgid="1991041427801869945">"Échelle d\'animation x 1"</item>
+    <item msgid="4012689927622382874">"Échelle d\'animation x 1,5"</item>
+    <item msgid="3289156759925947169">"Échelle d\'animation x 2"</item>
+    <item msgid="7705857441213621835">"Échelle d\'animation x 0,5"</item>
+    <item msgid="6660750935954853365">"Échelle d\'animation x 10"</item>
   </string-array>
   <string-array name="animator_duration_scale_entries">
     <item msgid="6039901060648228241">"Animation désactivée"</item>
-    <item msgid="1138649021950863198">"Échelle d\'animation x 0,5"</item>
+     <item>"Échelle d\'animation 0,25x"</item>
+    <item msgid="1138649021950863198">"Échelle d\'animation x 0,5"</item>
+     <item>"Échelle d\'animation 0,75x"</item>
     <item msgid="4394388961370833040">"Échelle d\'animation x 1"</item>
-    <item msgid="8125427921655194973">"Échelle d\'animation x 1,5"</item>
-    <item msgid="3334024790739189573">"Échelle d\'animation x 2"</item>
-    <item msgid="3170120558236848008">"Échelle d\'animation x 5"</item>
-    <item msgid="1069584980746680398">"Échelle d\'animation x 10"</item>
+    <item msgid="8125427921655194973">"Échelle d\'animation x 1,5"</item>
+    <item msgid="3334024790739189573">"Échelle d\'animation x 2"</item>
+    <item msgid="3170120558236848008">"Échelle d\'animation x 5"</item>
+    <item msgid="1069584980746680398">"Échelle d\'animation x 10"</item>
   </string-array>
   <string-array name="overlay_display_devices_entries">
     <item msgid="1606809880904982133">"Aucun"</item>
@@ -504,9 +510,9 @@
     <item msgid="3401625457385943795">"Limite standard"</item>
     <item msgid="4071574792028999443">"Aucun processus en arrière-plan"</item>
     <item msgid="4810006996171705398">"Un processus maximum"</item>
-    <item msgid="8586370216857360863">"Deux processus maximum"</item>
-    <item msgid="836593137872605381">"Trois processus maximum"</item>
-    <item msgid="7899496259191969307">"Quatre processus maximum"</item>
+    <item msgid="8586370216857360863">"Deux processus maximum"</item>
+    <item msgid="836593137872605381">"Trois processus maximum"</item>
+    <item msgid="7899496259191969307">"Quatre processus maximum"</item>
   </string-array>
   <string-array name="vpn_types_long">
     <item msgid="2732002039459078847">"VPN PPTP"</item>
