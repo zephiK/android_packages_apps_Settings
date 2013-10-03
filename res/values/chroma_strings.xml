@@ -394,4 +394,12 @@
     <!-- Quick settings disable on lockscreen -->
     <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
+
+    <!-- setting options for LCD density -->
+    <string name="lcd_density">LCD density</string>
+    <string name="dialog_title_lcd_density">LCD density</string>
+    <string name="lcd_density_value_format">%d DPI</string>
+    <string name="lcd_density_default_value_format">%d DPI (default)</string>
+    <string name="restarting_ui">Restarting UI\u2026</string>
+
 </resources>
