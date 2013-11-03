@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2013 Slimroms Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,20 +17,16 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory
-        android:key="app_security"
-        android:title="@string/app_security_title">
+    <SwitchPreference
+        android:key="privacy_guard_default"
+        android:title="@string/privacy_guard_default_title"
+        android:summary="@string/privacy_guard_default_summary"
+        android:persistent="false" />
 
-    <Preference android:key="privacy_guard_manager"
-            android:title="@string/privacy_guard_manager_title"
-            android:summary="@string/privacy_guard_manager_summary"
-            android:fragment="com.android.settings.simpleaosp.privacyguard.PrivacyGuardManager" />
-
-        <PreferenceScreen
-            android:key="blacklist"
-            android:title="@string/blacklist_title"
-            android:fragment="com.android.settings.blacklist.BlacklistSettings" />
-
-    </PreferenceCategory>
+    <SwitchPreference
+        android:key="privacy_guard_notification"
+        android:title="@string/privacy_guard_notification_title"
+        android:summary="@string/privacy_guard_notifiation_summary"
+        android:persistent="false" />
 
 </PreferenceScreen>
