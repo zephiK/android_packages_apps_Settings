@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/system_settings_title" >
+
+        <PreferenceScreen
+                android:key="clock_style_pref"
+                android:fragment="com.android.settings.terminus.StatusBarClockStyle"
+                android:title="@string/status_bar_clock" />
+
+        <PreferenceScreen
+                android:key="navigation_bar"
+                android:fragment="com.android.settings.terminus.NavigationBarSettings"
+                android:title="@string/navigation_bar_title" />
+
+</PreferenceScreen>
