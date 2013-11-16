@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The CyanogenMod Project
+<!-- Copyright (C) 2008 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -28,21 +28,27 @@
                  android:layout_height="64dp"
                  android:gravity="center_horizontal|center_vertical">
 
-                <TextView android:id="@+id/scale"
+                <TextView android:id="@+id/description"
+                        android:text="@string/font_size_sample"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:textAppearanceLarge" />
 
+                <TextView android:id="@+id/percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceSmall" />
+
         </LinearLayout>
 
-        <com.android.settings.IntervalSeekBar android:id="@+id/scale_seekbar"
+        <com.android.settings.IntervalSeekBar android:id="@+id/font_size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:layout_below="@+id/container"
-                settings:Min="0"
-                settings:Max="10"
-                settings:defaultValue="1.0"
-                settings:digits="1" />
+                settings:Min="0.85"
+                settings:Max="1.30"
+                settings:defaultValue="1.00"
+                settings:digits="2" />
 
 </RelativeLayout>
