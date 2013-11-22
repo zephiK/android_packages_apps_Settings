@@ -8,6 +8,11 @@
         android:key="category_battery_options"
         android:title="@string/display_category_navbar_options_title" >
 
+    <PreferenceScreen
+        android:key="navigation_bar"
+        android:fragment="com.android.settings.cyanogenmod.NavBar"
+        android:title="@string/navigation_bar_title" />
+
     <ListPreference
         android:defaultValue="48"
         android:dialogTitle="@string/navigation_bar_height"

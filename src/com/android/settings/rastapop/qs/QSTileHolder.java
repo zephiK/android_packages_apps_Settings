@@ -49,7 +49,7 @@ public class QSTileHolder {
                 !QSUtils.getAvailableTiles(context).contains(tileType)) {
             return null;
         }
-
+/*
         // We need to filter out the LTE tile manually, because
         // filtering via getAvailableTiles during fwb init
         // disallows reading our system prop
@@ -60,7 +60,7 @@ public class QSTileHolder {
                 && (!QSUtils.deviceSupportsLte(context))) {
             return null;
         }
-
+*/
         switch (tileType) {
             case TILE_ADD_DELETE:
                 break;
