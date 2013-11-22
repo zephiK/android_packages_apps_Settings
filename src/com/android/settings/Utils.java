@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import android.annotation.Nullable;
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
@@ -31,6 +32,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.IPackageManager;
 import android.content.pm.IntentFilterVerificationInfo;
@@ -85,6 +87,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.util.DisplayMetrics;
 import android.view.DisplayInfo;
+import android.view.Surface;
 import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TabWidget;
@@ -1309,5 +1312,37 @@ public final class Utils {
     public static boolean isPackageInstalled(Context context, String pkg) {
         return isPackageInstalled(context, pkg, true);
     }
-}
 
+    /**
+     * Locks the activity orientation to the current device orientation
+     * @param activity
+     */
+    public static void lockCurrentOrientation(Activity activity) {
+        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
+        int orientation = activity.getResources().getConfiguration().orientation;
+        int frozenRotation = 0;
+        switch (currentRotation) {
+            case Surface.ROTATION_0:
+                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
+                        ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+                        : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+                break;
+            case Surface.ROTATION_90:
+                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
+                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
+                        : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+                break;
+            case Surface.ROTATION_180:
+                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
+                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
+                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
+                break;
+            case Surface.ROTATION_270:
+                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
+                        ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
+                break;
+        }
+        activity.setRequestedOrientation(frozenRotation);
+    }
+}
