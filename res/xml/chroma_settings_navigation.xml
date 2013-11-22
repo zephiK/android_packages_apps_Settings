@@ -7,6 +7,12 @@
         android:key="category_navigation_options"
         android:title="@string/display_category_navbar_options_title" >
 
+    <PreferenceScreen
+        android:key="navigation_bar"
+        android:fragment="com.android.settings.cyanogenmod.NavBar"
+        android:summary="@string/navigation_bar_settings_summary"
+        android:title="@string/navigation_bar_buttons" />
+
     <ListPreference
         android:key="navigation_bar_height"
         android:dialogTitle="@string/navigation_bar_height"
