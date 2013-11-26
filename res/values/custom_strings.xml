@@ -157,4 +157,13 @@
     <string name="qs_category">Quicksettings</string>
     <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+<<<<<<< HEAD
     </resources>
+=======
+
+    <!--Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+
+</resources>
+>>>>>>> b88bafd... Settings: Quick unlock controll (1/2)
