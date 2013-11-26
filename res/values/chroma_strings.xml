@@ -290,4 +290,8 @@
     <string name="lcd_density_default">Device default</string>
     <string name="lcd_density_unsupported">Unsupported</string>
     <string name="restarting_ui">Restarting</string>
+
+    <!--Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
+    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
 </resources>
