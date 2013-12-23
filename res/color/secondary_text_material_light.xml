@@ -14,9 +14,31 @@
      limitations under the License.
 -->
 
+<<<<<<< HEAD:res/color/secondary_text_material_light.xml
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false"
           android:alpha="@*android:dimen/disabled_alpha_material_light"
           android:color="@color/text_color_secondary_text_material_light"/>
     <item android:color="@color/text_color_secondary_text_material_light"/>
 </selector> 
+=======
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/sound_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <SwitchPreference
+        android:key="safe_headset_volume"
+        android:title="@string/safe_headset_volume_title"
+        android:summary="@string/safe_headset_volume_summary"
+        android:persistent="false"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="volume_keys_control_media_stream"
+        android:title="@string/volume_keys_control_media_stream"
+        android:summary="@string/volume_keys_control_media_stream_summary"
+        android:defaultValue="false"
+        android:persistent="false" />
+</PreferenceScreen>
+>>>>>>> ce8d909... Option to use volume keys to control media volume anytime [2/2]:res/xml/simple_sound_settings.xml

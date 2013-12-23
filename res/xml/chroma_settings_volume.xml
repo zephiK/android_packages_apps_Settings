@@ -3,6 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <SwitchPreference
+        android:key="volume_keys_control_media_stream"
+        android:title="@string/volume_keys_control_media_stream"
+        android:summary="@string/volume_keys_control_media_stream_summary"
+        android:defaultValue="false"
+        android:persistent="false" />
+
      <PreferenceCategory
             android:key="volume_rocker_settings_category"
             android:title="@string/volume_rocker_screen_title">
