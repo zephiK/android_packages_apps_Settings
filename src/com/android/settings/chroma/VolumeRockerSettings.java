@@ -28,11 +28,13 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+    private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
 
     private SwitchPreference mCameraSounds;
     private SwitchPreference mVolumeWake;
     private SwitchPreference mVolumeMusicControl;
     private SwitchPreference mVolumeKeyAdjustSound;
+    private SwitchPreference mVolumeKeysControlMedia;
     private ListPreference mVolumeKeyCursorControl;
 
     @Override
@@ -52,6 +54,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         mVolumeMusicControl.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
         mVolumeMusicControl.setOnPreferenceChangeListener(this);
+
+        // volume key adjust media
+        mVolumeKeysControlMedia = (SwitchPreference) findPreference(KEY_VOL_MEDIA);
+        mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
+        mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
 
         // volume key adjust sound
         mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
@@ -117,6 +125,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                showDialogInner(DLG_CAMERA_SOUND);
                return true;
            }
+        } else if (preference == mVolumeKeysControlMedia) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM,
+                    (Boolean) objValue ? 1 : 0);
+            return true;
         }
         return false;
     }
