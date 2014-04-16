@@ -43,12 +43,6 @@
             android:entries="@array/night_mode_entries"
             android:entryValues="@array/night_mode_values" /> -->
 
-        <PreferenceScreen
-                android:key="wallpaper"
-                android:title="@string/wallpaper_settings_title"
-                settings:keywords="@string/keywords_display_wallpaper"
-                android:fragment="com.android.settings.WallpaperTypeSettings" />
-
         <ListPreference
                 android:key="screen_timeout"
                 android:title="@string/screen_timeout"
