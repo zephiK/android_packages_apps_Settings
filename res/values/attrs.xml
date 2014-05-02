@@ -115,5 +115,11 @@
         <attr name="min" format="integer" />
         <attr name="unitsLeft" format="string" />
         <attr name="unitsRight" format="string" />
+
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="Min" format="float" />
+        <attr name="Max" format="float" />
+        <attr name="defaultValue" format="float" />
+        <attr name="digits" format="integer" />
     </declare-styleable>
 </resources>
