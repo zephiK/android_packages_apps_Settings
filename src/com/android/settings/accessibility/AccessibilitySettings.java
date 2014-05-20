@@ -46,8 +46,6 @@ import android.view.accessibility.AccessibilityManager;
 import android.widget.TextView;
 
 import com.android.internal.content.PackageMonitor;
-import com.android.internal.view.RotationPolicy;
-import com.android.internal.view.RotationPolicy.RotationPolicyListener;
 import com.android.settings.DialogCreatable;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -86,8 +84,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             "toggle_inversion_preference";
     private static final String TOGGLE_POWER_BUTTON_ENDS_CALL_PREFERENCE =
             "toggle_power_button_ends_call_preference";
-    private static final String TOGGLE_LOCK_SCREEN_ROTATION_PREFERENCE =
-            "toggle_lock_screen_rotation_preference";
     private static final String TOGGLE_SPEAK_PASSWORD_PREFERENCE =
             "toggle_speak_password_preference";
     private static final String SELECT_LONG_PRESS_TIMEOUT_PREFERENCE =
@@ -172,13 +168,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
                 }
             };
 
-    private final RotationPolicyListener mRotationPolicyListener = new RotationPolicyListener() {
-        @Override
-        public void onChange() {
-            updateLockScreenRotationSwitch();
-        }
-    };
-
     // Preference controls.
     private PreferenceCategory mServicesCategory;
     private PreferenceCategory mSystemsCategory;
@@ -186,7 +175,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mToggleLargeTextPreference;
     private SwitchPreference mToggleHighTextContrastPreference;
     private SwitchPreference mTogglePowerButtonEndsCallPreference;
-    private SwitchPreference mToggleLockScreenRotationPreference;
     private SwitchPreference mToggleSpeakPasswordPreference;
     private ListPreference mSelectLongPressTimeoutPreference;
     private Preference mNoServicesMessagePreference;
@@ -217,20 +205,12 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
 
         mSettingsPackageMonitor.register(getActivity(), getActivity().getMainLooper(), false);
         mSettingsContentObserver.register(getContentResolver());
-        if (RotationPolicy.isRotationSupported(getActivity())) {
-            RotationPolicy.registerRotationPolicyListener(getActivity(),
-                    mRotationPolicyListener);
-        }
     }
 
     @Override
     public void onPause() {
         mSettingsPackageMonitor.unregister();
         mSettingsContentObserver.unregister(getContentResolver());
-        if (RotationPolicy.isRotationSupported(getActivity())) {
-            RotationPolicy.unregisterRotationPolicyListener(getActivity(),
-                    mRotationPolicyListener);
-        }
         super.onPause();
     }
 
@@ -250,9 +230,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             return true;
         } else if (mTogglePowerButtonEndsCallPreference == preference) {
             handleTogglePowerButtonEndsCallPreferenceChange((Boolean) newValue);
-            return true;
-        } else if (mToggleLockScreenRotationPreference == preference) {
-            handleLockScreenRotationPreferenceChange((Boolean) newValue);
             return true;
         } else if (mToggleSpeakPasswordPreference == preference) {
             handleToggleSpeakPasswordPreferenceChange((Boolean) newValue);
@@ -305,11 +282,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
                 Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR,
                 (checked ? Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_HANGUP
                         : Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_SCREEN_OFF));
-    }
-
-    private void handleLockScreenRotationPreferenceChange(boolean checked) {
-        RotationPolicy.setRotationLockForAccessibility(getActivity(),
-                !checked);
     }
 
     private void handleToggleSpeakPasswordPreferenceChange(boolean checked) {
@@ -368,15 +340,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             mSystemsCategory.removePreference(mTogglePowerButtonEndsCallPreference);
         } else {
             mTogglePowerButtonEndsCallPreference.setOnPreferenceChangeListener(this);
-        }
-
-        // Lock screen rotation.
-        mToggleLockScreenRotationPreference =
-                (SwitchPreference) findPreference(TOGGLE_LOCK_SCREEN_ROTATION_PREFERENCE);
-        if (!RotationPolicy.isRotationSupported(getActivity())) {
-            mSystemsCategory.removePreference(mToggleLockScreenRotationPreference);
-        } else {
-            mToggleLockScreenRotationPreference.setOnPreferenceChangeListener(this);
         }
 
         // Speak passwords.
@@ -558,9 +521,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
             mTogglePowerButtonEndsCallPreference.setChecked(powerButtonEndsCall);
         }
 
-        // Auto-rotate screen
-        updateLockScreenRotationSwitch();
-
         // Speak passwords.
         final boolean speakPasswordEnabled = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.ACCESSIBILITY_SPEAK_PASSWORD, 0) != 0;
@@ -596,14 +556,6 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         final boolean enabled = Settings.Secure.getInt(getContentResolver(), prefKey, 0) == 1;
         pref.setSummary(enabled ? R.string.accessibility_feature_state_on
                 : R.string.accessibility_feature_state_off);
-    }
-
-    private void updateLockScreenRotationSwitch() {
-        Context context = getActivity();
-        if (context != null) {
-            mToggleLockScreenRotationPreference.setChecked(
-                    !RotationPolicy.isRotationLocked(context));
-        }
     }
 
     private void loadInstalledServices() {
