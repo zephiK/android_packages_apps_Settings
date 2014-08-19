@@ -59,6 +59,12 @@
         android:entries="@array/quick_pulldown_entries"
         android:entryValues="@array/quick_pulldown_values"
         android:persistent="false" />
+
+   <PreferenceScreen
+    	android:key="network_traffic_state"
+	    android:fragment="com.android.settings.chroma.NetworkTraffic"
+     	android:summary="@string/network_traffic_summary"
+    	android:title="@string/network_traffic_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
