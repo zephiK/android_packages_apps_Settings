@@ -17,6 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.applications.AppOpsCategory;
+import com.android.settings.chroma.DisplayRotation;
 
 /**
  * Top-level Settings activity
@@ -102,5 +103,6 @@ public class Settings extends SettingsActivity {
     public static class ApnSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class DisplayRotationSettingsActivity extends SettingsActivity { /* empty */ }
 }
 

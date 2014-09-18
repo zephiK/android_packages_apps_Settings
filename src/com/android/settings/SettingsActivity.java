@@ -114,6 +114,7 @@ import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.headsup.HeadsUpSettings;
+import com.android.settings.chroma.DisplayRotation;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -306,7 +307,8 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
             ExpandedDesktopPreferenceFragment.class.getName(),
-    	    HeadsUpSettings.class.getName()
+    	    HeadsUpSettings.class.getName(),
+    	    DisplayRotation.class.getName()
     };
 
 
