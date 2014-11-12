@@ -28,10 +28,14 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     private static final int DLG_CAMERA_SOUND = 1;
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+    private static String VOLUME_ROCKER_SETTINGS_CATEGORY = "volume_rocker_settings_category";
+    private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
+    private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mCameraSounds;
     private SwitchPreference mVolumeRockerWake;
     private SwitchPreference mVolBtnMusicCtrl;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +66,16 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             }
         } catch (SettingNotFoundException e) {
         }
+
+	// volume cursor control
+	mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
+        if (mVolumeKeyCursorControl != null) {
+            mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
+            mVolumeKeyCursorControl.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                    .getContentResolver(), Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0)));
+            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
+        }
+
     }
 
     @Override
@@ -85,6 +99,14 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                showDialogInner(DLG_CAMERA_SOUND);
                return true;
            }
+        } else if (preference == mVolumeKeyCursorControl) {
+            String volumeKeyCursorControl = (String) objValue;
+            int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.VOLUME_KEY_CURSOR_CONTROL, volumeKeyCursorControlValue);
+            int volumeKeyCursorControlIndex = mVolumeKeyCursorControl.findIndexOfValue(volumeKeyCursorControl);
+            mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
+            return true;
         }
         return false;
     }
