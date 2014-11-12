@@ -4,4 +4,9 @@
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">rastapop build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
+
+    <!-- BUILD TWEAKS  -->
+    <string name="header_category_rastapop">Rastapop</string>
+    <string name="system_settings_title">Build Tweaks</string>
+    <string name="keywords_rastapop">Don\'t involve rasta in your say-say</string>
 </resources>
