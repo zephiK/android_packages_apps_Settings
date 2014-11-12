@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <string name="general_string">General</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">rastapop build date</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
-    <!-- BUILD TWEAKS  -->
+    <!-- BUILD TWEAKS -->
     <string name="header_category_rastapop">Rastapop</string>
     <string name="system_settings_title">Build Tweaks</string>
     <string name="keywords_rastapop">Don\'t involve rasta in your say-say</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_screen_title">Status bar</string>
+    <!-- Statusbar native battery percent -->
+    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
+
 </resources>
