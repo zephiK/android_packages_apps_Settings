@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/volume_rocker_screen_title" >
+
+    <ListPreference
+        android:dialogTitle="@string/volume_key_cursor_control_title"
+        android:entries="@array/volume_key_cursor_control_entries"
+        android:entryValues="@array/volume_key_cursor_control_values"
+        android:key="volume_key_cursor_control"
+        android:persistent="false"
+        android:title="@string/volume_key_cursor_control_title" />
+
+</PreferenceScreen>
