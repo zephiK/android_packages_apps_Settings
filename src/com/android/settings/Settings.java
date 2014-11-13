@@ -18,6 +18,7 @@ package com.android.settings;
 
 import com.android.settings.applications.AppOpsCategory;
 import com.android.settings.chroma.DisplayRotation;
+import com.android.settings.blacklist.BlacklistSettings;
 
 /**
  * Top-level Settings activity
@@ -104,5 +105,6 @@ public class Settings extends SettingsActivity {
     public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
     public static class DisplayRotationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
 }
 
