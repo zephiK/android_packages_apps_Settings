@@ -26,6 +26,11 @@
             android:summary="@string/privacy_guard_manager_summary"
             android:fragment="com.android.settings.chroma.privacyguard.PrivacyGuardManager" />
 
+        <PreferenceScreen
+            android:key="blacklist"
+            android:title="@string/blacklist_title"
+            android:fragment="com.android.settings.blacklist.BlacklistSettings" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
