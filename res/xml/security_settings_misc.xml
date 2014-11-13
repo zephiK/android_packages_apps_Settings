@@ -45,6 +45,16 @@
 
     </PreferenceCategory>
 
+   <PreferenceCategory
+         android:key="app_security"
+         android:title="@string/app_security_title">
+ 
+         <PreferenceScreen
+             android:key="blacklist"
+             android:title="@string/blacklist_title"
+             android:fragment="com.android.settings.blacklist.BlacklistSettings" />
+    </PreferenceCategory>
+
     <PreferenceCategory android:title="@string/security_passwords_title"
             android:persistent="false">
 

@@ -78,6 +78,7 @@ import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
+import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.chroma.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
@@ -355,7 +356,8 @@ public class SettingsActivity extends Activity
             ProcessStatsSummary.class.getName(),
             DrawOverlayDetails.class.getName(),
             WriteSettingsDetails.class.getName(),
-            DisplayRotation.class.getName()
+            DisplayRotation.class.getName(),          
+            BlacklistSettings.class.getName()
     };
 
 
