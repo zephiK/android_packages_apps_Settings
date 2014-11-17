@@ -59,7 +59,6 @@
     <string name="chroma_menu_personalizaton">Chroma Options</string>
     <string name="chroma_menu_about">About Chroma</string>
 
-
     <!-- Battery and clock category -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <string name="display_category_navring_options_title">Navigation ring options</string>
@@ -403,4 +402,15 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
     <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="expanded_hide_nothing">Hide nothing</string>
+    <string name="expanded_hide_status">Hide status bar</string>
+    <string name="expanded_hide_navigation">Hide navigation bar</string>
+    <string name="expanded_hide_both">Hide both</string>
+    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set "Enabled for all" to the off position</string>
+    <string name="expanded_desktop_state">Expanded state</string>
+    <string name="expanded_enabled_for_all">Enabled for all</string>
+    <string name="expanded_user_configurable">User configurable</string>
 </resources>
