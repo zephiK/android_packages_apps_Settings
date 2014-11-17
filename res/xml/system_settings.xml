@@ -14,6 +14,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="navigation_bar_general_category"
+        android:title="@string/navigation_bar_screen_title" >
+        <ListPreference
+            android:key="navigation_bar_height"
+            android:dialogTitle="@string/navigation_bar_height"
+            android:title="@string/navigation_bar_height"
+            android:entries="@array/navigation_bar_height_entries"
+            android:entryValues="@array/navigation_bar_height_values"
+            android:defaultValue="48"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="volume_rocker_general_category"
         android:title="@string/volume_rocker_screen_title" >
         <SwitchPreference

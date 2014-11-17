@@ -18,6 +18,9 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     // status bar native battery percentage
     private static final String STATUS_BAR_NATIVE_BATTERY_PERCENTAGE = "status_bar_native_battery_percentage";
 
+    // navigation bar height
+    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    
     // volume key adjust sound
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
     // volume key cursor control
@@ -25,6 +28,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     // status bar native battery percentage
     private SwitchPreference mStatusBarNativeBatteryPercentage;
+    // navigation bar height
+    private ListPreference mNavigationBarHeight;
     // volume key adjust sound
     private SwitchPreference mVolumeKeyAdjustSound;
     // volume key cursor control
@@ -42,6 +47,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         int statusBarNativeBatteryPercentage = Settings.System.getInt(getContentResolver(),
                 STATUS_BAR_NATIVE_BATTERY_PERCENTAGE, 0);
         mStatusBarNativeBatteryPercentage.setChecked(statusBarNativeBatteryPercentage != 0);
+        
+        // navigation bar height
+        mNavigationBarHeight = (ListPreference) findPreference(NAVIGATION_BAR_HEIGHT);
+        mNavigationBarHeight.setOnPreferenceChangeListener(this);
+        int statusNavigationBarHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
+        mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
 
         // volume key adjust sound
         mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
@@ -69,6 +82,16 @@ public class SystemSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), STATUS_BAR_NATIVE_BATTERY_PERCENTAGE,
                     value ? 1 : 0);
             return true;
+        }
+
+        // navigation bar height
+        else if (preference == mNavigationBarHeight) {
+            int statusNavigationBarHeight = Integer.valueOf((String) objValue);
+            int index = mNavigationBarHeight.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(), NAVIGATION_BAR_HEIGHT,
+                    statusNavigationBarHeight);
+            mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
+        return true;
         }
 
         // volume key adjust sound
