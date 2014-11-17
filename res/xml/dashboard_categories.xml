@@ -71,21 +71,6 @@
 
     </dashboard-category>
 
-    <!-- RASTAPOP -->
-    <dashboard-category
-            android:id="@+id/rastapop_section"
-            android:title="@string/header_category_rastapop" >
-
-        <!-- Build Tweaks -->
-        <dashboard-tile
-                android:id="@+id/rastapop_settings"
-                android:title="@string/system_settings_title"
-                android:fragment="com.android.settings.rastapop.SystemSettings"
-                android:icon="@drawable/ic_settings_system"
-                />
-    
-    </dashboard-category>
-
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
@@ -246,6 +231,14 @@
                 android:title="@string/development_settings_title"
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
+                />
+
+        <!-- Rastapop -->
+        <dashboard-tile
+                android:id="@+id/rastapop_settings"
+                android:title="@string/system_settings_title"
+                android:fragment="com.android.settings.rastapop.SystemSettings"
+                android:icon="@drawable/ic_settings_system"
                 />
 
         <!-- About Device -->

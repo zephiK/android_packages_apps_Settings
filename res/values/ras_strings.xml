@@ -7,8 +7,7 @@
     <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_rastapop">Rastapop</string>
-    <string name="system_settings_title">Build Tweaks</string>
+    <string name="system_settings_title">Rastapop</string>
     <string name="keywords_rastapop">Don\'t involve rasta in your say-say</string>
 
     <!-- Status bar -->
