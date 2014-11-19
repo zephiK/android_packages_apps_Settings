@@ -2,10 +2,9 @@
 package com.android.settings.rastapop;
 
 import android.os.Bundle;
+import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.ListPreference;
-import android.preference.PreferenceCategory;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
 
@@ -20,7 +19,9 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     // navigation bar height
     private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
-    
+
+    // volume rocker wake
+    private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
     // volume key adjust sound
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
     // volume key cursor control
@@ -30,6 +31,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mStatusBarNativeBatteryPercentage;
     // navigation bar height
     private ListPreference mNavigationBarHeight;
+    // volume rocker wake
+    private SwitchPreference mVolumeRockerWake;
     // volume key adjust sound
     private SwitchPreference mVolumeKeyAdjustSound;
     // volume key cursor control
@@ -55,6 +58,13 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                 Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
         mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
+
+        // volume rocker wake
+        mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
+        mVolumeRockerWake.setOnPreferenceChangeListener(this);
+        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_WAKE, 0);
+        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
 
         // volume key adjust sound
         mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
@@ -92,6 +102,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                     statusNavigationBarHeight);
             mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
         return true;
+        }
+
+        // volume rocker wake
+        else if (preference == mVolumeRockerWake) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
+                    value ? 1 : 0);
+            return true;
         }
 
         // volume key adjust sound
