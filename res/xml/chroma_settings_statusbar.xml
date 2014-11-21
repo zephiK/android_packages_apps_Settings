@@ -14,4 +14,16 @@
     	android:summary="@string/battery2_summary" />
     </PreferenceCategory>
 
+   <PreferenceCategory
+        android:key="category_statusbar_options"
+        android:title="@string/display_category_statusbar_options_title" >
+
+    <ListPreference
+        android:key="quick_pulldown"
+        android:title="@string/title_quick_pulldown"
+        android:entries="@array/quick_pulldown_entries"
+        android:entryValues="@array/quick_pulldown_values"
+        android:persistent="false" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

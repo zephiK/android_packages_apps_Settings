@@ -38,6 +38,7 @@
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
+    <string name="display_category_statusbar_options_title">Status bar options</string>
     <string name="display_category_wakeup_options_title">Wakeup options</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -163,5 +164,12 @@
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
+
+    <!-- Status bar quick qs pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 
 </resources>
