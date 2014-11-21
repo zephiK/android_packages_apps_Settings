@@ -15,6 +15,10 @@
     <!-- Statusbar native battery percent -->
     <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
     <string name="status_bar_native_battery_percentage_summary">Show percentage inside icon</string>
+    <!-- Status bar brightness control -->
+    <string name="status_bar_brightness_control_title">Brightness control</string>
+    <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
+    <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>

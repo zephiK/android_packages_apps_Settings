@@ -7,6 +7,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -16,6 +17,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     // status bar native battery percentage
     private static final String STATUS_BAR_NATIVE_BATTERY_PERCENTAGE = "status_bar_native_battery_percentage";
+    // status bar brightness control
+    private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
     // navigation bar height
     private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
@@ -29,6 +32,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     // status bar native battery percentage
     private SwitchPreference mStatusBarNativeBatteryPercentage;
+    // status bar brightness control
+    private SwitchPreference mStatusBarBrightnessControl;
     // navigation bar height
     private ListPreference mNavigationBarHeight;
     // volume rocker wake
@@ -50,7 +55,23 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         int statusBarNativeBatteryPercentage = Settings.System.getInt(getContentResolver(),
                 STATUS_BAR_NATIVE_BATTERY_PERCENTAGE, 0);
         mStatusBarNativeBatteryPercentage.setChecked(statusBarNativeBatteryPercentage != 0);
-        
+
+        // status bar native brightness control
+        mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
+        mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
+        int statusBarBrightnessControl = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_BRIGHTNESS_CONTROL, 0);
+        mStatusBarBrightnessControl.setChecked(statusBarBrightnessControl != 0);
+        try {
+            if (Settings.System.getInt(getContentResolver(),
+                    Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
+                mStatusBarBrightnessControl.setEnabled(false);
+                mStatusBarBrightnessControl.setSummary(R.string.status_bar_brightness_control_info);
+            }
+        } catch (SettingNotFoundException e) {
+            // what do you expect me to do?
+        }
+
         // navigation bar height
         mNavigationBarHeight = (ListPreference) findPreference(NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setOnPreferenceChangeListener(this);
@@ -90,6 +111,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         if (preference == mStatusBarNativeBatteryPercentage) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), STATUS_BAR_NATIVE_BATTERY_PERCENTAGE,
+                    value ? 1 : 0);
+            return true;
+        }
+
+        // status bar brightness control
+        else if (preference == mStatusBarBrightnessControl) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
             return true;
         }
