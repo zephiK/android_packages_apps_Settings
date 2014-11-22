@@ -30,6 +30,9 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     // volume key cursor control
     private static final String VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
 
+    // advanced reboot
+    private static final String ADVANCED_REBOOT = "advanced_reboot";
+
     // status bar native battery percentage
     private SwitchPreference mStatusBarNativeBatteryPercentage;
     // status bar brightness control
@@ -42,6 +45,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeKeyAdjustSound;
     // volume key cursor control
     private ListPreference mVolumeKeyCursorControl;
+    // advanced reboot
+    private SwitchPreference mAdvancedReboot;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -102,6 +107,13 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL, 0)));
             mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
         }
+
+        // advanced reboot
+        mAdvancedReboot = (SwitchPreference) findPreference(ADVANCED_REBOOT);
+        mAdvancedReboot.setOnPreferenceChangeListener(this);
+        int advancedReboot = Settings.Secure.getInt(getContentResolver(),
+                ADVANCED_REBOOT, 0);
+        mAdvancedReboot.setChecked(advancedReboot != 0);
     }
 
     @Override
@@ -159,6 +171,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                     .findIndexOfValue(volumeKeyCursorControl);
             mVolumeKeyCursorControl
                     .setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
+            return true;
+        }
+
+        // advanced reboot
+        else if (preference == mAdvancedReboot) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), ADVANCED_REBOOT,
+                    value ? 1 : 0);
             return true;
         }
         return false;

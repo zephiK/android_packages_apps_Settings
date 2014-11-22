@@ -52,4 +52,13 @@
             android:title="@string/volume_key_cursor_control_title" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="system_settings_general_category"
+        android:title="@string/system_settings_screen_title" >
+        <SwitchPreference
+            android:key="advanced_reboot"
+            android:summary="@string/advanced_reboot_summary"
+            android:title="@string/advanced_reboot_title" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
