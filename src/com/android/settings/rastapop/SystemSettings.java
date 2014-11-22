@@ -32,6 +32,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
     // advanced reboot
     private static final String ADVANCED_REBOOT = "advanced_reboot";
+    // kill-app long press back
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
     // status bar native battery percentage
     private SwitchPreference mStatusBarNativeBatteryPercentage;
@@ -47,6 +49,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private ListPreference mVolumeKeyCursorControl;
     // advanced reboot
     private SwitchPreference mAdvancedReboot;
+    // kill-app long press back
+    private SwitchPreference mKillAppLongPressBack;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -114,6 +118,13 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         int advancedReboot = Settings.Secure.getInt(getContentResolver(),
                 ADVANCED_REBOOT, 0);
         mAdvancedReboot.setChecked(advancedReboot != 0);
+
+        // kill-app long press back
+        mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
+        mKillAppLongPressBack.setOnPreferenceChangeListener(this);
+        int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
+                KILL_APP_LONGPRESS_BACK, 0);
+        mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
     }
 
     @Override
@@ -178,6 +189,14 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         else if (preference == mAdvancedReboot) {
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), ADVANCED_REBOOT,
+                    value ? 1 : 0);
+            return true;
+        }
+
+        // kill-app long press back
+        else if (preference == mKillAppLongPressBack) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
                     value ? 1 : 0);
             return true;
         }
