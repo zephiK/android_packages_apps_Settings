@@ -12,6 +12,12 @@
         android:key="battery_style_pref"
         android:title="@string/battery_title"
     	android:summary="@string/battery2_summary" />
+
+    <PreferenceScreen
+        android:fragment="com.android.settings.chroma.StatusBarClockStyle"
+        android:key="clock_style_pref"
+        android:title="@string/status_bar_clock"
+	    android:summary="@string/status_bar_clock_summary" />
     </PreferenceCategory>
 
    <PreferenceCategory
