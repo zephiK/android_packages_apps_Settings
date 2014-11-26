@@ -15,8 +15,8 @@ import com.android.settings.SettingsPreferenceFragment;
 public class SystemSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // status bar native battery percentage
-    private static final String STATUS_BAR_NATIVE_BATTERY_PERCENTAGE = "status_bar_native_battery_percentage";
+    // status bar show battery percent
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     // status bar brightness control
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
@@ -35,8 +35,8 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     // kill-app long press back
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
-    // status bar native battery percentage
-    private SwitchPreference mStatusBarNativeBatteryPercentage;
+    // status bar show battery percent
+    private SwitchPreference mStatusBarShowBatteryPercent;
     // status bar brightness control
     private SwitchPreference mStatusBarBrightnessControl;
     // navigation bar height
@@ -58,12 +58,12 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system_settings);
 
-        // status bar native battery percentage
-        mStatusBarNativeBatteryPercentage = (SwitchPreference) findPreference(STATUS_BAR_NATIVE_BATTERY_PERCENTAGE);
-        mStatusBarNativeBatteryPercentage.setOnPreferenceChangeListener(this);
-        int statusBarNativeBatteryPercentage = Settings.System.getInt(getContentResolver(),
-                STATUS_BAR_NATIVE_BATTERY_PERCENTAGE, 0);
-        mStatusBarNativeBatteryPercentage.setChecked(statusBarNativeBatteryPercentage != 0);
+        // status bar show battery percent
+        mStatusBarShowBatteryPercent = (SwitchPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+        mStatusBarShowBatteryPercent.setOnPreferenceChangeListener(this);
+        int statusBarShowBatteryPercent = Settings.System.getInt(getContentResolver(),
+                STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarShowBatteryPercent.setChecked(statusBarShowBatteryPercent != 0);
 
         // status bar native brightness control
         mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
@@ -130,10 +130,10 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 
-        // status bar native battery percentage
-        if (preference == mStatusBarNativeBatteryPercentage) {
+        // status bar show battery percent
+        if (preference == mStatusBarShowBatteryPercent) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(getContentResolver(), STATUS_BAR_NATIVE_BATTERY_PERCENTAGE,
+            Settings.System.putInt(getContentResolver(), STATUS_BAR_SHOW_BATTERY_PERCENT,
                     value ? 1 : 0);
             return true;
         }

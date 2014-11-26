@@ -12,9 +12,9 @@
 
     <!-- Status bar -->
     <string name="status_bar_screen_title">Status bar</string>
-    <!-- Statusbar native battery percent -->
-    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_native_battery_percentage_summary">Show percentage inside icon</string>
+    <!-- Statusbar show battery percent -->
+    <string name="status_bar_show_battery_percent_title">Battery percentage</string>
+    <string name="status_bar_show_battery_percent_summary">Show battery status percent</string>
     <!-- Status bar brightness control -->
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
