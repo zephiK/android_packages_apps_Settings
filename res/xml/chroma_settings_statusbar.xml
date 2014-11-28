@@ -3,4 +3,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="category_battery_options"
+        android:title="@string/display_category_batteryclock_options_title" >
+
+    <PreferenceScreen
+        android:fragment="com.android.settings.chroma.BatterySettings"
+        android:key="battery_style_pref"
+        android:title="@string/battery_title"
+    	android:summary="@string/battery2_summary" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
