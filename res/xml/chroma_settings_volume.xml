@@ -12,6 +12,13 @@
         android:summary="@string/volume_rocker_wake_summary"
         android:title="@string/volume_rocker_wake_title" />
 
+     <SwitchPreference
+        android:key="volbtn_music_controls"
+        android:title="@string/volbtn_music_controls_title"
+        android:summary="@string/volbtn_music_controls_summary"
+        android:persistent="false"
+        android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
