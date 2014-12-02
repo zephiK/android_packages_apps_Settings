@@ -47,4 +47,10 @@
         android:dependency="show_clear_all_recents" />
     </PreferenceCategory>
 
+	<com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="recents_show_hide_search_bar"
+        android:title="@string/recents_show_searchbar"
+        android:summary="@string/recents_show_searchbar_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
