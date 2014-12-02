@@ -35,9 +35,13 @@
 
 	<PreferenceScreen
  	    android:key="lockscreen_shortcuts_settings"
-            android:fragment="com.android.settings.cyanogenmod.LockscreenShortcuts"
-            android:title="@string/lockscreen_targets_message" />
-
+        android:fragment="com.android.settings.cyanogenmod.LockscreenShortcuts"
+        android:title="@string/lockscreen_targets_message" />
     </PreferenceCategory>
 
+	<SwitchPreference
+	        android:key="block_on_secure_keyguard"
+	        android:title="@string/block_on_secure_keyguard_title"
+	        android:summary="@string/block_on_secure_keyguard_summary"
+	        android:persistent="false" />
 </PreferenceScreen>

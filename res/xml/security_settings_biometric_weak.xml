@@ -57,7 +57,11 @@
             android:fragment="com.android.settings.OwnerInfoSettings"
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary"/>
-
     </PreferenceCategory>
 
+	<SwitchPreference
+	        android:key="block_on_secure_keyguard"
+	        android:title="@string/block_on_secure_keyguard_title"
+	        android:summary="@string/block_on_secure_keyguard_summary"
+	        android:persistent="false" />
 </PreferenceScreen>
