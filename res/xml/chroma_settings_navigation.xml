@@ -13,4 +13,17 @@
             android:summary="@string/kill_app_longpress_back_summary"/>
 
     </PreferenceCategory>
+
+	<PreferenceCategory
+	    android:key="recents_panel"
+	    android:title="@string/recents_panel_settings" >
+
+	<com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="recents_show_search_bar"
+        android:title="@string/recents_show_searchbar"
+        android:summary="@string/recents_show_searchbar_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
