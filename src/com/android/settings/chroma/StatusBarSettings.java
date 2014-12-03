@@ -25,11 +25,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
     private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private PreferenceScreen mLockClock;
     private ListPreference mQuickPulldown;
+    ListPreference mSmartPulldown;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,11 +53,20 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             updateQuickPulldownSummary(statusQuickPulldown);
         }
 
+    // Smart pulldown
+        mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
+        mSmartPulldown.setOnPreferenceChangeListener(this);
+        int smartPulldown =  Settings.System.getInt(getContentResolver(),
+                Settings.System.QS_SMART_PULLDOWN, 0);
+        mSmartPulldown.setValue(String.valueOf(smartPulldown));
+        updateSmartPulldownSummary(smartPulldown);
+
     // mLockClock 
     	mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
         if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
             prefSet.removePreference(mLockClock);
         }
+
     }
 
     @Override
@@ -66,6 +77,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
+            return true;
+        } else if (preference == mSmartPulldown) {
+            int smartPulldown = Integer.valueOf((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                Settings.System.QS_SMART_PULLDOWN, smartPulldown);
+            updateSmartPulldownSummary(smartPulldown);
             return true;
         }
         return false;
@@ -89,6 +106,31 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     ? (isRtl ? R.string.quick_pulldown_right : R.string.quick_pulldown_left)
                     : (isRtl ? R.string.quick_pulldown_left : R.string.quick_pulldown_right));
             mQuickPulldown.setSummary(res.getString(R.string.summary_quick_pulldown, direction));
+        }
+    }
+
+    private void updateSmartPulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+        } else {
+            String type = null;
+            switch (value) {
+                case 1:
+                    type = res.getString(R.string.smart_pulldown_dismissable);
+                    break;
+                case 2:
+                    type = res.getString(R.string.smart_pulldown_persistent);
+                    break;
+                default:
+                    type = res.getString(R.string.smart_pulldown_all);
+                    break;
+            }
+            // Remove title capitalized formatting
+            type = type.toLowerCase();
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
         }
     }
 }
