@@ -566,6 +566,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 Settings.Secure.ADVANCED_REBOOT, 0) != 0);
     }
 
+    private void resetDevelopmentShortcutOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.DEVELOPMENT_SHORTCUT, 0);
+    }
+
     private void resetDangerousOptions() {
         mDontPokeProperties = true;
         for (int i=0; i< mResetSwitchPrefs.size(); i++) {
