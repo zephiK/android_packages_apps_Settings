@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
+<!--
+     Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +15,13 @@
      limitations under the License.
 -->
 
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true">
-        <bitmap android:src="@drawable/ic_blacklist_calls_icon"
-                android:tint="@color/theme_accent"/>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/floating_action_button_touch_tint">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+        </shape>
     </item>
-    <item>
-        <bitmap
-                android:src="@drawable/ic_blacklist_calls_icon"
-                android:tint="@*android:color/secondary_text_default_material_light"/>
-    </item>
-</selector>
+    <item android:drawable="@drawable/fab_accent"/>
+</ripple>
 
