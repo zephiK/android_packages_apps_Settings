@@ -17,6 +17,12 @@
     	android:title="@string/status_bar_double_tap_to_sleep_title"
     	android:summary="@string/status_bar_double_tap_to_sleep_summary" />
 
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="status_bar_notif_count"
+        android:title="@string/status_bar_notif_count_title"
+        android:summary="@string/status_bar_notif_count_summary"
+        android:defaultValue="false" />
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/title_quick_pulldown"
