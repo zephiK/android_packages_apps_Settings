@@ -236,9 +236,9 @@
         <!-- Rastapop -->
         <dashboard-tile
                 android:id="@+id/rastapop_settings"
-                android:title="@string/system_settings_title"
-                android:fragment="com.android.settings.rastapop.SystemSettings"
-                android:icon="@drawable/ic_settings_system"
+                android:title="@string/rastapop_settings_title"
+                android:fragment="com.android.settings.rastapop.RastapopSettings"
+                android:icon="@drawable/ic_settings_rastapop"
                 />
 
         <!-- About Device -->

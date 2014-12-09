@@ -7,7 +7,7 @@
     <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="system_settings_title">Rastapop</string>
+    <string name="rastapop_settings_title">Rastapop</string>
     <string name="keywords_rastapop">Don\'t involve rasta in your say-say</string>
 
     <!-- Status bar -->
@@ -38,7 +38,7 @@
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
-    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
+    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with the volume keys</string>
 
     <!-- Developer options - kill app long press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="navigation_bar_general_category"
+    android:title="@string/navigation_bar_screen_title" >
+
+    <ListPreference
+        android:defaultValue="48"
+        android:dialogTitle="@string/navigation_bar_height"
+        android:entries="@array/navigation_bar_height_entries"
+        android:entryValues="@array/navigation_bar_height_values"
+        android:key="navigation_bar_height"
+        android:persistent="false"
+        android:title="@string/navigation_bar_height" />
+
+</PreferenceScreen>

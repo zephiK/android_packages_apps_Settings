@@ -1935,7 +1935,7 @@
         </activity>
 
         <!-- BUILD TWEAKS START -->
-        <activity android:name=".rastapop.SystemSettings" />
+        <activity android:name=".rastapop.RastapopSettings" />
         <!-- BUILD TWEAKS END -->
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
