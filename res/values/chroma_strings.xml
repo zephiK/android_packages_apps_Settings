@@ -388,8 +388,7 @@
     <string name="bluetooth_accept_all_files">Accept all file types</string>
 
     <!--Power menu -->
-    <string name="power_category">Power menu</string>
-    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+    <string name="lockscreen_enable_power_menu_title">Show power menu on lock screen</string>
+    <string name="lockscreen_enable_power_menu_summary">This option will disable the power menu on secure lock screens</string>
 
 </resources>
