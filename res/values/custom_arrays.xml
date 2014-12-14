@@ -107,4 +107,186 @@
         <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
     </string-array>
+<<<<<<< HEAD
+=======
+
+    <!-- Advanced reboot menu dev options -->
+    <string-array name="advanced_reboot_entries">
+        <item>@string/advanced_reboot_disabled</item>
+        <item>@string/advanced_reboot_hide_on_keyguard</item>
+        <item>@string/advanced_reboot_show_always</item>
+    </string-array>
+
+    <string-array name="advanced_reboot_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string-array name="notification_pulse_length_entries" translatable="false">
+        <item>@string/pulse_length_always_on</item>
+        <item>@string/pulse_length_very_short</item>
+        <item>@string/pulse_length_short</item>
+        <item>@string/pulse_length_normal</item>
+        <item>@string/pulse_length_long</item>
+        <item>@string/pulse_length_very_long</item>
+    </string-array>
+
+    <string-array name="notification_pulse_length_values" translatable="false">
+        <item>1</item>
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_entries" translatable="false">
+        <item>@string/pulse_speed_very_fast</item>
+        <item>@string/pulse_speed_fast</item>
+        <item>@string/pulse_speed_normal</item>
+        <item>@string/pulse_speed_slow</item>
+        <item>@string/pulse_speed_very_slow</item>
+    </string-array>
+
+    <string-array name="notification_pulse_speed_values" translatable="false">
+        <item>250</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Network Traffic Display States -->
+    <string-array name="show_network_traffic_state_entries" translatable="false">
+        <item>@string/show_network_traffic_disable</item>
+        <item>@string/show_network_traffic_up</item>
+        <item>@string/show_network_traffic_down</item>
+        <item>@string/show_network_traffic_all</item>
+    </string-array>
+
+    <string-array name="show_network_traffic_state_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- Network Traffic Display Unit -->
+    <string-array name="show_network_traffic_unit_entries" translatable="false">
+        <item>@string/show_network_traffic_bit</item>
+        <item>@string/show_network_traffic_byte</item>
+    </string-array>
+
+    <string-array name="show_network_traffic_unit_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- Network Traffic Period -->
+    <string-array name="show_network_traffic_frequency_entries" translatable="false">
+        <item>@string/show_network_traffic_500</item>
+        <item>@string/show_network_traffic_1000</item>
+        <item>@string/show_network_traffic_1500</item>
+        <item>@string/show_network_traffic_2000</item>
+    </string-array>
+
+    <string-array name="show_network_traffic_frequency_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+
+    <!--- Volume key cursor control -->
+    <string-array name="volume_key_cursor_control_entries">
+        <item>@string/volume_key_cursor_control_off</item>
+        <item>@string/volume_key_cursor_control_on</item>
+        <item>@string/volume_key_cursor_control_on_reverse</item>
+    </string-array>
+
+    <string-array name="volume_key_cursor_control_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Random PIN lock view -->
+    <string-array name="lock_numpad_random_entries">
+        <item>@string/lock_numpad_random_off</item>
+        <item>@string/lock_numpad_random_always</item>
+        <item>@string/lock_numpad_random_on_request</item>
+    </string-array>
+
+    <string-array name="lock_numpad_random_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!--Battery percent -->
+    <string-array name="status_bar_battery_style_entries" translatable="false">	
+	<item>@string/status_bar_battery_style_icon_portrait</item>
+	<item>@string/status_bar_battery_style_icon_landscape</item>
+	<item>@string/status_bar_battery_style_circle</item>
+	<item>@string/status_bar_battery_style_text</item>
+	<item>@string/status_bar_battery_style_hidden</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_values" translatable="false">
+	<item>0</item>
+	<item>5</item>
+	<item>2</item>
+	<item>6</item>
+	<item>4</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_entries" translatable="false">
+        <item>@string/status_bar_battery_percentage_default</item>
+        <item>@string/status_bar_battery_percentage_text_inside</item>
+        <item>@string/status_bar_battery_percentage_text_next</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_percentage_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Heads up -->
+    <string-array name="heads_up_snooze_entries">
+        <item>@string/disabled</item>
+        <item>@string/heads_up_snooze_3min</item>
+        <item>@string/heads_up_snooze_5min</item>
+        <item>@string/heads_up_snooze_10min</item>
+        <item>@string/heads_up_snooze_15min</item>
+        <item>@string/heads_up_snooze_20min</item>
+    </string-array>
+
+    <string-array name="heads_up_snooze_values" translatable="false">
+        <item>0</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1200000</item>
+    </string-array>
+
+    <string-array name="heads_up_time_out_entries">
+        <item>@string/heads_up_time_out_never</item>
+        <item>@string/heads_up_time_out_4sec</item>
+        <item>@string/heads_up_time_out_6sec</item>
+        <item>@string/heads_up_time_out_8sec</item>
+        <item>@string/heads_up_time_out_10sec</item>
+    </string-array>
+
+    <string-array name="heads_up_time_out_values" translatable="false">
+        <item>0</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>10000</item>
+    </string-array>
+>>>>>>> e1e32b0... Forward port battery icon option [2/2]
 </resources>
