@@ -7,9 +7,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
-import android.preference.Preference;
 import android.preference.ListPreference;
-import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
@@ -35,8 +33,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
+    private static final String KEY_LOCK_CLOCK = "lock_clock";
+    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private PreferenceScreen mClockStyle;
+    private PreferenceScreen mLockClock;
     private ListPreference mQuickPulldown;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -53,12 +54,17 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         if (!Utils.isPhone(getActivity())) {
             prefSet.removePreference(mQuickPulldown);
         } else {
-            // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
             int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
+        }
+
+    // mLockClock 
+    	mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
+            prefSet.removePreference(mLockClock);
         }
     }
 
