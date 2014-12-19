@@ -199,4 +199,13 @@
     <string name="empty_string">Empty</string>
     <string name="font_size_sample">Sample</string>
     <string name="attention">Attention</string>
+
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
+
+     <!--- Lock clock -->
+    <string name="lock_clock_title">Clock widget</string>
+    <string name="lock_clock_summary">View or change how the \'cLock\' widget will display</string>
+    <string name="weather_clock_title">Status bar weather</string>
 </resources>

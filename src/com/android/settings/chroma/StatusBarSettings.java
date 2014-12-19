@@ -25,7 +25,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String KEY_LOCK_CLOCK = "lock_clock";
+    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
+    private PreferenceScreen mLockClock;
     private ListPreference mQuickPulldown;
 
     @Override
@@ -41,12 +44,17 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         if (!Utils.isPhone(getActivity())) {
             prefSet.removePreference(mQuickPulldown);
         } else {
-            // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
             int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
+        }
+
+    // mLockClock 
+    	mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
+        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
+            prefSet.removePreference(mLockClock);
         }
     }
 
