@@ -540,4 +540,6 @@
     <string name="privacy_guard_app_ops_detail_reset_dialog_text">Reset all permissions back to default?</string>
     <string name="app_ops_btn_text">Modify</string>
     <string name="app_ops_no_item_text">This app has no changeable permissions</string>
+
+    <string name="model_name">Model name</string>
 </resources>
