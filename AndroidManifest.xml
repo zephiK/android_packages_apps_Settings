@@ -1786,6 +1786,9 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Heads up notifications -->
+        <activity android:name=".headsup.HeadsUpSettings" />
+
         <!-- "QS settings activity. -->
         <activity android:name="Settings$QSTilesSettingsActivity"
                 android:label="@string/qs_order_title"
