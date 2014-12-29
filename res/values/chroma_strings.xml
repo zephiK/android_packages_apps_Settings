@@ -205,6 +205,7 @@
     <!-- Volume rocker music seek options -->
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
+    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
 
     <!-- Show notification count -->
     <string name="status_bar_notif_count_title">Show notification count</string>
