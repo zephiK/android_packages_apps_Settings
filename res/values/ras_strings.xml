@@ -34,6 +34,9 @@
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your Nexus</string>
+    <!-- Volume rocker music control -->
+    <string name="volume_rocker_music_controls_title">Playback control</string>
+    <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Volume key cursor control</string>
     <string name="volume_key_cursor_control_off">Disabled</string>

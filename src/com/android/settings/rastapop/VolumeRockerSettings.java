@@ -16,6 +16,8 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     // volume rocker wake
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+    // volume rocker music control
+    public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
     // volume key adjust sound
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
     // volume key cursor control
@@ -23,6 +25,8 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     // volume rocker wake
     private SwitchPreference mVolumeRockerWake;
+    // volume rocker music control
+    private SwitchPreference mVolumeRockerMusicControl;
     // volume key adjust sound
     private SwitchPreference mVolumeKeyAdjustSound;
     // volume key cursor control
@@ -40,6 +44,13 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         int volumeRockerWake = Settings.System.getInt(getContentResolver(),
                 VOLUME_ROCKER_WAKE, 0);
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
+
+        // volume rocker music control
+        mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
+        mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
+        int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
+                VOLUME_ROCKER_MUSIC_CONTROLS, 0);
+        mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
 
         // volume key adjust sound
         mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
@@ -65,6 +76,14 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         if (preference == mVolumeRockerWake) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
+                    value ? 1 : 0);
+            return true;
+        }
+
+        // volume rocker wake
+        else if (preference == mVolumeRockerMusicControl) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
                     value ? 1 : 0);
             return true;
         }

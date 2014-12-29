@@ -10,6 +10,11 @@
         android:title="@string/volume_rocker_wake_title" />
 
     <SwitchPreference
+        android:key="volume_rocker_music_controls"
+        android:summary="@string/volume_rocker_music_controls_summary"
+        android:title="@string/volume_rocker_music_controls_title" />
+
+    <SwitchPreference
         android:key="volume_key_adjust_sound"
         android:summary="@string/volume_key_adjust_sound_summary"
         android:title="@string/volume_key_adjust_sound_title" />
