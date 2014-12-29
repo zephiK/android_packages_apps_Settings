@@ -8,6 +8,7 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -38,6 +39,14 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_MUSIC_CONTROLS, 1) != 0);
         mVolBtnMusicCtrl.setOnPreferenceChangeListener(this);
+ 	try {
+            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.VOLUME_ROCKER_WAKE) == 1) {
+                mVolBtnMusicCtrl.setEnabled(false);
+		mVolBtnMusicCtrl.setSummary(R.string.volume_button_toggle_info);
+            }
+        } catch (SettingNotFoundException e) {
+        }
     }
 
     @Override
