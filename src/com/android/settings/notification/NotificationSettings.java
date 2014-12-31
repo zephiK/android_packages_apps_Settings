@@ -181,7 +181,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         }
 
         boolean headsUpEnabled = Settings.System.getInt(
-                getContentResolver(), Settings.System.HEADS_UP_NOTIFICATION, 0) == 1;
+                getContentResolver(), Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
         mHeadsUp.setSummary(headsUpEnabled
                 ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
