@@ -52,4 +52,21 @@
 	android:title="@string/status_bar_quick_qs_pulldown_title"
 	android:summary="@string/status_bar_quick_qs_pulldown_summary"/>
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/qs_category_title">
+
+    <PreferenceScreen
+        android:key="qs_order"
+        android:title="@string/qs_order_title"
+        android:fragment="com.android.settings.rastapop.qs.QSTiles" />
+
+    <com.android.settings.rastapop.SystemSettingSwitchPreference
+        android:key="sysui_qs_main_tiles"
+        android:title="@string/qs_main_tiles_title"
+        android:summaryOn="@string/qs_main_tiles_summary_on"
+        android:summaryOff="@string/qs_main_tiles_summary_off"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
