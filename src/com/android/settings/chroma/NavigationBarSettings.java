@@ -55,12 +55,12 @@ OnPreferenceChangeListener {
 
     	mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
-            Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
+            Settings.System.SHOW_CLEAR_ALL_RECENTS, 0, UserHandle.USER_CURRENT) == 1);
         mRecentsClearAll.setOnPreferenceChangeListener(this);
 
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
-                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0, UserHandle.USER_CURRENT);
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 2, UserHandle.USER_CURRENT);
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
@@ -103,10 +103,16 @@ OnPreferenceChangeListener {
 
         if (value == 0) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0);
-            summary = R.string.recents_clear_all_location_right;
+            summary = R.string.recents_clear_all_location_top_right;
         } else if (value == 1) {
             Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 1);
-            summary = R.string.recents_clear_all_location_left;
+            summary = R.string.recents_clear_all_location_top_left;
+ 	} else if (value == 2) {
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 2);
+            summary = R.string.recents_clear_all_location_bottom_right;
+        } else if (value == 3) {
+            Settings.System.putInt(resolver, Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3);
+            summary = R.string.recents_clear_all_location_bottom_left;
         }
         if (mRecentsClearAllLocation != null && summary != -1) {
             mRecentsClearAllLocation.setSummary(res.getString(summary));
