@@ -2,7 +2,11 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt telephony-common ims-common
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4 android-support-v13 jsr305
+LOCAL_STATIC_JAVA_LIBRARIES := \
+	android-support-v4 \
+	android-support-v7-cardview \
+	android-support-v13 \
+	jsr305
 
 LOCAL_MODULE_TAGS := optional
 
@@ -10,7 +14,8 @@ LOCAL_SRC_FILES := \
         $(call all-java-files-under, src) \
         src/com/android/settings/EventLogTags.logtags
 
-LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
+    frameworks/support/v7/cardview/res
 
 LOCAL_PACKAGE_NAME := Settings
 LOCAL_CERTIFICATE := platform
@@ -22,6 +27,10 @@ ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_PROGUARD_ENABLED := disabled
     LOCAL_JACK_ENABLED := incremental
 endif
+
+LOCAL_AAPT_FLAGS := \
+    --auto-add-overlay \
+    --extra-packages android.support.v7.cardview
 
 include frameworks/opt/setupwizard/navigationbar/common.mk
 include frameworks/opt/setupwizard/library/common.mk
