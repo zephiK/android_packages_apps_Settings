@@ -378,4 +378,9 @@
     <string name="qs_main_tiles_title">Enlarge first row</string>
     <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
+
+    <!-- QS tiles -->
+    <dimen name="qs_tile_max_size">120dp</dimen>
+    <dimen name="qs_tile_max_padding">10dp</dimen>
+    <dimen name="qs_tile_dragged_z">10dp</dimen>
 </resources>
