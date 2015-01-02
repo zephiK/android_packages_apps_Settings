@@ -14,6 +14,7 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.cyanogenmod.qs.QSTiles;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -36,6 +37,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String KEY_LOCK_CLOCK = "lock_clock";
     private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
+    private Preference mQSTiles;
     private PreferenceScreen mClockStyle;
     private PreferenceScreen mLockClock;
     private ListPreference mQuickPulldown;
@@ -66,6 +68,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
             prefSet.removePreference(mLockClock);
         }
+
+        mQSTiles = findPreference("qs_order");
     }
 
     @Override
@@ -87,6 +91,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onResume() {
         super.onResume();
         updateClockStyleDescription();
+
+        int qsTileCount = QSTiles.determineTileCount(getActivity());
+        mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
+                    qsTileCount, qsTileCount));
     }
 
     private void updateClockStyleDescription() {
