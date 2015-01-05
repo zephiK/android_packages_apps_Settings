@@ -13,4 +13,9 @@
         android:persistent="false"
         android:title="@string/navigation_bar_height" />
 
+	<SwitchPreference
+                android:key="recents_show_hide_search_bar"
+                android:title="@string/recents_show_searchbar"
+                android:summary="@string/recents_show_searchbar_summary"
+                android:defaultValue="false" />
 </PreferenceScreen>
