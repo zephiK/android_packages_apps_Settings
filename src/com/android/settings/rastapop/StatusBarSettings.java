@@ -19,15 +19,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     // status bar battery percentage style
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    // status bar power menu
-    private static final String STATUS_BAR_POWER_MENU = "status_bar_power_menu";
 
     // status bar brightness control
     private SwitchPreference mStatusBarBrightnessControl;
     // status bar battery percentage style
     private ListPreference mStatusBarBatteryPercentageStyle;
-    // status bar power menu
-    private ListPreference mStatusBarPowerMenu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,15 +45,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarBatteryPercentageStyle.setValue(String.valueOf(statusBarBatteryPercentageStyle));
         mStatusBarBatteryPercentageStyle.setSummary(mStatusBarBatteryPercentageStyle.getEntry());
         mStatusBarBatteryPercentageStyle.setOnPreferenceChangeListener(this);
-
-        // status bar power menu
-        mStatusBarPowerMenu = (ListPreference) findPreference(STATUS_BAR_POWER_MENU);
-        mStatusBarPowerMenu.setOnPreferenceChangeListener(this);
-        int statusBarPowerMenu = Settings.System.getInt(getContentResolver(),
-                STATUS_BAR_POWER_MENU, 0);
-        mStatusBarPowerMenu.setValue(String.valueOf(statusBarPowerMenu));
-        mStatusBarPowerMenu.setSummary(mStatusBarPowerMenu.getEntry());
-    }
+}
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -80,19 +68,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     statusBarBatteryPercentageStyleValue);
             mStatusBarBatteryPercentageStyle.setSummary(mStatusBarBatteryPercentageStyle
                     .getEntries()[statusBarBatteryPercentageStyleIndex]);
-            return true;
-        }
-
-        // status bar power menu
-        else if (preference == mStatusBarPowerMenu) {
-            String statusBarPowerMenu = (String) objValue;
-            int statusBarPowerMenuValue = Integer.parseInt(statusBarPowerMenu);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_POWER_MENU, statusBarPowerMenuValue);
-            int statusBarPowerMenuIndex = mStatusBarPowerMenu
-                    .findIndexOfValue(statusBarPowerMenu);
-            mStatusBarPowerMenu
-                    .setSummary(mStatusBarPowerMenu.getEntries()[statusBarPowerMenuIndex]);
             return true;
         }
         return false;

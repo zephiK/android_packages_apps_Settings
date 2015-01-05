@@ -15,14 +15,4 @@
         android:dialogTitle="@string/status_bar_battery_percentage_dialog_title"
         android:entries="@array/status_bar_battery_percentage_entries"
         android:entryValues="@array/status_bar_battery_percentage_values" />
-
-    <ListPreference
-        android:defaultValue="0"
-        android:dialogTitle="@string/status_bar_power_menu_dialog_title"
-        android:entries="@array/status_bar_power_menu_entries"
-        android:entryValues="@array/status_bar_power_menu_values"
-        android:key="status_bar_power_menu"
-        android:persistent="false"
-        android:title="@string/status_bar_power_menu_title" />
-
 </PreferenceScreen>
