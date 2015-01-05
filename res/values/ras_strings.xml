@@ -23,6 +23,7 @@
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
+<<<<<<< HEAD
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <!-- Volume rocker wake -->
@@ -64,3 +65,6 @@
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
     </resources>
+=======
+</resources>
+>>>>>>> parent of 1449167... volume rocker: volume key cursor control

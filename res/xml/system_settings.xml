@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/system_settings_title"
+    settings:keywords="@string/keywords_rastapop" >
+
+    <PreferenceScreen
+        android:key="status_bar_settings"
+        android:fragment="com.android.settings.rastapop.StatusBarSettings"
+        android:title="@string/status_bar_screen_title" />
+</PreferenceScreen>
