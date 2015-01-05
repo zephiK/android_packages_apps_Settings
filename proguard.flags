@@ -16,6 +16,12 @@
 -keep class com.android.settings.notification.*
 -keep class com.android.settings.chroma.**
 
+# These would be stripped out since they are being created with reflection
+-keep class com.android.settings.dashboard.GenericSwitchToggle { *; }
+-keep class com.android.settings.wifi.WifiEnabler { *; }
+-keep class com.android.settings.bluetooth.BluetoothEnabler { *; }
+-keep class com.android.settings.dashboard.MobileNetworksEnabler { *; }
+
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {
   *** onClick*(...);
