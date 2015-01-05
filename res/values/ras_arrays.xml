@@ -39,31 +39,4 @@
         <item>20</item>
         <item>0</item>
     </string-array>
-
-    <!--  Status bar power menu -->
-    <string-array name="status_bar_power_menu_entries" translatable="false">
-        <item>@string/status_bar_power_menu_off</item>
-        <item>@string/status_bar_power_menu_action_screen_off</item>
-        <item>@string/status_bar_power_menu_action_dialog</item>
-    </string-array>
-
-    <string-array name="status_bar_power_menu_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <!-- Status bar battery percentage -->
-    <string-array name="status_bar_battery_percentage_entries" translatable="false">
-        <item>@string/status_bar_battery_percentage_default</item>
-        <item>@string/status_bar_battery_percentage_text_inside</item>
-        <item>@string/status_bar_battery_percentage_text_next</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_percentage_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
 </resources>
