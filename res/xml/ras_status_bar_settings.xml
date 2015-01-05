@@ -15,22 +15,10 @@
         android:dialogTitle="@string/status_bar_battery_percentage_dialog_title"
         android:entries="@array/status_bar_battery_percentage_entries"
         android:entryValues="@array/status_bar_battery_percentage_values" />
-<<<<<<< HEAD
-=======
-
-    <ListPreference
-        android:defaultValue="0"
-        android:dialogTitle="@string/status_bar_power_menu_dialog_title"
-        android:entries="@array/status_bar_power_menu_entries"
-        android:entryValues="@array/status_bar_power_menu_values"
-        android:key="status_bar_power_menu"
-        android:persistent="false"
-        android:title="@string/status_bar_power_menu_title" />
 
     <SwitchPreference
 	android:key="double_tap_sleep_gesture"
 	android:title="@string/double_tap_to_sleep_title"
 	android:summary="@string/double_tap_to_sleep_summary"
 	android:defaultValue="true" />
->>>>>>> 52e1457... Settings: Add double tap to sleep
 </PreferenceScreen>

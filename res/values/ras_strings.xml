@@ -58,17 +58,8 @@
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
-<<<<<<< HEAD
-=======
-
-    <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Disable Search Bar in Recents Menu</string>
-    <string name="recents_show_searchbar_summary">Disable or enable the Google search bar in the recents menu</string>
-    <string name="keywords_recents_show_searchbar">recent recents disable search bar searchbar hide</string>
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tapping the status bar puts the device to sleep</string>
->>>>>>> 52e1457... Settings: Add double tap to sleep
     </resources>
->>>>>>> parent of 1449167... volume rocker: volume key cursor control
