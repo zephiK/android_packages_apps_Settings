@@ -23,7 +23,6 @@
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
-<<<<<<< HEAD
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <!-- Volume rocker wake -->
@@ -32,16 +31,11 @@
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Playback control</string>
     <string name="volume_rocker_music_controls_summary">When the screen is off, long-pressing the volume keys will seek music tracks</string>
-    <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
     <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with the volume keys</string>
 
-    <!-- Developer options - kill app long press back -->
+    <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
 
@@ -65,6 +59,4 @@
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
     </resources>
-=======
-</resources>
 >>>>>>> parent of 1449167... volume rocker: volume key cursor control
