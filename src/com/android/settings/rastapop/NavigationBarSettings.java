@@ -6,6 +6,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
+import android.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -13,10 +14,12 @@ import com.android.settings.SettingsPreferenceFragment;
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // navigation bar height
-    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    // kill-app long press back
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    private SwitchPreference mKillAppLongPressBack;
 
     // navigation bar height
+    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private ListPreference mNavigationBarHeight;
 
     @Override
@@ -32,6 +35,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
         mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
+
+        // kill-app long press back
+        mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
+        mKillAppLongPressBack.setOnPreferenceChangeListener(this);
+        int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
+                KILL_APP_LONGPRESS_BACK, 0);
+        mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
     }
 
     @Override
@@ -44,6 +54,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), NAVIGATION_BAR_HEIGHT,
                     statusNavigationBarHeight);
             mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
+            return true;
+        }
+        // kill-app long press back
+        else if (preference == mKillAppLongPressBack) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
+                    value ? 1 : 0);
             return true;
         }
         return false;
