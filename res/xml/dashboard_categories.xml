@@ -79,7 +79,7 @@
         <dashboard-tile
                 android:id="@+id/chroma_settings"
                 android:title="@string/chroma_settings_title"
-                android:fragment="com.android.settings.rastapop.Rastapopsettings" 
+                android:fragment="com.android.settings.rastapop.RastapopSettings" 
 		android:icon="@drawable/ic_settings_chroma"
                 />
     </dashboard-category>
