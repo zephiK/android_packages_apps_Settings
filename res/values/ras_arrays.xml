@@ -26,7 +26,6 @@
         <item>0</item>
     </string-array>
 
-<<<<<<< HEAD:res/values/ras_arrays.xml
     <!-- Status bar battery percentage -->
     <string-array name="status_bar_battery_percentage_entries" translatable="false">
         <item>@string/status_bar_battery_percentage_default</item>
@@ -35,7 +34,11 @@
     </string-array>
 
     <string-array name="status_bar_battery_percentage_values" translatable="false">
-=======
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- statusbar clock and date customization -->
     <string-array name="clock_style_entries" translatable="false">
         <item>@string/right_clock</item>
@@ -66,13 +69,10 @@
     </string-array>
 
     <string-array name="clock_date_display_values" translatable="false">
->>>>>>> afed598... Statusbar clock and date customizations:res/values/custom_arrays.xml
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
-<<<<<<< HEAD:res/values/ras_arrays.xml
-=======
 
     <string-array name="clock_date_style_entries">
         <item>@string/clock_date_style_normal</item>
@@ -107,5 +107,4 @@
         <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
     </string-array>
->>>>>>> afed598... Statusbar clock and date customizations:res/values/custom_arrays.xml
 </resources>
