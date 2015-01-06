@@ -4,11 +4,6 @@
     android:key="system_settings_general_category"
     android:title="@string/system_settings_screen_title" >
 
-    <PreferenceScreen
-        android:key="clock_style_pref"
-        android:fragment="com.android.settings.rastapop.StatusBarClockStyle"
-        android:title="@string/status_bar_clock" />
-
     <SwitchPreference
         android:key="advanced_reboot"
         android:summary="@string/advanced_reboot_summary"
