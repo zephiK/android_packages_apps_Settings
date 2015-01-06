@@ -15,15 +15,20 @@ import com.android.settings.SettingsPreferenceFragment;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    // Quick Pulldown
+    public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "status_bar_quick_qs_pulldown";
     // status bar brightness control
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     // status bar battery percentage style
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
+    // Quick Pulldown
+    private SwitchPreference mStatusBarQuickQsPulldown;
     // status bar brightness control
     private SwitchPreference mStatusBarBrightnessControl;
     // status bar battery percentage style
     private ListPreference mStatusBarBatteryPercentageStyle;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +50,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarBatteryPercentageStyle.setValue(String.valueOf(statusBarBatteryPercentageStyle));
         mStatusBarBatteryPercentageStyle.setSummary(mStatusBarBatteryPercentageStyle.getEntry());
         mStatusBarBatteryPercentageStyle.setOnPreferenceChangeListener(this);
+
+        // Quick Pulldown
+        mStatusBarQuickQsPulldown = (SwitchPreference) getPreferenceScreen()
+                .findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
+        mStatusBarQuickQsPulldown.setChecked((Settings.System.getInt(getActivity()
+                .getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0) == 1));
+        mStatusBarQuickQsPulldown.setOnPreferenceChangeListener(this);
 }
 
     @Override
@@ -70,6 +83,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     .getEntries()[statusBarBatteryPercentageStyleIndex]);
             return true;
         }
+        } else if (preference == mStatusBarQuickQsPulldown) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value ? 1 : 0);
+            return true;
+	}
         return false;
     }
 }
