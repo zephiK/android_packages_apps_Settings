@@ -12,15 +12,15 @@
         android:key="navigation_bar_height"
         android:persistent="false"
         android:title="@string/navigation_bar_height" />
-
+<!--
 	<SwitchPreference
                 android:key="recents_show_hide_search_bar"
                 android:title="@string/recents_show_searchbar"
                 android:summary="@string/recents_show_searchbar_summary"
                 android:defaultValue="false" />
-
-	<SwitchPreference
-        	android:key="kill_app_longpress_back"
-	        android:summary="@string/kill_app_longpress_back_summary"
-	        android:title="@string/kill_app_longpress_back" />
+-->
+    <SwitchPreference
+        android:key="kill_app_longpress_back"
+        android:summary="@string/kill_app_longpress_back_summary"
+        android:title="@string/kill_app_longpress_back" />
 </PreferenceScreen>

@@ -59,10 +59,11 @@
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
 
-   <!-- Show/Hide Search Bar -->
+   <!-- Show/Hide Search Bar 
     <string name="recents_show_searchbar">Disable Search Bar in Recents Menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the Google search bar in the recents menu</string>
     <string name="keywords_recents_show_searchbar">recent recents disable search bar searchbar hide</string>
+-->
 
     <!-- Double tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
