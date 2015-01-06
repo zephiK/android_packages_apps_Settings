@@ -68,7 +68,20 @@
                 android:fragment="com.android.settings.WirelessSettings"
                 android:icon="@drawable/ic_settings_more"
                 />
+    </dashboard-category>
 
+    <!-- CUSTOMIZATIONS -->
+    <dashboard-category
+            android:id="@+id/chroma_section"
+            android:title="@string/header_category_chroma" >
+
+        <!-- ROM TWEAKS -->
+        <dashboard-tile
+                android:id="@+id/chroma_settings"
+                android:title="@string/chroma_settings_title"
+                android:fragment="com.android.settings.rastapop.Rastapopsettings" 
+		android:icon="@drawable/ic_settings_chroma"
+                />
     </dashboard-category>
 
     <!-- DEVICE -->
@@ -231,14 +244,6 @@
                 android:title="@string/development_settings_title"
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
-                />
-
-        <!-- Rastapop -->
-        <dashboard-tile
-                android:id="@+id/rastapop_settings"
-                android:title="@string/rastapop_settings_title"
-                android:fragment="com.android.settings.rastapop.RastapopSettings"
-                android:icon="@drawable/ic_settings_rastapop"
                 />
 
         <!-- About Device -->

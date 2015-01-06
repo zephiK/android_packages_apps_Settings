@@ -3,12 +3,12 @@
 
     <string name="general_string">General</string>
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">rastapop build date</string>
-    <string name="build_date_default">2014-01-01-0000</string>
+    <string name="build_date">Chroma build date</string>
+    <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="rastapop_settings_title">Rastapop</string>
-    <string name="keywords_rastapop">Don\'t involve rasta in your say-say</string>
+    <string name="header_category_chroma">Customizations</string>
+    <string name="chroma_settings_title">Chroma Tweaks</string>
 
     <!-- Status bar -->
     <string name="status_bar_screen_title">Status bar</string>
