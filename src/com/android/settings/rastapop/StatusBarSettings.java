@@ -83,7 +83,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     .getEntries()[statusBarBatteryPercentageStyleIndex]);
             return true;
         }
-        } else if (preference == mStatusBarQuickQsPulldown) {
+	// status bar quick pull down
+         else if (preference == mStatusBarQuickQsPulldown) {
+            boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value ? 1 : 0);
             return true;
