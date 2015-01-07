@@ -366,6 +366,8 @@
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_advanced_location_title">Advanced location quick settings</string>
+    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Volume key swap on rotation</string>
