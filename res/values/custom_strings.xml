@@ -104,12 +104,12 @@
     <string name="double_tap_to_sleep_summary">Double tapping the status bar puts the device to sleep</string>
 
  <!-- Quick Pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">One finger QS pull down</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Whether to allow one finger quick pulldown on the right side of the statusbar</string>
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Toggle quick pulldown on the right side of the statusbar</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="press_color_to_apply">Pick a color to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
