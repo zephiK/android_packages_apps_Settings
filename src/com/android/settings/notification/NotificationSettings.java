@@ -89,7 +89,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private boolean mVoiceCapable;
     private Vibrator mVibrator;
     private AudioManager mAudioManager;
-    private VolumeSeekBarPreference mRingOrNotificationPreference;
+    private VolumeSeekBarPreference mRingPreference;
+    private VolumeSeekBarPreference mNotificationPreference;
 
     private Preference mPhoneRingtonePreference;
     private Preference mNotificationRingtonePreference;
@@ -124,16 +125,13 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         initVolumePreference(KEY_ALARM_VOLUME, AudioManager.STREAM_ALARM,
                 com.android.internal.R.drawable.ic_audio_alarm_mute);
         if (mVoiceCapable) {
-            mRingOrNotificationPreference =
+            mRingPreference =
                     initVolumePreference(KEY_RING_VOLUME, AudioManager.STREAM_RING,
                             com.android.internal.R.drawable.ic_audio_ring_notif_mute);
-            sound.removePreference(sound.findPreference(KEY_NOTIFICATION_VOLUME));
         } else {
-            mRingOrNotificationPreference =
-                    initVolumePreference(KEY_NOTIFICATION_VOLUME, AudioManager.STREAM_NOTIFICATION,
-                            com.android.internal.R.drawable.ic_audio_ring_notif_mute);
             sound.removePreference(sound.findPreference(KEY_RING_VOLUME));
         }
+
         initRingtones(sound);
         initVibrateWhenRinging(sound);
 
@@ -153,6 +151,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         super.onResume();
         refreshNotificationListeners();
         lookupRingtoneNames();
+        updateNotificationPreferenceState();
         mSettingsObserver.register(true);
         mReceiver.register(true);
         updateRingOrNotificationPreference();
@@ -182,12 +181,14 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     }
 
     private void updateRingOrNotificationPreference() {
-        mRingOrNotificationPreference.showIcon(mSuppressor != null
+	if (mRingPreference != null && mNotificationPreference != null) {
+        mRingPreference.showIcon(mSuppressor != null
                 ? com.android.internal.R.drawable.ic_audio_ring_notif_mute
                 : mRingerMode == AudioManager.RINGER_MODE_VIBRATE
                 ? com.android.internal.R.drawable.ic_audio_ring_notif_vibrate
-                : com.android.internal.R.drawable.ic_audio_ring_notif);
+                : R.drawable.ic_audio_ring_24dp);
     }
+ }
 
     private void updateRingerMode() {
         final int ringerMode = mAudioManager.getRingerModeInternal();
@@ -200,11 +201,12 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         final ComponentName suppressor = NotificationManager.from(mContext).getEffectsSuppressor();
         if (Objects.equals(suppressor, mSuppressor)) return;
         mSuppressor = suppressor;
-        if (mRingOrNotificationPreference != null) {
+        if (mRingPreference != null && mNotificationPreference != null) {
             final String text = suppressor != null ?
                     mContext.getString(com.android.internal.R.string.muted_by,
                             getSuppressorCaption(suppressor)) : null;
-            mRingOrNotificationPreference.setSuppressionText(text);
+            mRingPreference.setSuppressionText(text);
+ 	    mNotificationPreference.setSuppressionText(text);
         }
         updateRingOrNotificationPreference();
     }
@@ -448,6 +450,23 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         mLockscreen.setSelectedValue(mLockscreenSelectedValue);
     }
 
+    private void updateNotificationPreferenceState() {
+        mNotificationPreference = initVolumePreference(KEY_NOTIFICATION_VOLUME,
+                AudioManager.STREAM_NOTIFICATION,
+		com.android.internal.R.drawable.ic_audio_ring_notif_mute);
+        if (mVoiceCapable) {
+        final boolean enabled = Settings.System.getInt(getContentResolver(),
+                Settings.Secure.VOLUME_LINK_NOTIFICATION, 1) == 1;
+
+        if (mNotificationPreference != null) {
+                mNotificationPreference.setEnabled(!enabled);
+                if (enabled) {
+                    updateEffectsSuppressor();
+                }
+            }
+	 }
+      }
+
     private boolean getLockscreenNotificationsEnabled() {
         return Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.LOCK_SCREEN_SHOW_NOTIFICATIONS, 0) != 0;
@@ -490,6 +509,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 Settings.Secure.getUriFor(Settings.Secure.LOCK_SCREEN_ALLOW_PRIVATE_NOTIFICATIONS);
         private final Uri LOCK_SCREEN_SHOW_URI =
                 Settings.Secure.getUriFor(Settings.Secure.LOCK_SCREEN_SHOW_NOTIFICATIONS);
+        private final Uri VOLUME_LINK_NOTIFICATION_URI =
+                Settings.Secure.getUriFor(Settings.Secure.VOLUME_LINK_NOTIFICATION);
 
         public SettingsObserver() {
             super(mHandler);
@@ -502,6 +523,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 cr.registerContentObserver(NOTIFICATION_LIGHT_PULSE_URI, false, this);
                 cr.registerContentObserver(LOCK_SCREEN_PRIVATE_URI, false, this);
                 cr.registerContentObserver(LOCK_SCREEN_SHOW_URI, false, this);
+                cr.registerContentObserver(VOLUME_LINK_NOTIFICATION_URI, false, this);
             } else {
                 cr.unregisterContentObserver(this);
             }
@@ -518,6 +540,9 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             }
             if (LOCK_SCREEN_PRIVATE_URI.equals(uri) || LOCK_SCREEN_SHOW_URI.equals(uri)) {
                 updateLockscreenNotifications();
+            }
+            if (VOLUME_LINK_NOTIFICATION_URI.equals(uri)) {
+                updateNotificationPreferenceState();
             }
         }
     }
