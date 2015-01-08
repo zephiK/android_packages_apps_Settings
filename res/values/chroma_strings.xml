@@ -414,4 +414,8 @@
     <string name="battery_saver_color_title">Warning color</string>
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
 
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">Link ring and notification volumes</string>
+    <string name="notification_volume_option_title">Notification volume</string>
+
 </resources>
