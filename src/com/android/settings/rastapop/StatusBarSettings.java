@@ -1,11 +1,10 @@
-
 package com.android.settings.rastapop;
 
+import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.net.Uri;
-import android.os.Handler;
-
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
@@ -46,6 +45,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.ras_status_bar_settings);
 
+        ContentResolver resolver = getActivity().getContentResolver();
+
         // status bar brightness control
         mStatusBarBrightnessControl = (SwitchPreference) findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarBrightnessControl.setOnPreferenceChangeListener(this);
@@ -79,6 +80,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+    ContentResolver resolver = getActivity().getContentResolver();
 
         // status bar brightness control
         if (preference == mStatusBarBrightnessControl) {
@@ -86,11 +88,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
             return true;
-        }
-
-        // status bar battery percentage style
-        ContentResolver resolver = getActivity().getContentResolver();
-        else if (preference == mStatusBarBattery) {
+        } else if (preference == mStatusBarBattery) {
             int batteryStyle = Integer.valueOf((String) objValue);
             int index = mStatusBarBattery.findIndexOfValue((String) objValue);
             Settings.System.putInt(resolver,
@@ -112,13 +110,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value ? 1 : 0);
             return true;
-	}
+		}
         return false;
     }
-}
 
     private void enableStatusBarBatteryDependents(String value) {
         boolean enabled = !(value.equals(STATUS_BAR_BATTERY_STYLE_TEXT)
                 || value.equals(STATUS_BAR_BATTERY_STYLE_HIDDEN));
         mStatusBarBatteryShowPercent.setEnabled(enabled);
     }
+
+}
