@@ -23,7 +23,7 @@ import android.content.IntentFilter;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.os.UserManager;
-import android.preference.CheckBoxPreference;
+import android.preference.SwitchPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.util.Log;
@@ -43,8 +43,8 @@ public class UsbSettings extends SettingsPreferenceFragment {
     private static final String KEY_PTP = "usb_ptp";
 
     private UsbManager mUsbManager;
-    private CheckBoxPreference mMtp;
-    private CheckBoxPreference mPtp;
+    private SwitchPreference mMtp;
+    private SwitchPreference mPtp;
     private boolean mUsbAccessoryMode;
 
     private final BroadcastReceiver mStateReceiver = new BroadcastReceiver() {
@@ -66,8 +66,8 @@ public class UsbSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.usb_settings);
         root = getPreferenceScreen();
 
-        mMtp = (CheckBoxPreference)root.findPreference(KEY_MTP);
-        mPtp = (CheckBoxPreference)root.findPreference(KEY_PTP);
+        mMtp = (SwitchPreference)root.findPreference(KEY_MTP);
+        mPtp = (SwitchPreference)root.findPreference(KEY_PTP);
 
         UserManager um = (UserManager) getActivity().getSystemService(Context.USER_SERVICE);
         if (um.hasUserRestriction(UserManager.DISALLOW_USB_FILE_TRANSFER)) {
