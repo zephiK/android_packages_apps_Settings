@@ -10,4 +10,10 @@
         android:title="@string/advanced_reboot_title"
         android:defaultValue="false" />
 
+         <!-- Screenshot Sound -->
+         <com.android.settings.rastapop.SystemSettingSwitchPreference
+                android:key="screenshot_sound"
+                android:title="@string/screenshot_sound_title"
+                android:summary="@string/screenshot_sound_summary"
+                android:defaultValue="true" />
 </PreferenceScreen>
