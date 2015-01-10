@@ -2,11 +2,15 @@
 package com.android.settings.rastapop;
 
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings;
 import android.preference.SwitchPreference;
+import android.preference.PreferenceScreen;
+import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -24,6 +28,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 
     // recents clear all
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
+    private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
 
@@ -32,6 +37,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.ras_navigation_bar_settings);
+	PreferenceScreen prefSet = getPreferenceScreen();
+	ContentResolver resolver = getActivity().getContentResolver();
 
         // navigation bar height
         mNavigationBarHeight = (ListPreference) findPreference(NAVIGATION_BAR_HEIGHT);
