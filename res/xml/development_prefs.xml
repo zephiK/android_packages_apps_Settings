@@ -307,15 +307,5 @@
             android:key="show_all_anrs"
             android:title="@string/show_all_anrs"
             android:summary="@string/show_all_anrs_summary"/>
-<<<<<<< HEAD
-=======
-
-        <SwitchPreference
-            android:key="kill_app_longpress_back"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary"/>
-
->>>>>>> cf964a6... Settings: Developer Settings - We want consistence...change from CheckBox…
      </PreferenceCategory>
-
 </PreferenceScreen>

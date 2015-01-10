@@ -178,12 +178,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mEnableAdb;
     private Preference mClearAdbKeys;
-<<<<<<< HEAD
-    private CheckBoxPreference mEnableTerminal;
-=======
     private SwitchPreference mEnableTerminal;
-    private Preference mRestartSystemUI;
->>>>>>> cf964a6... Settings: Developer Settings - We want consistence...change from CheckBox…
     private Preference mBugreport;
     private SwitchPreference mBugreportInPower;
     private SwitchPreference mKeepScreenOn;
@@ -231,13 +226,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mImmediatelyDestroyActivities;
 
     private ListPreference mAppProcessLimit;
-
-<<<<<<< HEAD
-    private CheckBoxPreference mShowAllANRs;
-=======
     private SwitchPreference mShowAllANRs;
-    private SwitchPreference mKillAppLongpressBack;
->>>>>>> cf964a6... Settings: Developer Settings - We want consistence...change from CheckBox…
 
     private PreferenceScreen mProcessStats;
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
@@ -365,12 +354,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mShowAllANRs = (SwitchPreference) findPreference(
                 SHOW_ALL_ANRS_KEY);
         mAllPrefs.add(mShowAllANRs);
-<<<<<<< HEAD
-        mResetCbPrefs.add(mShowAllANRs);
-=======
         mResetSpPrefs.add(mShowAllANRs);
-        mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
->>>>>>> cf964a6... Settings: Developer Settings - We want consistence...change from CheckBox…
 
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
