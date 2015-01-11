@@ -43,7 +43,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
         mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
         int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_MUSIC_CONTROLS, 0);
+                VOLUME_ROCKER_MUSIC_CONTROLS, 1);
         mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
 
         // volume key adjust sound

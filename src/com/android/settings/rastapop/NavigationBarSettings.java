@@ -58,12 +58,12 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 	// clear recents
 	mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
-            Settings.System.SHOW_CLEAR_ALL_RECENTS, 0, UserHandle.USER_CURRENT) == 1);
+            Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
         mRecentsClearAll.setOnPreferenceChangeListener(this);
 
         mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
         int location = Settings.System.getIntForUser(resolver,
-                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 2, UserHandle.USER_CURRENT);
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 0, UserHandle.USER_CURRENT);
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
