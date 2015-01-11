@@ -51,9 +51,6 @@
     <string name="status_bar_brightness_control_title">Brightness control</string>
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
 
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
