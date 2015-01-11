@@ -8,7 +8,7 @@
         android:key="advanced_reboot"
         android:summary="@string/advanced_reboot_summary"
         android:title="@string/advanced_reboot_title"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
          <!-- Screenshot Sound -->
          <com.android.settings.rastapop.SystemSettingSwitchPreference

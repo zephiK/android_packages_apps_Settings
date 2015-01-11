@@ -4,11 +4,11 @@
     <string name="general_string">General</string>
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Chroma build date</string>
-    <string name="build_date_default">2015-01-01-0000</string>
+    <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- BUILD TWEAKS -->
     <string name="header_category_chroma">Customizations</string>
-    <string name="chroma_settings_title">Chroma Tweaks</string>
+    <string name="chroma_settings_title">Chroma</string>
 
     <!-- Status bar -->
     <string name="status_bar_screen_title">Status bar</string>
