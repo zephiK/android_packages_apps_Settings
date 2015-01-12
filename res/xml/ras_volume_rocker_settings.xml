@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:key="volume_rocker_general_category"
-    android:title="@string/volume_rocker_screen_title" >
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <SwitchPreference
-        android:key="volume_rocker_wake"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:title="@string/volume_rocker_wake_title" />
+        <PreferenceCategory
+                android:key="category_wakeup_options"
+                android:title="@string/display_category_wakeup_options_title" >
 
-    <SwitchPreference
-        android:key="volume_rocker_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"/>
+    	<SwitchPreference
+      		android:key="volume_rocker_wake"
+		android:summary="@string/volume_rocker_wake_summary"
+		android:title="@string/volume_rocker_wake_title" />
+        </PreferenceCategory>
 
-    <SwitchPreference
-        android:key="volume_key_adjust_sound"
-        android:summary="@string/volume_key_adjust_sound_summary"
-        android:title="@string/volume_key_adjust_sound_title" />
+        <PreferenceCategory
+                android:key="category_media_options"
+                android:title="@string/media_options_title" >
+
+                <SwitchPreference
+                        android:key="volume_rocker_music_controls"
+                        android:title="@string/volume_rocker_music_controls_title"
+                        android:summary="@string/volume_rocker_music_controls_summary"
+                        android:persistent="false"
+                        android:defaultValue="true" />
+
+                <SwitchPreference
+                        android:key="volume_key_adjust_sound"
+                        android:title="@string/volume_key_adjust_sound_title"
+                        android:summary="@string/volume_key_adjust_sound_summary" />
+
+        </PreferenceCategory>
+
 </PreferenceScreen>

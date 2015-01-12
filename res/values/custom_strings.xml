@@ -52,8 +52,23 @@
     <string name="status_bar_brightness_control_summary">Adjust brightness by sliding across status bar</string>
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
+    <!-- Battery category -->
+    <string name="display_category_battery_options_title">Battery options</string>
+    <!-- Clock category -->
+    <string name="display_category_clock_options_title">Clock options</string>
+    <!-- Status bar category -->
+    <string name="display_category_statusbar_options_title">Status bar options</string>
+    <!-- Navigation bar category -->
+    <string name="display_category_navbar_options_title">Navigation options</string>
+    <!-- Recent apps category -->
+    <string name="display_category_recents_options_title">Recent apps options</string>
+
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
+    <!-- Wakeup category -->
+    <string name="display_category_wakeup_options_title">Wakeup options</string>
+    <!-- Media category -->
+    <string name="media_options_title">Media options</string>
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
@@ -161,5 +176,4 @@
     <!--Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Quick unlock</string>
     <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-
 </resources>
