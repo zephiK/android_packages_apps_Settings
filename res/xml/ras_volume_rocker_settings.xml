@@ -4,20 +4,18 @@
     android:key="volume_rocker_general_category"
     android:title="@string/volume_rocker_screen_title" >
 
-    <com.android.settings.rastapop.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="volume_rocker_wake"
         android:summary="@string/volume_rocker_wake_summary"
         android:title="@string/volume_rocker_wake_title" />
 
-    <com.android.settings.rastapop.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="volume_rocker_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title" 
-	android:defaultValue="true"/>
+        android:title="@string/volume_rocker_music_controls_title"/>
 
-    <com.android.settings.rastapop.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="volume_key_adjust_sound"
         android:summary="@string/volume_key_adjust_sound_summary"
-        android:title="@string/volume_key_adjust_sound_title" 
-	android:defaultValue="true"/>
+        android:title="@string/volume_key_adjust_sound_title" />
 </PreferenceScreen>
