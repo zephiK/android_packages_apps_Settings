@@ -147,4 +147,9 @@
     <!-- Ignore last app when clearing recents -->
     <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
     <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
+
+    <!-- Hide power menu on lockscreen -->
+    <string name="power_category">Power menu</string>
+    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
+    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
     </resources>
