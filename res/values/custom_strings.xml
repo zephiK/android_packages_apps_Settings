@@ -152,4 +152,9 @@
     <string name="power_category">Power menu</string>
     <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
     <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+
+    <!-- Quicksettings block on secure lockscreen -->
+    <string name="qs_category">Quicksettings</string>
+    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
     </resources>
