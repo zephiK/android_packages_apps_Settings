@@ -66,8 +66,7 @@
         <SwitchPreference
             android:key="enable_adb"
             android:title="@string/enable_adb"
-            android:summary="@string/enable_adb_summary"
-	    android:defaultValue="true"/>
+            android:summary="@string/enable_adb_summary"/>
 
         <Preference android:key="clear_adb_keys"
                 android:title="@string/clear_adb_keys" />
