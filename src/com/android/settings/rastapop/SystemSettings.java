@@ -31,7 +31,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements
         mAdvancedReboot.setChecked(advancedReboot != 0);
     }
 
-    @Override
+    //@Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 
         // advanced reboot

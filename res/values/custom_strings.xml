@@ -59,7 +59,7 @@
     <!-- Status bar category -->
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <!-- Navigation bar category -->
-    <string name="display_category_navbar_options_title">Navigation options</string>
+    <string name="display_category_navbar_options_title">Navigation bar options</string>
     <!-- Recent apps category -->
     <string name="display_category_recents_options_title">Recent apps options</string>
 
@@ -143,10 +143,6 @@
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
-
-    <!-- Screenshot sound -->
-    <string name="screenshot_sound_title">Screenshot sound</string>
-    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>    
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all recents button</string>

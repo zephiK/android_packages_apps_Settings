@@ -53,9 +53,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                 VOLUME_KEY_ADJUST_SOUND, 1) != 0);
     }
 
-    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
         // volume rocker wake
         if (preference == mVolumeRockerWake) {
             boolean value = (Boolean) objValue;

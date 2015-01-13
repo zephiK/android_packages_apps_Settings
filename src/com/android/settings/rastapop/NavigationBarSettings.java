@@ -69,7 +69,6 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         updateRecentsLocation(location);
     }
 
-    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 
         // navigation bar height
@@ -101,7 +100,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         }
         return false;
     }
-		private void updateRecentsLocation(int value) {
+
+	private void updateRecentsLocation(int value) {
         ContentResolver resolver = getContentResolver();
         Resources res = getResources();
         int summary = -1;

@@ -78,7 +78,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarQuickQsPulldown.setOnPreferenceChangeListener(this);
 }
 
-    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
     ContentResolver resolver = getActivity().getContentResolver();
 
@@ -88,6 +87,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
             return true;
+	// battery
         } else if (preference == mStatusBarBattery) {
             int batteryStyle = Integer.valueOf((String) objValue);
             int index = mStatusBarBattery.findIndexOfValue((String) objValue);
