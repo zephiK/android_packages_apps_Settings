@@ -16,33 +16,28 @@
         android:key="navigation_bar_height"
         android:persistent="false"
         android:title="@string/navigation_bar_height" />
-<!--
-	<com.android.settings.rastapop.SystemSettingSwitchPreference
-	<SwitchPreference
--->
+
 	<com.android.settings.rastapop.SystemSettingSwitchPreference
         android:key="recents_show_hide_search_bar"
         android:title="@string/recents_show_searchbar"
         android:summary="@string/recents_show_searchbar_summary"
-	android:defaultValue="true"/>
+	android:defaultValue="false"/>
 
     <SwitchPreference
+	android:defaultValue="false"
         android:key="kill_app_longpress_back"
         android:summary="@string/kill_app_longpress_back_summary"
-        android:title="@string/kill_app_longpress_back"
-	android:defaultValue="true" />
+        android:title="@string/kill_app_longpress_back"/>
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="category_battery_options"
         android:title="@string/display_category_recents_options_title" >
 
-	<SwitchPreference
+	<com.android.settings.rastapop.SystemSettingSwitchPreference
 	android:key="show_clear_all_recents"
 	android:title="@string/show_clear_all_recents_button_title"
-	android:summary="@string/show_clear_all_recents_button_summary"
-	android:persistent="true"
-	android:defaultValue="true" />
+	android:summary="@string/show_clear_all_recents_button_summary" />
 
     <ListPreference
 	android:key="recents_clear_all_location"
@@ -51,15 +46,12 @@
 	android:entryValues="@array/recents_clear_all_location_values"
 	android:defaultValue="1"
 	android:dependency="show_clear_all_recents"/>
-<!--
+
     <com.android.settings.rastapop.SystemSettingSwitchPreference
--->
-	<SwitchPreference
 	android:key="recents_clear_all_dismiss_all"
 	android:title="@string/recents_clear_all_dismiss_all_title"
 	android:summary="@string/recents_clear_all_dismiss_all_summary"
-	android:dependency="show_clear_all_recents"
-	android:persistent="true"
-	android:defaultValue="true" />
+	android:defaultValue="true" 
+	android:dependency="show_clear_all_recents" />
     </PreferenceCategory>
 </PreferenceScreen>
