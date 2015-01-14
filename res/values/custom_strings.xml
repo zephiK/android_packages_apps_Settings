@@ -180,4 +180,11 @@
     <string name="lock_numpad_random_always">Always</string>
     <string name="lock_numpad_random_on_request">On request</string>
 
+    <!-- Doze pulse (ambient display) notification timeout -->
+    <string name="doze_timeout_title">Ambient display timeout</string>
+    <string name="doze_timeout_summary">Time that the screen stays on for notification pulse</string>
+
+    <!-- Doze (ambient display) preference category -->
+    <string name="display_category_doze_options_title">Ambient display options</string>
+
 </resources>
