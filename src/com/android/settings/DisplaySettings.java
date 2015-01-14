@@ -31,8 +31,11 @@ import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT;
 
 import android.app.Activity;
 import android.app.ActivityManagerNative;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.IActivityManager;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.app.ProgressDialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.ContentResolver;
@@ -55,11 +58,15 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
+import android.text.Editable;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.EditText;
 
 import com.android.settings.chroma.DisplayRotation;
 
@@ -72,6 +79,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
+    private static final int DIALOG_DENSITY = 101;
 
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
@@ -109,6 +117,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mDozePreference;
     private SwitchPreference mAutoBrightnessPreference;
     private PreferenceScreen mDozeFragement;
+
+    protected Context mContext;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -187,12 +197,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED, 1) == 1);
             mWakeUpWhenPluggedOrUnplugged.setOnPreferenceChangeListener(this);
         }
-        // lcd densitty
+        // lcd density
+        mContext = getActivity().getApplicationContext();
+        int newDensityValue;
+
         mLcdDensityPreference = (ListPreference) findPreference(KEY_LCD_DENSITY);
+        densityEntries[8] = getString(R.string.custom_density);
         int defaultDensity = DisplayMetrics.DENSITY_DEVICE;
         int currentDensity = DisplayMetrics.DENSITY_CURRENT;
         int currentIndex = -1;
-        String[] densityEntries = new String[8];
+        String[] densityEntries = new String[9];
         for (int idx = 0; idx < 8; ++idx) {
             int pct = (75 + idx*5);
             int val = defaultDensity * pct / 100;
@@ -552,9 +566,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 if (idx > 0) {
                     strValue = strValue.substring(0, idx);
                 }
+            String strValue = (String) objValue;
+            if (strValue.equals(getResources().getString(R.string.custom_density))) {
+                showDialog(DIALOG_DENSITY);
+            } else {
                 int value = Integer.parseInt(strValue);
                 writeLcdDensityPreference(preference.getContext(), value);
                 updateLcdDensityPreferenceDescription(value);
+            }
             }
             catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist display density setting", e);
@@ -614,4 +633,49 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     return result;
                 }
             };
+    public Dialog onCreateDialog(int dialogId) {
+        LayoutInflater factory = LayoutInflater.from(mContext);
+
+        switch (dialogId) {
+            case DIALOG_DENSITY:
+                final View textEntryView = factory.inflate(
+                        R.layout.alert_dialog_text_entry, null);
+                return new AlertDialog.Builder(getActivity())
+                        .setTitle(R.string.custom_density_dialog_title)
+                        .setMessage(getResources().getString(R.string.custom_density_dialog_summary))
+                        .setView(textEntryView)
+                        .setPositiveButton(getResources().getString(R.string.set_custom_density_set), new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
+                                Editable text = dpi.getText();
+                                Log.i(TAG, text.toString());
+                                String editText = dpi.getText().toString();
+
+                                try {
+                                    SystemProperties.set("persist.sys.lcd_density", editText);
+                                }
+                                catch (Exception e) {
+                                    Log.w(TAG, "Unable to save LCD density");
+                                }
+                                try {
+                                    final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
+                                    if (am != null) {
+                                        am.restart();
+                                    }
+                                }
+                                catch (RemoteException e) {
+                                    Log.e(TAG, "Failed to restart");
+                                }
+                            }
+
+                        })
+                        .setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+
+                                dialog.dismiss();
+                            }
+                        }).create();
+        }
+        return null;
+    }
 }
