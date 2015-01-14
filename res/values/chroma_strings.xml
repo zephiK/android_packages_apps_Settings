@@ -514,4 +514,14 @@
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three fingers down to take a screenshot</string>
+
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">Carrier Label</string>
+    <string name="carrier_options_summary">Customize the carrier label</string>
+    <string name="show_status_bar_carrier_title">Status bar carrier</string>
+    <string name="show_status_bar_carrier_summary">Show carrier in status bar</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="status_bar_carrier_color">Carrier label color</string>
 </resources>
