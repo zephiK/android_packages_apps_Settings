@@ -17,18 +17,14 @@
                 android:key="category_media_options"
                 android:title="@string/media_options_title" >
 
-                <SwitchPreference
-                        android:key="volume_rocker_music_controls"
-                        android:title="@string/volume_rocker_music_controls_title"
-                        android:summary="@string/volume_rocker_music_controls_summary"
-                        android:persistent="false"
-                        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="volume_rocker_music_controls"
+        android:summary="@string/volume_rocker_music_controls_summary"
+        android:title="@string/volume_rocker_music_controls_title" />
 
-                <SwitchPreference
-                        android:key="volume_key_adjust_sound"
-                        android:title="@string/volume_key_adjust_sound_title"
-                        android:summary="@string/volume_key_adjust_sound_summary" />
-
+    <SwitchPreference
+	android:key="volume_key_adjust_sound"
+	android:title="@string/volume_key_adjust_sound_title"
+	android:summary="@string/volume_key_adjust_sound_summary" />
         </PreferenceCategory>
-
 </PreferenceScreen>
