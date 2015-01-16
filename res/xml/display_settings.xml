@@ -68,7 +68,7 @@
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.simpleaosp.DisplayRotation"
+                android:fragment="com.android.settings.rastapop.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
         <PreferenceScreen
