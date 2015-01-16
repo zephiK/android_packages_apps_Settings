@@ -12,6 +12,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 
+import com.android.settings.rastapop.qs.QSTiles;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -37,7 +38,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     // status bar battery percentage style
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-
+    // customizable tiles
+   private Preference mQSTiles;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,6 +78,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 .getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0) == 1));
         mStatusBarQuickQsPulldown.setOnPreferenceChangeListener(this);
+	mQSTiles = findPreference("qs_order");
 }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -118,6 +121,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         boolean enabled = !(value.equals(STATUS_BAR_BATTERY_STYLE_TEXT)
                 || value.equals(STATUS_BAR_BATTERY_STYLE_HIDDEN));
         mStatusBarBatteryShowPercent.setEnabled(enabled);
+    }
+
+    @Override
+    public void onResume() {
+        int qsTileCount = QSTiles.determineTileCount(getActivity());
+        mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
+                    qsTileCount, qsTileCount));
     }
 
 }
