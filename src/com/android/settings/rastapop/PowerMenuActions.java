@@ -48,10 +48,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
     private SwitchPreference mAirplanePref;
-    private SwitchPreference mUsersPref;
-    private SwitchPreference mSettingsPref;
-    private SwitchPreference mLockdownPref;
-    private SwitchPreference mBugReportPref;
     private SwitchPreference mSilentPref;
 
     Context mContext;
@@ -85,14 +81,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
-                mSettingsPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SETTINGS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
-                mLockdownPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
-            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
-                mBugReportPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
                 mSilentPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SILENT);
             }
@@ -119,30 +107,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
  
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
-        }
-
-        if (mUsersPref != null) {
-            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
-            } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
-                boolean enabled = (users.size() > 1);
-                mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
-                mUsersPref.setEnabled(enabled);
-            }
-        }
-
-        if (mSettingsPref != null) {
-            mSettingsPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SETTINGS));
-        }
-
-        if (mLockdownPref != null) {
-            mLockdownPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_LOCKDOWN));
-        }
-
-        if (mBugReportPref != null) {
-            mBugReportPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_BUGREPORT));
         }
 
         if (mSilentPref != null) {
@@ -177,22 +141,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
-
-        } else if (preference == mUsersPref) {
-            value = mUsersPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
-
-        } else if (preference == mSettingsPref) {
-            value = mSettingsPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SETTINGS);
-
-        } else if (preference == mLockdownPref) {
-            value = mLockdownPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
-
-        } else if (preference == mBugReportPref) {
-            value = mBugReportPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
 
         } else if (preference == mSilentPref) {
             value = mSilentPref.isChecked();
@@ -231,15 +179,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private void updatePreferences() {
         boolean bugreport = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
-
-        if (mBugReportPref != null) {
-            mBugReportPref.setEnabled(bugreport);
-            if (bugreport) {
-                mBugReportPref.setSummary(null);
-            } else {
-                mBugReportPref.setSummary(R.string.power_menu_bug_report_disabled);
-            }
-        }
     }
 
     private void getUserConfig() {
