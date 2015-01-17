@@ -39,7 +39,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
     // customizable tiles
-   private Preference mQSTiles;
+    private Preference mQSTiles;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -78,6 +78,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 .getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0) == 1));
         mStatusBarQuickQsPulldown.setOnPreferenceChangeListener(this);
+
+	// Quick Settings Tile Customization
 	mQSTiles = findPreference("qs_order");
 }
 
@@ -125,6 +127,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public void onResume() {
+	super.onResume();
+
         int qsTileCount = QSTiles.determineTileCount(getActivity());
         mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
                     qsTileCount, qsTileCount));
