@@ -19,7 +19,8 @@
     android:layout_height="wrap_content"
     android:padding="6dp"
     android:gravity="center_vertical"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@*android:color/material_blue_grey">
 
     <ImageView
         android:id="@android:id/icon"

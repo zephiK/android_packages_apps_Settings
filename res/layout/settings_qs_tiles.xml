@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:gravity="center_vertical"
     android:padding="16dp"
-    android:background="#ddd">
+    android:background="@*android:color/material_blue_grey">
 
     <com.android.settings.rastapop.qs.DraggableGridView
         android:id="@+id/qs_gridview"
