@@ -19,13 +19,7 @@
         android:title="@string/volume_rocker_screen_title" />
 
     <PreferenceScreen
-        android:fragment="com.android.settings.rastapop.SystemSettings"
-        android:key="system_settings_general_category"
-        android:title="@string/system_settings_screen_title" />
-
-    <PreferenceScreen
         android:fragment="com.android.settings.rastapop.PowerMenuActions"
         android:key="power_menu_general_category"
         android:title="@string/power_menu_title" />
-
 </PreferenceScreen>

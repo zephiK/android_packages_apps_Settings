@@ -68,5 +68,11 @@
         android:summaryOff="@string/qs_main_tiles_summary_off"
         android:defaultValue="true" />
 
+    <com.android.settings.rastapop.SystemSettingSwitchPreference
+        android:key="qs_location_advanced"
+        android:title="@string/qs_advanced_location_title"
+        android:summary="@string/qs_advanced_location_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 </PreferenceScreen>
