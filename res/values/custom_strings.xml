@@ -62,6 +62,10 @@
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <!-- Recent apps category -->
     <string name="display_category_recents_options_title">Recent apps options</string>
+    <!-- Advanced reboot category -->
+    <string name="display_category_advreboot_options_title">Battery options</string>
+    <!-- Power menu category -->
+    <string name="display_category_power_options_title">Battery options</string>
 
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Volume rocker</string>
@@ -97,8 +101,8 @@
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
 
-    <!-- System settings -->
-    <string name="system_settings_screen_title">System settings</string>
+    <!-- Power menu settings -->
+    <string name="system_settings_screen_title">Power menu</string>
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Advanced reboot</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
@@ -205,4 +209,19 @@
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
     <string name="qs_advanced_location_title">Advanced location quick settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+
+
+    <!-- Power menu -->
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_power_title">Power off</string>
+    <string name="power_menu_reboot_title">Reboot menu</string>
+    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_profiles_title">Profile switcher</string>
+    <string name="power_menu_airplane_title">Airplane mode</string>
+    <string name="power_menu_settings_title">Settings shortcut</string>
+    <string name="power_menu_lockdown_title">Device lockdown</string>
+    <string name="power_menu_bug_report_title">Bug report</string>
+    <string name="power_menu_sound_title">Sound panel</string>
+    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <string name="power_menu_profiles_disabled">System profiles are disabled</string>
 </resources>

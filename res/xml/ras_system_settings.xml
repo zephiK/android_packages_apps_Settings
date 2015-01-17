@@ -4,9 +4,65 @@
     android:key="system_settings_general_category"
     android:title="@string/system_settings_screen_title" >
 
+
      <!-- Advanced Reboot -->
+   <PreferenceCategory
+        android:key="category_advreboot_options"
+        android:title="@string/display_category_advreboot_options_title" >
+
     <SwitchPreference
         android:key="advanced_reboot"
         android:summary="@string/advanced_reboot_summary"
         android:title="@string/advanced_reboot_title"/>
+	</PreferenceCategory>
+
+	<!-- Power Menu -->
+   <PreferenceCategory
+        android:key="category_power_options"
+        android:title="@string/display_category_power_options_title" >
+    <SwitchPreference
+        android:key="power"
+        android:title="@string/power_menu_power_title"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="reboot"
+        android:title="@string/power_menu_reboot_title"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="screenshot"
+        android:title="@string/power_menu_screenshot_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="profile"
+        android:title="@string/power_menu_profiles_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="airplane"
+        android:title="@string/power_menu_airplane_title"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="settings"
+        android:title="@string/power_menu_settings_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="lockdown"
+        android:title="@string/power_menu_lockdown_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="bugreport"
+        android:title="@string/power_menu_bug_report_title"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="silent"
+        android:title="@string/power_menu_sound_title"
+        android:defaultValue="true" />
+    </PreferenceCategory>
 </PreferenceScreen>
