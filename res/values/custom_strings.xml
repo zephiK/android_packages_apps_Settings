@@ -7,7 +7,7 @@
     <string name="build_date_default">Unknown</string>
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_chroma">Customizations</string>
+    <string name="header_category_chroma">Personalization</string>
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- Status bar -->

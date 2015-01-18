@@ -14,12 +14,12 @@
         android:title="@string/navigation_bar_screen_title" />
 
     <PreferenceScreen
-        android:fragment="com.android.settings.rastapop.VolumeRockerSettings"
-        android:key="volume_rocker_general_category"
-        android:title="@string/volume_rocker_screen_title" />
-
-    <PreferenceScreen
         android:fragment="com.android.settings.rastapop.PowerMenuActions"
         android:key="power_menu_general_category"
         android:title="@string/power_menu_title" />
+
+    <PreferenceScreen
+        android:fragment="com.android.settings.rastapop.VolumeRockerSettings"
+        android:key="volume_rocker_general_category"
+        android:title="@string/volume_rocker_screen_title" />
 </PreferenceScreen>
