@@ -10,7 +10,9 @@
     	<SwitchPreference
       		android:key="volume_rocker_wake"
 		android:summary="@string/volume_rocker_wake_summary"
-		android:title="@string/volume_rocker_wake_title" />
+		android:title="@string/volume_rocker_wake_title"
+		android:defaultValue="false"
+		android:persistent="false" />
         </PreferenceCategory>
 
         <PreferenceCategory
@@ -20,7 +22,9 @@
     <SwitchPreference
         android:key="volume_rocker_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title" />
+        android:title="@string/volume_rocker_music_controls_title"
+        android:persistent="false"
+        android:defaultValue="true" />
 
     <SwitchPreference
 	android:key="volume_key_adjust_sound"
