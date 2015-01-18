@@ -40,13 +40,15 @@
         android:defaultValue="true" />
 
     <SwitchPreference
-        android:key="users"
-        android:title="@string/power_menu_users_title"
-        android:defaultValue="false" />
-
-    <SwitchPreference
         android:key="silent"
         android:title="@string/power_menu_sound_title"
         android:defaultValue="true" />
     </PreferenceCategory>
+
+    <Preference
+        android:key="advanced_options"
+        android:title="@string/advpower_settings_screen_title"
+        android:persistent="false"
+        android:fragment="com.android.settings.rastapop.SystemSettings" />
+
 </PreferenceScreen>

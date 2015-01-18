@@ -63,7 +63,7 @@
     <!-- Recent apps category -->
     <string name="display_category_recents_options_title">Recent apps options</string>
     <!-- Advanced reboot category -->
-    <string name="display_category_advreboot_options_title">Battery options</string>
+    <string name="display_category_advreboot_options_title">Advanced options</string>
     <!-- Power menu title -->
     <string name="power_settings_title">Power menu</string>
     <!-- Power menu category -->
@@ -213,18 +213,16 @@
     <string name="qs_advanced_location_title">Advanced location quick settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
-    <!-- Power menu -->
-    <string name="power_menu_title">Power menu</string>
+     <!-- Power menu -->
+     <string name="power_menu_title">Power menu</string>
     <string name="power_menu_power_title">Power off</string>
-    <string name="power_menu_reboot_title">Reboot menu</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_profiles_title">Profile switcher</string>
-    <string name="power_menu_airplane_title">Airplane mode</string>
-    <string name="power_menu_users_title">User switcher</string>
-    <string name="power_menu_settings_title">Settings shortcut</string>
-    <string name="power_menu_lockdown_title">Device lockdown</string>
-    <string name="power_menu_bug_report_title">Bug report</string>
-    <string name="power_menu_sound_title">Sound panel</string>
-    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
-    <string name="power_menu_profiles_disabled">System profiles are disabled</string>
+     <string name="power_menu_reboot_title">Reboot menu</string>
+     <string name="power_menu_screenshot_title">Screenshot</string>
+     <string name="power_menu_airplane_title">Airplane mode</string>
+     <string name="power_menu_users_title">User switcher</string>
+     <string name="power_menu_settings_title">Settings shortcut</string>
+     <string name="power_menu_lockdown_title">Device lockdown</string>
+     <string name="power_menu_bug_report_title">Bug report</string>
+     <string name="power_menu_sound_title">Sound panel</string>
+     <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
 </resources>

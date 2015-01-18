@@ -160,5 +160,8 @@
         <item>power</item>
         <item>reboot</item>
         <item>screenshot</item>
+        <item>profile</item>
+        <item>airplane</item>
+        <item>bugreport</item>
     </string-array>
 </resources>
