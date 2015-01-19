@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project
+    <!--
+     Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +15,6 @@
      limitations under the License.
 -->
 
-<resources>
-    <!-- QS tiles -->
-    <dimen name="qs_tile_max_size">120dp</dimen>
-    <dimen name="qs_tile_max_padding">10dp</dimen>
-    <dimen name="qs_tile_dragged_z">10dp</dimen>
-
-    <!-- Lockscreen shortcuts -->
-    <dimen name="phone_height">210dp</dimen>
-    <dimen name="phone_width">420dp</dimen>
-</resources>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#DDDDDD">
+</ripple>

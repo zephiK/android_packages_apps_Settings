@@ -153,6 +153,10 @@
     <string name="profile_reset_title">Reset</string>
     <string name="profiles_add">Add</string>
     <string name="profile_choose_app">Choose app</string>
+    <string name="profile_applist_title">Apps</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock &amp; date</string>
@@ -473,4 +477,12 @@
     <string name="debug_LAN_category">LAN Settings</string>    
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_settings_title">Lock screen</string>
+    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
+    <string name="lockscreen_default_target">Default</string>
+    <string name="lockscreen_none_target">None</string>
+    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
+    <string name="lockscreen_choose_action_title">Choose action</string>
 </resources>
