@@ -50,4 +50,7 @@
     <dimen name="setup_wizard_card_title_padding_top">24dp</dimen>
     <dimen name="setup_wizard_card_title_padding_bottom">0dp</dimen>
 
+    <!-- Lockscreen shortcuts -->
+    <dimen name="phone_height">210dp</dimen>
+    <dimen name="phone_width">420dp</dimen>
 </resources>
