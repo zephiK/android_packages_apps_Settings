@@ -20,6 +20,10 @@ import android.app.Fragment;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.pm.PackageManager;
+import android.content.res.Resources;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -29,9 +33,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;
+import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -40,17 +45,10 @@ import java.util.List;
 public class QSTiles extends Fragment implements
         DraggableGridView.OnRearrangeListener, AdapterView.OnItemClickListener {
 
-    private static final String[] AVAILABLE_TILES = {
-        "wifi" ,"bt", "cell", "airplane", "rotation", "flashlight",
-        "location", "cast", "inversion", "hotspot"
-    };
-
-    private static final String QS_DEFAULT_ORDER =
-            "wifi,bt,cell,airplane,rotation,flashlight,location,cast";
-
     private DraggableGridView mDraggableGridView;
     private View mAddDeleteTile;
     private boolean mDraggingActive;
+    private Context mSystemUiContext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,17 +63,20 @@ public class QSTiles extends Fragment implements
         super.onActivityCreated(savedInstanceState);
 
         ContentResolver resolver = getActivity().getContentResolver();
-        String order = Settings.System.getString(resolver, Settings.System.QS_TILES);
+        String order = Settings.Secure.getString(resolver, Settings.Secure.QS_TILES);
         if (TextUtils.isEmpty(order)) {
-            order = QS_DEFAULT_ORDER;
-            Settings.System.putString(resolver, Settings.System.QS_TILES, order);
+            order = QSUtils.getDefaultTilesAsString(getActivity());;
+            Settings.Secure.putString(resolver, Settings.Secure.QS_TILES, order);
         }
 
         for (String tileType: order.split(",")) {
-            mDraggableGridView.addView(buildQSTile(tileType));
+            View tile = buildQSTile(tileType);
+            if (tile != null) {
+                mDraggableGridView.addView(tile);
+            }
         }
         // Add a dummy tile for the "Add / Delete" tile
-        mAddDeleteTile = buildQSTile("");
+        mAddDeleteTile = buildQSTile(QSTileHolder.TILE_ADD_DELETE);
         mDraggableGridView.addView(mAddDeleteTile);
         updateAddDeleteState();
 
@@ -118,7 +119,7 @@ public class QSTiles extends Fragment implements
 
     private void updateAddDeleteState() {
         int activeTiles = mDraggableGridView.getChildCount() - (mDraggingActive ? 2 : 1);
-        boolean limitReached = activeTiles >= AVAILABLE_TILES.length;
+        boolean limitReached = activeTiles >= QSUtils.getAvailableTiles(getActivity()).size();
         int iconResId = mDraggingActive ? R.drawable.ic_menu_delete : R.drawable.ic_menu_add_dark;
         int titleResId = mDraggingActive ? R.string.qs_action_delete :
                 limitReached ? R.string.qs_action_no_more_tiles : R.string.qs_action_add;
@@ -138,15 +139,18 @@ public class QSTiles extends Fragment implements
 
         // We load the added tiles and compare it to the list of available tiles.
         // We only show the tiles that aren't already on the grid.
-        String order = Settings.System.getString(resolver, Settings.System.QS_TILES);
+        String order = Settings.Secure.getString(resolver, Settings.Secure.QS_TILES);
 
         List<String> savedTiles = Arrays.asList(order.split(","));
 
         final List<QSTileHolder> tilesList = new ArrayList<QSTileHolder>();
-        for (String tile : AVAILABLE_TILES) {
+        for (String tile : QSUtils.getAvailableTiles(getActivity())) {
             // Don't count the already added tiles
             if (!savedTiles.contains(tile)) {
-                tilesList.add(QSTileHolder.from(getActivity(), tile));
+                QSTileHolder holder = QSTileHolder.from(getActivity(), tile);
+                if (holder != null) {
+                    tilesList.add(holder);
+                }
             }
         }
 
@@ -170,7 +174,8 @@ public class QSTiles extends Fragment implements
             }
         };
 
-        final QSListAdapter adapter = new QSListAdapter(getActivity(), tilesList);
+        final QSListAdapter adapter = new QSListAdapter(getActivity(),
+                mSystemUiContext, tilesList);
         new AlertDialog.Builder(getActivity())
                 .setTitle(R.string.add_qs)
                 .setSingleChoiceItems(adapter, -1, selectionListener)
@@ -198,11 +203,17 @@ public class QSTiles extends Fragment implements
 
     private View buildQSTile(String tileType) {
         QSTileHolder item = QSTileHolder.from(getActivity(), tileType);
+        if (item == null) {
+            return null;
+        }
         View qsTile = getLayoutInflater(null).inflate(R.layout.qs_item, null);
 
         if (item.name != null) {
             ImageView icon = (ImageView) qsTile.findViewById(android.R.id.icon);
-            icon.setImageResource(item.drawableId);
+            Drawable d = Utils.getNamedDrawable(mSystemUiContext, item.resourceName);
+            d.setColorFilter(getResources().getColor(R.color.qs_tile_tint_color),
+                    PorterDuff.Mode.SRC_ATOP);
+            icon.setImageDrawable(d);
             TextView title = (TextView) qsTile.findViewById(android.R.id.title);
             title.setText(item.name);
         }
@@ -213,9 +224,9 @@ public class QSTiles extends Fragment implements
 
     public static int determineTileCount(Context context) {
         String order = Settings.System.getString(context.getContentResolver(),
-                Settings.System.QS_TILES);
+                Settings.Secure.QS_TILES);
         if (TextUtils.isEmpty(order)) {
-            order = QS_DEFAULT_ORDER;
+            order = QSUtils.getDefaultTilesAsString(context);
         }
         return order.split(",").length;
     }
