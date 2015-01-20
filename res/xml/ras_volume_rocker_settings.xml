@@ -6,33 +6,18 @@
         <PreferenceCategory
                 android:key="category_wakeup_options"
                 android:title="@string/display_category_wakeup_options_title" >
-<!--
+
     	<SwitchPreference
       		android:key="volume_rocker_wake"
 		android:summary="@string/volume_rocker_wake_summary"
-		android:title="@string/volume_rocker_wake_title"
-		android:defaultValue="false"
-		android:persistent="false" />
--->
-<com.android.settings.rastapop.SystemSettingSwitchPreference
-      		android:key="volume_rocker_wake"
-		android:summary="@string/volume_rocker_wake_summary"
 		android:title="@string/volume_rocker_wake_title"/>
-        </PreferenceCategory>
+	</PreferenceCategory>
 
-        <PreferenceCategory
-                android:key="category_media_options"
-                android:title="@string/media_options_title" >
+    <PreferenceCategory
+        android:key="category_media_options"
+        android:title="@string/media_options_title" >
 
-<!--
-    <SwitchPreference
-        android:key="volume_rocker_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
-        android:title="@string/volume_rocker_music_controls_title"
-        android:persistent="false"
-        android:defaultValue="true" />
--->
-    <com.android.settings.rastapop.SystemSettingSwitchPreference
+   <SwitchPreference
         android:key="volume_rocker_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
         android:title="@string/volume_rocker_music_controls_title" />
