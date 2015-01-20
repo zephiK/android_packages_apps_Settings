@@ -44,9 +44,6 @@ public class QSTileHolder {
         } else if (tileType.equals("bt")) {
             resId = R.drawable.ic_settings_bluetooth2;
             stringId = R.string.bluetooth_settings_title;
-        } else if (tileType.equals("inversion")) {
-            resId = R.drawable.ic_settings_accessibility;
-            stringId = R.string.accessibility_display_inversion_preference_title;
         } else if (tileType.equals("cell")) {
             resId = R.drawable.ic_qs_signal;
             stringId = R.string.cellular_data_title;
