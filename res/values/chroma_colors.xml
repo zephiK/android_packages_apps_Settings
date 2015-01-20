@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2015 The CyanogenMod Project
+<!-- Copyright (C) 2007 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +13,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="64dp"
-    android:height="64dp"
-    android:viewportWidth="24.0"
-    android:viewportHeight="24.0">
 
-    <path
-        android:fillColor="#FF009587"
-        android:pathData="M12.0,17.273l6.1800003,3.7269993 -1.6350002,-7.0290003 5.455,-4.7269993 -7.191,-0.6170006 -2.809,-6.627 -2.809,6.627 -7.191,0.6170006 5.455,4.7269993 -1.6349998,7.0290003z"/>
-</vector>
+<resources>
+    <!-- QS tiles -->
+    <color name="qs_tile_tint_color">#FF009587</color>
+</resources> 
