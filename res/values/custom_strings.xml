@@ -218,6 +218,7 @@
     <string name="qs_tile_notifications">Notifications</string>
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_lte">LTE</string>
 
      <!-- Power menu -->
      <string name="power_menu_title">Power menu</string>
