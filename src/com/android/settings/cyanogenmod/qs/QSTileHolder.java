@@ -97,6 +97,14 @@ public class QSTileHolder {
             case QSConstants.TILE_SCREEN_TIMEOUT:
                 resourceName = "ic_qs_screen_timeout_vector";
                 stringId = R.string.qs_tile_screen_timeout;
+                break; 
+            case QSConstants.TILE_EXPANDED_DESKTOP:
+                resourceName = "ic_qs_expanded_desktop";
+                stringId = R.string.qs_expanded_desktop_tile;
+                break;
+            case QSConstants.TILE_SCREEN_OFF:
+                resourceName = "ic_qs_power";
+                stringId = R.string.qs_screen_off_tile;
                 break;
             case QSConstants.TILE_SCREENSHOT:
                 resourceName = "ic_qs_screenshot";

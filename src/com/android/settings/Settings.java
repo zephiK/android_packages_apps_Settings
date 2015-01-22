@@ -106,5 +106,7 @@ public class Settings extends SettingsActivity {
     public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
     public static class QSSettingsActivity extends SettingsActivity { /* empty */ }
     public static class WifiCallingSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class DisplayRotationActivity extends SettingsActivity { /* empty */ }  
+    public static class ExpandedDesktopSettingsActivity extends SettingsActivity { /* empty */ }
 }
 
