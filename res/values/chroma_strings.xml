@@ -338,6 +338,7 @@
     <string name="qs_sync_tile">Sync</string>
     <string name="qs_tile_headsup">Heads up</string>
     <string name="qs_music_play_tile">Play</string>
+    <string name="qs_tile_lte">LTE</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
