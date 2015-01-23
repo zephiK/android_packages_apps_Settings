@@ -67,7 +67,7 @@
         android:title="@string/qs_order_title"
         android:fragment="com.android.settings.rastapop.qs.QSTiles" />
 
-    <com.android.settings.rastapop.SystemSettingSwitchPreference
+    <com.android.settings.rastapop.SecureSettingSwitchPreference
         android:key="sysui_qs_main_tiles"
         android:title="@string/qs_main_tiles_title"
         android:summaryOn="@string/qs_main_tiles_summary_on"
@@ -80,7 +80,7 @@
         android:summary="@string/qs_advanced_location_summary"
         android:defaultValue="false" />
 
-     <com.android.settings.rastapop.SystemSettingSwitchPreference
+     <com.android.settings.rastapop.SecureSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title"
         android:summary="@string/qs_brightness_slider_summary"
