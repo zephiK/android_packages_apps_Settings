@@ -26,8 +26,11 @@
             android:title="@string/unlock_set_unlock_launch_picker_title"
             android:summary="@string/unlock_set_unlock_mode_none"
             android:persistent="false"/>
+        <PreferenceScreen
+            android:key="lockscreen_shortcuts_settings"
+            android:fragment="com.android.settings.cyanogenmod.LockscreenShortcuts"
+            android:title="@string/lockscreen_targets_message" />
 
-        <PreferenceScreen>
     </PreferenceCategory>
 
 </PreferenceScreen>
