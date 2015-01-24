@@ -34,16 +34,13 @@ import java.util.List;
 
 public class QSListAdapter extends ArrayAdapter<QSTileHolder> {
     private Resources mSystemUIResources;
+    private Context mSystemUiContext;
     private LayoutInflater mInflater;
-    public QSListAdapter(Context context, List<QSTileHolder> objects) {
-        super(context, 0, objects);
-        mInflater = LayoutInflater.from(context);
-        try {
-            Context sysUIContext = context.createPackageContext(Utils.SYSTEM_UI_PACKAGE_NAME, 0);
-            mSystemUIResources = sysUIContext.getResources();
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
+
+    public QSListAdapter(Context context, Context systemUiContext, List<QSTileHolder> tiles) {
+        super(context, 0, tiles);
+	mInflater = LayoutInflater.from(context);
+	mSystemUiContext = systemUiContext;
     }
 
     @Override
@@ -63,7 +60,7 @@ public class QSListAdapter extends ArrayAdapter<QSTileHolder> {
 
         holder.entry.setText(item.name);
         if (item.resourceName != null) {
-            Drawable d = Utils.getNamedDrawableFromSystemUI(mSystemUIResources, item.resourceName);
+            Drawable d = Utils.getNamedDrawable(mSystemUiContext, item.resourceName);
             d.setColorFilter(getContext().getResources().getColor(R.color.qs_tile_tint_color),
                     PorterDuff.Mode.SRC_ATOP);
             holder.icon.setImageDrawable(d);

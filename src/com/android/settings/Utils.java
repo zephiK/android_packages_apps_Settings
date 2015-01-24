@@ -93,6 +93,8 @@ import java.util.Locale;
 public final class Utils {
     private static final String TAG = "Settings";
 
+    public static final String SYSTEM_UI_PACKAGE_NAME = "com.android.systemui";
+
     /**
      * Set the preference's title to the matching activity's label.
      */
@@ -1027,7 +1029,7 @@ public final class Utils {
 
     public static boolean isPackageInstalled(Context context, String pkg) {
         return isPackageInstalled(context, pkg, true);
-    }
+    }	
 
     public static Context createPackageContext(Context context, String packageName) {
         try {
