@@ -90,6 +90,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_ringer_audible";
                 stringId = R.string.qs_tile_notifications;
                 break;
+            case QSConstants.TILE_SCREEN_TIMEOUT:
+                resourceName = "ic_qs_screen_timeout_vector";
+                stringId = R.string.qs_tile_screen_timeout;
+                break;
             default:
                 return null;
         }
