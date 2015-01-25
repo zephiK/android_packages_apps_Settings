@@ -20,6 +20,8 @@ import android.text.format.DateFormat;
 import android.view.View;
 
 import com.android.settings.rastapop.qs.QSTiles;
+import java.util.Date;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -52,6 +54,10 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
 
+    // Date
+    private static final String STATUS_BAR_DATE_STYLE = "status_bar_date";
+    private static final String STATUS_BAR_DATE_FORMAT = "status_bar_date_format";
+
     // Statusbar battery percent
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -60,6 +66,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     // Center clock
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
+    // Date
+    private ListPreference mStatusBarDate;
+    private ListPreference mStatusBarDateFormat;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -104,6 +113,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         // Center clock
         mStatusBarClock = (ListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
         mStatusBarAmPm = (ListPreference) findPreference(STATUS_BAR_AM_PM);
+        mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
+        mStatusBarDateFormat = (ListPreference) findPreference(STATUS_BAR_DATE_FORMAT);
 
         int clockStyle = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CLOCK, 1);
@@ -121,6 +132,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
+        enableStatusBarClockDependents();
+
+        // Date
+        int dateStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_DATE, 0);
+        mStatusBarDate.setValue(String.valueOf(dateStyle));
+        mStatusBarDate.setSummary(mStatusBarDate.getEntry());
+        mStatusBarDate.setOnPreferenceChangeListener(this);
+
+        mStatusBarDateFormat.setOnPreferenceChangeListener(this);
+        mStatusBarDateFormat.setSummary(mStatusBarDateFormat.getEntry());
+        if (mStatusBarDateFormat.getValue() == null) {
+            mStatusBarDateFormat.setValue("EEE");
+        }
+        parseClockDateFormats();
     }
 
     @Override
@@ -172,15 +198,31 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             int clockStyle = Integer.parseInt((String) objValue);
             int index = mStatusBarClock.findIndexOfValue((String) objValue);
             Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_CLOCK_STYLE, clockStyle);
+                    STATUS_BAR_CLOCK_STYLE, clockStyle);
             mStatusBarClock.setSummary(mStatusBarClock.getEntries()[index]);
+            enableStatusBarClockDependents();
             return true;
         } else if (preference == mStatusBarAmPm) {
             int statusBarAmPm = Integer.valueOf((String) objValue);
             int index = mStatusBarAmPm.findIndexOfValue((String) objValue);
             Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_AM_PM, statusBarAmPm);
+                    STATUS_BAR_AM_PM, statusBarAmPm);
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarDate) {
+            int statusBarDate = Integer.valueOf((String) objValue);
+            int index = mStatusBarDate.findIndexOfValue((String) objValue);
+            Settings.System.putInt(resolver,
+                    STATUS_BAR_DATE_STYLE, statusBarDate);
+            mStatusBarDate.setSummary(mStatusBarDate.getEntries()[index]);
+            return true;
+        } else if (preference ==  mStatusBarDateFormat) {
+            int index = mStatusBarDateFormat.findIndexOfValue((String) objValue);
+            if ((String) newValue != null) {
+                Settings.System.putString(resolver,
+                   Settings.System.STATUS_BAR_DATE_FORMAT, (String) objValue);
+            mStatusBarDateFormat.setSummary(mStatusBarDateFormat.getEntries()[index]);
+            }
             return true;
         }
         return false;
@@ -199,5 +241,40 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         int qsTileCount = QSTiles.determineTileCount(getActivity());
         mQSTiles.setSummary(getResources().getQuantityString(R.plurals.qs_tiles_summary,
                     qsTileCount, qsTileCount));
+	}
+    private void enableStatusBarClockDependents() {
+        int clockStyle = Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUS_BAR_CLOCK, 1);
+        if (clockStyle == 0) {
+            mStatusBarDate.setEnabled(false);
+            mStatusBarDateFormat.setEnabled(false);
+        } else {
+            mStatusBarDate.setEnabled(true);
+            mStatusBarDateFormat.setEnabled(true);
+        }
+    }
+
+    private void parseClockDateFormats() {
+        // Parse and repopulate mClockDateFormats's entries based on current date.
+        String[] dateEntries = getResources().getStringArray(R.array.status_bar_date_format_entries_values);
+        CharSequence parsedDateEntries[];
+        parsedDateEntries = new String[dateEntries.length];
+        Date now = new Date();
+        int lastEntry = dateEntries.length - 1;
+        for (int i = 0; i < dateEntries.length; i++) {
+            if (i == lastEntry) {
+                parsedDateEntries[i] = dateEntries[i];
+            } else {
+                String newDate;
+                CharSequence dateString = DateFormat.format(dateEntries[i], now);
+                newDate = dateString.toString().toLowerCase();
+                parsedDateEntries[i] = newDate;
+            }
+        }
+        mStatusBarDateFormat.setEntries(parsedDateEntries);
+    }
+
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 }

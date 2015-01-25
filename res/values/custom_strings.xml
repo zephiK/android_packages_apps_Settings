@@ -30,6 +30,16 @@
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_hidden">Hidden (default)</string>
 
+    <!-- Clock and date -->
+    <string name="clock_date_title">Clock and date style</string>
+
+    <!--Status bar date -->
+    <string name="status_bar_date_title">Date style</string>
+    <string name="status_bar_date_none">Hidden (default)</string>
+    <string name="status_bar_date_small">Small</string>
+    <string name="status_bar_date_normal">Normal</string>
+    <string name="status_bar_date_format_title">Date format</string>
+
     <!-- Battery category -->
     <string name="display_category_battery_options_title">Battery options</string>
     <!-- Clock category -->
@@ -111,7 +121,7 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
- <!-- Quick Pulldown -->
+    <!-- Quick Pulldown -->
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">Toggle quick pulldown on the right side of the statusbar</string>
 
