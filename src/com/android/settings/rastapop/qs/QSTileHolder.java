@@ -90,6 +90,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_zen_on";
                 stringId = R.string.qs_tile_notifications;
                 break;
+            case QSConstants.TILE_VISUALIZER:
+                resourceName = "ic_qs_visualizer_static";
+                stringId = R.string.qs_tile_visualizer;
+                break;
             default:
                 return null;
         }
