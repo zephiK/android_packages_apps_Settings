@@ -18,6 +18,7 @@
     <color name="black">#000</color>
     <color name="red">#F00</color>
 
+    <color name="actionbar_icon_color">#ffffff</color>
     <color name="material_empty_color_light">#FFCED7DB</color>
 
     <color name="memory_used">#F00</color>
