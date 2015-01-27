@@ -393,6 +393,7 @@
     <string name="qs_expanded_desktop_tile">Expanded desktop</string>
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_headsup">Heads up</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
