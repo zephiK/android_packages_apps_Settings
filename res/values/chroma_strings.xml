@@ -413,4 +413,9 @@
     <string name="network_traffic_autohide">Auto hide</string>
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Navigation ring targets</string>
+    <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
+    <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string> 
 </resources>
