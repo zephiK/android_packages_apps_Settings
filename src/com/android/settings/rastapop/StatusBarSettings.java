@@ -147,6 +147,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarDateFormat.setValue("EEE");
         }
         parseClockDateFormats();
+        enableStatusBarClockDependents(); 
+        enableStatusBarDateDependents();   
     }
 
     @Override
@@ -215,6 +217,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(resolver,
                     STATUS_BAR_DATE_STYLE, statusBarDate);
             mStatusBarDate.setSummary(mStatusBarDate.getEntries()[index]);
+	    enableStatusBarDateDependents();
             return true;
         } else if (preference ==  mStatusBarDateFormat) {
             int index = mStatusBarDateFormat.findIndexOfValue((String) objValue);
@@ -248,11 +251,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         if (clockStyle == 0) {
             mStatusBarDate.setEnabled(false);
             mStatusBarDateFormat.setEnabled(false);
+	    mStatusBarAmPm.setEnabled(false);
         } else {
             mStatusBarDate.setEnabled(true);
             mStatusBarDateFormat.setEnabled(true);
+	    mStatusBarAmPm.setEnabled(true);
         }
     }
+
+   private void enableStatusBarDateDependents() {
+        int dateStyle = Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUS_BAR_DATE, 1);
+        if (dateStyle == 0) {
+            mStatusBarDateFormat.setEnabled(false);
+        } else {
+            mStatusBarDateFormat.setEnabled(true);
 
     private void parseClockDateFormats() {
         // Parse and repopulate mClockDateFormats's entries based on current date.
