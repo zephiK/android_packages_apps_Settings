@@ -4,16 +4,13 @@ import android.content.ContentResolver;
 <<<<<<< HEAD:src/com/android/settings/rastapop/StatusBarSettings.java
 import android.database.ContentObserver;
 import android.net.Uri;
-=======
 import android.content.res.Configuration;
 import android.content.res.Resources;
->>>>>>> eb755f5... Status Bar Clock: rewrite for lollipop and add left clock (2/2):src/com/android/settings/terminus/StatusBarSettings.java
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.text.format.DateFormat;
@@ -21,9 +18,9 @@ import android.view.View;
 
 import com.android.settings.rastapop.qs.QSTiles;
 import java.util.Date;
-
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.Utils;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -69,6 +66,16 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     // Date
     private ListPreference mStatusBarDate;
     private ListPreference mStatusBarDateFormat;
+
+    // Statusbar general category
+    private static String STATUS_BAR_GENERAL_CATEGORY = "status_bar_general_category";
+    private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String KEY_LOCK_CLOCK = "lock_clock";
+    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
+
+
+    private ListPreference mQuickPulldown;
+    private PreferenceScreen mLockClock;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -149,18 +156,19 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         parseClockDateFormats();
         enableStatusBarClockDependents(); 
         enableStatusBarDateDependents();   
+	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
+
+        // Quick Pulldown
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
+        mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
+        updateQuickPulldownSummary(statusQuickPulldown);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        // Adjust clock position for RTL if necessary
-        Configuration config = getResources().getConfiguration();
-        if (config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-                mStatusBarClock.setEntries(getActivity().getResources().getStringArray(
-                        R.array.status_bar_clock_style_entries_rtl));
-                mStatusBarClock.setSummary(mStatusBarClock.getEntry());
-        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -227,6 +235,17 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarDateFormat.setSummary(mStatusBarDateFormat.getEntries()[index]);
             }
             return true;
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+	ContentResolver cr = getActivity().getContentResolver();
+	if (preference == mQuickPulldown) {
+            int statusQuickPulldown = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
+                    statusQuickPulldown);
+            updateQuickPulldownSummary(statusQuickPulldown); 
+	return true;    
         }
         return false;
     }

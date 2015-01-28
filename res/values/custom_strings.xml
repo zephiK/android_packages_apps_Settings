@@ -18,6 +18,9 @@
     <string name="status_bar_brightness_control_info">Automatic brightness must be disabled</string>
 
     <!-- Statusbar clock -->
+    <string name="status_bar_clock">Clock &amp; date</string>
+    <string name="status_bar_clock_title">Clock &amp; date style</string>
+    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
     <string name="status_bar_clock_style_title">Clock style</string>
     <string name="status_bar_clock_style_right">Right</string>
     <string name="status_bar_clock_style_left">Left</string>
@@ -108,6 +111,8 @@
     <string name="double_tap_to_sleep_summary">Double tapping the status bar puts the device to sleep</string>
 
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Battery icons</string>
+    <string name="status_bar_battery_summary">Change battery icons</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
