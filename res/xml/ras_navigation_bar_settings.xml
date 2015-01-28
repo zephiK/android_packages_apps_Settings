@@ -34,6 +34,11 @@
         android:summary="@string/navigation_bar_arrow_keys_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+	android:key="navigation_bar_ring"
+	android:fragment="com.android.settings.cyanogenmod.NavRing"
+	android:title="@string/navigation_ring_title" />
+
     <SwitchPreference
 	android:defaultValue="false"
         android:key="kill_app_longpress_back"
