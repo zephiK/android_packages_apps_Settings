@@ -57,8 +57,7 @@ public class QSTileHolder {
         // or it supports Dual Sim Dual Active.
         // TODO: Should be spawning off a tile per sim
         if (TextUtils.equals(QSConstants.TILE_LTE, tileType)
-                && (!QSUtils.deviceSupportsLte(context)
-                || QSUtils.deviceSupportsDdsSupported(context))) {
+                && (!QSUtils.deviceSupportsLte(context))) {
             return null;
         }
 
