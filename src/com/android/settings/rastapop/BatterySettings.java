@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.simpleaosp;
+package com.android.settings.rastapop;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
