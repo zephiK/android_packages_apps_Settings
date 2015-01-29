@@ -26,10 +26,7 @@
         android:key="category_clock_options"
         android:title="@string/display_category_clock_options_title" >
 
-    <PreferenceScreen
-        android:key="clock_style_pref"
-        android:fragment="com.android.settings.rastapop.StatusBarClockStyle"
-        android:title="@string/status_bar_clock" />
+	    <!-- clock stuff -->
     </PreferenceCategory>
 
     <PreferenceCategory
