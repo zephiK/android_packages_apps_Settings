@@ -43,10 +43,8 @@
     <string name="status_bar_date_normal">Normal</string>
     <string name="status_bar_date_format_title">Date format</string>
 
-    <!-- Battery category -->
-    <string name="display_category_battery_options_title">Battery options</string>
-    <!-- Clock category -->
-    <string name="display_category_clock_options_title">Clock options</string>
+    <!-- Battery and clock category -->
+    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <!-- Status bar category -->
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <!-- Navigation bar category -->
