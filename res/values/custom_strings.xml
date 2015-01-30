@@ -214,8 +214,7 @@
     <string name="qs_tile_cast_screen">Cast screen</string>
     <string name="qs_tile_hotspot">Hotspot</string>
     <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_visualizer">AudioFX</string>
-    <string name="qs_tile_lte">LTE</string>
+
      <!-- Power menu -->
      <string name="power_menu_title">Power menu</string>
     <string name="power_menu_power_title">Power off</string>

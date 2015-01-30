@@ -17,12 +17,9 @@ package com.android.settings.rastapop.qs;
 
 import android.content.Context;
 
-import android.text.TextUtils;
 import com.android.internal.util.cm.QSConstants;
 import com.android.internal.util.cm.QSUtils;
 import com.android.settings.R;
-
-import java.util.Arrays;
 
 /**
  * This class holds the icon, the name - or the string the user sees,
@@ -49,19 +46,7 @@ public class QSTileHolder {
                 !QSUtils.getAvailableTiles(context).contains(tileType)) {
             return null;
         }
-/*
-        // We need to filter out the LTE tile manually, because
-        // filtering via getAvailableTiles during fwb init
-        // disallows reading our system prop
-        // Hide the tile if device doesn't support LTE
-        // or it supports Dual Sim Dual Active.
-        // TODO: Should be spawning off a tile per sim
-        if (TextUtils.equals(QSConstants.TILE_LTE, tileType)
-                && (!QSUtils.deviceSupportsLte(context)
-                || QSUtils.deviceSupportsDdsSupported(context))) {
-            return null;
-        }
-*/
+
         switch (tileType) {
             case TILE_ADD_DELETE:
                 break;
@@ -104,13 +89,6 @@ public class QSTileHolder {
             case QSConstants.TILE_NOTIFICATIONS:
                 resourceName = "ic_qs_zen_on";
                 stringId = R.string.qs_tile_notifications;
-            case QSConstants.TILE_LTE:
-                resourceName = "ic_qs_lte_on";
-                stringId = R.string.qs_tile_lte;
-                break;
-            case QSConstants.TILE_VISUALIZER:
-                resourceName = "ic_qs_visualizer_static";
-                stringId = R.string.qs_tile_visualizer;
                 break;
             default:
                 return null;
