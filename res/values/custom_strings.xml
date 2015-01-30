@@ -214,7 +214,7 @@
     <string name="qs_tile_cast_screen">Cast screen</string>
     <string name="qs_tile_hotspot">Hotspot</string>
     <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_visualizer">Visualizer</string>
+    <string name="qs_tile_visualizer">AudioFX</string>
     <string name="qs_tile_lte">LTE</string>
      <!-- Power menu -->
      <string name="power_menu_title">Power menu</string>
@@ -310,4 +310,5 @@
     <string name="profiles_add">Add</string>
     <string name="profile_choose_app">Choose app</string>
     <string name="profile_reset_title">Reset</string>
+    <string name="ok">OK</string>
 </resources>
