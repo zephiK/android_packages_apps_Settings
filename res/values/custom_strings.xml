@@ -203,6 +203,7 @@
     <string name="qs_wifi_detail_summary">Enable detailed view for Wi\u2011Fi in Quick Settings</string>
     <string name="display_rotation_title">Rotation</string>
     <string name="mobile_data">Mobile data</string>
+    <string name="notifications">Notifications</string>
 
     <string name="qs_tile_wifi">Wi\u2011Fi</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
