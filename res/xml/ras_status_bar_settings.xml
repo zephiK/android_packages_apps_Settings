@@ -77,6 +77,6 @@
         android:key="qs_advanced_options"
         android:title="@string/advpower_settings_screen_title"
         android:persistent="false"
-        android:fragment="com.android.settings.rastapop.ras_status_bar_qs_advanced" />
+        android:fragment="com.android.settings.rastapop.StatusBarSettingsAdv" />
     </PreferenceCategory>
 </PreferenceScreen>
