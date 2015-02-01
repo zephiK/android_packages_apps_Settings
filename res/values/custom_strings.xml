@@ -312,4 +312,7 @@
     <string name="profile_choose_app">Choose app</string>
     <string name="profile_reset_title">Reset</string>
     <string name="ok">OK</string>
+
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Show four tiles per row</string>
 </resources>
