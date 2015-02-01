@@ -56,9 +56,8 @@ public class QSTileHolder {
         // Hide the tile if device doesn't support LTE
         // or it supports Dual Sim Dual Active.
         // TODO: Should be spawning off a tile per sim
-        if (TextUtils.equals(QSConstants.TILE_LTE, tileType)
-                && (!QSUtils.deviceSupportsLte(context)
-                || QSUtils.deviceSupportsDdsSupported(context))) {
+        if (!TILE_ADD_DELETE.equals(tileType) &&
+                !QSUtils.getAvailableTiles(context).contains(tileType)) {
             return null;
         }
 
