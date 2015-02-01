@@ -11,7 +11,8 @@
     <PreferenceScreen
         android:key="navigation_bar"
         android:fragment="com.android.settings.cyanogenmod.NavBar"
-        android:title="@string/navigation_bar_title" />
+        android:title="@string/navigation_bar_title"
+	android:summary="@string/navigation_bar_settings_summary" />
 
     <ListPreference
         android:defaultValue="48"
