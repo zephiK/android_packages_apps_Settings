@@ -67,18 +67,6 @@
         android:title="@string/qs_four_columns_title"
         android:defaultValue="false" />
 
-    <com.android.settings.rastapop.SecureSettingSwitchPreference
-        android:key="qs_location_advanced"
-        android:title="@string/qs_advanced_location_title"
-        android:summary="@string/qs_advanced_location_summary"
-        android:defaultValue="false" />
-
-    <com.android.settings.rastapop.SecureSettingSwitchPreference
-        android:key="qs_wifi_detail"
-        android:title="@string/qs_wifi_detail_title"
-        android:summary="@string/qs_wifi_detail_summary"
-        android:defaultValue="false" />
-
      <com.android.settings.rastapop.SecureSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title"
