@@ -84,5 +84,11 @@
         android:title="@string/qs_brightness_slider_title"
         android:summary="@string/qs_brightness_slider_summary"
         android:defaultValue="true"/>
+
+    <Preference
+        android:key="qs_advanced_options"
+        android:title="@string/advpower_settings_screen_title"
+        android:persistent="false"
+        android:fragment="com.android.settings.rastapop.ras_status_bar_qs_advanced" />
     </PreferenceCategory>
 </PreferenceScreen>

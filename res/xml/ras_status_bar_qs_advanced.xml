@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+    <PreferenceCategory
+        android:title="@string/qs_category_title">
+
+    <com.android.settings.rastapop.SecureSettingSwitchPreference
+        android:key="qs_location_advanced"
+        android:title="@string/qs_advanced_location_title"
+        android:summary="@string/qs_advanced_location_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.rastapop.SecureSettingSwitchPreference
+        android:key="qs_wifi_detail"
+        android:title="@string/qs_wifi_detail_title"
+        android:summary="@string/qs_wifi_detail_summary"
+        android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
