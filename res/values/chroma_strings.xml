@@ -484,6 +484,7 @@
     <string name="qs_tile_cast_screen">Cast screen</string>
     <string name="qs_tile_hotspot">Hotspot</string>
     <string name="qs_tile_screen_timeout">Screen timeout</string>
+    <string name="qs_tile_sync">Sync</string>
     <string name="qs_action_delete">Delete</string>
     <string name="qs_action_add">Add</string>
     <string name="qs_action_no_more_tiles">No more tiles available</string>
