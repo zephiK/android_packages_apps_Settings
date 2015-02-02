@@ -3,6 +3,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/chroma_settings_title" >
 
+    <PreferenceCategory
+        android:key="category_chroma_personalization"
+        android:title="@string/chroma_menu_personalizaton" >
+
     <PreferenceScreen
         android:fragment="com.android.settings.rastapop.StatusBarSettings"
         android:key="status_bar_general_category"
@@ -22,9 +26,16 @@
         android:fragment="com.android.settings.rastapop.VolumeRockerSettings"
         android:key="volume_rocker_general_category"
         android:title="@string/volume_rocker_screen_title" />
+    </PreferenceCategory>
+
+   <PreferenceCategory
+        android:key="category_chroma_tools"
+        android:title="@string/chroma_menu_tools" >
 
     <PreferenceScreen
         android:key="display_settings"
         android:fragment="com.android.settings.rastapop.DisplaySettings"
         android:title="@string/display_settings_title" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

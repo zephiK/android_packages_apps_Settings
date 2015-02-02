@@ -43,6 +43,11 @@
     <string name="status_bar_date_normal">Normal</string>
     <string name="status_bar_date_format_title">Date format</string>
 
+    <!-- Chroma Menu -->
+    <string name="chroma_menu_personalizaton">Personalizations</string>
+    <string name="chroma_menu_tools">Tools</string>
+    <string name="chroma_menu_about">About Chroma</string>
+
     <!-- Battery and clock category -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <!-- Status bar category -->
