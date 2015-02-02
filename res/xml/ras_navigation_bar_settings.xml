@@ -23,6 +23,12 @@
         android:persistent="false"
         android:title="@string/navigation_bar_height" />
 
+    <com.android.settings.rastapop.SystemSettingSwitchPreference
+        android:key="navigation_bar_menu_arrow_keys"
+        android:title="@string/navigation_bar_arrow_keys_title"
+        android:summary="@string/navigation_bar_arrow_keys_summary"
+        android:defaultValue="false" />
+
 	<com.android.settings.rastapop.SystemSettingSwitchPreference
         android:key="recents_show_hide_search_bar"
         android:title="@string/recents_show_searchbar"
