@@ -26,18 +26,6 @@
         android:fragment="com.android.settings.rastapop.VolumeRockerSettings"
         android:key="volume_rocker_general_category"
         android:title="@string/volume_rocker_screen_title" />
-    </PreferenceCategory>
-
-   <PreferenceCategory
-        android:key="category_chroma_tools"
-        android:title="@string/chroma_menu_tools" >
-
-    <PreferenceScreen
-        android:key="display_settings"
-        android:fragment="com.android.settings.rastapop.DisplaySettings"
-        android:title="@string/display_settings_title" />
-    </PreferenceCategory>
-
 
    <PreferenceCategory
         android:key="category_chroma_about"
