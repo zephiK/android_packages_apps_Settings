@@ -16,8 +16,73 @@
     android:title="@string/chroma_menu_about"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <ListPreference
-        android:key="main_developer"
-        android:title="zephiK"
-        android:summary="test" />
+	<!-- About Chroma -->
+    <PreferenceCategory
+        android:title="Chroma" >
+    <Preference android:key="build_date"
+        style="?android:preferenceInformationStyle"
+        android:title="@string/build_date"
+        android:summary="02/02/2015" />
+    <Preference android:key="changelog"
+        android:title="View Changelog"
+	/>
+
+	<!-- Developers -->
+    <PreferenceCategory
+        android:key="category_chroma_developers"
+        android:title="Developers" >
+
+    <Preference
+        android:title="zephiK"/>
+    </PreferenceCategory>
+	<!-- Graphics -->
+    <PreferenceCategory
+        android:key="category_chroma_graphics"
+        android:title="Graphics" >
+
+    <Preference
+        android:title="boysetsfire"/>
+
+    <Preference
+        android:title="vomer"/>
+    </PreferenceCategory>
+
+	<!-- Testers -->
+    <PreferenceCategory
+        android:key="category_chroma_testers"
+        android:title="Testers" >
+
+    <Preference
+        android:title="Ngo93"/>
+    </PreferenceCategory>
+
+	<!-- Donators -->
+    <PreferenceCategory
+        android:key="category_chroma_donators"
+        android:title="Donators" >
+   <Preference
+        android:title="dan04103"/>
+   <Preference
+        android:title="gamewarden234"/>
+   <Preference
+        android:title="Ngo93"/>
+   <Preference
+        android:title="shreddintyres"/>
+   <Preference
+        android:title="USAN03"/>
+   <Preference
+        android:title="thefiverivers"/>
+   <Preference
+        android:title="Maybelle"/>
+   <Preference
+        android:title="twstdprdgy"/>
+   <Preference
+        android:title="Bkdodger"/>
+   <Preference
+        android:title="billybloxx"/>
+   <Preference
+        android:title="hondajohn88"/>
+   <Preference
+        android:title="LONRA"/>
+</PreferenceCategory>
 </PreferenceScreen>
