@@ -1,6 +1,7 @@
 package com.android.settings.rastapop;
 
 import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Bundle;
@@ -52,9 +53,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.ras_status_bar_settings);
-
+	PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
         // status bar brightness control
@@ -66,17 +66,12 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
 	// quick settings pulldown
 	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
-        if (!DeviceUtils.isPhone(getActivity())) {
-            prefs.removePreference(mQuickPulldown);
-        } else {
             // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
             int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
-        }
-
 	// Quick Settings Tile Customization
 	mQSTiles = findPreference("qs_order");
     }
@@ -96,7 +91,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     value ? 1 : 0);
             return true;
 	} else if (preference == mQuickPulldown) {
-            int statusQuickPulldown = Integer.valueOf((String) newValue);
+            int statusQuickPulldown = Integer.valueOf((String) objValue);
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
