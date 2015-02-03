@@ -10,6 +10,18 @@
     <string name="header_category_chroma">Personalization</string>
     <string name="chroma_settings_title">Chroma</string>
 
+    <!-- General strings -->
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="attention">Attention</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="default_string">Default</string>
+    <string name="additional_options_title">Additional options</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="style_title">Style</string>
+    <string name="add">Add</string>
+
     <!-- Status bar -->
     <string name="status_bar_screen_title">Status bar</string>
     <!-- Status bar brightness control -->
@@ -319,7 +331,6 @@
     <string name="profiles_add">Add</string>
     <string name="profile_choose_app">Choose app</string>
     <string name="profile_reset_title">Reset</string>
-    <string name="ok">OK</string>
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Show four tiles per row</string>

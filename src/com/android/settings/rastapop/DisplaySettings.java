@@ -57,7 +57,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.rastapop_display_settings);
+        addPreferencesFromResource(R.xml.ras_display_settings);
 
         mContext = getActivity().getApplicationContext();
         int newDensityValue;
