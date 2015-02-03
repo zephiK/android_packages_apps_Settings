@@ -38,4 +38,14 @@
         android:title="@string/display_settings_title" />
     </PreferenceCategory>
 
+
+   <PreferenceCategory
+        android:key="category_chroma_about"
+        android:title="@string/chroma_menu_about" >
+
+    <PreferenceScreen
+        android:key="about_chroma"
+        android:fragment="com.android.settings.rastapop.AboutChroma"
+        android:title="@string/chroma_menu_about" />
+    </PreferenceCategory>
 </PreferenceScreen>
