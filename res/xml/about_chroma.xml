@@ -18,6 +18,6 @@
 
     <ListPreference
         android:key="main_developer"
-        android:title="@string/lcd_density"
-        android:summary="@string/lcd_density_summary" />
+        android:title="zephiK"
+        android:summary="test" />
 </PreferenceScreen>
