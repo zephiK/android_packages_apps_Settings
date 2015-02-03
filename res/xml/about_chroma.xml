@@ -24,8 +24,8 @@
         android:title="@string/build_date"
         android:summary="02/02/2015" />
     <Preference android:key="changelog"
-        android:title="View Changelog"
-	/>
+        android:title="View Changelog"/>
+    </PreferenceCategory>
 
 	<!-- Developers -->
     <PreferenceCategory
