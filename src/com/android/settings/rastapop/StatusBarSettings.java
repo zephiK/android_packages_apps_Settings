@@ -22,15 +22,11 @@ import com.android.settings.Utils;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // Quick Pulldown
-    public static final String STATUS_BAR_QUICK_QS_PULLDOWN = "status_bar_quick_qs_pulldown";
     // status bar brightness control
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
    // status bar battery
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
-    // Quick Pulldown
-    private SwitchPreference mStatusBarQuickQsPulldown;
     // status bar brightness control
     private SwitchPreference mStatusBarBrightnessControl;
     // status bar battery percentage style
@@ -61,13 +57,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 STATUS_BAR_BRIGHTNESS_CONTROL, 0);
         mStatusBarBrightnessControl.setChecked(statusBarBrightnessControl != 0);
 
-        // Quick Pulldown
-        mStatusBarQuickQsPulldown = (SwitchPreference) getPreferenceScreen()
-                .findPreference(STATUS_BAR_QUICK_QS_PULLDOWN);
-        mStatusBarQuickQsPulldown.setChecked((Settings.System.getInt(getActivity()
-                .getApplicationContext().getContentResolver(),
-                Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 0) == 1));
-        mStatusBarQuickQsPulldown.setOnPreferenceChangeListener(this);
 	// Quick Settings Tile Customization
 	mQSTiles = findPreference("qs_order");
     }
@@ -86,13 +75,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), STATUS_BAR_BRIGHTNESS_CONTROL,
                     value ? 1 : 0);
             return true;
-	// status bar quick pull down
-         } else if (preference == mStatusBarQuickQsPulldown) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, value ? 1 : 0);
-            return true;
-		}
+	}
 	return false;
 	}
 
