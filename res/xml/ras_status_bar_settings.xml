@@ -35,6 +35,12 @@
 	android:summary="@string/double_tap_to_sleep_summary"
 	android:defaultValue="true"/>
 
+     <com.android.settings.rastapop.SystemSettingSwitchPreference
+        android:key="status_bar_notif_count"
+        android:title="@string/status_bar_notif_count_title"
+        android:summary="@string/status_bar_notif_count_summary"
+        android:defaultValue="false" />
+
     <ListPreference
 	android:key="quick_pulldown"
 	android:title="@string/title_quick_pulldown"
@@ -42,11 +48,10 @@
 	android:entryValues="@array/quick_pulldown_values"
 	android:persistent="false" />
 
-     <com.android.settings.rastapop.SystemSettingSwitchPreference
-        android:key="status_bar_notif_count"
-        android:title="@string/status_bar_notif_count_title"
-        android:summary="@string/status_bar_notif_count_summary"
-        android:defaultValue="false" />
+    <PreferenceScreen
+	android:key="status_bar_network_traffic"
+  	android:fragment="com.android.settings.applications.NetworkTraffic"
+	android:title="@string/network_traffic_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
