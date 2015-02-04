@@ -34,30 +34,26 @@
 	<!-- Developers -->
     <PreferenceCategory
         android:key="category_chroma_developers"
-        android:title="Developers" >
+        android:title="Lead Developer" >
 
     <Preference
         android:title="zephiK"/>
     </PreferenceCategory>
-	<!-- Graphics -->
+
+	<!-- Honorable Mentions -->
     <PreferenceCategory
-        android:key="category_chroma_graphics"
-        android:title="Graphics" >
+        android:key="category_chroma_mentions"
+        android:title="Honorable Mentions" >
 
     <Preference
-        android:title="boysetsfire"/>
-
+        android:title="boysetsfire"
+	android:summary="Boot animation and wallpapers"/>
     <Preference
-        android:title="vomer"/>
-    </PreferenceCategory>
-
-	<!-- Testers -->
-    <PreferenceCategory
-        android:key="category_chroma_testers"
-        android:title="Testers" >
-
+        android:title="vomer"
+	android:summary="Chroma logo"/>
     <Preference
-        android:title="Ngo93"/>
+        android:title="Ngo93"
+	android:summary="Testing pre-release builds at odd hours"/>
     </PreferenceCategory>
 
 	<!-- Donators -->
