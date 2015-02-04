@@ -22,9 +22,13 @@
     <Preference android:key="build_date"
         style="?android:preferenceInformationStyle"
         android:title="@string/build_date"
-        android:summary="02/02/2015" />
-    <Preference android:key="changelog"
-        android:title="View Changelog"/>
+        android:summary="02/03/2015" />
+
+<PreferenceScreen android:title="View Changelog">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
+</PreferenceScreen>
     </PreferenceCategory>
 
 	<!-- Developers -->
@@ -84,5 +88,11 @@
         android:title="hondajohn88"/>
    <Preference
         android:title="LONRA"/>
+   <Preference
+        android:title="Imakillher"/>
+   <Preference
+        android:title="matrox00612"/>
+   <Preference
+        android:title="parcou"/>
 </PreferenceCategory>
 </PreferenceScreen>
