@@ -22,7 +22,7 @@
     <Preference android:key="build_date"
         style="?android:preferenceInformationStyle"
         android:title="@string/build_date"
-        android:summary="02/03/2015" />
+        android:summary="02/04/2015" />
 
 <PreferenceScreen android:title="View Changelog">
     <intent
@@ -90,5 +90,11 @@
         android:title="matrox00612"/>
    <Preference
         android:title="parcou"/>
+   <Preference
+        android:title="grinchyyy"/>
+   <Preference
+        android:title="stumpy352"/>
+   <Preference
+        android:title="wooddale"/>
 </PreferenceCategory>
 </PreferenceScreen>
