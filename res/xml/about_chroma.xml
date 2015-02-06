@@ -100,5 +100,9 @@
         android:title="suku_patel_22"/>
    <Preference
         android:title="unobtrusivetones"/>
+   <Preference
+        android:title="adrman"/>
+   <Preference
+        android:title="tonyfiore75"/>
 </PreferenceCategory>
 </PreferenceScreen>
