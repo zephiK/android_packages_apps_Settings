@@ -239,7 +239,6 @@
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_sync_tile">Sync</string>
     <string name="qs_tile_lte">LTE</string>
-    <string name="qs_tile_visualizer" translatable="false">AudioFX</string>
     <string name="qs_tile_headsup">Heads up</string>
 
      <!-- Power menu -->
