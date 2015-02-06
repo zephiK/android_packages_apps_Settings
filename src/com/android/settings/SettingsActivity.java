@@ -300,7 +300,7 @@ public class SettingsActivity extends Activity
             OtherSoundSettings.class.getName(),
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),
-	    DisplayRotation.class.getName()
+	    DisplayRotation.class.getName(),
 	    HeadsUpSettings.class.getName()
     };
 
