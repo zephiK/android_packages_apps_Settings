@@ -62,6 +62,7 @@
 
     <!-- Battery and clock category -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_navring_options_title">Navigation bar ring options</string>
     <!-- Status bar category -->
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <!-- Navigation bar category -->
