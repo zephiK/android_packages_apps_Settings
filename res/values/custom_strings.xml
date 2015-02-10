@@ -389,4 +389,8 @@
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the check mark icon to save your changes, or restore to reset the settings to defaults.</string>
     <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
+
+
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Enable navigation rings</string>
 </resources>
