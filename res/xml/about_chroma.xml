@@ -13,23 +13,14 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/chroma_menu_about"
+    android:title="About Chroma"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-
-	<!-- About Chroma -->
-    <PreferenceCategory
-        android:title="Chroma" >
-    <Preference android:key="build_date"
-        style="?android:preferenceInformationStyle"
-        android:title="@string/build_date"
-        android:summary="02/07/2015" />
 
 <PreferenceScreen android:title="View Changelog">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
 </PreferenceScreen>
-    </PreferenceCategory>
 
 	<!-- Developers -->
     <PreferenceCategory
@@ -40,7 +31,7 @@
         android:title="zephiK"/>
     </PreferenceCategory>
 
-	<!-- Honorable Mentions -->
+	<!-- Honorable mentions -->
     <PreferenceCategory
         android:key="category_chroma_mentions"
         android:title="Honorable Mentions" >
