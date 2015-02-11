@@ -44,16 +44,15 @@
     <PreferenceCategory
         android:key="category_chroma_mentions"
         android:title="Honorable Mentions" >
-
     <Preference
         android:title="boysetsfire"
 	android:summary="Boot animation and wallpapers"/>
     <Preference
-        android:title="vomer"
-	android:summary="Chroma logo"/>
-    <Preference
         android:title="Ngo93"
 	android:summary="Testing pre-release builds at odd hours"/>
+    <Preference
+        android:title="vomer"
+	android:summary="Chroma logo"/>
     </PreferenceCategory>
 
 	<!-- Donators -->
@@ -61,56 +60,58 @@
         android:key="category_chroma_donators"
         android:title="Donators" >
    <Preference
-        android:title="dan04103"/>
-   <Preference
-        android:title="gamewarden234"/>
-   <Preference
-        android:title="Ngo93"/>
-   <Preference
-        android:title="shreddintyres"/>
-   <Preference
-        android:title="USAN03"/>
-   <Preference
-        android:title="thefiverivers"/>
-   <Preference
-        android:title="Maybelle"/>
-   <Preference
-        android:title="twstdprdgy"/>
-   <Preference
-        android:title="Bkdodger"/>
-   <Preference
-        android:title="billybloxx"/>
-   <Preference
-        android:title="hondajohn88"/>
-   <Preference
-        android:title="LONRA"/>
-   <Preference
-        android:title="Imakillher"/>
-   <Preference
-        android:title="matrox00612"/>
-   <Preference
-        android:title="parcou"/>
-   <Preference
-        android:title="grinchyyy"/>
-   <Preference
-        android:title="stumpy352"/>
-   <Preference
-        android:title="wooddale"/>
-   <Preference
-        android:title="suku_patel_22"/>
-   <Preference
-        android:title="unobtrusivetones"/>
-   <Preference
         android:title="adrman"/>
    <Preference
-        android:title="tonyfiore75"/>
+        android:title="billybloxx"/>
+	<Preference
+        android:title="Bkdodger"/>
    <Preference
-        android:title="Griff22usmc"/>
+        android:title="dan04103"/>
    <Preference
         android:title="Donjuanal"/>
    <Preference
-        android:title="sbann"/>
+        android:title="enricof7"/>
+   <Preference
+        android:title="gamewarden234"/>
+   <Preference
+        android:title="Griff22usmc"/>
+   <Preference
+        android:title="grinchyyy"/>
+   <Preference
+        android:title="hondajohn88"/>
+   <Preference
+        android:title="Imakillher"/>
+	<Preference
+        android:title="LONRA"/>
+   <Preference
+        android:title="matrox00612"/>
+   <Preference
+        android:title="Maybelle"/>
    <Preference
         android:title="MrMaverick03"/>
+   <Preference
+        android:title="Ngo93"/>
+   <Preference
+        android:title="parcou"/>
+   <Preference
+        android:title="sbann"/>
+   <Preference
+        android:title="shreddintyres"/>
+   <Preference
+        android:title="stumpy352"/>
+   <Preference
+        android:title="suku_patel_22"/>
+   <Preference
+        android:title="thefiverivers"/>
+   <Preference
+        android:title="tonyfiore75"/>
+   <Preference
+        android:title="twstdprdgy"/>
+   <Preference
+        android:title="unobtrusivetones"/>
+   <Preference
+        android:title="USAN03"/>
+   <Preference
+        android:title="wooddale"/>
 </PreferenceCategory>
 </PreferenceScreen>
