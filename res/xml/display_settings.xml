@@ -51,16 +51,20 @@
                 android:title="@string/lift_to_wake_title"
                 android:persistent="false" />
 
-        <SwitchPreference
-                android:key="doze"
-                android:title="@string/doze_title"
-                android:summary="@string/doze_summary"
-                android:persistent="false" />
+        <PreferenceScreen
+                android:key="expanded_desktop"
+                android:title="@string/power_menu_expanded_desktop"
+                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
 
-                <ListPreference
-                    android:key="lcd_density"
-                    android:title="@string/lcd_density"
-                    android:persistent="false" />
+        <PreferenceScreen
+                android:key="doze_fragment"
+                android:title="@string/doze_title"
+                android:fragment="com.android.settings.chroma.AmbientSettings" />
+
+        <ListPreference
+                android:key="lcd_density"
+                android:title="@string/lcd_density"
+                android:persistent="false" />
 
         <PreferenceScreen
                 android:key="expanded_desktop"
