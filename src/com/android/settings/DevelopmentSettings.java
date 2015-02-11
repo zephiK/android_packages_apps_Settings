@@ -165,6 +165,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static String DEFAULT_LOG_RING_BUFFER_SIZE_IN_BYTES = "262144"; // 256K
 
+    // advanced reboot
+    private static final String ADVANCED_REBOOT = "advanced_reboot";
+    private SwitchPreference mAdvancedReboot;
     private IWindowManager mWindowManager;
     private IBackupManager mBackupManager;
     private DevicePolicyManager mDpm;
@@ -290,6 +293,14 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             removePreference(mEnableOemUnlock);
             mEnableOemUnlock = null;
         }
+
+        // advanced reboot
+        mAdvancedReboot = (SwitchPreference) findPreference(ADVANCED_REBOOT);
+        mAdvancedReboot.setOnPreferenceChangeListener(this);
+        int advancedReboot = Settings.Secure.getInt(getContentResolver(),
+                ADVANCED_REBOOT, 1);
+        mAdvancedReboot.setChecked(advancedReboot != 0);
+
         mAllowMockLocation = findAndInitSwitchPref(ALLOW_MOCK_LOCATION);
         mDebugViewAttributes = findAndInitSwitchPref(DEBUG_VIEW_ATTRIBUTES);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
@@ -1432,6 +1443,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             SystemProperties.set(HDCP_CHECKING_PROPERTY, newValue.toString());
             updateHdcpValues();
             pokeSystemProperties();
+            return true;
+        // advanced reboot
+        } else if (preference == mAdvancedReboot) {
+            boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(getContentResolver(), ADVANCED_REBOOT,
+                    value ? 1 : 0);
             return true;
         } else if (preference == mLogdSize) {
             writeLogdSizeOption(newValue);
