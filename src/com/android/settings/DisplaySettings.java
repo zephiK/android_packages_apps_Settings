@@ -209,8 +209,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                         Settings.System.WAKEUP_WHEN_PLUGGED_UNPLUGGED, 1) == 1);
             mWakeUpWhenPluggedOrUnplugged.setOnPreferenceChangeListener(this);
         }
->>>>>>> c431db2... PowerManager: Don't wake up device when charger is plugged/unplugged (2/2)
-
     }
 
     private static boolean allowAllRotations(Context context) {
