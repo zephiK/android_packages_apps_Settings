@@ -53,9 +53,15 @@
    <Preference
         android:title="adrman"/>
    <Preference
+        android:title="Berlino"/>
+   <Preference
         android:title="billybloxx"/>
-	<Preference
+   <Preference
         android:title="Bkdodger"/>
+   <Preference
+        android:title="Blaze420916"/>
+   <Preference
+        android:title="brwatters"/>
    <Preference
         android:title="dan04103"/>
    <Preference
@@ -77,6 +83,8 @@
    <Preference
         android:title="matrox00612"/>
    <Preference
+        android:title="marcadam"/>
+   <Preference
         android:title="Maybelle"/>
    <Preference
         android:title="MrMaverick03"/>
@@ -84,6 +92,8 @@
         android:title="Ngo93"/>
    <Preference
         android:title="parcou"/>
+   <Preference
+        android:title="R. Savely"/>
    <Preference
         android:title="sbann"/>
    <Preference
