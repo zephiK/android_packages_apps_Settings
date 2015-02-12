@@ -240,6 +240,7 @@
     <string name="qs_sync_tile">Sync</string>
     <string name="qs_tile_lte">LTE</string>
     <string name="qs_tile_headsup">Heads up</string>
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
 
      <!-- Power menu -->
      <string name="power_menu_title">Power menu</string>

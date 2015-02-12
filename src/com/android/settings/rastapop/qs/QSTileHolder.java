@@ -120,6 +120,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_ringer_audible";
                 stringId = R.string.qs_tile_headsup;
                 break;
+            case QSConstants.TILE_EXPANDED_DESKTOP:
+                resourceName = "ic_qs_expanded_desktop";
+                stringId = R.string.qs_expanded_desktop_tile;
+                break;
             default:
                 return null;
         }
