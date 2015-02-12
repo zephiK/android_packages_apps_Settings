@@ -15,6 +15,26 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <resources>
+    <!-- Exposed resources for theming -->
+    <color name="exposed_bg_dark">#ffffffff</color>
+    <color name="exposed_bg_light">#ff212121</color>
+    <color name="exposed_primary_text_light">#de000000</color>
+    <color name="exposed_secondary_text_light">#8a000000</color>
+    <color name="exposed_primary_text_dark">#ffffffff</color>
+    <color name="exposed_secondary_text_dark">#b3ffffff</color>
+    <color name="exposed_barPrimaryColor">#ff009688</color>
+    <color name="exposed_barPredictionColor">@color/material_empty_color_light</color>
+    <color name="exposed_qs_tile_text">#de000000</color>
+
+    <!-- QS tiles -->
+    <color name="qs_tile_tint_color">#FF009587</color>
+
+    <!-- Expanded desktop -->
+    <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
+    <drawable name="expanded_item_bg">@android:color/background_light</drawable>
+    <color name="expanded_button_color_normal">#4CAF50</color>
+    <color name="expanded_button_color_close">#F44336</color>
+
     <!-- Layers -->
     <color name="exposed_datachartfillcolor">#ff009688</color>
     <color name="exposed_datachartfillcolor_secondary">#ff80cbc4</color>
