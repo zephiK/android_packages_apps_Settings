@@ -25,7 +25,7 @@
 	<!-- Developers -->
     <PreferenceCategory
         android:key="category_chroma_developers"
-        android:title="Lead Developer" >
+        android:title="Lead Developer">
 
     <Preference
         android:title="zephiK"/>
@@ -53,6 +53,8 @@
    <Preference
         android:title="adrman"/>
    <Preference
+        android:title="anthonyg45157"/>
+   <Preference
         android:title="Berlino"/>
    <Preference
         android:title="billybloxx"/>
@@ -67,6 +69,8 @@
    <Preference
         android:title="Donjuanal"/>
    <Preference
+        android:title="dannieloco"/>
+   <Preference
         android:title="enricof7"/>
    <Preference
         android:title="gamewarden234"/>
@@ -78,7 +82,13 @@
         android:title="hondajohn88"/>
    <Preference
         android:title="Imakillher"/>
-	<Preference
+   <Preference
+        android:title="J. Carter"/>
+   <Preference
+        android:title="K. Patzelt"/>
+   <Preference
+        android:title="kinnesotan"/>
+   <Preference
         android:title="LONRA"/>
    <Preference
         android:title="matrox00612"/>
@@ -91,11 +101,17 @@
    <Preference
         android:title="Ngo93"/>
    <Preference
+        android:title="oak"/>
+   <Preference
         android:title="parcou"/>
+   <Preference
+        android:title="pointman_12"/>
    <Preference
         android:title="R. Savely"/>
    <Preference
         android:title="sbann"/>
+   <Preference
+        android:title="seanowns"/>
    <Preference
         android:title="shreddintyres"/>
    <Preference
