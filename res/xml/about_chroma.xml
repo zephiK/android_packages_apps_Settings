@@ -51,6 +51,8 @@
         android:key="category_chroma_donators"
         android:title="Donators" >
    <Preference
+        android:title="A. Perks"/>
+   <Preference
         android:title="adrman"/>
    <Preference
         android:title="anthonyg45157"/>
