@@ -51,8 +51,6 @@
         android:key="category_chroma_donators"
         android:title="Donators" >
    <Preference
-        android:title="A. Perks"/>
-   <Preference
         android:title="adrman"/>
    <Preference
         android:title="anthonyg45157"/>
@@ -87,9 +85,17 @@
    <Preference
         android:title="J. Carter"/>
    <Preference
+        android:title="J.Guido85"/>
+   <Preference
+        android:title="jermaine151"/>
+   <Preference
+        android:title="Jrmiller"/>
+   <Preference
         android:title="K. Patzelt"/>
    <Preference
         android:title="kinnesotan"/>
+   <Preference
+        android:title="Konfuzion"/>
    <Preference
         android:title="LONRA"/>
    <Preference
@@ -111,6 +117,8 @@
    <Preference
         android:title="R. Savely"/>
    <Preference
+        android:title="S. Gardner"/>
+   <Preference
         android:title="sbann"/>
    <Preference
         android:title="seanowns"/>
@@ -121,7 +129,11 @@
    <Preference
         android:title="suku_patel_22"/>
    <Preference
+        android:title="symple"/>
+   <Preference
         android:title="thefiverivers"/>
+   <Preference
+        android:title="RoscoeDpG"/>
    <Preference
         android:title="tonyfiore75"/>
    <Preference
