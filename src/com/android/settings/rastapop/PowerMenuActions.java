@@ -48,7 +48,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
     private SwitchPreference mAirplanePref;
-    private SwitchPreference mSilentPref;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -81,8 +80,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
-                mSilentPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SILENT);
             }
         }
         getUserConfig();
@@ -107,10 +104,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
  
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
-        }
-
-        if (mSilentPref != null) {
-            mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
         }
     }
 
@@ -138,10 +131,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
-
-        } else if (preference == mSilentPref) {
-            value = mSilentPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
 
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -211,7 +200,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 s.append("|");
             }
         }
-
         Settings.Global.putStringForUser(getContentResolver(),
                  Settings.Global.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
         updatePowerMenuDialog();
