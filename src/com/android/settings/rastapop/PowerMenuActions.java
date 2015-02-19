@@ -112,14 +112,11 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
         if (mSilentPref != null) {
             mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
         }
-
-        updatePreferences();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        updatePreferences();
     }
 
     @Override
@@ -174,11 +171,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
         saveUserConfig();
-    }
-
-    private void updatePreferences() {
-        boolean bugreport = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
     }
 
     private void getUserConfig() {
