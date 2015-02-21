@@ -31,8 +31,7 @@ import com.android.settings.SecuritySettings;
 import com.android.settings.WirelessSettings;
 import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.cyanogenmod.NotificationDrawerSettings;
-import com.android.settings.cyanogenmod.PowerMenuActions;
+import com.android.settings.rastapop.PowerMenuActions;
 import com.android.settings.deviceinfo.Memory;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageSummary;
@@ -45,9 +44,9 @@ import com.android.settings.notification.OtherSoundSettings;
 import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.sim.SimSettings;
-import com.android.settings.simpleaosp.AmbientSettings;
-import com.android.settings.simpleaosp.NavigationBarSettings;
-import com.android.settings.simpleaosp.StatusBarSettings;
+import com.android.settings.chroma.AmbientSettings;
+import com.android.settings.rastapop.NavigationBarSettings;
+import com.android.settings.rastapop.StatusBarSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
@@ -271,15 +270,8 @@ public final class SearchIndexableResources {
 	sResMap.put(StatusBarSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(StatusBarSettings.class.getName()),
-                        R.xml.status_bar_settings,
+                        R.xml.ras_status_bar_settings,
                         StatusBarSettings.class.getName(),
-                        R.drawable.ic_settings_display));
-
- 	sResMap.put(NotificationDrawerSettings.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(NotificationDrawerSettings.class.getName()),
-                        R.xml.notification_drawer_settings,
-                        NotificationDrawerSettings.class.getName(),
                         R.drawable.ic_settings_display));
 
         sResMap.put(PowerMenuActions.class.getName(),
@@ -292,7 +284,7 @@ public final class SearchIndexableResources {
 	sResMap.put(NavigationBarSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(NavigationBarSettings.class.getName()),
-                        R.xml.navigation_bar_settings,
+                        R.xml.ras_navigation_bar_settings,
                         NavigationBarSettings.class.getName(),
                         R.drawable.ic_settings_display));
 

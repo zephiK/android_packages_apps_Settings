@@ -123,6 +123,7 @@
         <item>@string/pulse_speed_normal</item>
         <item>@string/pulse_speed_slow</item>
         <item>@string/pulse_speed_very_slow</item>
+    </string-array>
 
     <string-array name="doze_pulse_duration_in_entries" translatable="false">
         <item>@string/twohundred_ms</item>
@@ -198,7 +199,6 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
-    </string-array>
     </string-array>
 
     <string-array name="notification_pulse_speed_values" translatable="false">

@@ -52,11 +52,6 @@
                 android:persistent="false" />
 
         <PreferenceScreen
-                android:key="expanded_desktop"
-                android:title="@string/power_menu_expanded_desktop"
-                android:fragment="com.android.settings.applications.ExpandedDesktopPreferenceFragment" />
-
-        <PreferenceScreen
                 android:key="doze_fragment"
                 android:title="@string/doze_title"
                 android:fragment="com.android.settings.chroma.AmbientSettings" />
