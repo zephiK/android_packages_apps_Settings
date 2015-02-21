@@ -77,6 +77,8 @@
    <Preference
         android:title="GeekMcLeod"/>
    <Preference
+        android:title="geolchris"/>
+   <Preference
         android:title="Griff22usmc"/>
    <Preference
         android:title="grinchyyy"/>
@@ -92,6 +94,8 @@
         android:title="jermaine151"/>
    <Preference
         android:title="Jrmiller"/>
+   <Preference
+        android:title="joshm"/>
    <Preference
         android:title="K. Patzelt"/>
    <Preference
@@ -138,6 +142,8 @@
         android:title="thefiverivers"/>
    <Preference
         android:title="RoscoeDpG"/>
+   <Preference
+        android:title="rmanaka"/>
    <Preference
         android:title="rwcasto"/>
    <Preference
