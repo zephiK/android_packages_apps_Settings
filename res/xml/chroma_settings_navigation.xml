@@ -38,6 +38,12 @@
         android:key="kill_app_longpress_back"
         android:summary="@string/kill_app_longpress_back_summary"
         android:title="@string/kill_app_longpress_back"/>
+
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_navbar"
+        android:title="@string/double_tap_sleep_nav_bar_title"
+        android:summary="@string/double_tap_sleep_nav_bar_summary"
+        android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
