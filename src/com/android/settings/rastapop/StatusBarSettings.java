@@ -27,28 +27,19 @@ import com.android.internal.util.rastapop.DeviceUtils;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // status bar brightness control
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
-    // status bar battery
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    // quick pulldown
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
-    // status bar brightness control
-    private SwitchPreference mStatusBarBrightnessControl;
-    // status bar battery percentage style
+
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-    // customizable tiles
-    private Preference mQSTiles;
-
-    // Center clock
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
-    // Date
     private ListPreference mStatusBarDate;
     private ListPreference mStatusBarDateFormat;
-    // quick pulldown
     private ListPreference mQuickPulldown;
+    private Preference mQSTiles;
+    private SwitchPreference mStatusBarBrightnessControl;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,17 +55,18 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 STATUS_BAR_BRIGHTNESS_CONTROL, 0);
         mStatusBarBrightnessControl.setChecked(statusBarBrightnessControl != 0);
 
-	// quick settings pulldown
-	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
+	    // quick settings pulldown
+    	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
             // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
             int statusQuickPulldown = Settings.System.getInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
-	// Quick Settings Tile Customization
-	mQSTiles = findPreference("qs_order");
-    }
+
+    	// Quick Settings Tile Customization
+    	mQSTiles = findPreference("qs_order");
+        }
 
     @Override
     public void onResume() {

@@ -20,23 +20,17 @@ import com.android.settings.SettingsPreferenceFragment;
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // kill-app long press back
-    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
-    private SwitchPreference mKillAppLongPressBack;
-
-    // navigation bar height
-    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
-    private ListPreference mNavigationBarHeight;
-
-    // navigation bar color
-    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
-    private ColorPickerPreference mNavbarButtonTint;
-
-    // recents clear all
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
-    private SwitchPreference mRecentsClearAll;
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
+
+    private ColorPickerPreference mNavbarButtonTint;
+    private ListPreference mNavigationBarHeight;
     private ListPreference mRecentsClearAllLocation;
+    private SwitchPreference mKillAppLongPressBack;
+    private SwitchPreference mRecentsClearAll;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,7 +48,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
         mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
 
-	// navigation bar color
+    	// navigation bar color
         mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
         mNavbarButtonTint.setOnPreferenceChangeListener(this);
         int intColor = Settings.System.getInt(getActivity().getContentResolver(),
@@ -70,8 +64,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
                 KILL_APP_LONGPRESS_BACK, 0);
         mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
 
-	// clear recents
-	mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
+    	// clear recents
+    	mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
         mRecentsClearAll.setChecked(Settings.System.getIntForUser(resolver,
             Settings.System.SHOW_CLEAR_ALL_RECENTS, 1, UserHandle.USER_CURRENT) == 1);
         mRecentsClearAll.setOnPreferenceChangeListener(this);

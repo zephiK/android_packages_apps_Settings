@@ -13,18 +13,13 @@ import com.android.settings.SettingsPreferenceFragment;
 public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    // volume rocker wake
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
-    // volume rocker music control
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
-    // volume key adjust sound
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
-    // volume rocker wake
+
     private SwitchPreference mVolumeRockerWake;
-    // volume rocker music control
     private SwitchPreference mVolumeRockerMusicControl;
-    // volume key adjust sound
     private SwitchPreference mVolumeKeyAdjustSound;
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
