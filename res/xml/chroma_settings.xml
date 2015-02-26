@@ -8,6 +8,11 @@
         android:fragment="com.android.settings.chroma.ChromaAbout"
         android:title="@string/chroma_menu_about" />
 
+        <PreferenceScreen
+                android:id="@+id/app_ops_settings"
+                android:title="@string/app_ops_settings"
+                android:fragment="com.android.settings.applications.AppOpsSummary" />
+
     <PreferenceCategory
         android:key="category_chroma_personalization"
         android:title="@string/chroma_menu_personalizaton" >
