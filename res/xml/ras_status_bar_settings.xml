@@ -8,12 +8,12 @@
         android:title="@string/display_category_batteryclock_options_title" >
 
     <PreferenceScreen
-        android:fragment="com.android.settings.chroma.BatterySettings"
+        android:fragment="com.android.settings.rastapop.BatterySettings"
         android:key="battery_style_pref"
         android:title="@string/status_bar_battery_title"
 	android:summary="@string/status_bar_battery_summary" />
     <PreferenceScreen
-        android:fragment="com.android.settings.chroma.StatusBarClockStyle"
+        android:fragment="com.android.settings.rastapop.StatusBarClockStyle"
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock"
 	android:summary="@string/status_bar_clock_summary" />

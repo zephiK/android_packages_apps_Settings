@@ -77,7 +77,7 @@
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.rastapop.DisplayRotation"
+                android:fragment="com.android.settings.chroma.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
         <PreferenceScreen
@@ -97,7 +97,7 @@
                 android:defaultValue="true"
                 android:persistent="false" />
 
-            <com.android.settings.rastapop.SystemSettingSwitchPreference
+            <com.android.settings.chroma.SystemSettingSwitchPreference
                     android:key="proximity_on_wake"
                     android:title="@string/proximity_wake_title"
                     android:summary="@string/proximity_wake_summary"

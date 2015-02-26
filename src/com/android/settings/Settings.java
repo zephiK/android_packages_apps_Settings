@@ -17,7 +17,7 @@
 package com.android.settings;
 
 import com.android.settings.applications.AppOpsSummary;
-import com.android.settings.rastapop.DisplayRotation;
+import com.android.settings.chroma.DisplayRotation;
 
 /**
  * Top-level Settings activity

@@ -113,7 +113,7 @@ import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
-import com.android.settings.rastapop.DisplayRotation;
+import com.android.settings.chroma.DisplayRotation;
 import com.android.settings.headsup.HeadsUpSettings;
 
 import org.xmlpull.v1.XmlPullParser;

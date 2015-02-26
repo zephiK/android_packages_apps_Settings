@@ -61,7 +61,7 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import com.android.settings.rastapop.DisplayRotation;
+import com.android.settings.chroma.DisplayRotation;
 
 import java.util.ArrayList;
 import java.util.List;

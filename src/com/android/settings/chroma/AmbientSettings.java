@@ -42,7 +42,7 @@ import android.widget.Button;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.rastapop.SystemSettingSwitchPreference;
+import com.android.settings.chroma.SystemSettingSwitchPreference;
 import com.android.settings.chroma.sensor.ShakeSensorManager;
 
 import java.util.ArrayList;
