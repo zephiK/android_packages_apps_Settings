@@ -3,16 +3,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <PreferenceCategory
-                android:key="category_wakeup_options"
-                android:title="@string/display_category_wakeup_options_title" >
+    <PreferenceCategory
+        android:key="category_wakeup_options"
+        android:title="@string/display_category_wakeup_options_title" >
 
-    	<SwitchPreference
+    <SwitchPreference
         android:key="volume_rocker_wake"
 		android:summary="@string/volume_rocker_wake_summary"
 		android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"
-        android:disableDependentsState="true"/>
+        android:defaultValue="false"/>
 	</PreferenceCategory>
 
     <PreferenceCategory
@@ -23,8 +22,7 @@
         android:key="volume_rocker_music_controls"
         android:summary="@string/volume_rocker_music_controls_summary"
         android:title="@string/volume_rocker_music_controls_title"
-    	android:defaultValue="true"
-        android:dependency="volume_rocker_wake" />
+    	android:defaultValue="true" />
 
     <SwitchPreference
 	android:key="volume_key_adjust_sound"

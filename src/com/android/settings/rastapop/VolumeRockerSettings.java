@@ -19,12 +19,15 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_rocker_music_controls";
     // volume key adjust sound
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
+    private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
     // volume rocker wake
     private SwitchPreference mVolumeRockerWake;
     // volume rocker music control
     private SwitchPreference mVolumeRockerMusicControl;
     // volume key adjust sound
     private SwitchPreference mVolumeKeyAdjustSound;
+    private SwitchPreference mVolumeWakeScreen;
+    private SwitchPreference mVolumeMusicControls;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,17 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         mVolumeKeyAdjustSound.setOnPreferenceChangeListener(this);
         mVolumeKeyAdjustSound.setChecked(Settings.System.getInt(getContentResolver(),
                 VOLUME_KEY_ADJUST_SOUND, 1) != 0);
+
+        // wake screen dependency
+        mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_WAKE_SCREEN);
+        mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
+
+        if (mVolumeWakeScreen != null) {
+            if (mVolumeMusicControls != null) {
+                mVolumeMusicControls.setDependency(Settings.System.VOLUME_WAKE_SCREEN);
+                mVolumeWakeScreen.setDisableDependentsState(true);
+            }
+        }
     }
 
     @Override
