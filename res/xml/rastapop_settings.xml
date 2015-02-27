@@ -5,7 +5,7 @@
 
     <PreferenceScreen
         android:key="about_chroma"
-        android:fragment="com.android.settings.rastapop.AboutChroma"
+        android:fragment="com.android.settings.chroma.AboutChroma"
         android:title="@string/chroma_menu_about" />
 
     <PreferenceCategory

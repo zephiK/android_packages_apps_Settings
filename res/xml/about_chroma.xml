@@ -53,6 +53,8 @@
         android:key="category_chroma_donators"
         android:title="Donators" >
    <Preference
+        android:title="ACCUSED24"/>
+   <Preference
         android:title="adrman"/>
    <Preference
         android:title="anthonyg45157"/>
@@ -69,11 +71,17 @@
    <Preference
         android:title="dan04103"/>
    <Preference
+        android:title="dan04103"/>
+   <Preference
         android:title="Donjuanal"/>
    <Preference
         android:title="dannieloco"/>
    <Preference
+        android:title="E. Zuloaga"/>
+   <Preference
         android:title="enricof7"/>
+   <Preference
+        android:title="erraggy"/>
    <Preference
         android:title="euge.lee"/>
    <Preference
@@ -94,6 +102,8 @@
         android:title="J. Carter"/>
    <Preference
         android:title="J.Guido85"/>
+   <Preference
+        android:title="jenkkapena"/>
    <Preference
         android:title="jermaine151"/>
    <Preference

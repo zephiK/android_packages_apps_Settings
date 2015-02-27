@@ -51,12 +51,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                 VOLUME_KEY_ADJUST_SOUND, 1) != 0);
 
         // wake screen dependency
-        mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_WAKE_SCREEN);
-        mVolumeMusicControls = (SwitchPreference) findPreference(KEY_VOLUME_MUSIC_CONTROLS);
+        mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_ROCKER_WAKE);
+        mVolumeMusicControls = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
 
         if (mVolumeWakeScreen != null) {
             if (mVolumeMusicControls != null) {
-                mVolumeMusicControls.setDependency(Settings.System.VOLUME_WAKE_SCREEN);
+                mVolumeMusicControls.setDependency(Settings.System.VOLUME_ROCKER_WAKE);
                 mVolumeWakeScreen.setDisableDependentsState(true);
             }
         }
