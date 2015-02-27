@@ -8,7 +8,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.rastapop;
+package com.android.settings.chroma;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
