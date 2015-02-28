@@ -69,6 +69,8 @@
    <Preference
         android:title="brwatters"/>
    <Preference
+        android:title="Canno"/>
+   <Preference
         android:title="dan04103"/>
    <Preference
         android:title="dan04103"/>
@@ -84,6 +86,8 @@
         android:title="erraggy"/>
    <Preference
         android:title="euge.lee"/>
+   <Preference
+        android:title="G. Hayles"/>
    <Preference
         android:title="gamewarden234"/>
    <Preference
