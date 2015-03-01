@@ -16,7 +16,14 @@
     android:title="About Chroma"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<PreferenceScreen android:title="View Changelog">
+<PreferenceScreen android:title="OTA notifications">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:summary="Requires pushbullet application"
+        android:data="https://www.pushbullet.com/channel?tag=chroma"/>
+</PreferenceScreen>
+
+<PreferenceScreen android:title="View changelog">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
@@ -25,7 +32,7 @@
 	<!-- Developers -->
     <PreferenceCategory
         android:key="category_chroma_developers"
-        android:title="Lead Developer">
+        android:title="Lead developer">
 
     <Preference
         android:title="zephiK"/>
@@ -34,7 +41,7 @@
 	<!-- Honorable mentions -->
     <PreferenceCategory
         android:key="category_chroma_mentions"
-        android:title="Honorable Mentions" >
+        android:title="Honorable mentions" >
     <Preference
         android:title="boysetsfire"
        	android:summary="Boot animation, signature banners and wallpapers"/>
@@ -136,6 +143,8 @@
         android:title="oak"/>
    <Preference
         android:title="parcou"/>
+   <Preference
+        android:title="pdiddyfan"/>
    <Preference
         android:title="pointman_12"/>
    <Preference
