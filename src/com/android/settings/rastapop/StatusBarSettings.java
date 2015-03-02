@@ -30,8 +30,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
     private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String PRE_QUICK_PULLDOWN = "quick_pulldown";
-    private static final String KEY_LOCK_CLOCK = "lock_clock";
-    private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
 
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -41,7 +39,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private ListPreference mStatusBarDateFormat;
     private ListPreference mQuickPulldown;
     private Preference mQSTiles;
-    private PreferenceScreen mLockClock;
     private SwitchPreference mStatusBarBrightnessControl;
 
     @Override
@@ -69,12 +66,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     	// Quick Settings Tile Customization
     	mQSTiles = findPreference("qs_order");
-
-        // Status bar weather
- 	mLockClock = (PreferenceScreen) findPreference(KEY_LOCK_CLOCK);
-        if (!Utils.isPackageInstalled(getActivity(), KEY_LOCK_CLOCK_PACKAGE_NAME)) {
-            prefSet.removePreference(mLockClock);
-            }
         }
 
     @Override
