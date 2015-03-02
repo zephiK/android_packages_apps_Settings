@@ -496,4 +496,8 @@
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Volume key swap on rotation</string>
     <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
+
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 </resources>
