@@ -505,5 +505,4 @@
     <string name="lock_clock_title">Clock widget</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' widget will display</string>
     <string name="weather_clock_title">Status bar weather</string>
-    <string name="weather_clock_summary">View or change status bar weather settings</string>
 </resources>
