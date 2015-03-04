@@ -19,7 +19,6 @@
 <PreferenceScreen android:title="OTA notifications">
     <intent
         android:action="android.intent.action.VIEW"
-        android:summary="Requires pushbullet application"
         android:data="https://www.pushbullet.com/channel?tag=chroma"/>
 </PreferenceScreen>
 
@@ -80,11 +79,11 @@
    <Preference
         android:title="dan04103"/>
    <Preference
-        android:title="dan04103"/>
-   <Preference
         android:title="Donjuanal"/>
    <Preference
         android:title="dannieloco"/>
+   <Preference
+        android:title="DroidOnRoids"/>
    <Preference
         android:title="E. Zuloaga"/>
    <Preference
@@ -109,6 +108,8 @@
         android:title="hondajohn88"/>
    <Preference
         android:title="Imakillher"/>
+   <Preference
+        android:title="iaguilera14"/>
    <Preference
         android:title="J. Carter"/>
    <Preference
@@ -152,6 +153,8 @@
    <Preference
         android:title="r3dp0is0n2012"/>
    <Preference
+        android:title="rmanaka"/>
+   <Preference
         android:title="S. Gardner"/>
    <Preference
         android:title="sbann"/>
@@ -165,6 +168,8 @@
         android:title="suku_patel_22"/>
    <Preference
         android:title="symple"/>
+   <Preference
+        android:title="the_rooter"/>
    <Preference
         android:title="thefiverivers"/>
    <Preference
@@ -183,5 +188,7 @@
         android:title="USAN03"/>
    <Preference
         android:title="wooddale"/>
+    <Preference
+        android:title="xrage28"/>
 </PreferenceCategory>
 </PreferenceScreen>
