@@ -128,6 +128,8 @@
         android:title="kinnesotan"/>
    <Preference
         android:title="Konfuzion"/>
+  <Preference
+        android:title="loadies"/>
    <Preference
         android:title="LONRA"/>
    <Preference
