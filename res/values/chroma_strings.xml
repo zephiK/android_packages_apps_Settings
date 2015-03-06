@@ -87,4 +87,7 @@
     <string name="recents_clear_all_location_title">Clear all recents location</string>
     <string name="recents_clear_all_location_right">Top right</string>
     <string name="recents_clear_all_location_left">Top left</string>
+
+    <!-- BitSyko Layers -->
+    <string name="bitsyko_layers">Layers</string>
 </resources>
