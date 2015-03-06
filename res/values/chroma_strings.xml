@@ -17,6 +17,9 @@
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
+    <!-- BitSyko Layers -->
+    <string name="bitsyko_layers">Layers</string>
+
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
@@ -29,4 +32,10 @@
     <string name="display_rotation_90_title">90 degrees</string>
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Statusbar native battery percent -->
+    <string name="general_string">General</string>
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
 </resources>
