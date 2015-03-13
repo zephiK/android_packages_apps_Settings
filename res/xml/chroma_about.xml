@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Chroma
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="About Chroma"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+<PreferenceScreen android:title="OTA notifications">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.pushbullet.com/channel?tag=chroma"/>
+</PreferenceScreen>
+
+<PreferenceScreen android:title="View changelog">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
+</PreferenceScreen>
+
+	<!-- Developers -->
+    <PreferenceCategory
+        android:key="category_chroma_developers"
+        android:title="Lead developer">
+
+    <Preference
+        android:title="zephiK"/>
+    </PreferenceCategory>
+
+	<!-- Honorable mentions -->
+    <PreferenceCategory
+        android:key="category_chroma_mentions"
+        android:title="Honorable mentions" >
+    <Preference
+        android:title="boysetsfire"
+       	android:summary="Boot animation, signature banners and wallpapers"/>
+    <Preference
+        android:title="Jeremiah_1988" />
+    <Preference
+        android:title="Ngo93"
+	android:summary="Testing pre-release builds at odd hours"/>
+    <Preference
+        android:title="vomer"
+	android:summary="Chroma logo"/>
+    </PreferenceCategory>
+
+	<!-- Donators -->
+    <PreferenceCategory
+        android:key="category_chroma_donators"
+        android:title="Donators" >
+   <Preference
+        android:title="ACCUSED24"/>
+   <Preference
+        android:title="adrman"/>
+   <Preference
+        android:title="anthonyg45157"/>
+   <Preference
+        android:title="Berlino"/>
+   <Preference
+        android:title="billybloxx"/>
+   <Preference
+        android:title="Bkdodger"/>
+   <Preference
+        android:title="Blaze420916"/>
+   <Preference
+        android:title="brwatters"/>
+   <Preference
+        android:title="bworley50 "/>
+   <Preference
+        android:title="C. Moller"/>
+   <Preference
+        android:title="Canno"/>
+   <Preference
+        android:title="colinmcg71"/>
+   <Preference
+        android:title="dan04103"/>
+   <Preference
+        android:title="Donjuanal"/>
+   <Preference
+        android:title="dannieloco"/>
+   <Preference
+        android:title="DroidOnRoids"/>
+   <Preference
+        android:title="E. Zuloaga"/>
+   <Preference
+        android:title="enricof7"/>
+   <Preference
+        android:title="erraggy"/>
+   <Preference
+        android:title="euge.lee"/>
+   <Preference
+        android:title="G. Hayles"/>
+   <Preference
+        android:title="gamewarden234"/>
+   <Preference
+        android:title="GeekMcLeod"/>
+   <Preference
+        android:title="geolchris"/>
+   <Preference
+        android:title="Griff22usmc"/>
+   <Preference
+        android:title="grinchyyy"/>
+   <Preference
+        android:title="hondajohn88"/>
+   <Preference
+        android:title="Imakillher"/>
+   <Preference
+        android:title="iaguilera14"/>
+   <Preference
+        android:title="J. Carter"/>
+   <Preference
+        android:title="J.Guido85"/>
+   <Preference
+        android:title="Jack$on"/>
+   <Preference
+        android:title="jenkkapena"/>
+   <Preference
+        android:title="jermaine151"/>
+   <Preference
+        android:title="Jrmiller"/>
+   <Preference
+        android:title="joshm"/>
+   <Preference
+        android:title="K. Patzelt"/>
+   <Preference
+        android:title="kinnesotan"/>
+   <Preference
+        android:title="Konfuzion"/>
+  <Preference
+        android:title="loadies"/>
+   <Preference
+        android:title="LONRA"/>
+   <Preference
+        android:title="M. Woodson"/>
+   <Preference
+        android:title="matrox00612"/>
+   <Preference
+        android:title="marcadam"/>
+   <Preference
+        android:title="Maybelle"/>
+   <Preference
+        android:title="MrMaverick03"/>
+   <Preference
+        android:title="oak"/>
+   <Preference
+        android:title="parcou"/>
+   <Preference
+        android:title="pdiddyfan"/>
+   <Preference
+        android:title="pointman_12"/>
+   <Preference
+        android:title="R. Savely"/>
+   <Preference
+        android:title="r3dp0is0n2012"/>
+   <Preference
+        android:title="rmanaka"/>
+   <Preference
+        android:title="S. Gardner"/>
+   <Preference
+        android:title="sbann"/>
+   <Preference
+        android:title="seanowns"/>
+   <Preference
+        android:title="shreddintyres"/>
+   <Preference
+        android:title="SirRastusBear"/>
+   <Preference
+        android:title="stumpy352"/>
+   <Preference
+        android:title="suku_patel_22"/>
+   <Preference
+        android:title="symple"/>
+   <Preference
+        android:title="T. Enzmann"/>
+   <Preference
+        android:title="the_rooter"/>
+   <Preference
+        android:title="thefiverivers"/>
+   <Preference
+        android:title="Tsoflyup"/>
+   <Preference
+        android:title="RoscoeDpG"/>
+   <Preference
+        android:title="rmanaka"/>
+   <Preference
+        android:title="rwcasto"/>
+   <Preference
+        android:title="tonyfiore75"/>
+   <Preference
+        android:title="twstdprdgy"/>
+   <Preference
+        android:title="unobtrusivetones"/>
+   <Preference
+        android:title="USAN03"/>
+   <Preference
+        android:title="wooddale"/>
+    <Preference
+        android:title="xrage28"/>
+    <Preference
+        android:title="you5urf"/>
+</PreferenceCategory>
+</PreferenceScreen>

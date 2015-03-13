@@ -71,6 +71,19 @@
 
     </dashboard-category>
 
+    <!-- CUSTOMIZATIONS -->
+    <dashboard-category
+            android:id="@+id/chroma_section"
+            android:title="@string/header_category_chroma" >
+
+        <!-- ROM TWEAKS -->
+        <dashboard-tile
+                android:id="@+id/chroma_settings"
+                android:title="@string/chroma_settings_title"
+                android:fragment="com.android.settings.chroma.ChromaSettings" 
+        		android:icon="@drawable/ic_settings_chroma" />
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
