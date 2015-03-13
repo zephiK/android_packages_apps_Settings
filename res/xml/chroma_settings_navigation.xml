@@ -3,4 +3,14 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="category_battery_options"
+        android:title="@string/display_category_navbar_options_title" >
+
+    <SwitchPreference
+	android:defaultValue="false"
+        android:key="kill_app_longpress_back"
+        android:summary="@string/kill_app_longpress_back_summary"
+        android:title="@string/kill_app_longpress_back"/>
+    </PreferenceCategory>
 </PreferenceScreen>

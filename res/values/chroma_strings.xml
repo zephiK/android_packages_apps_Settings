@@ -18,6 +18,8 @@
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <!-- Battery and clock category -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <!-- Navigation bar category -->
+    <string name="display_category_navbar_options_title">Navigation bar options</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
@@ -40,4 +42,8 @@
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
     <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
+
+    <!-- Developer options - kill app long press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
 </resources>
