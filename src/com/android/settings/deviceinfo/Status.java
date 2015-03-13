@@ -185,11 +185,11 @@ public class Status extends PreferenceActivity {
             // android.R.id.home will be triggered in onOptionsItemSelected()
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
+/*
         if (UserHandle.myUserId() == UserHandle.USER_OWNER) {
             mPhone = PhoneFactory.getDefaultPhone();
         }
-
+*/
         // Note - missing in zaku build, be careful later...
         mUptime = findPreference("up_time");
 
