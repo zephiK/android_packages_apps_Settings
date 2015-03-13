@@ -1989,6 +1989,10 @@
                 android:value="true" />
         </activity>
 
+        <!-- BUILD TWEAKS START -->
+        <activity android:name=".chroma.ChromaSettings" />
+        <!-- BUILD TWEAKS END -->
+
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"
                 android:exported="false"

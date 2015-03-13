@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- BUILD TWEAKS -->
+    <string name="header_category_chroma">Personalization</string>
+    <string name="chroma_settings_title">Chroma</string>
+
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Chroma build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Chroma Menu -->
+    <string name="chroma_menu_personalizaton">Chroma Options</string>
+    <string name="chroma_menu_about">About Chroma</string>
+    <string name="status_bar_screen_title">Status bar</string>
+    <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="power_menu_title">Power menu</string>
+    <string name="volume_rocker_screen_title">Volume rocker</string>
 </resources>
