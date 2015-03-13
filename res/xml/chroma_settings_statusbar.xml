@@ -7,9 +7,11 @@
         android:title="@string/display_category_batteryclock_options_title" >
 
     <PreferenceScreen
-            android:fragment="com.android.settings.chroma.StatusBarClockStyle"
-            android:key="clock_style_pref"
-            android:title="@string/status_bar_clock" />
+        android:fragment="com.android.settings.chroma.StatusBarClockStyle"
+        android:key="clock_style_pref"
+        android:summary="@string/status_bar_clock_summary"
+        android:title="@string/status_bar_clock" />
+
 
         <CheckBoxPreference
             android:defaultValue="false"
