@@ -22,6 +22,10 @@
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <!-- Status bar category -->
     <string name="display_category_statusbar_options_title">Status bar options</string>
+    <!-- Recent apps category -->
+    <string name="display_category_recents_options_title">Recent apps options</string>
+    <!-- Power menu category -->
+    <string name="display_category_power_options_title">Power menu options</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
@@ -183,4 +187,14 @@
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (hide)</string>
 
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
+    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
+    <string name="recents_clear_all_location_title">Clear all recents location</string>
+    <string name="recents_clear_all_location_top_right">Top right</string>
+    <string name="recents_clear_all_location_top_left">Top left</string>
+    <string name="recents_clear_all_location_top_center">Top center</string>
+    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
+    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
+    <string name="recents_clear_all_location_bottom_center">Bottoms center</string>
 </resources>
