@@ -14,12 +14,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
-    public static final String VOLUME_ROCKER_MUSIC_CONTROLS = "volume_music_controls";
+    public static final String VOLUME_MUSIC_CONTROLS = "volume_music_controls";
     private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
 
     private SwitchPreference mVolumeRockerWake;
-    private SwitchPreference mVolumeRockerMusicControl;
+    private SwitchPreference mVolumeMusicControl;
     private SwitchPreference mVolumeKeyAdjustSound;
     private SwitchPreference mVolumeWakeScreen;
     private SwitchPreference mVolumeMusicControls;
@@ -38,11 +38,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         mVolumeRockerWake.setChecked(volumeRockerWake != 0);
 
         // volume rocker music control
-        mVolumeRockerMusicControl = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
-        mVolumeRockerMusicControl.setOnPreferenceChangeListener(this);
-        int volumeRockerMusicControl = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_MUSIC_CONTROLS, 1);
-        mVolumeRockerMusicControl.setChecked(volumeRockerMusicControl != 0);
+        mVolumeMusicControl = (SwitchPreference) findPreference(VOLUME_MUSIC_CONTROLS);
+        mVolumeMusicControl.setOnPreferenceChangeListener(this);
+        int volumeMusicControl = Settings.System.getInt(getContentResolver(),
+                VOLUME_MUSIC_CONTROLS, 1);
+        mVolumeMusicControl.setChecked(volumeMusicControl != 0);
 
         // volume key adjust sound
         mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
@@ -52,7 +52,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
         // wake screen dependency
         mVolumeWakeScreen = (SwitchPreference) findPreference(Settings.System.VOLUME_ROCKER_WAKE);
-        mVolumeMusicControls = (SwitchPreference) findPreference(VOLUME_ROCKER_MUSIC_CONTROLS);
+        mVolumeMusicControls = (SwitchPreference) findPreference(VOLUME_MUSIC_CONTROLS);
 
         if (mVolumeWakeScreen != null) {
             if (mVolumeMusicControls != null) {
@@ -64,24 +64,17 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        // volume rocker wake
         if (preference == mVolumeRockerWake) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
                     value ? 1 : 0);
             return true;
-        }
-
-        // volume rocker music control
-        else if (preference == mVolumeRockerMusicControl) {
+        } else if (preference == mVolumeRockerMusicControl) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_MUSIC_CONTROLS,
+            Settings.System.putInt(getContentResolver(), VOLUME_MUSIC_CONTROLS,
                     value ? 1 : 0);
             return true;
-        }
-
-        // volume key adjust sound
-        else if (preference == mVolumeKeyAdjustSound) {
+        } else if (preference == mVolumeKeyAdjustSound) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), VOLUME_KEY_ADJUST_SOUND,
                     value ? 1 : 0);

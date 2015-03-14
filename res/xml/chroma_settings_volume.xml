@@ -25,14 +25,14 @@
     	android:defaultValue="true" />
 
     <SwitchPreference
-	android:key="volume_key_adjust_sound"
-	android:title="@string/volume_key_adjust_sound_title"
-	android:summary="@string/volume_key_adjust_sound_summary" />
-        </PreferenceCategory>
+	    android:key="volume_key_adjust_sound"
+	    android:title="@string/volume_key_adjust_sound_title"
+	    android:summary="@string/volume_key_adjust_sound_summary" />
 
     <com.android.settings.chroma.SystemSettingSwitchPreference
         android:key="swap_volume_buttons"
         android:title="@string/swap_volume_buttons_title"
         android:summary="@string/swap_volume_buttons_summary"
         android:defaultValue="true"/>
+    </PreferenceCategory>
 </PreferenceScreen>
