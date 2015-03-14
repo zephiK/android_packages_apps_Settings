@@ -112,9 +112,6 @@
 
    <!--- Navigation bar height -->
     <string-array name="navigation_bar_height_entries" translatable="false">
-        <item>@string/navigation_bar_height_54</item>
-        <item>@string/navigation_bar_height_52</item>
-        <item>@string/navigation_bar_height_50</item>
         <item>@string/navigation_bar_height_48</item>
         <item>@string/navigation_bar_height_44</item>
         <item>@string/navigation_bar_height_40</item>
@@ -127,9 +124,6 @@
     </string-array>
 
     <string-array name="navigation_bar_height_values" translatable="false">
-        <item>54</item>
-        <item>52</item>
-        <item>50</item>
         <item>48</item>
         <item>44</item>
         <item>40</item>

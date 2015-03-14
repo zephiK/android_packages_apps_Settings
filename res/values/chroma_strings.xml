@@ -177,9 +177,6 @@
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <!-- Navigation Bar Height -->
     <string name="navigation_bar_height">Navigation bar height</string>
-    <string name="navigation_bar_height_48">54</string>
-    <string name="navigation_bar_height_48">52</string>
-    <string name="navigation_bar_height_48">50</string>
     <string name="navigation_bar_height_48">48dp (default)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
