@@ -69,7 +69,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
                     value ? 1 : 0);
             return true;
-        } else if (preference == mVolumeRockerMusicControl) {
+        } else if (preference == mVolumeMusicControl) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getContentResolver(), VOLUME_MUSIC_CONTROLS,
                     value ? 1 : 0);
