@@ -82,4 +82,14 @@
     	</PreferenceScreen>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/qs_category_title">
+
+     <com.android.settings.chroma.SecureSettingSwitchPreference
+        android:key="qs_show_brightness_slider"
+        android:title="@string/qs_brightness_slider_title"
+        android:summary="@string/qs_brightness_slider_summary"
+        android:defaultValue="true"/>
+    </PreferenceCategory>
+
 </PreferenceScreen>
