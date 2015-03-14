@@ -62,7 +62,6 @@ import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Switch;
 import android.widget.TextView;
-
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
@@ -180,6 +179,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mEnableAdb;
     private Preference mClearAdbKeys;
+    private SwitchPreference mEnableTerminal;
 
     private SwitchPreference mKeepScreenOn;
     private SwitchPreference mBtHciSnoopLog;
@@ -228,7 +228,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mShowAllANRs;
 
-    private CheckBoxPreference mAdvancedReboot;
+    private SwitchPreference mAdvancedReboot;
 
     private PreferenceScreen mProcessStats;
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
@@ -295,7 +295,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mDebugViewAttributes = findAndInitSwitchPref(DEBUG_VIEW_ATTRIBUTES);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
-        mAdvancedReboot = findAndInitCheckboxPref(ADVANCED_REBOOT_KEY);
+        mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
 
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
@@ -495,13 +495,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mHaveDebugSettings = false;
         updateSwitchPreference(mEnableAdb, Settings.Global.getInt(cr,
                 Settings.Global.ADB_ENABLED, 0) != 0);
-        if (mEnableTerminal != null) {
-            updateSwitchPreference(mEnableTerminal,
-                    context.getPackageManager().getApplicationEnabledSetting(TERMINAL_APP_PACKAGE)
-                            == PackageManager.COMPONENT_ENABLED_STATE_ENABLED);
-        }
-
-        updateSwitchPref(mKeepScreenOn, Settings.Global.getInt(cr,
+        updateSwitchPreference(mKeepScreenOn, Settings.Global.getInt(cr,
                 Settings.Global.STAY_ON_WHILE_PLUGGED_IN, 0) != 0);
         updateSwitchPreference(mBtHciSnoopLog, Settings.Secure.getInt(cr,
                 Settings.Secure.BLUETOOTH_HCI_LOG, 0) != 0);
@@ -556,11 +550,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateAdvancedRebootOptions() {
         mAdvancedReboot.setChecked(Settings.Secure.getInt(getActivity().getContentResolver(),
                 Settings.Secure.ADVANCED_REBOOT, 1) != 0);
-    }
-
-    private void resetDevelopmentShortcutOptions() {
-        Settings.Secure.putInt(getActivity().getContentResolver(),
-                Settings.Secure.DEVELOPMENT_SHORTCUT, 0);
     }
 
     private void resetDangerousOptions() {
