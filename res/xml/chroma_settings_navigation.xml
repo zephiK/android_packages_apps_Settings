@@ -7,6 +7,15 @@
         android:key="category_battery_options"
         android:title="@string/display_category_navbar_options_title" >
 
+    <ListPreference
+        android:defaultValue="48"
+        android:dialogTitle="@string/navigation_bar_height"
+        android:entries="@array/navigation_bar_height_entries"
+        android:entryValues="@array/navigation_bar_height_values"
+        android:key="navigation_bar_height"
+        android:persistent="false"
+        android:title="@string/navigation_bar_height" />
+
     <SwitchPreference
 	android:defaultValue="false"
         android:key="kill_app_longpress_back"
