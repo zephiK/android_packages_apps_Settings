@@ -1,22 +1,29 @@
 package com.android.settings.chroma;
 
-import android.os.Bundle;
+import android.content.Context;
+import android.content.Intent;
 import android.content.ContentResolver;
+import android.content.res.Configuration;
+import android.content.res.Resources;
+import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.SwitchPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.provider.Settings.SettingNotFoundException;
-import android.database.ContentObserver;
-import android.net.Uri;
-import android.os.Handler;
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import com.android.settings.R;
+import java.util.Locale;
+import android.text.TextUtils;
+import android.view.View;
+
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 
 public class StatusBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
@@ -40,7 +47,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_navigation);
+        addPreferencesFromResource(R.xml.chroma_settings_statusbar);
         PreferenceScreen prefSet = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
