@@ -3,4 +3,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:key="category_dtts_options"
+        android:title="@string/display_category_dtts_title" >
+
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_navbar"
+        android:title="@string/double_tap_sleep_nav_bar_title"
+        android:summary="@string/double_tap_sleep_nav_bar_summary"
+        android:defaultValue="false" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
