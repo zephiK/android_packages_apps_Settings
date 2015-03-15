@@ -26,6 +26,8 @@
     <string name="display_category_recents_options_title">Recent apps options</string>
     <!-- Power menu category -->
     <string name="display_category_power_options_title">Power menu options</string>
+    <!-- QS Tiles -->
+    <string name="qs_category_title">Quick Settings</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
@@ -250,5 +252,4 @@
     <string name="lock_clock_title">Clock widget</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' widget will display</string>
     <string name="weather_clock_title">Status bar weather</string>
-
 </resources>

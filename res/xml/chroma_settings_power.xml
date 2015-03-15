@@ -3,4 +3,10 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:key="category_power_options"
+        android:title="@string/display_category_power_options_title" >
+    <!-- insert power stuff here -->
+    </PreferenceCategory>
+
 </PreferenceScreen>
