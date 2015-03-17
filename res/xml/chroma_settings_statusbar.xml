@@ -80,9 +80,10 @@
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
     	</PreferenceScreen>
     </PreferenceCategory>
-
+<!--
     <PreferenceCategory
         android:title="@string/qs_category_title">
-       <!-- insert quick settings stuff here -->
+       insert stuff here
     </PreferenceCategory>
+-->
 </PreferenceScreen>
