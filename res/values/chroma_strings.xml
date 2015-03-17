@@ -27,7 +27,7 @@
     <!-- Power menu category -->
     <string name="display_category_power_options_title">Power menu options</string>
     <!-- QS Tiles -->
-    <string name="qs_category_title">Quick Settings</string>
+    <string name="qs_category_title">Quick settings</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
