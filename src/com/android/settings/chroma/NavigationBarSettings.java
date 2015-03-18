@@ -16,18 +16,22 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-
+import android.preference.PreferenceScreen;
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+ 
 public class NavigationBarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
     private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
     private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String NAVIGATION_BAR_TINT = "navigation_bar_tint";
 
     private ListPreference mNavigationBarHeight;
     private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mKillAppLongPressBack;
     private SwitchPreference mRecentsClearAll;
+    private ColorPickerPreference mNavbarButtonTint;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,15 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         mRecentsClearAllLocation.setValue(String.valueOf(location));
         mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
         updateRecentsLocation(location);
+
+        // navigation bar tint
+        mNavbarButtonTint = (ColorPickerPreference) findPreference(NAVIGATION_BAR_TINT);
+        mNavbarButtonTint.setOnPreferenceChangeListener(this);
+        int intColor = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NAVIGATION_BAR_TINT, 0xffffffff);
+        String hexColor = String.format("#%08x", (0xffffffff & intColor));
+        mNavbarButtonTint.setSummary(hexColor);
+        mNavbarButtonTint.setNewPreviewColor(intColor);
     }
 
     @Override
@@ -89,6 +102,14 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
             updateRecentsLocation(location);
+            return true;
+        } else if (preference == mNavbarButtonTint) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_TINT, intHex);
             return true;
         }
         return false;

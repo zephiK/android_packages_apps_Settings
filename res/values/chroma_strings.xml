@@ -269,4 +269,7 @@
     <string name="debug_LAN_category">LAN Settings</string>
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- Navigation bar button color -->
+    <string name="navbar_button_tint_title">Navigation button tint</string>
 </resources>
