@@ -4,7 +4,7 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceCategory
-        android:key="category_battery_options"
+        android:key="category_navigation_options"
         android:title="@string/display_category_navbar_options_title" >
 
     <PreferenceScreen
@@ -19,7 +19,8 @@
         android:entryValues="@array/navigation_bar_height_values"
         android:key="navigation_bar_height"
         android:persistent="false"
-        android:title="@string/navigation_bar_height" />
+        android:title="@string/navigation_bar_height"
+        android:summary="@string/navigation_bar_settings_summary" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="navigation_bar_tint"
