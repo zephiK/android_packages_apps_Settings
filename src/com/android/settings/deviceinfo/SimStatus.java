@@ -16,6 +16,8 @@
 
 package com.android.settings.deviceinfo;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -47,6 +49,7 @@ import com.android.internal.telephony.PhoneFactory;
 import com.android.settings.R;
 import com.android.settings.Utils;
 
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TabHost;
@@ -140,6 +143,12 @@ public class SimStatus extends PreferenceActivity {
         mTelephonyManager = (TelephonyManager)getSystemService(TELEPHONY_SERVICE);
 
         addPreferencesFromResource(R.xml.device_info_sim_status);
+
+        ActionBar actionBar = getActionBar();
+        if (actionBar != null) {
+            // android.R.id.home will be triggered in onOptionsItemSelected()
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         mRes = getResources();
         mDefaultText = mRes.getString(R.string.device_info_default);
@@ -419,5 +428,23 @@ public class SimStatus extends PreferenceActivity {
     private TabSpec buildTabSpec(String tag, String title) {
         return mTabHost.newTabSpec(tag).setIndicator(title).setContent(
                 mEmptyTabContent);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        final int itemId = item.getItemId();
+        switch (itemId) {
+            case android.R.id.home:
+                goUpToTopLevelSetting(this);
+                return true;
+            default:
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    /**
+     * Finish current Activity and go up to the top level Settings.
+     */
+    private static void goUpToTopLevelSetting(Activity activity) {
+        activity.finish();
     }
 }
