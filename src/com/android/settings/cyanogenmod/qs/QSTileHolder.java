@@ -118,6 +118,10 @@ public class QSTileHolder {
                 resourceName = "ic_qs_ringer_audible";
                 stringId = R.string.qs_tile_headsup;
                 break;
+            case QSConstants.TILE_MUSIC:
+                resourceName = "ic_qs_media_play";
+                stringId = R.string.qs_music_play_tile;
+                break;
             default:
                 return null;
         }
