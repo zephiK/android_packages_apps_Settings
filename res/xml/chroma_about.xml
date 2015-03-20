@@ -65,6 +65,8 @@
    <Preference
         android:title="anthonyg45157"/>
    <Preference
+        android:title="Aruarian"/>
+   <Preference
         android:title="Berlino"/>
    <Preference
         android:title="billybloxx"/>
@@ -91,6 +93,8 @@
    <Preference
         android:title="DroidOnRoids"/>
    <Preference
+        android:title="dstr15"/>
+   <Preference
         android:title="E. Zuloaga"/>
    <Preference
         android:title="enricof7"/>
@@ -98,6 +102,8 @@
         android:title="erraggy"/>
    <Preference
         android:title="euge.lee"/>
+   <Preference
+        android:title="Fauert"/>
    <Preference
         android:title="G. Hayles"/>
    <Preference
@@ -151,6 +157,8 @@
    <Preference
         android:title="MrMaverick03"/>
    <Preference
+        android:title="N. Miller"/>
+   <Preference
         android:title="oak"/>
    <Preference
         android:title="parcou"/>
@@ -167,7 +175,11 @@
    <Preference
         android:title="S. Gardner"/>
    <Preference
+        android:title="saxophone101"/>
+   <Preference
         android:title="sbann"/>
+   <Preference
+        android:title="schmolch"/>
    <Preference
         android:title="seanowns"/>
    <Preference
@@ -176,6 +188,8 @@
         android:title="SirRastusBear"/>
    <Preference
         android:title="stumpy352"/>
+   <Preference
+        android:title="Spaded21"/>
    <Preference
         android:title="suku_patel_22"/>
    <Preference
@@ -189,6 +203,8 @@
    <Preference
         android:title="Tsoflyup"/>
    <Preference
+        android:title="R. Toppi"/>
+   <Preference
         android:title="RoscoeDpG"/>
    <Preference
         android:title="rmanaka"/>
@@ -196,6 +212,8 @@
         android:title="rwcasto"/>
    <Preference
         android:title="tonyfiore75"/>
+   <Preference
+        android:title="twcobra"/>
    <Preference
         android:title="twstdprdgy"/>
    <Preference
