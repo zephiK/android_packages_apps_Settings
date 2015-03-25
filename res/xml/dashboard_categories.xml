@@ -49,19 +49,6 @@
                 android:icon="@drawable/ic_sim_sd"
                 />
 
-	<!-- Mobile networks -->
-        <dashboard-tile
-                android:id="@+id/mobile_networks"
-                android:title="@string/network_settings_title"
-                android:icon="@drawable/ic_settings_cellular"
-	settings:switchClass="com.android.settings.dashboard.MobileNetworksEnabler"
-		>
-            <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.phone"
-                    android:targetClass="com.android.phone.MobileNetworkSettings" />
-        </dashboard-tile>
-
         <!-- Data Usage -->
         <dashboard-tile
                 android:id="@+id/data_usage_settings"
