@@ -258,10 +258,6 @@
     <string name="recents_show_searchbar">Disable search bar in recents menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the search bar in the recents menu</string>
 
-    <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-
     <!-- QS tiles -->
     <string name="qs_category_title">Quick Settings</string>
     <string name="qs_order_title">Select and order tiles</string>
