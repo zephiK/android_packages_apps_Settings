@@ -47,11 +47,8 @@
     <Preference
         android:title="Jeremiah_1988" />
     <Preference
-        android:title="Ngo93"
-	android:summary="Testing pre-release builds at odd hours"/>
-    <Preference
-        android:title="vomer"
-	android:summary="Chroma logo"/>
+        android:title="Sykopompos"
+	    android:summary="Fixing bugs like its nothin!"/>
     </PreferenceCategory>
 
 	<!-- Donators -->
@@ -83,9 +80,19 @@
    <Preference
         android:title="Canno"/>
    <Preference
+        android:title="CMBaughman"/>
+   <Preference
         android:title="colinmcg71"/>
    <Preference
+        android:title="compuguy1088"/>
+   <Preference
+        android:title="dadoc04"/>
+   <Preference
         android:title="dan04103"/>
+   <Preference
+        android:title="Deekayy"/>
+   <Preference
+        android:title="dershy86"/>
    <Preference
         android:title="Donjuanal"/>
    <Preference
@@ -96,6 +103,8 @@
         android:title="dstr15"/>
    <Preference
         android:title="E. Zuloaga"/>
+   <Preference
+        android:title="EggNogg421"/>
    <Preference
         android:title="enricof7"/>
    <Preference
@@ -113,9 +122,13 @@
    <Preference
         android:title="geolchris"/>
    <Preference
+        android:title="GoldfishTX"/>
+   <Preference
         android:title="Griff22usmc"/>
    <Preference
         android:title="grinchyyy"/>
+   <Preference
+        android:title="grv00711"/>
    <Preference
         android:title="hondajohn88"/>
    <Preference
@@ -163,13 +176,19 @@
    <Preference
         android:title="N. Miller"/>
    <Preference
+        android:title="Ngo93"/>
+   <Preference
         android:title="oak"/>
+   <Preference
+        android:title="P. Johnson"/>
    <Preference
         android:title="parcou"/>
    <Preference
         android:title="pdiddyfan"/>
    <Preference
         android:title="pointman_12"/>
+   <Preference
+        android:title="R. Calderon"/>
    <Preference
         android:title="R. Savely"/>
    <Preference
@@ -180,6 +199,8 @@
         android:title="S. Gardner"/>
    <Preference
         android:title="S. Warrington"/>
+   <Preference
+        android:title="samcrocr"/>
    <Preference
         android:title="saxophone101"/>
    <Preference
@@ -200,6 +221,8 @@
         android:title="spevil07"/>
    <Preference
         android:title="suku_patel_22"/>
+   <Preference
+        android:title="Svid"/>
    <Preference
         android:title="symple"/>
    <Preference
