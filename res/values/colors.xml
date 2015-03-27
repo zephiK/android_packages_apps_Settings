@@ -82,4 +82,7 @@
 
     <color name="wifi_divider">#ffe0e0e0</color>
     <color name="sim_noitification">@*android:color/material_deep_teal_500</color>
+
+    <!-- QS tiles -->
+    <color name="qs_tile_tint_color">#FF009587</color>
 </resources>
