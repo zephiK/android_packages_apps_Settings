@@ -49,7 +49,7 @@
                 android:title="@string/notification_volume_option_title" />
 
         <!-- Link Volume Notification -->
-        <CheckBoxPreference
+        <SwitchPreference
                 android:key="volume_link_notification"
                 android:title="@string/link_volume_option_title"
                 android:persistent = "false"
