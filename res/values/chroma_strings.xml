@@ -456,8 +456,4 @@
     <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
-    <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Quicksettings</string>
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
 </resources>

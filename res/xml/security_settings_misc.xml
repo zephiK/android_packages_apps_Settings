@@ -33,18 +33,6 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
-            android:key="qs_key"
-            android:title="@string/qs_category" >
-
-            <com.android.settings.chroma.SecureSettingSwitchPreference
-                    android:key="block_on_secure_keyguard"
-                    android:title="@string/block_on_secure_keyguard_title"
-                    android:summary="@string/block_on_secure_keyguard_summary"
-                    android:defaultValue="true" />
-
-    </PreferenceCategory>
-
     <PreferenceCategory android:title="@string/security_passwords_title"
             android:persistent="false">
 
