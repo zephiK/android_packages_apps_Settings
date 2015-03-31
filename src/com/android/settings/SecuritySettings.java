@@ -743,6 +743,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 result = false;
             } else {
                 setNonMarketAppsAllowed(false);
+        }
         } else if (preference == mQuickUnlockScreen) {
             Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
