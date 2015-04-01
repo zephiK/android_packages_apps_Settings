@@ -711,16 +711,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             } else {
                 setNonMarketAppsAllowed(false);
         }
-        } else if (preference == mQuickUnlockScreen) {
-            Settings.Secure.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
-                    (Boolean) value ? 1 : 0);
-        } else if (preference == mLockNumpadRandom) {
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.LOCK_NUMPAD_RANDOM,
-                    Integer.valueOf((String) value));
-            mLockNumpadRandom.setValue(String.valueOf(value));
-            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
         } else if (preference == mBlockOnSecureKeyguard) {
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
