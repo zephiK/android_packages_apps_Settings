@@ -84,7 +84,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_ADVANCED_SECURITY = "advanced_security";
     private static final String KEY_MANAGE_TRUST_AGENTS = "manage_trust_agents";
     private static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "quick_unlock_control";
-    private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -130,7 +129,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private SwitchPreference mToggleAppInstallation;
     private SwitchPreference mQuickUnlockScreen;
-    private ListPreference mLockNumpadRandom;
     private DialogInterface mWarnInstallApps;
     private SwitchPreference mPowerButtonInstantlyLocks;
 
@@ -215,16 +213,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             mQuickUnlockScreen.setChecked(Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.LOCKSCREEN_QUICK_UNLOCK_CONTROL, 1) == 1);
             mQuickUnlockScreen.setOnPreferenceChangeListener(this);
-        }
-
-        // Lock Numpad Random
-        mLockNumpadRandom = (ListPreference) root.findPreference(LOCK_NUMPAD_RANDOM);
-        if (mLockNumpadRandom != null) {
-            mLockNumpadRandom.setValue(String.valueOf(
-                    Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.LOCK_NUMPAD_RANDOM, 0)));
-            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
-            mLockNumpadRandom.setOnPreferenceChangeListener(this);
         }
 
         // Add options for lock/unlock screen
@@ -729,12 +717,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
         } else if (KEY_SHOW_PASSWORD.equals(key)) {
             Settings.System.putInt(getContentResolver(), Settings.System.TEXT_SHOW_PASSWORD,
                     ((Boolean) value) ? 1 : 0);
-        } else if (preference == mLockNumpadRandom) {
-            Settings.Secure.putInt(getContentResolver(),
-                    Settings.Secure.LOCK_NUMPAD_RANDOM,
-                    Integer.valueOf((String) value));
-            mLockNumpadRandom.setValue(String.valueOf(value));
-            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
         } else if (KEY_TOGGLE_INSTALL_APPLICATIONS.equals(key)) {
             if ((Boolean) value) {
                 mToggleAppInstallation.setChecked(false);
