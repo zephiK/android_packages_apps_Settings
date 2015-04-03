@@ -454,4 +454,17 @@
     <!-- Lockscreen pin shuffle -->
     <string name="unlock_scramble_pin_layout_title">Mise en page Scramble</string>
     <string name="unlock_scramble_pin_layout_summary">La mise en page PIN Scramble déverrouillera le dispositif</string>
+    
+	<!--  Volume rocker -->
+    <string name="volume_rocker_cursor_title">Options du curseur</string>
+    
+	<!--- Volume key cursor control -->
+    <string name="volume_key_cursor_control_title">Contrôle du curseur par les touches volume</string>
+    <string name="volume_key_cursor_control_off">Désactivé</string>
+    <string name="volume_key_cursor_control_on">Volume haut/bas déplace le curseur à gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume haut/bas déplace le curseur à droite/gauche</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">Taper deux fois pour mettre en veille</string>
+    <string name="double_tap_sleep_nav_bar_summary">Taper deux fois dans la barre de statut pour mettre l\'appareil en veille</string>
 </resources>
