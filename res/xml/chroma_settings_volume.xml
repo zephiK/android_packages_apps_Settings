@@ -8,21 +8,23 @@
         android:title="@string/display_category_wakeup_options_title" >
 
     <SwitchPreference
-        android:key="volume_rocker_wake"
-		android:summary="@string/volume_rocker_wake_summary"
-		android:title="@string/volume_rocker_wake_title"
-        android:defaultValue="false"/>
+        android:key="pref_volume_wake"
+        android:title="@string/volume_rocker_wake_title"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:persistent="false" />
 	</PreferenceCategory>
 
     <PreferenceCategory
         android:key="category_media_options"
         android:title="@string/media_options_title" >
 
-   <SwitchPreference
-        android:key="volume_music_controls"
-        android:summary="@string/volume_rocker_music_controls_summary"
+    <SwitchPreference
+        android:key="volbtn_music_controls"
         android:title="@string/volume_rocker_music_controls_title"
-    	android:defaultValue="true" />
+        android:summary="@string/volume_rocker_music_controls_summary"
+        android:persistent="false"
+        android:defaultValue="true" />
 
     <SwitchPreference
 	    android:key="volume_key_adjust_sound"
