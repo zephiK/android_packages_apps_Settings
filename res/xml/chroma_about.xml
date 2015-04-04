@@ -112,7 +112,11 @@
    <Preference
         android:title="euge.lee"/>
    <Preference
+        android:title="FatCat0"/>
+   <Preference
         android:title="Fauert"/>
+   <Preference
+        android:title="fuzzybuffalo"/>
    <Preference
         android:title="G. Hayles"/>
    <Preference
@@ -166,6 +170,8 @@
    <Preference
         android:title="M. Woodson"/>
    <Preference
+        android:title="madmuthertrucker"/>
+   <Preference
         android:title="matrox00612"/>
    <Preference
         android:title="marcadam"/>
@@ -179,6 +185,8 @@
         android:title="Ngo93"/>
    <Preference
         android:title="oak"/>
+   <Preference
+        android:title="Ortanon"/>
    <Preference
         android:title="P. Johnson"/>
    <Preference
@@ -224,9 +232,15 @@
    <Preference
         android:title="Svid"/>
    <Preference
+        android:title="swamp2"/>
+   <Preference
         android:title="symple"/>
    <Preference
         android:title="T. Enzmann"/>
+   <Preference
+        android:title="taldesigns"/>
+   <Preference
+        android:title="teddyearp"/>
    <Preference
         android:title="the_rooter"/>
    <Preference
