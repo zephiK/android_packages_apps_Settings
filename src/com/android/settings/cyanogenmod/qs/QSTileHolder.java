@@ -105,6 +105,7 @@ public class QSTileHolder {
             case QSConstants.TILE_EXPANDED_DESKTOP:
                 resourceName = "ic_qs_expanded_desktop";
                 stringId = R.string.qs_expanded_desktop_tile;
+                break;
             case QSConstants.TILE_SCREENSHOT:
                 resourceName = "ic_qs_screenshot";
                 stringId = R.string.qs_screenshot_tile;
@@ -113,7 +114,7 @@ public class QSTileHolder {
                 resourceName = "ic_qs_sync_on";
                 stringId = R.string.qs_sync_tile;
                 break;
-	    case QSConstants.TILE_HEADS_UP:
+	        case QSConstants.TILE_HEADS_UP:
                 resourceName = "ic_qs_ringer_audible";
                 stringId = R.string.qs_tile_headsup;
                 break;
