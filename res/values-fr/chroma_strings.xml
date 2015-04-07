@@ -93,6 +93,7 @@
     <string name="enable_clock_weekday_summary">Nom abrégé du jour la semaine avant l\'heure</string>
     <string name="right_clock">Horloge à droite</string>
     <string name="center_clock">Horloge au centre</string>
+    <string name="left_clock">Horloge à gauche</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Affichage de la date personnalisée avant l\'horloge</string>
@@ -388,7 +389,13 @@
     <string name="qs_tile_hotspot">Point d\'accès</string>
     <string name="qs_tile_notifications">Sons de notification</string>
     <string name="qs_tile_screen_timeout">Mise en veille de l\'écran</string>
-
+    <string name="qs_battery_saver_tile">Économiseur de batterie</string>
+	<string name="qs_brightness_tile">Luminosité</string>
+    <string name="qs_expanded_desktop_tile">Bureau étendu</string>
+    <string name="qs_screenshot_tile">Capture d\'écran</string>
+    <string name="qs_sync_tile">Synchronisation</string>
+    <string name="qs_tile_headsup">Notification flottante</string>
+	
     <!-- Network traffic -->
     <string name="network_traffic_title">Trafic réseau</string>
     <string name="show_network_traffic_state">Moniteur de trafic sur la barre de statut</string>
@@ -437,7 +444,9 @@
     <string name="expanded_hide_navigation">Masquer la barre de navigation</string>
     <string name="expanded_hide_both">Tout masquer</string>
     <string name="expanded_nothing_to_show">Pour ajouter une configuration personnalisée par application du bureau étendu, Régler \'Activé pour tous\' en position arrêt</string>
+    <string name="expanded_desktop_state">État étendu</string>
     <string name="expanded_enabled_for_all">Activé pour tous</string>
+    <string name="expanded_user_configurable">Configurable par l\'utilisateur</string>
     <string name="expanded_desktop_style">Style du bureau étendu</string>
     <string name="expanded_desktop_style_description">Choisir le style du bureau étendu par défaut</string>
     <string name="expanded_desktop_title">Options du bureau étendu</string>
@@ -467,4 +476,26 @@
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Taper deux fois pour mettre en veille</string>
     <string name="double_tap_sleep_nav_bar_summary">Taper deux fois dans la barre de statut pour mettre l\'appareil en veille</string>
+
+    <!-- Heads Up -->
+    <string name="category_heads_up">Notifications flottantes</string>
+    <string name="summary_heads_up_enabled">Notifications flottantes activées</string>
+    <string name="summary_heads_up_disabled">Notifications flottantes désactivées</string>
+    <string name="add_heads_up_package">Ajouter une application</string>
+    <string name="add_heads_up_dnd_summary">Ne pas afficher les notifications flottantes dans cette application</string>
+    <string name="add_heads_up_blacklist_summary">Ne pas afficher les notifications flottantes de cette application</string>
+    <string name="heads_up_dnd_title">Ne pas déranger</string>
+    <string name="heads_up_blacklist_title">Liste noire</string>
+    <string name="heads_up_disabled_notice">Pour permettre aux applications d\'afficher des notifications interactives dans une fenêtre contextuel sur votre écran, activer les notifications flottantes.</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Temporisation</string>
+    <string name="heads_up_time_out_summary">La notification sera afficher pendant <xliff:g id="number">%d</xliff:g> secondes</string>
+    <string name="heads_up_time_out_never_summary">La notification s\'affichera jusqu\'à ce qu\'elle soit rejetée</string>
+    <string name="heads_up_time_out_2sec">2 secondes</string>
+    <string name="heads_up_time_out_4sec">4 secondes</string>
+    <string name="heads_up_time_out_6sec">6 secondes</string>
+    <string name="heads_up_time_out_8sec">8 secondes</string>
+    <string name="heads_up_time_out_10sec">10 secondes</string>
+    <string name="heads_up_time_out_never">Jamais</string>
 </resources>
