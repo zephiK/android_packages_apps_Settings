@@ -31,10 +31,14 @@
 	<!-- Developers -->
     <PreferenceCategory
         android:key="category_chroma_developers"
-        android:title="Lead developer">
+        android:title="Developers">
 
     <Preference
-        android:title="zephiK"/>
+        android:title="zephiK"
+	    android:summary="Lead Developer for Chroma"/>
+    <Preference
+        android:title="Sykopompos"
+	    android:summary="Device maintainer for N4/N5/N7-2012/N7-2013/N10"/>
     </PreferenceCategory>
 
 	<!-- Honorable mentions -->
@@ -43,18 +47,17 @@
         android:title="Honorable mentions" >
     <Preference
         android:title="boysetsfire"
-       	android:summary="Boot animation, signature banners and wallpapers"/>
+       	android:summary="Graphics - bootanimations, wallpapers"/>
     <Preference
         android:title="Jeremiah_1988" />
-    <Preference
-        android:title="Sykopompos"
-	    android:summary="Fixing bugs like its nothin!"/>
     </PreferenceCategory>
 
 	<!-- Donators -->
     <PreferenceCategory
         android:key="category_chroma_donators"
         android:title="Donators" >
+   <Preference
+        android:title="A. Wirtz"/>
    <Preference
         android:title="ACCUSED24"/>
    <Preference
@@ -168,6 +171,8 @@
    <Preference
         android:title="LONRA"/>
    <Preference
+        android:title="M. Hill"/>
+   <Preference
         android:title="M. Woodson"/>
    <Preference
         android:title="madmuthertrucker"/>
@@ -238,6 +243,8 @@
    <Preference
         android:title="T. Enzmann"/>
    <Preference
+        android:title="T. Hiott"/>
+   <Preference
         android:title="taldesigns"/>
    <Preference
         android:title="teddyearp"/>
@@ -271,5 +278,7 @@
         android:title="xrage28"/>
     <Preference
         android:title="you5urf"/>
+    <Preference
+        android:title="zanoli99"/>
 </PreferenceCategory>
 </PreferenceScreen>
