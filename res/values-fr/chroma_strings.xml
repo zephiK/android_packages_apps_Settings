@@ -295,6 +295,18 @@
     <string name="lcd_density_default">Valeur par défaut de l\'appareil</string>
     <string name="lcd_density_unsupported">Non supportée</string>
     <string name="restarting_ui">Redémarrage</string>
+    <string name="custom_density_title">Changer pour ce que vous voulez</string>
+    <string name="custom_density_summary">Si jamais vous avez des problèmes de compatibilité avec le Play Store, assurez-vous de vérifier si le Play Store multi-DPI est installé</string>
+    <string name="custom_density_summary_invalid">"DENSITÉ NON VALIDE !"</string>
+    <string name="custom_density">personnalisée</string>
+    <string name="set_custom_density_title">Définir la densité personnalisée</string>
+    <string name="set_custom_density_set">Définir</string>
+    <string name="custom_density_dialog_title">ATTENTION !</string>
+    <string name="custom_density_dialog_summary">Changer votre densité LCD par défaut peut parfois causer des problèmes, certaines applications ne pourraient pas fonctionner correctement et / ou le Play Store pourrait montrer des applications incompatibles avec votre appareil</string>
+    <string name="dpi">DPI</string>
+    <string name="custom_density_warning">Redémarrer le système et appliquer la densité sélectionnée ?</string>
+    <string name="dialog_restart">Redémarrer</string>
+    <string name="dialog_cancel">Annuler</string>
 
     <!-- Doze pulse (ambient display) options -->
     <string name="summary_doze_enabled">Activé</string>
@@ -390,7 +402,7 @@
     <string name="qs_tile_notifications">Sons de notification</string>
     <string name="qs_tile_screen_timeout">Mise en veille de l\'écran</string>
     <string name="qs_battery_saver_tile">Économiseur de batterie</string>
-	<string name="qs_brightness_tile">Luminosité</string>
+    <string name="qs_brightness_tile">Luminosité</string>
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
@@ -498,4 +510,7 @@
     <string name="heads_up_time_out_8sec">8 secondes</string>
     <string name="heads_up_time_out_10sec">10 secondes</string>
     <string name="heads_up_time_out_never">Jamais</string>
+
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Activer les anneaux de navigations</string>
 </resources>
