@@ -304,9 +304,7 @@
     <string name="custom_density_dialog_title">ATTENTION !</string>
     <string name="custom_density_dialog_summary">Changer votre densité LCD par défaut peut parfois causer des problèmes, certaines applications pourraient ne pas fonctionner correctement et / ou le Play Store pourrait afficher des applications incompatibles avec votre appareil</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density_warning">Redémarrer le système et appliquer la densité sélectionnée ?</string>
-    <string name="dialog_restart">Redémarrer</string>
-    <string name="dialog_cancel">Annuler</string>
+    <string name="custom_density">personnalisée</string>
 
     <!-- Doze pulse (ambient display) options -->
     <string name="summary_doze_enabled">Activé</string>
