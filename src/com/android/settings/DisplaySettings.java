@@ -202,11 +202,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         int newDensityValue;
 
         mLcdDensityPreference = (ListPreference) findPreference(KEY_LCD_DENSITY);
-        densityEntries[8] = getString(R.string.custom_density);
         int defaultDensity = DisplayMetrics.DENSITY_DEVICE;
         int currentDensity = DisplayMetrics.DENSITY_CURRENT;
         int currentIndex = -1;
         String[] densityEntries = new String[9];
+        densityEntries[8] = getString(R.string.custom_density);
         for (int idx = 0; idx < 8; ++idx) {
             int pct = (75 + idx*5);
             int val = defaultDensity * pct / 100;
@@ -477,6 +477,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     @Override
     public Dialog onCreateDialog(int dialogId) {
+        LayoutInflater factory = LayoutInflater.from(mContext);
+
         if (dialogId == DLG_GLOBAL_CHANGE_WARNING) {
             return Utils.buildGlobalChangeWarningDialog(getActivity(),
                     R.string.global_font_change_title,
@@ -485,6 +487,46 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                             mFontSizePref.click();
                         }
                     });
+        }
+        switch (dialogId) {
+            case DIALOG_DENSITY:
+                final View textEntryView = factory.inflate(
+                        R.layout.alert_dialog_text_entry, null);
+                return new AlertDialog.Builder(getActivity())
+                        .setTitle(R.string.custom_density_dialog_title)
+                        .setMessage(getResources().getString(R.string.custom_density_dialog_summary))
+                        .setView(textEntryView)
+                        .setPositiveButton(getResources().getString(R.string.set_custom_density_set), new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
+                                Editable text = dpi.getText();
+                                Log.i(TAG, text.toString());
+                                String editText = dpi.getText().toString();
+
+                                try {
+                                    SystemProperties.set("persist.sys.lcd_density", editText);
+                                }
+                                catch (Exception e) {
+                                    Log.w(TAG, "Unable to save LCD density");
+                                }
+                                try {
+                                    final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
+                                    if (am != null) {
+                                        am.restart();
+                                    }
+                                }
+                                catch (RemoteException e) {
+                                    Log.e(TAG, "Failed to restart");
+                                }
+                            }
+
+                        })
+                        .setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+
+                                dialog.dismiss();
+                            }
+                        }).create();
         }
         return null;
     }
@@ -566,7 +608,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 if (idx > 0) {
                     strValue = strValue.substring(0, idx);
                 }
-            String strValue = (String) objValue;
             if (strValue.equals(getResources().getString(R.string.custom_density))) {
                 showDialog(DIALOG_DENSITY);
             } else {
@@ -633,49 +674,4 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     return result;
                 }
             };
-    public Dialog onCreateDialog(int dialogId) {
-        LayoutInflater factory = LayoutInflater.from(mContext);
-
-        switch (dialogId) {
-            case DIALOG_DENSITY:
-                final View textEntryView = factory.inflate(
-                        R.layout.alert_dialog_text_entry, null);
-                return new AlertDialog.Builder(getActivity())
-                        .setTitle(R.string.custom_density_dialog_title)
-                        .setMessage(getResources().getString(R.string.custom_density_dialog_summary))
-                        .setView(textEntryView)
-                        .setPositiveButton(getResources().getString(R.string.set_custom_density_set), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                EditText dpi = (EditText) textEntryView.findViewById(R.id.dpi_edit);
-                                Editable text = dpi.getText();
-                                Log.i(TAG, text.toString());
-                                String editText = dpi.getText().toString();
-
-                                try {
-                                    SystemProperties.set("persist.sys.lcd_density", editText);
-                                }
-                                catch (Exception e) {
-                                    Log.w(TAG, "Unable to save LCD density");
-                                }
-                                try {
-                                    final IActivityManager am = ActivityManagerNative.asInterface(ServiceManager.checkService("activity"));
-                                    if (am != null) {
-                                        am.restart();
-                                    }
-                                }
-                                catch (RemoteException e) {
-                                    Log.e(TAG, "Failed to restart");
-                                }
-                            }
-
-                        })
-                        .setNegativeButton(getResources().getString(R.string.cancel), new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-
-                                dialog.dismiss();
-                            }
-                        }).create();
-        }
-        return null;
-    }
 }
