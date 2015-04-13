@@ -55,6 +55,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_DOZE = "doze";
     private static final String KEY_DOZE_OVERWRITE_VALUE = "doze_overwrite_value";
+    private static final String KEY_DOZE_PULSE_IN = "doze_pulse_in";
     private static final String KEY_DOZE_PULSE_VISIBLE = "doze_pulse_visible";
     private static final String KEY_DOZE_PULSE_OUT = "doze_pulse_out";
     private static final String KEY_DOZE_LIST_MODE = "doze_list_mode";
@@ -67,6 +68,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     private int mOldAccValue;
     private SwitchPreference mDozePreference;
     private ListPreference mDozeListMode;
+    private ListPreference mDozePulseIn;
     private ListPreference mDozePulseVisible;
     private ListPreference mDozePulseOut;
     private ListPreference mDozeShakeThreshold;
@@ -84,6 +86,9 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
 
         mDozePreference = (SwitchPreference) findPreference(KEY_DOZE);
         mDozePreference.setOnPreferenceChangeListener(this);
+
+        mDozePulseIn = (ListPreference) findPreference(KEY_DOZE_PULSE_IN);
+        mDozePulseIn.setOnPreferenceChangeListener(this);
 
         mDozePulseVisible = (ListPreference) findPreference(KEY_DOZE_PULSE_VISIBLE);
         mDozePulseVisible.setOnPreferenceChangeListener(this);
@@ -317,6 +322,15 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
     }
 
     private void updateDozeOptions() {
+        if (mDozePulseIn != null) {
+            final int statusDozePulseIn = Settings.System.getInt(getContentResolver(),
+                    Settings.System.DOZE_PULSE_DURATION_IN, 1000);
+            mDozePulseIn.setValue(String.valueOf(statusDozePulseIn));
+            int index = mDozePulseIn.findIndexOfValue(String.valueOf(statusDozePulseIn));
+            if (index != -1) {
+                mDozePulseIn.setSummary(mDozePulseIn.getEntries()[index]);
+            }
+        }
         if (mDozePulseVisible != null) {
             final int statusDozePulseVisible = Settings.System.getInt(getContentResolver(),
                     Settings.System.DOZE_PULSE_DURATION_VISIBLE, 3000);
@@ -386,6 +400,13 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
             boolean value = (Boolean) objValue;
             Settings.Secure.putInt(getContentResolver(), Settings.Secure.DOZE_ENABLED, value ? 1 : 0);
         }
+        if (preference == mDozePulseIn) {
+            int dozePulseIn = Integer.parseInt((String)objValue);
+            int index = mDozePulseIn.findIndexOfValue((String) objValue);
+            mDozePulseIn.setSummary(mDozePulseIn.getEntries()[index]);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.DOZE_PULSE_DURATION_IN, dozePulseIn);
+        }
         if (preference == mDozePulseVisible) {
             int dozePulseVisible = Integer.parseInt((String)objValue);
             int index = mDozePulseVisible.findIndexOfValue((String) objValue);
@@ -446,6 +467,7 @@ public class AmbientSettings extends SettingsPreferenceFragment implements
                         result.add(KEY_DOZE_TIME_MODE);
                         result.add(KEY_DOZE_OVERWRITE_VALUE);
                         result.add(KEY_DOZE_PULSE_MODE);
+                        result.add(KEY_DOZE_PULSE_IN);
                         result.add(KEY_DOZE_PULSE_VISIBLE);
                         result.add(KEY_DOZE_PULSE_OUT);
                         result.add(KEY_DOZE_SHAKE_THRESHOLD);
