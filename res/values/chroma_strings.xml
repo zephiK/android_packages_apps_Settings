@@ -208,7 +208,7 @@
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
     <string name="recents_clear_all_location_bottom_center">Bottoms center</string>
 
-   <!-- useless strings -->
+    <!-- useless strings -->
     <string name="profiles_add">Add</string>
     <string name="profile_choose_app">Choose app</string>
     <string name="profile_reset_title">Reset</string>
@@ -260,7 +260,7 @@
     <string name="status_bar_show_weather_title">Show weather</string>
     <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 
-     <!--- Lock clock -->
+    <!--- Lock clock -->
     <string name="lock_clock_title">Clock widget</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' widget will display</string>
     <string name="weather_clock_title">Status bar weather</string>
@@ -429,7 +429,7 @@
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Navigation ring targets</string>
     <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
-<string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
+    <string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Lock screen</string>
