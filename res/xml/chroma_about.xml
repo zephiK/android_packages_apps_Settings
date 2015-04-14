@@ -63,11 +63,17 @@
    <Preference
         android:title="adrman"/>
    <Preference
+        android:title="angiest"/>
+   <Preference
         android:title="anthonyg45157"/>
    <Preference
         android:title="Aruarian"/>
    <Preference
+        android:title="BackInA88"/>
+   <Preference
         android:title="Berlino"/>
+   <Preference
+        android:title="bfederspill"/>
    <Preference
         android:title="billybloxx"/>
    <Preference
@@ -109,6 +115,8 @@
    <Preference
         android:title="E. Zuloaga"/>
    <Preference
+        android:title="edzuper"/>
+   <Preference
         android:title="EggNogg421"/>
    <Preference
         android:title="enricof7"/>
@@ -121,9 +129,13 @@
    <Preference
         android:title="Fauert"/>
    <Preference
+        android:title="FormeriPhoney"/>
+   <Preference
         android:title="fuzzybuffalo"/>
    <Preference
         android:title="G. Hayles"/>
+   <Preference
+        android:title="G. Junno"/>
    <Preference
         android:title="gamewarden234"/>
    <Preference
@@ -146,6 +158,8 @@
         android:title="iaguilera14"/>
    <Preference
         android:title="J. Carter"/>
+   <Preference
+        android:title="J. Hagen"/>
    <Preference
         android:title="J. Thompson"/>
    <Preference
@@ -211,6 +225,8 @@
    <Preference
         android:title="rmanaka"/>
    <Preference
+        android:title="Roll3r"/>
+   <Preference
         android:title="S. Gardner"/>
    <Preference
         android:title="S. Warrington"/>
@@ -224,6 +240,8 @@
         android:title="schmolch"/>
    <Preference
         android:title="seanowns"/>
+   <Preference
+        android:title="SeVIIn"/>
    <Preference
         android:title="shreddintyres"/>
    <Preference
