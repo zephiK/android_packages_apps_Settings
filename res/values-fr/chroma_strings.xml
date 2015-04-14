@@ -511,4 +511,8 @@
 
     <!-- Navring targets (enable/disable) -->
     <string name="navigation_ring_enable_title">Activer les anneaux de navigations</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Éviter tout risque de réveil</string>
+    <string name="proximity_wake_summary">Vérifier le capteur de proximité avant de réveiller l\'écran.\nNOTE : cela peut provoquer un réveil plus lent de l\'écran</string>
 </resources>
