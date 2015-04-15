@@ -405,6 +405,7 @@
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
     <string name="qs_tile_headsup">Notification flottante</string>
+    <string name="qs_music_play_tile">Jouer</string>
 	
     <!-- Network traffic -->
     <string name="network_traffic_title">Trafic réseau</string>
