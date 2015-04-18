@@ -6,12 +6,12 @@
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Дата созания</string>
+    <string name="build_date">Дата создания</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- Chroma Menu -->
     <string name="chroma_menu_personalizaton">Расширенные настройки</string>
-    <string name="chroma_menu_about">О прошивки</string>
+    <string name="chroma_menu_about">О прошивке</string>
     <string name="status_bar_screen_title">Строка состояния</string>
     <string name="navigation_bar_screen_title">Панель навигации</string>
     <string name="power_menu_title">Меню выключения</string>
@@ -34,7 +34,7 @@
     <string name="bitsyko_layers">Оформление</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">SuperSU</string>
+    <string name="supersu_title">Суперпользователь</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Поворот экрана</string>
@@ -58,13 +58,13 @@
 
     <!-- Generic strings -->
     <string name="ok_string">Ok</string>
-    <string name="default_string">По-умолчанию</string>
+    <string name="default_string">По умолчанию</string>
     <string name="enabled_string">Включено</string>
     <string name="disabled_string">Выключено</string>
     <string name="general_string">Основные</string>
     <string name="reset_string">Сбросить</string>
     <string name="reset">Сбросить</string>
-    <string name="empty_string">Пустоy</string>
+    <string name="empty_string">Пустое</string>
      <string name="ok">Ok</string>
 
     <!-- Color Picker -->
@@ -75,7 +75,7 @@
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Установить</string>
-    <string name="color_default">По-умолчани</string>
+    <string name="color_default">По умолчани</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Часы &amp; дата</string>
@@ -109,7 +109,7 @@
     <string name="clock_date_display_normal">Нормальный размер шрифта</string>
     <string name="clock_date_style_normal">Нормальный</string>
     <string name="clock_date_style_lowercase">Строчные буквы</string>
-    <string name="clock_date_style_uppercase">прописные буквы</string>
+    <string name="clock_date_style_uppercase">Прописные буквы</string>
     <string name="clock_date_format_custom">Пользовательский java формат</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
     
@@ -130,7 +130,7 @@
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Проценты заряда</string>
-    <string name="status_bar_battery_percentage_default">Не отображаются (по-умолчанию))</string>
+    <string name="status_bar_battery_percentage_default">Не отображаются (по умолчанию))</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри иконки</string>
     <string name="status_bar_battery_percentage_text_next">Рядом с иконкой</string>
 
@@ -284,7 +284,7 @@
 
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Показывать стрелки ввода при наборе</string>
-    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева курсоры ввода. Overrides IME switcher.</string>
+    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева кнопки перемещения курсора. Overrides IME switcher.</string>
  
     <!-- Navigation bar button color -->
     <string name="navbar_button_tint_title">Оттенок панели навигации</string>
@@ -295,153 +295,153 @@
     <string name="lcd_density_default">Значение по умолчанию</string>
     <string name="lcd_density_unsupported">Не поддерживается</string>
     <string name="restarting_ui">Перезагрузка</string>
-    <string name="custom_density_title">Измените по своему вкусу</string>
-    <string name="custom_density_summary">If you ever have compatibility issues with the Play Store, be sure to doublecheck if a Multi-DPI Play Store is installed</string>
-    <string name="custom_density_summary_invalid">"INVALID DENSITY!"</string>
-    <string name="custom_density">Custom</string>
-    <string name="set_custom_density_title">Set custom density</string>
-    <string name="set_custom_density_set">Set</string>
-    <string name="custom_density_dialog_title">WARNING!</string>
-    <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
+    <string name="custom_density_title">Измнените все как, Вам нравится</string>
+    <string name="custom_density_summary">Если Вы столкнетесь с проблемами совместимости ПО в Play Store, перепроверьте стоит ли у Вас, модифицированный Play Store</string>
+    <string name="custom_density_summary_invalid">"Неверное значение!"</string>
+    <string name="custom_density">Нестандартное</string>
+    <string name="set_custom_density_title">Установить нестандартную плотность экрана</string>
+    <string name="set_custom_density_set">Установить</string>
+    <string name="custom_density_dialog_title">ОСТОРОЖНО!</string>
+    <string name="custom_density_dialog_summary">Изменение плотности экрана может повлиять на работу приложений, магазин приложений может показывать приложения как несовместимые с вашим устройством"</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density">Custom</string>
+    <string name="custom_density">Пользовательское</string>
 
     <!-- Doze pulse (ambient display) options -->
-    <string name="summary_doze_enabled">Enabled</string>
-    <string name="summary_doze_disabled">Disabled</string>
-    <string name="doze_overwrite_value_title">Overwrite value</string>
-    <string name="doze_overwrite_value_summary">Allow to overwrite default value with user config</string>
+    <string name="summary_doze_enabled">Включено</string>
+    <string name="summary_doze_disabled">Отключено</string>
+    <string name="doze_overwrite_value_title">Изменить значения</string>
+    <string name="doze_overwrite_value_summary">Принимать изменение значений по умолчанию на пользовательские</string>
 
-    <string name="doze_list_mode_title">Doze mode</string>
-    <string name="doze_list_mode_summary">Option to configure doze mode</string>
+    <string name="doze_list_mode_title">Режим сна</string>
+    <string name="doze_list_mode_summary">Настройка режима сна</string>
 
-    <string name="doze_pulse_title">Time settings</string>
-    <string name="doze_pulse_duration_in_title">Fade in</string>
+    <string name="doze_pulse_title">Настройки времени</string>
+    <string name="doze_pulse_duration_in_title">Появление</string>
     <string name="doze_pulse_duration_in_summary"></string>
 
-    <string name="doze_pulse_duration_visible_title">Visible duration</string>
+    <string name="doze_pulse_duration_visible_title">Время видимости</string>
     <string name="doze_pulse_duration_visible_summary"></string>
 
-    <string name="doze_pulse_duration_out_title">Fade out</string>
+    <string name="doze_pulse_duration_out_title">Угасание</string>
     <string name="doze_pulse_duration_out_summary"></string>
 
-    <string name="doze_pulse_on_notifications_title">Pulse on notifications</string>
-    <string name="doze_pulse_on_notifications_summary">Trigger activation only on pending notifications</string>
+    <string name="doze_pulse_on_notifications_title">Пульсация</string>
+    <string name="doze_pulse_on_notifications_summary">Пульсация экрана при уведомлении</string>
 
-    <string name="doze_shake_title">Shake settings</string>
-    <string name="doze_shake_mode_title">Shake mode</string>
-    <string name="doze_shake_mode_summary">Use shake sensor value to trigger activation</string>
-    <string name="doze_shake_mode_test_summary">Do you want to test shake sensor?</string>
-    <string name="doze_shake_mode_test_result">Apply current value?</string>
-    <string name="doze_shake_test">Shake your device now</string>
-    <string name="doze_shake_it">Shake detected!</string>
+    <string name="doze_shake_title">Настройки встряхивания</string>
+    <string name="doze_shake_mode_title">Режим встряхивания</string>
+    <string name="doze_shake_mode_summary">>Использовать сенсор для активации действия</string>
+    <string name="doze_shake_mode_test_summary">Хотите протестировать работу сенсора?</string>
+    <string name="doze_shake_mode_test_result">Применить значение?</string>
+    <string name="doze_shake_test">Потрясите устройство</string>
+    <string name="doze_shake_it">Обнаружено!</string>
 
-    <string name="doze_shake_acc_threshold_title">Shake threshold</string>
-    <string name="doze_shake_acc_threshold_summary">Configure shake strength required to trigger activation</string>
+    <string name="doze_shake_acc_threshold_title">Чувствительность встряхивания</string>
+    <string name="doze_shake_acc_threshold_summary">Настроить силу встряхивания для активации действия</string>
 
-    <string name="doze_time_mode_title">Show clock &amp; date</string>
-    <string name="doze_time_mode_summary">Force showing time when there is no notification</string>
+    <string name="doze_time_mode_title">Показывать дату и время</string>
+    <string name="doze_time_mode_summary">Принудительно показывать время, когда нет уведомлений</string>
 
-    <string name="twohundred_ms">200 ms</string>
-    <string name="fivehundred_ms">500 ms</string>
-    <string name="one_second">1 s</string>
-    <string name="one_second_default">1 s (default)</string>
-    <string name="onehalf_second">1.5 s</string>
-    <string name="two_second">2 s</string>
-    <string name="twohalf_second">2.5 s</string>
-    <string name="three_second">3 s</string>
-    <string name="three_second_default">3 s (default)</string>
-    <string name="threehalf_second">3.5 s</string>
-    <string name="four_second">4 s</string>
-    <string name="fourhalf_second">4.5 s</string>
-    <string name="five_second">5 s</string>
+    <string name="twohundred_ms">200 мс</string>
+    <string name="fivehundred_ms">500 мс</string>
+    <string name="one_second">1 сек</string>
+    <string name="one_second_default">1 сек (по умолчанию)</string>
+    <string name="onehalf_second">1.5 сек</string>
+    <string name="two_second">2 сек</string>
+    <string name="twohalf_second">2.5 сек</string>
+    <string name="three_second">3 сек</string>
+    <string name="three_second_default">3 сек ((по умолчанию)</string>
+    <string name="threehalf_second">3.5 сек</string>
+    <string name="four_second">4 сек</string>
+    <string name="fourhalf_second">4.5 сек</string>
+    <string name="five_second">5 сек</string>
 
-    <string name="veryeasy_shake">Very easy</string>
-    <string name="easy_shake">Easy</string>
-    <string name="medium_shake">Default</string>
-    <string name="hard_shake">Hard</string>
-    <string name="veryhard_shake">Very hard</string>
-    <string name="strong_shake">Strong</string>
+    <string name="veryeasy_shake">Очень легко</string>
+    <string name="easy_shake">>Легко</string>
+    <string name="medium_shake">По умолчанию</string>
+    <string name="hard_shake">Сильно</string>
+    <string name="veryhard_shake">Очень сильно</string>
+    <string name="strong_shake">Со всей силы</string>
 
-    <string name="fully_mode">Full mode</string>
-    <string name="pocket_shake_mode">Pocket and shake</string>
-    <string name="pocket_pulse_mode">Pocket and pulse</string>
-    <string name="pocket_only_mode">Pocket</string>
-    <string name="shake_pulse_mode">Shake and pulse</string>
-    <string name="pulse_only_mode">Pulse (default)</string>
+    <string name="fully_mode">Полный режим</string>
+    <string name="pocket_shake_mode">В кармане и потрясти</string>
+    <string name="pocket_pulse_mode"В кармане и пульсировать экраном</string>
+    <string name="pocket_only_mode">В кармане</string>
+    <string name="shake_pulse_mode">Потрясти и пульсировать экраном</string>
+    <string name="pulse_only_mode">Пульсировать экраном (по умолчанию)</string>
 
     <!-- QS tiles -->
-    <string name="qs_category_title">Quick Settings</string>
-    <string name="qs_order_title">Select and order tiles</string>
-    <string name="add_qs">Add new tile</string>
-    <string name="qs_action_delete">Delete</string>
-    <string name="qs_action_add">Add</string>
-    <string name="qs_action_no_more_tiles">No more tiles available</string>
-    <string name="qs_main_tiles_title">Enlarge first row</string>
-    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-    <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
+    <string name="qs_category_title">Плики быстрых настроек</string>
+    <string name="qs_order_title">Выбрать и изменить порядок плиток</string>
+    <string name="add_qs">Добавить новую плитку</string>
+    <string name="qs_action_delete">Удалить</string>
+    <string name="qs_action_add">Добавить</string>
+    <string name="qs_action_no_more_tiles">Нет больше доступных плиток</string>
+    <string name="qs_main_tiles_title">Увеличить первый рад</string>
+    <string name="qs_main_tiles_summary_on">Две большие плитки в первом ряду</string>
+    <string name="qs_main_tiles_summary_off">Три плитки в каждом ряду</string>
 
     <!-- QuickSettings brightness slider -->
-    <string name="qs_brightness_slider_title">Show brightness slider</string>
-    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+    <string name="qs_brightness_slider_title">Показывать регулятор яркости</string>
+    <string name="qs_brightness_slider_summary">Показывать регулятор яркости в панели быстрых настроек</string>
 
     <!-- Quick settings advance location -->
-    <string name="qs_advanced_location_title">Advanced location quick settings</string>
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
-    <string name="qs_tile_wifi">Wi\u2011Fi</string>
+    <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
+    <string name="qs_advanced_location_summary">>Включить отображение расширенных настроек местоположения в быстрых настройках</string>
+    <string name="qs_tile_wifi">Wi-FI</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_cellular_data">Data connection</string>
-    <string name="qs_tile_airplane_mode">Airplane mode</string>
-    <string name="qs_tile_display_rotation">Rotation</string>
-    <string name="qs_tile_flashlight">Flashlight</string>
-    <string name="qs_tile_location">Location</string>
-    <string name="qs_tile_cast_screen">Cast screen</string>
-    <string name="qs_tile_hotspot">Hotspot</string>
-    <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_battery_saver_tile">Battery saver</string>
-    <string name="qs_brightness_tile">Brightness</string>
-    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
-    <string name="qs_screenshot_tile">Screenshot</string>
-    <string name="qs_sync_tile">Sync</string>
-    <string name="qs_tile_headsup">Heads up</string>
-    <string name="qs_music_play_tile">Play</string>
+    <string name="qs_tile_cellular_data">Передача данных</string>
+    <string name="qs_tile_airplane_mode">Режим полета</string>
+    <string name="qs_tile_display_rotation">Поворот экрана</string>
+    <string name="qs_tile_flashlight">Фонарик</string>
+    <string name="qs_tile_location">Местоположение</string>
+    <string name="qs_tile_cast_screen">Передача экрана</string>
+    <string name="qs_tile_hotspot">Хотспот</string>
+    <string name="qs_tile_notifications">Уведомления</string>
+    <string name="qs_tile_screen_timeout">Время отключения экрана</string>
+    <string name="qs_battery_saver_tile">Энергосбережение</string>
+    <string name="qs_brightness_tile">Яркость</string>
+    <string name="qs_expanded_desktop_tile">Расширенный экран</string>
+    <string name="qs_screenshot_tile">Скриншот</string>
+    <string name="qs_sync_tile">Синхронизация</string>
+    <string name="qs_tile_headsup">Всплювающие уведомления</string>
+    <string name="qs_music_play_tile">Играть музыку</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
-    <string name="show_network_traffic_500">500 ms</string>
-    <string name="show_network_traffic_1000">1000 ms</string>
-    <string name="show_network_traffic_1500">1500 ms</string>
-    <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_title">Сетевой трафик</string>
+    <string name="show_network_traffic_state">Отображение сетевого трафика</string>
+    <string name="network_traffic_summary">Включить отображение сетевого трафика в строке состояния</string>
+    <string name="show_network_traffic_unit">Единицы измерения</string>
+    <string name="show_network_traffic_frequency">Интервал обновления</string>
+    <string name="show_network_traffic_disable">Выключен</string>
+    <string name="show_network_traffic_up">Исходящий</string>
+    <string name="show_network_traffic_down">Входящий</string>
+    <string name="show_network_traffic_all">Исходящий и входящий</string>
+    <string name="show_network_traffic_bit">Бит в секунду</string>
+    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="show_network_traffic_500">500 мс</string>
+    <string name="show_network_traffic_1000">1000 мс</string>
+    <string name="show_network_traffic_1500">1500 мс</string>
+    <string name="show_network_traffic_2000">2000 мс</string>
+    <string name="network_traffic_autohide">Автоматически скрывать</string>
+    <string name="network_traffic_autohide_summary">Скрывать отображение трафика, когда нет сетевой активности</string>
+    <string name="network_traffic_autohide_threshold">Порог неактивности</string> 
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Navigation ring targets</string>
-    <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
-<string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
+    <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
+    <string name="navigation_ring_summary">Редактировать ярлыки кольца панели навигации</string>
+<string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык для настройки его поведения.\n\nНажмите the \'\u2713\' для сохранения изменений, или \'Восстановить \' для сброса настроек по умолчанию.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
-    <string name="lockscreen_default_target">Default</string>
-    <string name="lockscreen_none_target">None</string>
-    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
-    <string name="lockscreen_choose_action_title">Choose action</string>
+    <string name="lockscreen_settings_title">Экран блокировки</string>
+    <string name="lockscreen_targets_message">Ярлыки экрана блокировки</string>
+    <string name="lockscreen_default_target">По умолчанию</string>
+    <string name="lockscreen_none_target">Нет</string>
+    <string name="lockscreen_message">Нажмите на иконку слева или справа, чтобы изменить ярлык.</string>
+    <string name="lockscreen_choose_action_title">Выбирите действие</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
 
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volumes</string>
@@ -468,8 +468,8 @@
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
 
     <!--Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
+    <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, если введён корректный PIN-код</string>
 
     <!-- Lockscreen pin shuffle -->
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
@@ -485,33 +485,33 @@
     <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Двойное нажатие для сна</string>
+    <string name="double_tap_sleep_nav_bar_summary">Двойное нажатие по панели навигации выключит экран</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up notifications</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+    <string name="category_heads_up">Всплювающие уведомления</string>
+    <string name="summary_heads_up_enabled">Всплювающие уведомления включены</string>
+    <string name="summary_heads_up_disabled"Всплювающие уведомления отключены</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_dnd_summary">Не показывать всплювающие уведомления в этих приложениях</string>
+    <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
+    <string name="heads_up_dnd_title">Не беспокоить</string>
+    <string name="heads_up_blacklist_title">Черный список</string>
+    <string name="heads_up_disabled_notice">Для отображения интерактивных уведомлений от приложений,включите всплывающие уведомления.</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_never_summary">Notification will show until it is dismissed</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_title">Таймаут</string>
+    <string name="heads_up_time_out_summary">Уведомление будет отображаться <xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_never_summary">Уведомление будет отображаться до отклонения</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10секунд</string>
+    <string name="heads_up_time_out_never">Никогда</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_enable_title">Enable navigation rings</string>
+    <string name="navigation_ring_enable_title">Включить навигационное кольцо</string>
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Prevent accidental wake-up</string>
