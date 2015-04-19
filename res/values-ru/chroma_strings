@@ -28,7 +28,7 @@
     <!-- Power menu category -->
     <string name="display_category_power_options_title">Настройки меню выключения</string>
     <!-- QS Tiles -->
-    <string name="qs_category_title">Быстрые настройки</string>
+    <string name="qs_category_title">Настройка плиток</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Оформление</string>
@@ -75,7 +75,7 @@
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Установить</string>
-    <string name="color_default">По умолчани</string>
+    <string name="color_default">По умолчанию</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Часы &amp; дата</string>
@@ -130,13 +130,13 @@
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Проценты заряда</string>
-    <string name="status_bar_battery_percentage_default">Не отображаются (по умолчанию))</string>
+    <string name="status_bar_battery_percentage_default">Не отображаются (по умолчанию)</string>
     <string name="status_bar_battery_percentage_text_inside">Внутри иконки</string>
     <string name="status_bar_battery_percentage_text_next">Рядом с иконкой</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Быстрый доступ</string>
-    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down quick settings</string>
+    <string name="summary_quick_pulldown">%1$s от края открывают быстрые настройки</string>
     <string name="quick_pulldown_off">Выключен</string>
     <string name="quick_pulldown_left">Слева</string>
     <string name="quick_pulldown_right">Справа</string>
@@ -295,7 +295,7 @@
     <string name="lcd_density_default">Значение по умолчанию</string>
     <string name="lcd_density_unsupported">Не поддерживается</string>
     <string name="restarting_ui">Перезагрузка</string>
-    <string name="custom_density_title">Измнените все как, Вам нравится</string>
+    <string name="custom_density_title">Измнените всё как Вам нравится</string>
     <string name="custom_density_summary">Если Вы столкнетесь с проблемами совместимости ПО в Play Store, перепроверьте стоит ли у Вас, модифицированный Play Store</string>
     <string name="custom_density_summary_invalid">"Неверное значение!"</string>
     <string name="custom_density">Нестандартное</string>
@@ -350,7 +350,7 @@
     <string name="two_second">2 сек</string>
     <string name="twohalf_second">2.5 сек</string>
     <string name="three_second">3 сек</string>
-    <string name="three_second_default">3 сек ((по умолчанию)</string>
+    <string name="three_second_default">3 сек (по умолчанию)</string>
     <string name="threehalf_second">3.5 сек</string>
     <string name="four_second">4 сек</string>
     <string name="fourhalf_second">4.5 сек</string>
@@ -371,7 +371,7 @@
     <string name="pulse_only_mode">Пульсировать экраном (по умолчанию)</string>
 
     <!-- QS tiles -->
-    <string name="qs_category_title">Плики быстрых настроек</string>
+    <string name="qs_category_title">Плитки быстрых настроек</string>
     <string name="qs_order_title">Выбрать и изменить порядок плиток</string>
     <string name="add_qs">Добавить новую плитку</string>
     <string name="qs_action_delete">Удалить</string>
@@ -387,7 +387,7 @@
 
     <!-- Quick settings advance location -->
     <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
-    <string name="qs_advanced_location_summary">>Включить отображение расширенных настроек местоположения в быстрых настройках</string>
+    <string name="qs_advanced_location_summary">>Включить отображение расширенных настроек местоположения</string>
     <string name="qs_tile_wifi">Wi-FI</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
     <string name="qs_tile_cellular_data">Передача данных</string>
@@ -444,28 +444,28 @@
     <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ring and notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-    <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
+    <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
+    <string name="notification_volume_option_title">Громкость уведомлений</string>
+    <string name="ring_notification_volume_option_tile">Громкость звонка и уведомлений</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_hide_nothing">Hide nothing</string>
-    <string name="expanded_hide_status">Hide status bar</string>
-    <string name="expanded_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_hide_both">Hide both</string>
+    <string name="power_menu_expanded_desktop">Расширенный экран</string>
+    <string name="expanded_hide_nothing">Не скрывать</string>
+    <string name="expanded_hide_status">Скрывать строку состояния</string>
+    <string name="expanded_hide_navigation">Скрывать нанель навигации</string>
+    <string name="expanded_hide_both">Скрывать всё</string>
     <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Expanded state</string>
-    <string name="expanded_enabled_for_all">Enabled for all</string>
-    <string name="expanded_user_configurable">User configurable</string>
-    <string name="expanded_desktop_style">Expanded desktop style</string>
-    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-    <string name="expanded_desktop_title">Expanded desktop options</string>
+    <string name="expanded_desktop_state">Статус расширенного экрана</string>
+    <string name="expanded_enabled_for_all">Включен для всех</string>
+    <string name="expanded_user_configurable">Пользовательские настройки</string>
+    <string name="expanded_desktop_style">Стиль расширенного экрана</string>
+    <string name="expanded_desktop_style_description">Выбрать по умолчанию расширенный экран</string>
+    <string name="expanded_desktop_title">Настройки расширенного экрана</string>
 
     <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Quicksettings</string>
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+    <string name="qs_category">Доступ к быстрым настройкам</string>
+    <string name="block_on_secure_keyguard_title">Отключен на экране блокировки</string>
+    <string name="block_on_secure_keyguard_summary">Отключить доступ к быстрым настройкам на защищенном экране блокировки.</string>
 
     <!--Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
@@ -476,13 +476,13 @@
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_cursor_title">Cursor options</string>
-    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
+    <string name="volume_rocker_cursor_title">Настройки курсора</string>
+    <string name="volume_button_toggle_info">Пробуждение кнопками громкости будет отключено</string>
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Управление курсором кнопками громкости</string>
+    <string name="volume_key_cursor_control_off">Отключено</string>
+    <string name="volume_key_cursor_control_on">Кнопка громкости вверх/вниз двигает курсор влево/вправо</string>
+    <string name="volume_key_cursor_control_on_reverse">Кнопка громкости вверх/вниз двигает курсор вправо/влево</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Двойное нажатие для сна</string>
@@ -507,7 +507,7 @@
     <string name="heads_up_time_out_4sec">4 секунды</string>
     <string name="heads_up_time_out_6sec">6 секунд</string>
     <string name="heads_up_time_out_8sec">8 секунд</string>
-    <string name="heads_up_time_out_10sec">10секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
     <string name="heads_up_time_out_never">Никогда</string>
 
     <!-- Navring targets (enable/disable) -->
