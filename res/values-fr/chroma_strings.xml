@@ -516,4 +516,9 @@
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Éviter tout risque de réveil</string>
     <string name="proximity_wake_summary">Vérifier le capteur de proximité avant de réveiller l\'écran.\nNOTE : cela peut provoquer un réveil plus lent de l\'écran</string>
+
+    <!--Power menu -->
+    <string name="lockscreen_enable_power_menu_title">Afficher le menu d\'alimentation sur l\'écran de verrouillage</string>
+    <string name="lockscreen_enable_power_menu_summary">Activer l\'accès au menu d\'alimentation sur les écrans de verrouillage sécurisés</string>
+
 </resources>
