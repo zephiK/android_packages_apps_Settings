@@ -281,6 +281,7 @@
     <string name="qs_tile_screen_timeout">Screen timeout</string>
     <string name="qs_tile_sync">Sync</string>
     <string name="qs_screenshot_tile">Screenshot</string>
+    <string name="qs_tile_heads_up">Heads up</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>
@@ -478,4 +479,5 @@
 
     <!-- Navring targets (enable/disable) -->
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
+
 </resources>
