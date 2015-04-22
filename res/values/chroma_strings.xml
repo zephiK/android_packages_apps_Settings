@@ -357,4 +357,6 @@
     <string name="show_ime_arrows_title">Show arrow keys while typing</string>
     <string name="show_ime_arrows_summary">Display left and right cursor buttons for IME.</string>
 
+    <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
+
 </resources>
