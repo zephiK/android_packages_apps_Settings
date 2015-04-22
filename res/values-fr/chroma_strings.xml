@@ -522,4 +522,7 @@
     <string name="lockscreen_enable_power_menu_title">Afficher le menu d\'alimentation sur l\'écran de verrouillage</string>
     <string name="lockscreen_enable_power_menu_summary">Activer l\'accès au menu d\'alimentation sur les écrans de verrouillage sécurisés</string>
 
+    <!-- Silent mode -->
+    <string name="none_is_silent_title">Aucun est le mode silencieux</string>
+    <string name="none_is_silent_summary">En mode silencieux l\'alarme sonne toujours</string>
 </resources>
