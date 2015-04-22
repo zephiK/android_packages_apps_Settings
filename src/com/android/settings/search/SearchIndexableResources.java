@@ -128,18 +128,8 @@ public final class SearchIndexableResources {
                         Ranking.getRankForClassName(DisplaySettings.class.getName()),
                         NO_DATA_RES_ID,
                         DisplaySettings.class.getName(),
-                        R.drawable.ic_settings_display_exposed));
+                        R.drawable.ic_settings_display));
 
-/*
-        Disabled due to: https://github.com/zephiK/android_packages_apps_Settings/commit/e9dccf84981e51282d3619ccb2b4e27d292a9bee
-        sResMap.put(WallpaperTypeSettings.class.getName(),
-                new SearchIndexableResource(
-                        Ranking.getRankForClassName(WallpaperTypeSettings.class.getName()),
-                        NO_DATA_RES_ID,
-                        WallpaperTypeSettings.class.getName(),
-                        R.drawable.ic_settings_display_exposed));
-
-*/
         sResMap.put(NotificationSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(NotificationSettings.class.getName()),
