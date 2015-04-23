@@ -78,15 +78,15 @@
     <string name="color_default">По умолчанию</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Часы &amp; дата</string>
-    <string name="status_bar_clock_title">Стиль часов &amp; даты</string>
-    <string name="status_bar_clock_summary">Различные настройки часов &amp; даты</string> 
+    <string name="status_bar_clock">Часы и дата</string>
+    <string name="status_bar_clock_title">Стиль часов и даты</string>
+    <string name="status_bar_clock_summary">Различные настройки часов и даты</string> 
     <string name="clock_title_enable">Выравнивание</string>
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Отключено</string>
     <string name="clock_color_title">Цвет</string>
     <string name="status_bar_clock_style_reset">Сбросить цвет</string>
-    <string name="status_bar_show_clock_title">Показывать часы &amp; дату</string>
+    <string name="status_bar_show_clock_title">Показывать часы и дату</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-ой формат времени включен</string>
     <string name="enable_clock_weekday">День недели</string>
@@ -497,7 +497,7 @@
     <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
     <string name="heads_up_dnd_title">Не беспокоить</string>
     <string name="heads_up_blacklist_title">Черный список</string>
-    <string name="heads_up_disabled_notice">Для отображения интерактивных уведомлений от приложений,включите всплывающие уведомления.</string>
+    <string name="heads_up_disabled_notice">Для отображения интерактивных уведомлений от приложений, включите всплывающие уведомления.</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Таймаут</string>
@@ -514,6 +514,15 @@
     <string name="navigation_ring_enable_title">Включить навигационное кольцо</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="proximity_wake_title">Предотвращение случайного пробуждения</string>
+    <string name="proximity_wake_summary">Проверьте датчик приближения до пробуждения экрана.\nNOTE: Это может сделать включение экрана более медленным.</string>
+    
+    <!-- Hide power menu on lockscreen -->
+    <string name="power_category">Меню выключения</string>
+    <string name="lockscreen_enable_power_menu_title">Показывать меню выключения на экране блокировки</string>
+    <string name="lockscreen_enable_power_menu_summary">Эта опция будет отключать меню выключения на защищённом экране блокировки</string>
+
+    <!-- Silent mode -->
+    <string name="none_is_silent_title">None is Silent mode</string>
+    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
 </resources>
