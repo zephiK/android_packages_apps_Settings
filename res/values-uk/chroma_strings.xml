@@ -398,34 +398,34 @@
     <string name="qs_tile_cast_screen">Передача екрану</string>
     <string name="qs_tile_hotspot">Хотспот</string>
     <string name="qs_tile_notifications">Сповіщення</string>
-    <string name="qs_tile_screen_timeout">с</string>
-    <string name="qs_battery_saver_tile">Энергосбережение</string>
-    <string name="qs_brightness_tile">Яркость</string>
-    <string name="qs_expanded_desktop_tile">Расширенный экран</string>
-    <string name="qs_screenshot_tile">Скриншот</string>
-    <string name="qs_sync_tile">Синхронизация</string>
-    <string name="qs_tile_headsup">Всплювающие уведомления</string>
-    <string name="qs_music_play_tile">Играть музыку</string>
+    <string name="qs_tile_screen_timeout">Час відключення екрану</string>
+    <string name="qs_battery_saver_tile">Енергозбереження</string>
+    <string name="qs_brightness_tile">Яскравість</string>
+    <string name="qs_expanded_desktop_tile">Расширений екран</string>
+    <string name="qs_screenshot_tile">Скріншот</string>
+    <string name="qs_sync_tile">Синхронизація</string>
+    <string name="qs_tile_headsup">Спливаючі сповіщення</string>
+    <string name="qs_music_play_tile">Грати музику</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Сетевой трафик</string>
-    <string name="show_network_traffic_state">Отображение сетевого трафика</string>
-    <string name="network_traffic_summary">Включить отображение сетевого трафика в строке состояния</string>
-    <string name="show_network_traffic_unit">Единицы измерения</string>
-    <string name="show_network_traffic_frequency">Интервал обновления</string>
-    <string name="show_network_traffic_disable">Выключен</string>
-    <string name="show_network_traffic_up">Исходящий</string>
-    <string name="show_network_traffic_down">Входящий</string>
-    <string name="show_network_traffic_all">Исходящий и входящий</string>
-    <string name="show_network_traffic_bit">Бит в секунду</string>
-    <string name="show_network_traffic_byte">Байт в секунду</string>
+    <string name="network_traffic_title">Мережевий трафік</string>
+    <string name="show_network_traffic_state">Відображення мережевого трафіку</string>
+    <string name="network_traffic_summary">Включити відображення мережевого трафіку в рядку стану</string>
+    <string name="show_network_traffic_unit">Одиниці виміру</string>
+    <string name="show_network_traffic_frequency">Інтервал поновлення</string>
+    <string name="show_network_traffic_disable">Вимкнений</string>
+    <string name="show_network_traffic_up">Вихідний</string>
+    <string name="show_network_traffic_down">Вхідний</string>
+    <string name="show_network_traffic_all">Вихідний і вхідний</string>
+    <string name="show_network_traffic_bit">Біт за секунду</string>
+    <string name="show_network_traffic_byte">Байт за секунду</string>
     <string name="show_network_traffic_500">500 мс</string>
     <string name="show_network_traffic_1000">1000 мс</string>
     <string name="show_network_traffic_1500">1500 мс</string>
     <string name="show_network_traffic_2000">2000 мс</string>
-    <string name="network_traffic_autohide">Автоматически скрывать</string>
-    <string name="network_traffic_autohide_summary">Скрывать отображение трафика, когда нет сетевой активности</string>
-    <string name="network_traffic_autohide_threshold">Порог неактивности</string> 
+    <string name="network_traffic_autohide">Автоматично приховувати</string>
+    <string name="network_traffic_autohide_summary">Приховувати відображення трафіку, коли немає мережевої активності</string>
+    <string name="network_traffic_autohide_threshold">Поріг активності</string> 
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
