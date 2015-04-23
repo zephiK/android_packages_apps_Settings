@@ -486,14 +486,14 @@
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Подвійний тап для сну</string>
-    <string name="double_tap_sleep_nav_bar_summary">Подвійний тап Подвійний тап </string>
+    <string name="double_tap_sleep_nav_bar_summary">Подвійний тап по панелі навігації вимикає екран</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Всплювающие уведомления</string>
-    <string name="summary_heads_up_enabled">Всплювающие уведомления включены</string>
-    <string name="summary_heads_up_disabled">Всплювающие уведомления отключены</string>
-    <string name="add_heads_up_package">Добавить приложение</string>
-    <string name="add_heads_up_dnd_summary">Не показывать всплювающие уведомления в этих приложениях</string>
+    <string name="category_heads_up">Спливаючі  сповіщення</string>
+    <string name="summary_heads_up_enabled">Спливаючі  сповіщення увімнені</string>
+    <string name="summary_heads_up_disabled">Спливаючі  сповіщення вимкнені</string>
+    <string name="add_heads_up_package">Додати сповіщеня</string>
+    <string name="add_heads_up_dnd_summary">Чи не показувати спливаючі повідомлення в цих додатках</string>
     <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
     <string name="heads_up_dnd_title">Не беспокоить</string>
     <string name="heads_up_blacklist_title">Черный список</string>
