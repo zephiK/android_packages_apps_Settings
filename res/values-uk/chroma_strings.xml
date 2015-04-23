@@ -168,19 +168,19 @@
     <string name="volume_rocker_wake_summary">Натискання кнопок гучності увімкне пристрій\nOverrides playback control</string>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Контроль відтворення</string>
-    <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие кнопок громкости будет переключать композиции</string>
+    <string name="volume_rocker_music_controls_summary">Коли екран вимкнений, довге натискання кнопок гучності буде перемикати композиції</string>
     <!-- Volume adjust sound -->
-    <string name="volume_key_adjust_sound_title">Звук нажатия кнопок</string>
-    <string name="volume_key_adjust_sound_summary">Воспроизводить звук когда нажимаются кнопки громкости</string>
+    <string name="volume_key_adjust_sound_title">Звук натискання кнопок</string>
+    <string name="volume_key_adjust_sound_summary">Відтворювати звук коли натискаються кнопки гучності</string>
     <!-- Swap volume buttons when the screen is rotated -->
-    <string name="swap_volume_buttons_title">Менять расположение кнопок громкости</string>
-    <string name="swap_volume_buttons_summary">Менять расположение кнопок громкости согласно ориентации экрана</string>
+    <string name="swap_volume_buttons_title">Міняти розташування кнопок гучності</string>
+    <string name="swap_volume_buttons_summary">Міняти розташування кнопок гучності згідно орієнтації екрану</string>
 
     <!-- Navigation Bar -->
-    <string name="navigation_bar_screen_title">Панель навигации</string>
+    <string name="navigation_bar_screen_title">Панель навигації</string>
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Размер панели навигации</string>
-    <string name="navigation_bar_height_48">48dp (по умолчанию)</string>
+    <string name="navigation_bar_height">Размір панелі навигації</string>
+    <string name="navigation_bar_height_48">48dp (за замовчуванням)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
     <string name="navigation_bar_height_36">36dp</string>
@@ -188,58 +188,58 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
-    <string name="navigation_bar_height_0">0dp (скрыто)</string>
-    <string name="navigation_bar_title">Кнопки и расположение</string>
-    <string name="navigation_bar_settings_summary">Изменение и переназначение кнопок панели навигации</string>
-    <string name="navigation_bar_help_text">Для начала нажмите иконки редактирования для изменения кнопок панели навигации.\n\nВы можете нажать на иконки, чтобы изменить её или зажать чтобы поменять местами.\n\nНажать \'Сохранить\' для подтверждения изменений, или \'Восстановить по-умолчанию\' для сброса к исходным настройкам.</string>
-    <string name="navigation_restore_button_text">Восстановить\nпо умолчанию</string>
-    <string name="navigation_edit_button_text">Редактировать</string>
-    <string name="navigation_save_button_text">Сохранить</string>
-    <string name="navigation_bar_reset_message">Удалить текущие настройки и восстановить значения по умолчанию?</string>
+    <string name="navigation_bar_height_0">0dp (Приховано)</string>
+    <string name="navigation_bar_title">Кнопки і розміщення</string>
+    <string name="navigation_bar_settings_summary">Зміна та перепризначення кнопок панелі навігації</string>
+    <string name="navigation_bar_help_text">Для початку натисніть іконки редагування для зміни кнопок панелі навігації.\n\nВы можете нажать на иконки, чтобы изменить её или зажать чтобы поменять местами.\n\nНажать \'Сохранить\' для подтверждения изменений, или \'Восстановить по-умолчанию\' для сброса к исходным настройкам.</string>
+    <string name="navigation_restore_button_text">Відновити\nза замовчуванням</string>
+    <string name="navigation_edit_button_text">Редагувати</string>
+    <string name="navigation_save_button_text">Зберегти</string>
+    <string name="navigation_bar_reset_message">Видалити поточні налаштування і відновити значення за замовчуванням?</string>
 
     <!-- Recents panel settings -->
-    <string name="show_clear_all_recents_button_title">Кнопка очистки недавних приложений</string>
-    <string name="show_clear_all_recents_button_summary">Показывать кнопку очистки в панели недавних приложений </string>
-    <string name="recents_clear_all_location_title">Расположение кнопки</string>
-    <string name="recents_clear_all_location_top_right">Сверху справа</string>
-    <string name="recents_clear_all_location_top_left">Сверху слева</string>
+    <string name="show_clear_all_recents_button_title">Кнопка очищення недавніх додатків</string>
+    <string name="show_clear_all_recents_button_summary">Показувати кнопку очищення в панелі недавніх додатків </string>
+    <string name="recents_clear_all_location_title">Розташування кнопки</string>
+    <string name="recents_clear_all_location_top_right">Зверху справа</string>
+    <string name="recents_clear_all_location_top_left">Зверху зліва</string>
     <string name="recents_clear_all_location_top_center">Сверху по центру</string>
-    <string name="recents_clear_all_location_bottom_right">Снизу справа</string>
-    <string name="recents_clear_all_location_bottom_left">Снизу слева</string>
-    <string name="recents_clear_all_location_bottom_center">Снизу по центру</string>
+    <string name="recents_clear_all_location_bottom_right">Знизу справа</string>
+    <string name="recents_clear_all_location_bottom_left">Знизу зліва</string>
+    <string name="recents_clear_all_location_bottom_center">Знизу по центру</string>
 
    <!-- useless strings -->
-    <string name="profiles_add">Добавить</string>
-    <string name="profile_choose_app">Выбрать приложение</string>
-    <string name="profile_reset_title">Сбросить</string>
-    <string name="profile_applist_title">Приложения</string>
-    <string name="picker_activities">Активности</string>
-    <string name="select_custom_app_title">Выбрать пользовательское приложение</string>
-    <string name="select_custom_activity_title">Выбрать пользовательскую активность</string>
+    <string name="profiles_add">Додати</string>
+    <string name="profile_choose_app">Вибрати додаток</string>
+    <string name="profile_reset_title">Скинути</string>
+    <string name="profile_applist_title">Додатки</string>
+    <string name="picker_activities">Активність</string>
+    <string name="select_custom_app_title">Вибрати користувацький додаток</string>
+    <string name="select_custom_activity_title">Вибрати користувацьку активність</string>
 
     <!-- Notification light dialogs -->
-    <string name="edit_light_settings">Настройки индикации</string>
-    <string name="pulse_speed_title">Длительность и скорость</string>
+    <string name="edit_light_settings">Налаштування індикації</string>
+    <string name="pulse_speed_title">Тривалість і швидкість</string>
     <string name="default_time">Нормально</string>
-    <string name="custom_time">Пользовательские настройки</string>
-    <string name="dialog_delete_title">Удалить</string>
-    <string name="dialog_delete_message">Удалить выбранный пункт?</string>
+    <string name="custom_time">Налаштування користувача</string>
+    <string name="dialog_delete_title">Видалити</string>
+    <string name="dialog_delete_message">Видалити обраний пункт?</string>
 
     <!-- Values for the notification light pulse spinners -->
-    <string name="pulse_length_always_on">Всегда включен</string>
-    <string name="pulse_length_very_short">Очень быстро</string>
-    <string name="pulse_length_short">Быстро</string>
+    <string name="pulse_length_always_on">Завжди увімнений</string>
+    <string name="pulse_length_very_short">Дуже швидко</string>
+    <string name="pulse_length_short">Швидко</string>
     <string name="pulse_length_normal">Нормально</string>
-    <string name="pulse_length_long">Долго</string>
-    <string name="pulse_length_very_long">Очень долго</string>
-    <string name="pulse_speed_very_fast">Очень быстро</string>
-    <string name="pulse_speed_fast">Быстро</string>
+    <string name="pulse_length_long">Довго</string>
+    <string name="pulse_length_very_long">Дуже довго</string>
+    <string name="pulse_speed_very_fast">ОДуже швидко</string>
+    <string name="pulse_speed_fast">Швидко</string>
     <string name="pulse_speed_normal">Нормально</string>
-    <string name="pulse_speed_slow">Медленно</string>
-    <string name="pulse_speed_very_slow">Очень медленно</string>
+    <string name="pulse_speed_slow">Повільно</string>
+    <string name="pulse_speed_very_slow">Дуже новільно</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Индикация батареи</string>
+    <string name="battery_light_title">Индикация батареї</string>
     <string name="battery_low_pulse_title">Пульсировать светодиодом при низком заряде</string>
     <string name="battery_light_list_title">Цвета</string>
     <string name="battery_light_low_color_title">Низкий заряд</string>
