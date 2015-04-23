@@ -53,121 +53,121 @@
     <string name="status_bar_native_battery_percentage_summary">Показувати відсотки заряду</string>
 
     <!-- Developer options - kill app long press back -->
-    <string name="kill_app_longpress_back">Закрытие приложения кнопкой назад</string>
-    <string name="kill_app_longpress_back_summary">Закрытие приложения долгим удержанием кнопки назад</string>
+    <string name="kill_app_longpress_back">Закриття програми кнопкою назад</string>
+    <string name="kill_app_longpress_back_summary">Закриття програми довгим утриманням кнопки назад</string>
 
     <!-- Generic strings -->
     <string name="ok_string">Ok</string>
-    <string name="default_string">По умолчанию</string>
-    <string name="enabled_string">Включено</string>
-    <string name="disabled_string">Выключено</string>
-    <string name="general_string">Основные</string>
-    <string name="reset_string">Сбросить</string>
-    <string name="reset">Сбросить</string>
-    <string name="empty_string">Пустое</string>
+    <string name="default_string">За замовчуванням</string>
+    <string name="enabled_string">Увімк</string>
+    <string name="disabled_string">Вимк</string>
+    <string name="general_string">Основні</string>
+    <string name="reset_string">Скинути</string>
+    <string name="reset">Скинути</string>
+    <string name="empty_string">Пусте</string>
      <string name="ok">Ok</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Настройка цвета</string>
-    <string name="press_color_to_apply">Нажмите на цвет для применения</string>
+    <string name="dialog_color_picker">Налаштування кольору</string>
+    <string name="press_color_to_apply">Натисніть на колір для застосування</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Установить</string>
-    <string name="color_default">По умолчанию</string>
+    <string name="set">Встановити</string>
+    <string name="color_default">За замовчуванням</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Часы &amp; дата</string>
-    <string name="status_bar_clock_title">Стиль часов &amp; даты</string>
-    <string name="status_bar_clock_summary">Различные настройки часов &amp; даты</string> 
-    <string name="clock_title_enable">Выравнивание</string>
-    <string name="clock_enabled">Включено</string>
-    <string name="clock_disabled">Отключено</string>
-    <string name="clock_color_title">Цвет</string>
-    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
-    <string name="status_bar_show_clock_title">Показывать часы &amp; дату</string>
+    <string name="status_bar_clock">Годинник &amp; дата</string>
+    <string name="status_bar_clock_title">Стиль годинника &amp; дати</string>
+    <string name="status_bar_clock_summary">Різні налаштування годинника &amp; дати</string> 
+    <string name="clock_title_enable">Вирівнювання</string>
+    <string name="clock_enabled">Увімкнено</string>
+    <string name="clock_disabled">Вимкнено</string>
+    <string name="clock_color_title">Колір</string>
+    <string name="status_bar_clock_style_reset">Скинути колір</string>
+    <string name="status_bar_show_clock_title">Показувати годинник &amp; дату</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-ой формат времени включен</string>
+    <string name="status_bar_am_pm_info">24-ий формат часу увімкнений</string>
     <string name="enable_clock_weekday">День недели</string>
-    <string name="enable_clock_weekday_summary">Сокращенный день недели перед часами</string>
-    <string name="right_clock">Часы справа</string>
-    <string name="center_clock">Часы по центру</string>
-    <string name="left_clock">Часы слева</string>
-    <string name="dont_show">Не показывать</string>
+    <string name="enable_clock_weekday_summary">Скорочений день тижня перед годинами</string>
+    <string name="right_clock">Години зправа</string>
+    <string name="center_clock">Години по центру</string>
+    <string name="left_clock">Години зліва</string>
+    <string name="dont_show">Не показувати</string>
     <string name="clock_date_display">Дата</string>
-    <string name="clock_date_display_summary">Показывать пользовательскую дату перед часами</string>
-    <string name="clock_date_style">Стиль даты</string>
-    <string name="clock_date_format">Формат даты</string>
-    <string name="clock_date_string_edittext_title">должно быть в формате, например: MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Ввести значение</string>
-    <string name="am_pm_clock_normal">Нормальный размер шрифта</string>
+    <string name="clock_date_display_summary">Показувати користувацьку дату перед годинами</string>
+    <string name="clock_date_style">Стиль дати</string>
+    <string name="clock_date_format">Формат дати</string>
+    <string name="clock_date_string_edittext_title">має бути у форматі, наприклад: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Ввести значення</string>
+    <string name="am_pm_clock_normal">Нормальний размір шрифта</string>
     <string name="am_pm_clock_small">Маленький шрифт</string>
-    <string name="am_pm_clock_none">Не показывать</string>
-    <string name="clock_date_display_none">Не показывать</string>
+    <string name="am_pm_clock_none">Не показувати</string>
+    <string name="clock_date_display_none">Не показувати</string>
     <string name="clock_date_display_small">Маленький шрифт</string>
-    <string name="clock_date_display_normal">Нормальный размер шрифта</string>
-    <string name="clock_date_style_normal">Нормальный</string>
-    <string name="clock_date_style_lowercase">Строчные буквы</string>
-    <string name="clock_date_style_uppercase">Прописные буквы</string>
-    <string name="clock_date_format_custom">Пользовательский java формат</string>
-    <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
+    <string name="clock_date_display_normal">Нормальний размір шрифта</string>
+    <string name="clock_date_style_normal">Нормальний</string>
+    <string name="clock_date_style_lowercase">Малі літери</string>
+    <string name="clock_date_style_uppercase">Прописні літери</string>
+    <string name="clock_date_format_custom">Користувацький java формат</string>
+    <string name="status_bar_clock_style_reset_message">Скинути колір годин?</string>
     
     <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">Настройки пробуждения</string>
-    <string name="wakeup_when_plugged_unplugged_title">Включать экран при зарядке</string>
-    <string name="wakeup_when_plugged_unplugged_summary">Включать экран, когда зарядное устройство подключено/отключено.</string>
+    <string name="display_category_wakeup_options_title">Налаштування пробудження</string>
+    <string name="wakeup_when_plugged_unplugged_title">Включати екран при зарядці</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Включати екран, коли зарядний пристрій підключено / відключено.</string>
 
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_title">Значок батареи</string>
-    <string name="status_bar_battery_summary">Изменить значок батареи</string>
-    <string name="status_bar_battery_style_title">Стили значка батареи</string>
-    <string name="status_bar_battery_style_icon_portrait">Вертикальная</string>
-    <string name="status_bar_battery_style_icon_landscape">Горизонтальная</string>
-    <string name="status_bar_battery_style_circle">Круглая</string>
+    <string name="status_bar_battery_title">Значок батареї</string>
+    <string name="status_bar_battery_summary">Змінити значок батареї</string>
+    <string name="status_bar_battery_style_title">Стилі значка батареї</string>
+    <string name="status_bar_battery_style_icon_portrait">Вертикальна</string>
+    <string name="status_bar_battery_style_icon_landscape">Горизонтальна</string>
+    <string name="status_bar_battery_style_circle">Кругла</string>
     <string name="status_bar_battery_style_text">Текст</string>
-    <string name="status_bar_battery_style_hidden">Скрыта</string>
+    <string name="status_bar_battery_style_hidden">Прихована</string>
 
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Проценты заряда</string>
-    <string name="status_bar_battery_percentage_default">Не отображаются (по умолчанию)</string>
-    <string name="status_bar_battery_percentage_text_inside">Внутри иконки</string>
-    <string name="status_bar_battery_percentage_text_next">Рядом с иконкой</string>
+    <string name="status_bar_battery_percentage_title">Відсотки заряду</string>
+    <string name="status_bar_battery_percentage_default">Не відображати (за замовчуванням)</string>
+    <string name="status_bar_battery_percentage_text_inside">Усередині іконки</string>
+    <string name="status_bar_battery_percentage_text_next">Поруч з іконкою</string>
 
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Быстрый доступ</string>
-    <string name="summary_quick_pulldown">%1$s от края открывают быстрые настройки</string>
-    <string name="quick_pulldown_off">Выключен</string>
-    <string name="quick_pulldown_left">Слева</string>
+    <string name="title_quick_pulldown">Швидкий доступ</string>
+    <string name="summary_quick_pulldown">%1$s від краю відкривають швидкі налаштування</string>
+    <string name="quick_pulldown_off">Вимк</string>
+    <string name="quick_pulldown_left">Зліва</string>
     <string name="quick_pulldown_right">Справа</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Двойное нажатие для сна</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Двойное нажатие по строке состояния выключит экран</string>
+    <string name="status_bar_double_tap_to_sleep_title">Подвійне натискання для сну</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Подвійне натискання по рядку стану вимикає екран</string>
 
     <!-- Status bar brightness control -->
-    <string name="status_bar_toggle_brightness">Контроль яркости</string>
-    <string name="status_bar_toggle_brightness_summary">Регулировать яркость движением пальца по строке состояния</string>
+    <string name="status_bar_toggle_brightness">Контроль яскравості</string>
+    <string name="status_bar_toggle_brightness_summary">Регулювати яскравість рухом пальця по рядку стану</string>
 
     <!-- Show notification count -->
-    <string name="status_bar_notif_count_title">Показывать количество уведомлений</string>
-    <string name="status_bar_notif_count_summary">Отображать количество полученных уведомлений</string>
+    <string name="status_bar_notif_count_title">Показувати кількість повідомлень</string>
+    <string name="status_bar_notif_count_summary">Відображати кількість отриманих повідомлень</string>
 
     <!-- Advanced reboot options -->
-    <string name="advanced_reboot_title">Варианты перезагрузки</string>
-    <string name="advanced_reboot_summary">Когда устройство разблокировано, включить возможность перезагрузки в режим восстановления, загрузчик или быструю перезагрузку</string>
+    <string name="advanced_reboot_title">Варіанти перезавантаження</string>
+    <string name="advanced_reboot_summary">Коли пристрій розблоковано, включити можливість перезавантаження в режим відновлення, завантажувач або швидке перезавантаження</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_screen_title">Кнопки громкости</string>
+    <string name="volume_rocker_screen_title">Кнопки гучності</string>
     <!-- Wakeup category -->
-    <string name="display_category_wakeup_options_title">Настройки пробуждения</string>
+    <string name="display_category_wakeup_options_title">Налаштування пробудження</string>
     <!-- Media category -->
-    <string name="media_options_title">Настройки медиа</string>
+    <string name="media_options_title">Налаштування медіа</string>
     <!-- Volume rocker wake -->
-    <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
-    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости включит устройство\nOverrides playback control</string>
+    <string name="volume_rocker_wake_title">Пробудження кнопками гучності</string>
+    <string name="volume_rocker_wake_summary">Натискання кнопок гучності увімкне пристрій\nOverrides playback control</string>
     <!-- Volume rocker music control -->
-    <string name="volume_rocker_music_controls_title">Контроль воспроизведением</string>
+    <string name="volume_rocker_music_controls_title">Контроль відтворення</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие кнопок громкости будет переключать композиции</string>
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Звук нажатия кнопок</string>
