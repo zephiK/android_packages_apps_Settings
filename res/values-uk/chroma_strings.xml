@@ -2,55 +2,55 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_chroma">Персонализация</string>
+    <string name="header_category_chroma">Персоналізація</string>
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Дата создания</string>
+    <string name="build_date">Дата створення</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Расширенные настройки</string>
-    <string name="chroma_menu_about">О прошивке</string>
-    <string name="status_bar_screen_title">Строка состояния</string>
-    <string name="navigation_bar_screen_title">Панель навигации</string>
-    <string name="power_menu_title">Меню выключения</string>
-    <string name="volume_rocker_screen_title">Кнопки громкости</string>
+    <string name="chroma_menu_personalizaton">Розширені налаштування</string>
+    <string name="chroma_menu_about">Про Chroma</string>
+    <string name="status_bar_screen_title">Рядок стану</string>
+    <string name="navigation_bar_screen_title">Панель навігації</string>
+    <string name="power_menu_title">Меню вимкнення</string>
+    <string name="volume_rocker_screen_title">Кнопки гучності</string>
     <!-- Battery and clock category -->
-    <string name="display_category_batteryclock_options_title">Настройки часов и батареи</string>
+    <string name="display_category_batteryclock_options_title">Налаштування годинника і батареї</string>
     <!-- Navigation bar category -->
-    <string name="display_category_navbar_options_title">Настройки панели навигации</string>
-    <string name="display_category_navring_options_title">Настройки кольца панели навигации</string>
+    <string name="display_category_navbar_options_title">Налаштування панелі навігації</string>
+    <string name="display_category_navring_options_title">Налаштування кільця панелі навігації</string>
     <!-- Status bar category -->
-    <string name="display_category_statusbar_options_title">Настройки строки состояния</string>
+    <string name="display_category_statusbar_options_title">Налаштування рядка стану</string>
     <!-- Recent apps category -->
-    <string name="display_category_recents_options_title">Настройки панели недавних приложений</string>
+    <string name="display_category_recents_options_title">Налаштування панелі недавніх додатків</string>
     <!-- Power menu category -->
-    <string name="display_category_power_options_title">Настройки меню выключения</string>
+    <string name="display_category_power_options_title">Налаштування меню вимкнення</string>
     <!-- QS Tiles -->
-    <string name="qs_category_title">Настройка плиток</string>
+    <string name="qs_category_title">Налаштування плиток</string>
 
     <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Оформление</string>
+    <string name="bitsyko_layers">Оформлення</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
-    <string name="supersu_title">Суперпользователь</string>
+    <string name="supersu_title">Суперкористувач</string>
 
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Поворот экрана</string>
-    <string name="display_rotation_disabled">Отлючен</string>
-    <string name="display_rotation_unit">градусы</string>
-    <string name="display_rotation_category_title">Настройки поворота экрана</string>
-    <string name="display_rotation_0_title">0 градусов</string>
-    <string name="display_rotation_90_title">90 градусов</string>
-    <string name="display_rotation_180_title">180 градусов</string>
-    <string name="display_rotation_270_title">270 градусов</string>
+    <string name="display_rotation_title">Поворот екрану</string>
+    <string name="display_rotation_disabled">Вимкнений</string>
+    <string name="display_rotation_unit">градуси</string>
+    <string name="display_rotation_category_title">Налаштування повороту екрану</string>
+    <string name="display_rotation_0_title">0 градусів</string>
+    <string name="display_rotation_90_title">90 градусів</string>
+    <string name="display_rotation_180_title">180 градусів</string>
+    <string name="display_rotation_270_title">270 градусів</string>
 
     <!-- Statusbar native battery percent -->
-    <string name="general_string">Основные</string>
-    <string name="status_bar_title">Строка состояния</string>
-    <string name="status_bar_native_battery_percentage_title">Проценты заряда</string>
-    <string name="status_bar_native_battery_percentage_summary">Показывать проценты заряда</string>
+    <string name="general_string">Основні</string>
+    <string name="status_bar_title">Рядок стану</string>
+    <string name="status_bar_native_battery_percentage_title">Відсотки заряду</string>
+    <string name="status_bar_native_battery_percentage_summary">Показувати відсотки заряду</string>
 
     <!-- Developer options - kill app long press back -->
     <string name="kill_app_longpress_back">Закрытие приложения кнопкой назад</string>
