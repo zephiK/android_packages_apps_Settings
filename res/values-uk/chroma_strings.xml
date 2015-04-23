@@ -464,22 +464,22 @@
 
     <!-- Quicksettings block on secure lockscreen -->
     <string name="qs_category">Доступ до швидких налаштувань</string>
-    <string name="block_on_secure_keyguard_title">Отключен на экране блокировки</string>
-    <string name="block_on_secure_keyguard_summary">Отключить доступ к быстрым настройкам на защищенном экране блокировки.</string>
+    <string name="block_on_secure_keyguard_title">Відключений на екрані блокування</string>
+    <string name="block_on_secure_keyguard_summary">Відключити доступ до швидких налаштувань на захисному екрані блокування.</string>
 
     <!--Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
-    <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, если введён корректный PIN-код</string>
+    <string name="unlock_quick_unlock_control_title">Швидке розблокування</string>
+    <string name="unlock_quick_unlock_control_summary">Розблокувати автоматично, якщо введений коректний PIN-код</string>
 
     <!-- Lockscreen pin shuffle -->
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_cursor_title">Настройки курсора</string>
-    <string name="volume_button_toggle_info">Пробуждение кнопками громкости будет отключено</string>
+    <string name="volume_rocker_cursor_title">Налаштування курсора</string>
+    <string name="volume_button_toggle_info">Пробудження кнопками гучності буде відключено</string>
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Управление курсором кнопками громкости</string>
+    <string name="volume_key_cursor_control_title">Пробудження кнопками гучності буде відключено</string>
     <string name="volume_key_cursor_control_off">Отключено</string>
     <string name="volume_key_cursor_control_on">Кнопка громкости вверх/вниз двигает курсор влево/вправо</string>
     <string name="volume_key_cursor_control_on_reverse">Кнопка громкости вверх/вниз двигает курсор вправо/влево</string>
