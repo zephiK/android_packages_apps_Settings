@@ -232,7 +232,7 @@
     <string name="pulse_length_normal">Нормально</string>
     <string name="pulse_length_long">Довго</string>
     <string name="pulse_length_very_long">Дуже довго</string>
-    <string name="pulse_speed_very_fast">ОДуже швидко</string>
+    <string name="pulse_speed_very_fast">Дуже швидко</string>
     <string name="pulse_speed_fast">Швидко</string>
     <string name="pulse_speed_normal">Нормально</string>
     <string name="pulse_speed_slow">Повільно</string>
