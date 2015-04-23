@@ -203,10 +203,10 @@
     <string name="recents_clear_all_location_title">Розташування кнопки</string>
     <string name="recents_clear_all_location_top_right">Зверху справа</string>
     <string name="recents_clear_all_location_top_left">Зверху зліва</string>
-    <string name="recents_clear_all_location_top_center">Сверху по центру</string>
+    <string name="recents_clear_all_location_top_center">Сверху в центрі</string>
     <string name="recents_clear_all_location_bottom_right">Знизу справа</string>
     <string name="recents_clear_all_location_bottom_left">Знизу зліва</string>
-    <string name="recents_clear_all_location_bottom_center">Знизу по центру</string>
+    <string name="recents_clear_all_location_bottom_center">Знизу в центрі</string>
 
    <!-- useless strings -->
     <string name="profiles_add">Додати</string>
@@ -240,95 +240,95 @@
 
     <!-- Battery light settings -->
     <string name="battery_light_title">Индикация батареї</string>
-    <string name="battery_low_pulse_title">Пульсировать светодиодом при низком заряде</string>
-    <string name="battery_light_list_title">Цвета</string>
-    <string name="battery_light_low_color_title">Низкий заряд</string>
+    <string name="battery_low_pulse_title">Пульсувати світлодіодом при низькому заряді</string>
+    <string name="battery_light_list_title">Кольори</string>
+    <string name="battery_light_low_color_title">Низький заряд</string>
     <string name="battery_light_medium_color_title">Зарядка</string>
-    <string name="battery_light_full_color_title">Полностью заряжен</string>
+    <string name="battery_light_full_color_title">Повністю заряджений</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_title">Индикация уведомлений</string>
-    <string name="notification_light_general_title">Основные</string>
-    <string name="notification_light_applist_title">Приложения</string>
+    <string name="notification_light_title">Індикація сповіщень</string>
+    <string name="notification_light_general_title">Основні</string>
+    <string name="notification_light_applist_title">Додатки</string>
     <string name="notification_light_phonelist_title">Телефон</string>
-    <string name="notification_light_use_custom">Использовать пользовательские значения</string>
-    <string name="notification_light_default_value">По умолчанию</string>
-    <string name="notification_light_missed_call_title">Пропущенный звонок</string>
-    <string name="notification_light_voicemail_title">Голосовая почта</string>
+    <string name="notification_light_use_custom">Використовувати користувацькі значення</string>
+    <string name="notification_light_default_value">За замовченням</string>
+    <string name="notification_light_missed_call_title">Пропущений дзвінок</string>
+    <string name="notification_light_voicemail_title">Голосова пошта</string>
 
     <!-- Weather in status bar -->
-    <string name="status_bar_show_weather_title">Показывать погоду</string>
-    <string name="status_bar_show_weather_summary">Показывать погоду в панели уведомлений</string>
+    <string name="status_bar_show_weather_title">Показувати погоду</string>
+    <string name="status_bar_show_weather_summary">Показувати погоду в панелі повідомлень</string>
 
      <!--- Lock clock -->
-    <string name="lock_clock_title">Виджет часов</string>
-    <string name="lock_clock_summary">Посмотреть или изменить виджет</string>
-    <string name="weather_clock_title">Погода в строке состояния</string>
+    <string name="lock_clock_title">Віджет годинника</string>
+    <string name="lock_clock_summary">Переглянути або змінити віджет</string>
+    <string name="weather_clock_title">Погода в рядку стану</string>
 
     <!-- Power menu -->
-    <string name="power_menu_title">Меню выключения</string>
-    <string name="power_menu_reboot_title">Перезагрузка</string>
-    <string name="power_menu_screenshot_title">Скриншот</string>
-    <string name="power_menu_airplane_title">Режим полета</string>
-    <string name="power_menu_users_title">Переключение пользователя</string>
-    <string name="power_menu_settings_title">Ярлык настроек</string>
-    <string name="power_menu_lockdown_title">Блокировка устройства</string>
-    <string name="power_menu_bug_report_title">Отчёт об ошибках</string>
-    <string name="power_menu_sound_title">Звуковая панель</string>
-    <string name="power_menu_bug_report_disabled">Отчёт об ошибках отключён в настройках разработчика</string>
+    <string name="power_menu_title">Меню вимкнення</string>
+    <string name="power_menu_reboot_title">Перезавантаження</string>
+    <string name="power_menu_screenshot_title">Скріншот</string>
+    <string name="power_menu_airplane_title">Режим польоту</string>
+    <string name="power_menu_users_title">Зміна користувача</string>
+    <string name="power_menu_settings_title">Ярлик налаштувань</string>
+    <string name="power_menu_lockdown_title">Блокування пристрою</string>
+    <string name="power_menu_bug_report_title">Звіт про помилки</string>
+    <string name="power_menu_sound_title">Звукова панель</string>
+    <string name="power_menu_bug_report_disabled">Звіт про помилки відключений в налаштуваннях розробника</string>
 
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
-    <string name="debug_LAN_category">Настройки LAN</string>
+    <string name="debug_LAN_category">Налаштування LAN</string>
     <!-- Hostname setting -->
-    <string name="device_hostname">Хост-имя устройства</string>
+    <string name="device_hostname">Хост-им'я пристрою</string>
 
     <!-- Navigation bar cursor -->
-    <string name="navigation_bar_arrow_keys_title">Показывать стрелки ввода при наборе</string>
-    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева кнопки перемещения курсора. Overrides IME switcher.</string>
+    <string name="navigation_bar_arrow_keys_title">Показувати стрілки введення при наборі</string>
+    <string name="navigation_bar_arrow_keys_summary">Відображати праворуч і ліворуч кнопки переміщення курсора. Overrides IME switcher.</string>
  
     <!-- Navigation bar button color -->
-    <string name="navbar_button_tint_title">Оттенок панели навигации</string>
+    <string name="navbar_button_tint_title">Відтінок панелі навігації</string>
 
     <!-- Display settings screen, setting options for LCD density -->
-    <string name="lcd_density">Плотность экрана</string>
+    <string name="lcd_density">Щільність екрану</string>
     <string name="lcd_density_summary">%d DPI</string>
-    <string name="lcd_density_default">Значение по умолчанию</string>
-    <string name="lcd_density_unsupported">Не поддерживается</string>
-    <string name="restarting_ui">Перезагрузка</string>
-    <string name="custom_density_title">Измнените всё как Вам нравится</string>
-    <string name="custom_density_summary">Если Вы столкнетесь с проблемами совместимости ПО в Play Store, перепроверьте стоит ли у Вас, модифицированный Play Store</string>
-    <string name="custom_density_summary_invalid">"Неверное значение!"</string>
-    <string name="custom_density">Нестандартное</string>
-    <string name="set_custom_density_title">Установить нестандартную плотность экрана</string>
-    <string name="set_custom_density_set">Установить</string>
-    <string name="custom_density_dialog_title">ОСТОРОЖНО!</string>
-    <string name="custom_density_dialog_summary">Изменение плотности экрана может повлиять на работу приложений, магазин приложений может показывать приложения как несовместимые с вашим устройством"</string>
+    <string name="lcd_density_default">Значення за замовчуванням</string>
+    <string name="lcd_density_unsupported">Не підтримується</string>
+    <string name="restarting_ui">Перезавантаження</string>
+    <string name="custom_density_title">Змініть все як Вам подобається</string>
+    <string name="custom_density_summary">Якщо Ви зіткнетеся з проблемами сумісності ПЗ в Play Store, перевірте чи встановлено у Вас, модифікований Play Store</string>
+    <string name="custom_density_summary_invalid">"Невірне значення!"</string>
+    <string name="custom_density">Нестандартне</string>
+    <string name="set_custom_density_title">Встановити не стандартну щільність екрану</string>
+    <string name="set_custom_density_set">Встановити</string>
+    <string name="custom_density_dialog_title">ОБЕРЕЖНО!</string>
+    <string name="custom_density_dialog_summary">Зміна щільності екрану може вплинути на роботу додатків, Play Store може показувати додатки як несумісні з вашим пристроєм"</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density">Пользовательское</string>
+    <string name="custom_density">Користувацькі</string>
 
     <!-- Doze pulse (ambient display) options -->
-    <string name="summary_doze_enabled">Включено</string>
-    <string name="summary_doze_disabled">Отключено</string>
-    <string name="doze_overwrite_value_title">Изменить значения</string>
-    <string name="doze_overwrite_value_summary">Принимать изменение значений по умолчанию на пользовательские</string>
+    <string name="summary_doze_enabled">Увімкнено</string>
+    <string name="summary_doze_disabled">Вимкнено</string>
+    <string name="doze_overwrite_value_title">Змінити значення</string>
+    <string name="doze_overwrite_value_summary">Приймати зміну значень за замовчуванням на користувацькі</string>
 
-    <string name="doze_list_mode_title">Режим сна</string>
-    <string name="doze_list_mode_summary">Настройка режима сна</string>
+    <string name="doze_list_mode_title">Режим сну</string>
+    <string name="doze_list_mode_summary">Налаштування режиму сну</string>
 
-    <string name="doze_pulse_title">Настройки времени</string>
-    <string name="doze_pulse_duration_in_title">Появление</string>
+    <string name="doze_pulse_title">Налаштування часу</string>
+    <string name="doze_pulse_duration_in_title">Поява</string>
     <string name="doze_pulse_duration_in_summary"></string>
 
-    <string name="doze_pulse_duration_visible_title">Время видимости</string>
+    <string name="doze_pulse_duration_visible_title">Час видимості</string>
     <string name="doze_pulse_duration_visible_summary"></string>
 
-    <string name="doze_pulse_duration_out_title">Угасание</string>
+    <string name="doze_pulse_duration_out_title">Згасання</string>
     <string name="doze_pulse_duration_out_summary"></string>
 
-    <string name="doze_pulse_on_notifications_title">Пульсация</string>
-    <string name="doze_pulse_on_notifications_summary">Пульсация экрана при уведомлении</string>
+    <string name="doze_pulse_on_notifications_title">Пульсація</string>
+    <string name="doze_pulse_on_notifications_summary">Пульсація екрану при сповіщенні</string>
 
-    <string name="doze_shake_title">Настройки встряхивания</string>
+    <string name="doze_shake_title">Налаштування струшування</string>
     <string name="doze_shake_mode_title">Режим встряхивания</string>
     <string name="doze_shake_mode_summary">>Использовать сенсор для активации действия</string>
     <string name="doze_shake_mode_test_summary">Хотите протестировать работу сенсора?</string>
