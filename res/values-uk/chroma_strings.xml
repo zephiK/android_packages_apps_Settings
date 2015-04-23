@@ -428,42 +428,42 @@
     <string name="network_traffic_autohide_threshold">Поріг активності</string> 
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
-    <string name="navigation_ring_summary">Редактировать ярлыки кольца панели навигации</string>
-<string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык для настройки его поведения.\n\nНажмите the \'\u2713\' для сохранения изменений, или \'Восстановить \' для сброса настроек по умолчанию.</string>
+    <string name="navigation_ring_title">Ярлики навігаційного кільця</string>
+    <string name="navigation_ring_summary">Редагувати ярлики кільця панелі навігації</string>
+<string name="navigation_ring_message">Торкніться значка редагування для зміни навігаційного кільця.\n\nВыберите ярлык для настройки его поведения.\n\nНажмите the \'\u2713\' для сохранения изменений, или \'Восстановить \' для сброса настроек по умолчанию.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Экран блокировки</string>
-    <string name="lockscreen_targets_message">Ярлыки экрана блокировки</string>
-    <string name="lockscreen_default_target">По умолчанию</string>
-    <string name="lockscreen_none_target">Нет</string>
-    <string name="lockscreen_message">Нажмите на иконку слева или справа, чтобы изменить ярлык.</string>
-    <string name="lockscreen_choose_action_title">Выбирите действие</string>
+    <string name="lockscreen_settings_title">Екран блокування</string>
+    <string name="lockscreen_targets_message">Ярлики екрану блокування</string>
+    <string name="lockscreen_default_target">За замовчуванням</string>
+    <string name="lockscreen_none_target">Ні</string>
+    <string name="lockscreen_message">Натисніть на іконку зліва чи справа, щоб змінити ярлик.</string>
+    <string name="lockscreen_choose_action_title">Виберіть дію</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
+    <string name="qs_four_columns_title">Показувати чотири плитки в ряд</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Связать громкость звонка и уведомлений</string>
-    <string name="notification_volume_option_title">Громкость уведомлений</string>
-    <string name="ring_notification_volume_option_tile">Громкость звонка и уведомлений</string>
+    <string name="link_volume_option_title">Зв'язати гучність дзвінка і сповіщень</string>
+    <string name="notification_volume_option_title">Гучність сповіщень</string>
+    <string name="ring_notification_volume_option_tile">Гучність дзвінка і сповіщень</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Расширенный экран</string>
-    <string name="expanded_hide_nothing">Не скрывать</string>
-    <string name="expanded_hide_status">Скрывать строку состояния</string>
-    <string name="expanded_hide_navigation">Скрывать нанель навигации</string>
-    <string name="expanded_hide_both">Скрывать всё</string>
+    <string name="power_menu_expanded_desktop">Расширений екран</string>
+    <string name="expanded_hide_nothing">Не приховувати</string>
+    <string name="expanded_hide_status">Приховувати рядок стану</string>
+    <string name="expanded_hide_navigation">Приховувати панель навігації</string>
+    <string name="expanded_hide_both">Приховувати все</string>
     <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Статус расширенного экрана</string>
-    <string name="expanded_enabled_for_all">Включен для всех</string>
-    <string name="expanded_user_configurable">Пользовательские настройки</string>
-    <string name="expanded_desktop_style">Стиль расширенного экрана</string>
-    <string name="expanded_desktop_style_description">Выбрать по умолчанию расширенный экран</string>
-    <string name="expanded_desktop_title">Настройки расширенного экрана</string>
+    <string name="expanded_desktop_state">Статус расширенного екрана</string>
+    <string name="expanded_enabled_for_all">Включено для всіх</string>
+    <string name="expanded_user_configurable">Користувацькі налаштування</string>
+    <string name="expanded_desktop_style">Стиль расширенного екрану</string>
+    <string name="expanded_desktop_style_description">Вибрати розширений екран за замовчуванням </string>
+    <string name="expanded_desktop_title">Налаштування расширенного екрану</string>
 
     <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Доступ к быстрым настройкам</string>
+    <string name="qs_category">Доступ до швидких налаштувань</string>
     <string name="block_on_secure_keyguard_title">Отключен на экране блокировки</string>
     <string name="block_on_secure_keyguard_summary">Отключить доступ к быстрым настройкам на защищенном экране блокировки.</string>
 
