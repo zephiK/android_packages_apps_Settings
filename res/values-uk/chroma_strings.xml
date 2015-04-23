@@ -329,9 +329,9 @@
     <string name="doze_pulse_on_notifications_summary">Пульсація екрану при сповіщенні</string>
 
     <string name="doze_shake_title">Налаштування струшування</string>
-    <string name="doze_shake_mode_title">Режим встряхивания</string>
-    <string name="doze_shake_mode_summary">>Использовать сенсор для активации действия</string>
-    <string name="doze_shake_mode_test_summary">Хотите протестировать работу сенсора?</string>
+    <string name="doze_shake_mode_title">Режим струшування</string>
+    <string name="doze_shake_mode_summary">Використовувати сенсор для активації дії</string>
+    <string name="doze_shake_mode_test_summary">Хочете протестувати роботу сенсора?</string>
     <string name="doze_shake_mode_test_result">Применить значение?</string>
     <string name="doze_shake_test">Потрясите устройство</string>
     <string name="doze_shake_it">Обнаружено!</string>
