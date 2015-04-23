@@ -365,7 +365,7 @@
 
     <string name="fully_mode">Полный режим</string>
     <string name="pocket_shake_mode">В кармане и потрясти</string>
-    <string name="pocket_pulse_mode"В кармане и пульсировать экраном</string>
+    <string name="pocket_pulse_mode">В кармане и пульсировать экраном</string>
     <string name="pocket_only_mode">В кармане</string>
     <string name="shake_pulse_mode">Потрясти и пульсировать экраном</string>
     <string name="pulse_only_mode">Пульсировать экраном (по умолчанию)</string>
@@ -491,7 +491,7 @@
     <!-- Heads Up -->
     <string name="category_heads_up">Всплювающие уведомления</string>
     <string name="summary_heads_up_enabled">Всплювающие уведомления включены</string>
-    <string name="summary_heads_up_disabled"Всплювающие уведомления отключены</string>
+    <string name="summary_heads_up_disabled">Всплювающие уведомления отключены</string>
     <string name="add_heads_up_package">Добавить приложение</string>
     <string name="add_heads_up_dnd_summary">Не показывать всплювающие уведомления в этих приложениях</string>
     <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
