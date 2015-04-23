@@ -492,28 +492,28 @@
     <string name="category_heads_up">Спливаючі  сповіщення</string>
     <string name="summary_heads_up_enabled">Спливаючі  сповіщення увімнені</string>
     <string name="summary_heads_up_disabled">Спливаючі  сповіщення вимкнені</string>
-    <string name="add_heads_up_package">Додати сповіщеня</string>
-    <string name="add_heads_up_dnd_summary">Чи не показувати спливаючі повідомлення в цих додатках</string>
-    <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
-    <string name="heads_up_dnd_title">Не беспокоить</string>
-    <string name="heads_up_blacklist_title">Черный список</string>
-    <string name="heads_up_disabled_notice">Для отображения интерактивных уведомлений от приложений,включите всплывающие уведомления.</string>
+    <string name="add_heads_up_package">Додати додаток</string>
+    <string name="add_heads_up_dnd_summary">Не показувати спливаючі повідомлення в цих додатках</string>
+    <string name="add_heads_up_blacklist_summary">Не показувати спливаючі повідомлення від цих додатків</string>
+    <string name="heads_up_dnd_title">Не турбувати</string>
+    <string name="heads_up_blacklist_title">Черний список</string>
+    <string name="heads_up_disabled_notice">Для відображення інтерактивних сповіщень від додатків, включіть спливаючі сповіщення.</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Таймаут</string>
-    <string name="heads_up_time_out_summary">Уведомление будет отображаться <xliff:g id="number">%d</xliff:g> секунд</string>
-    <string name="heads_up_time_out_never_summary">Уведомление будет отображаться до отклонения</string>
-    <string name="heads_up_time_out_2sec">2 секунды</string>
-    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_summary">Сповіщення буде відображатися <xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_never_summary">Сповіщення буде відображатися до відхилення</string>
+    <string name="heads_up_time_out_2sec">2 секунди</string>
+    <string name="heads_up_time_out_4sec">4 секунди</string>
     <string name="heads_up_time_out_6sec">6 секунд</string>
     <string name="heads_up_time_out_8sec">8 секунд</string>
     <string name="heads_up_time_out_10sec">10 секунд</string>
-    <string name="heads_up_time_out_never">Никогда</string>
+    <string name="heads_up_time_out_never">Ніколи</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_enable_title">Включить навигационное кольцо</string>
+    <string name="navigation_ring_enable_title">Включити навігаційне кільце</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="proximity_wake_title">Запобігання випадкового пробудження</string>
+    <string name="proximity_wake_summary">Перевірте датчик наближення до пробудження екрану.\nNOTE: Це може призвести до екран телефону, щоб прокинутися повільніше.</string>
 </resources>
