@@ -332,73 +332,73 @@
     <string name="doze_shake_mode_title">Режим струшування</string>
     <string name="doze_shake_mode_summary">Використовувати сенсор для активації дії</string>
     <string name="doze_shake_mode_test_summary">Хочете протестувати роботу сенсора?</string>
-    <string name="doze_shake_mode_test_result">Применить значение?</string>
-    <string name="doze_shake_test">Потрясите устройство</string>
-    <string name="doze_shake_it">Обнаружено!</string>
+    <string name="doze_shake_mode_test_result">Застосувати значення?</string>
+    <string name="doze_shake_test">Потрясіть пристрій</string>
+    <string name="doze_shake_it">Знайдено!</string>
 
-    <string name="doze_shake_acc_threshold_title">Чувствительность встряхивания</string>
-    <string name="doze_shake_acc_threshold_summary">Настроить силу встряхивания для активации действия</string>
+    <string name="doze_shake_acc_threshold_title">Чутливість струшування</string>
+    <string name="doze_shake_acc_threshold_summary">Налаштувати силу струшування для активації дії</string>
 
-    <string name="doze_time_mode_title">Показывать дату и время</string>
-    <string name="doze_time_mode_summary">Принудительно показывать время, когда нет уведомлений</string>
+    <string name="doze_time_mode_title">Показувати дату і час</string>
+    <string name="doze_time_mode_summary">Примусово показувати час, коли немає сповіщень</string>
 
     <string name="twohundred_ms">200 мс</string>
     <string name="fivehundred_ms">500 мс</string>
     <string name="one_second">1 сек</string>
-    <string name="one_second_default">1 сек (по умолчанию)</string>
+    <string name="one_second_default">1 сек (за замовчуванням)</string>
     <string name="onehalf_second">1.5 сек</string>
     <string name="two_second">2 сек</string>
     <string name="twohalf_second">2.5 сек</string>
     <string name="three_second">3 сек</string>
-    <string name="three_second_default">3 сек (по умолчанию)</string>
+    <string name="three_second_default">3 сек (за замовчуванням)</string>
     <string name="threehalf_second">3.5 сек</string>
     <string name="four_second">4 сек</string>
     <string name="fourhalf_second">4.5 сек</string>
     <string name="five_second">5 сек</string>
 
-    <string name="veryeasy_shake">Очень легко</string>
+    <string name="veryeasy_shake">Дуже легко</string>
     <string name="easy_shake">>Легко</string>
-    <string name="medium_shake">По умолчанию</string>
+    <string name="medium_shake">за замовчуванням</string>
     <string name="hard_shake">Сильно</string>
-    <string name="veryhard_shake">Очень сильно</string>
-    <string name="strong_shake">Со всей силы</string>
+    <string name="veryhard_shake">Дуже сильно</string>
+    <string name="strong_shake">Зі всієї сили</string>
 
-    <string name="fully_mode">Полный режим</string>
-    <string name="pocket_shake_mode">В кармане и потрясти</string>
-    <string name="pocket_pulse_mode">В кармане и пульсировать экраном</string>
-    <string name="pocket_only_mode">В кармане</string>
-    <string name="shake_pulse_mode">Потрясти и пульсировать экраном</string>
-    <string name="pulse_only_mode">Пульсировать экраном (по умолчанию)</string>
+    <string name="fully_mode">Повний режим</string>
+    <string name="pocket_shake_mode">У кишені і потрясти</string>
+    <string name="pocket_pulse_mode">У кишені і пульсувати екраном</string>
+    <string name="pocket_only_mode">У кишені</string>
+    <string name="shake_pulse_mode">Потрясти і пульсувати екраном</string>
+    <string name="pulse_only_mode">Пульсувати екраном (за замовчуванням)</string>
 
     <!-- QS tiles -->
-    <string name="qs_category_title">Плитки быстрых настроек</string>
-    <string name="qs_order_title">Выбрать и изменить порядок плиток</string>
-    <string name="add_qs">Добавить новую плитку</string>
-    <string name="qs_action_delete">Удалить</string>
-    <string name="qs_action_add">Добавить</string>
-    <string name="qs_action_no_more_tiles">Нет больше доступных плиток</string>
-    <string name="qs_main_tiles_title">Увеличить первый рад</string>
-    <string name="qs_main_tiles_summary_on">Две большие плитки в первом ряду</string>
-    <string name="qs_main_tiles_summary_off">Три плитки в каждом ряду</string>
+    <string name="qs_category_title">Плитки швидких налаштувань</string>
+    <string name="qs_order_title">Вибрати й змінити порядок плиток</string>
+    <string name="add_qs">Додати нову плитку</string>
+    <string name="qs_action_delete">Видалити</string>
+    <string name="qs_action_add">Додати</string>
+    <string name="qs_action_no_more_tiles">Немає більше доступних плиток</string>
+    <string name="qs_main_tiles_title">Збільшити перший раз</string>
+    <string name="qs_main_tiles_summary_on">Дві великі плитки в першому ряду</string>
+    <string name="qs_main_tiles_summary_off">Три плитки в кожному ряду</string>
 
     <!-- QuickSettings brightness slider -->
-    <string name="qs_brightness_slider_title">Показывать регулятор яркости</string>
-    <string name="qs_brightness_slider_summary">Показывать регулятор яркости в панели быстрых настроек</string>
+    <string name="qs_brightness_slider_title">Показувати регулятор яскравості</string>
+    <string name="qs_brightness_slider_summary">Показувати регулятор яскравості в панелі швидких налаштувань</string>
 
     <!-- Quick settings advance location -->
-    <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
-    <string name="qs_advanced_location_summary">>Включить отображение расширенных настроек местоположения</string>
+    <string name="qs_advanced_location_title">Розширені налаштування місцеположення</string>
+    <string name="qs_advanced_location_summary">Включити відображення розширених налаштувань місцезнаходження</string>
     <string name="qs_tile_wifi">Wi-FI</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_cellular_data">Передача данных</string>
-    <string name="qs_tile_airplane_mode">Режим полета</string>
-    <string name="qs_tile_display_rotation">Поворот экрана</string>
-    <string name="qs_tile_flashlight">Фонарик</string>
-    <string name="qs_tile_location">Местоположение</string>
-    <string name="qs_tile_cast_screen">Передача экрана</string>
+    <string name="qs_tile_cellular_data">Передача даних</string>
+    <string name="qs_tile_airplane_mode">Режим польоту</string>
+    <string name="qs_tile_display_rotation">Поворот екрану</string>
+    <string name="qs_tile_flashlight">Ліхтарик</string>
+    <string name="qs_tile_location">Місцезнаходження</string>
+    <string name="qs_tile_cast_screen">Передача екрану</string>
     <string name="qs_tile_hotspot">Хотспот</string>
-    <string name="qs_tile_notifications">Уведомления</string>
-    <string name="qs_tile_screen_timeout">Время отключения экрана</string>
+    <string name="qs_tile_notifications">Сповіщення</string>
+    <string name="qs_tile_screen_timeout">с</string>
     <string name="qs_battery_saver_tile">Энергосбережение</string>
     <string name="qs_brightness_tile">Яркость</string>
     <string name="qs_expanded_desktop_tile">Расширенный экран</string>
