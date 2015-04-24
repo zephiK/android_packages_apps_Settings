@@ -513,7 +513,36 @@
     <!-- Navring targets (enable/disable) -->
     <string name="navigation_ring_enable_title">Включить навигационное кольцо</string>
 
-    <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="app_security_title">Безопасность приложений</string>
+
+   <!-- Blacklist preferences -->
+    <string name="blacklist_title">Черный список</string>
+    <string name="blacklist_edit_dialog_title">Редактировать запись</string>
+    <string name="blacklist_prefs">Настройки</string>
+    <string name="blacklist_button_delete">Удалить</string>
+    <string name="blacklist_empty_text">У вас нет номеров в черном списке. Добавьте запись нажатием на кнопку добавить(+).</string>
+    <string name="blacklist_disabled_empty_text">Чтобы блокировать звонки и сообщения от этих номеров, включите черный список.</string>
+    <string name="blacklist_summary_disabled">Выключено</string>
+    <string name="blacklist_summary">Входящие звонки и сообщения от номеров в черном списке будут блокированы</string>
+    <string name="blacklist_notify">Показывать уведомленние</string>
+    <string name="blacklist_private_numbers_title">Скрытые номера</string>
+    <string name="blacklist_private_numbers_summary_disabled">Блокировать звонки со скрытых номеров</string>
+    <string name="blacklist_private_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> со скрытых номеров</string>
+    <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать звонки и сообщения от тех, кто не добвлен в контакты</string>
+    <string name="blacklist_unknown_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> от номеров, которые не добавлены в контакты</string>
+    <string name="blacklist_summary_type_calls_only">звонки</string>
+    <string name="blacklist_summary_type_messages_only">сообщения</string>
+    <string name="blacklist_summary_type_calls_and_messages">звонки и сообщения</string>
+    <string name="blacklist_regex_title">Использовать символы</string>
+    <string name="blacklist_regex_summary">Используйте . в качестве шаблона и * для повторения. Например 123. * блокирует номера, начинающиеся с 123 и . * 123. * блокирует цифры содержащие 123</string>
+    <string name="blacklist_policy_block_calls">Блокировать входящие звонки</string>
+    <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
+    <string name="blacklist_bad_number_add">Невозможно добавить недопустимый номер в черный список</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">Добавить номер</string>
+    <string name="remove_blacklist_number_title">Удалить номер</string>
+    <string name="remove_blacklist_entry">Вы хотите удалить запись черного списка?</string>
+    <string name="select_contact">Выбрать контакт</string>
 </resources>
