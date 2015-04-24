@@ -525,4 +525,37 @@
     <!-- Silent mode -->
     <string name="none_is_silent_title">Aucun est le mode silencieux</string>
     <string name="none_is_silent_summary">En mode silencieux l\'alarme sonne toujours</string>
+	
+    <string name="app_security_title">Sécurité des applications</string>
+
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">Liste noire</string>
+    <string name="blacklist_edit_dialog_title">Éditer les entrées de la liste noire</string>
+    <string name="blacklist_prefs">Paramètres</string>
+    <string name="blacklist_button_delete">Supprimer</string>
+    <string name="blacklist_empty_text">Aucun numéro dans votre liste noire. Ajouter une entrée en appuyant sur le bouton Ajouter (+).</string>
+    <string name="blacklist_disabled_empty_text">Pour bloquer les appels et/ou messages de certains numéros, activez la liste noire.</string>
+    <string name="blacklist_summary_disabled">Désactiver</string>
+    <string name="blacklist_summary">Les appels et messages de numéros de téléphone sur la liste noire seront bloqués</string>
+    <string name="blacklist_notify">Afficher les notifications</string>
+    <string name="blacklist_private_numbers_title">Numéros privés</string>
+    <string name="blacklist_private_numbers_summary_disabled">Ne pas bloquer les appels des numéros privés</string>
+    <string name="blacklist_private_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> des numéros privés</string>
+    <string name="blacklist_unknown_numbers_title">Numéros inconnus</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Ne pas bloquer les appels ou les messages provenant de numéros non répertoriés dans la liste des contacts</string>
+    <string name="blacklist_unknown_numbers_summary">Bloquer les <xliff:g id="type">%s</xliff:g> des numéros non répertoriés dans la liste des contacts</string>
+    <string name="blacklist_summary_type_calls_only">appels</string>
+    <string name="blacklist_summary_type_messages_only">messages</string>
+    <string name="blacklist_summary_type_calls_and_messages">appels et messages</string>
+    <string name="blacklist_regex_title">>Utiliser des caractères génériques</string>
+    <string name="blacklist_regex_summary">Utiliser un point comme caractère générique et une astérisque pour la répétition. Exemple, 123.* si le numéro de téléphone commence par 123 et .*123.* si le numéro de téléphone contient 123</string>
+    <string name="blacklist_policy_block_calls">Bloquer les appels entrants</string>
+    <string name="blacklist_policy_block_messages">Bloquer les messages entrants</string>
+    <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro non valide à la liste noire</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">Ajouter un numéro</string>
+    <string name="remove_blacklist_number_title">Supprimer un numéro</string>
+    <string name="remove_blacklist_entry">Voulez vous supprimer cette entrée de la liste noire ?</string>
+    <string name="select_contact">Sélectionner un contact</string>
 </resources>
