@@ -52,15 +52,4 @@
         android:title="franciscofranco"
        	android:summary="for Franco Kernel"/>
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="category_chroma_spotlight"
-        android:title="Layers Spotlight" >
-
-    <PreferenceScreen android:title="Timberwolf by Jimmy Setiawan">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://play.google.com/store/search?q=Timberwolf%20Layers"/>
-    </PreferenceScreen>
-    </PreferenceCategory>
     </PreferenceScreen>
