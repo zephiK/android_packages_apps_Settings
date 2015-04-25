@@ -306,70 +306,6 @@
     <string name="dpi">DPI</string>
     <string name="custom_density">personnalisée</string>
 
-    <!-- Doze pulse (ambient display) options -->
-    <string name="summary_doze_enabled">Activé</string>
-    <string name="summary_doze_disabled">Désactivé</string>
-    <string name="doze_overwrite_value_title">Remplacer la valeur</string>
-    <string name="doze_overwrite_value_summary">Permettre de remplacer la valeur par défaut avec la configuration utilisateur</string>
-
-    <string name="doze_list_mode_title">Affichage en mode veille</string>
-    <string name="doze_list_mode_summary">Option pour configurer le mode veille</string>
-
-    <string name="doze_pulse_title">Réglages de l\'heure</string>
-    <string name="doze_pulse_duration_in_title">Apparition en fondu</string>
-    <string name="doze_pulse_duration_in_summary"></string>
-
-    <string name="doze_pulse_duration_visible_title">Durée de visibilité</string>
-    <string name="doze_pulse_duration_visible_summary"></string>
-
-    <string name="doze_pulse_duration_out_title">Disparition en fondu</string>
-    <string name="doze_pulse_duration_out_summary"></string>
-
-    <string name="doze_pulse_on_notifications_title">Affichage à l\'écran des notifications</string>
-    <string name="doze_pulse_on_notifications_summary">Activation de l\'affichage seulement sur les notifications en attentes</string>
-
-    <string name="doze_shake_title">Paramètre des secousses</string>
-    <string name="doze_shake_mode_title">Mode de secousse</string>
-    <string name="doze_shake_mode_summary">Utiliser la valeur du capteur de secousse pour déclencher l\'activation par secouement</string>
-    <string name="doze_shake_mode_test_summary">Voulez-vous tester le capteur de secousse ?</string>
-    <string name="doze_shake_mode_test_result">Appliquer la valeur actuelle ?</string>
-    <string name="doze_shake_test">Secouer l\'appareil maintenant</string>
-    <string name="doze_shake_it">Secousse détecté !</string>
-
-    <string name="doze_shake_acc_threshold_title">Seuil de secousse</string>
-    <string name="doze_shake_acc_threshold_summary">Configurer la force des secousses nécessaire pour déclencher l\'activation</string>
-
-    <string name="doze_time_mode_title">Afficher l\'heure et la date</string>
-    <string name="doze_time_mode_summary">Force l\'affichage de l\'heure lorsqu\'il n\'y a pas de notification</string>
-
-    <string name="twohundred_ms">200 ms</string>
-    <string name="fivehundred_ms">500 ms</string>
-    <string name="one_second">1 s</string>
-    <string name="one_second_default">1 s (par défaut)</string>
-    <string name="onehalf_second">1.5 s</string>
-    <string name="two_second">2 s</string>
-    <string name="twohalf_second">2.5 s</string>
-    <string name="three_second">3 s</string>
-    <string name="three_second_default">3 s (par défaut)</string>
-    <string name="threehalf_second">3.5 s</string>
-    <string name="four_second">4 s</string>
-    <string name="fourhalf_second">4.5 s</string>
-    <string name="five_second">5 s</string>
-
-    <string name="veryeasy_shake">Très facile</string>
-    <string name="easy_shake">Facile</string>
-    <string name="medium_shake">par défaut</string>
-    <string name="hard_shake">Difficile</string>
-    <string name="veryhard_shake">Très difficile</string>
-    <string name="strong_shake">Puissant</string>
-
-    <string name="fully_mode">Mode complet</string>
-    <string name="pocket_shake_mode">Poche et secousse</string>
-    <string name="pocket_pulse_mode">Poche et vibration</string>
-    <string name="pocket_only_mode">Poche</string>
-    <string name="shake_pulse_mode">Secousse et vibration</string>
-    <string name="pulse_only_mode">Vibration (par défaut)</string>
-
     <!-- QS tiles -->
     <string name="qs_category_title">Paramètres rapides</string>
     <string name="qs_order_title">Sélectionner et ordonner les tuiles</string>
@@ -558,4 +494,6 @@
     <string name="remove_blacklist_number_title">Supprimer un numéro</string>
     <string name="remove_blacklist_entry">Voulez vous supprimer cette entrée de la liste noire ?</string>
     <string name="select_contact">Sélectionner un contact</string>
+    
+    <string name="allow_lights_title">Autoriser les voyants de notification</string>
 </resources>
