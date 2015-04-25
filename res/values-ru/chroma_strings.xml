@@ -39,7 +39,7 @@
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Поворот экрана</string>
     <string name="display_rotation_disabled">Отлючен</string>
-    <string name="display_rotation_unit">градусы</string>
+    <string name="display_rotation_unit">градусов</string>
     <string name="display_rotation_category_title">Настройки поворота экрана</string>
     <string name="display_rotation_0_title">0 градусов</string>
     <string name="display_rotation_90_title">90 градусов</string>
@@ -165,7 +165,7 @@
     <string name="media_options_title">Настройки медиа</string>
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
-    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости включит устройство\nOverrides playback control</string>
+    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости включит устройство</string>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Контроль воспроизведением</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие кнопок громкости будет переключать композиции</string>
@@ -284,7 +284,7 @@
 
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Показывать стрелки ввода при наборе</string>
-    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева кнопки перемещения курсора. Overrides IME switcher.</string>
+    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева кнопки перемещения курсора.</string>
  
     <!-- Navigation bar button color -->
     <string name="navbar_button_tint_title">Оттенок панели навигации</string>
@@ -292,7 +292,7 @@
     <!-- Display settings screen, setting options for LCD density -->
     <string name="lcd_density">Плотность экрана</string>
     <string name="lcd_density_summary">%d DPI</string>
-    <string name="lcd_density_default">Значение по умолчанию</string>
+    <string name="lcd_density_default">По умолчанию</string>
     <string name="lcd_density_unsupported">Не поддерживается</string>
     <string name="restarting_ui">Перезагрузка</string>
     <string name="custom_density_title">Измнените всё как Вам нравится</string>
@@ -305,70 +305,6 @@
     <string name="custom_density_dialog_summary">Изменение плотности экрана может повлиять на работу приложений, магазин приложений может показывать приложения как несовместимые с вашим устройством"</string>
     <string name="dpi">DPI</string>
     <string name="custom_density">Пользовательское</string>
-
-    <!-- Doze pulse (ambient display) options -->
-    <string name="summary_doze_enabled">Включено</string>
-    <string name="summary_doze_disabled">Отключено</string>
-    <string name="doze_overwrite_value_title">Изменить значения</string>
-    <string name="doze_overwrite_value_summary">Принимать изменение значений по умолчанию на пользовательские</string>
-
-    <string name="doze_list_mode_title">Режим сна</string>
-    <string name="doze_list_mode_summary">Настройка режима сна</string>
-
-    <string name="doze_pulse_title">Настройки времени</string>
-    <string name="doze_pulse_duration_in_title">Появление</string>
-    <string name="doze_pulse_duration_in_summary"></string>
-
-    <string name="doze_pulse_duration_visible_title">Время видимости</string>
-    <string name="doze_pulse_duration_visible_summary"></string>
-
-    <string name="doze_pulse_duration_out_title">Угасание</string>
-    <string name="doze_pulse_duration_out_summary"></string>
-
-    <string name="doze_pulse_on_notifications_title">Пульсация</string>
-    <string name="doze_pulse_on_notifications_summary">Пульсация экрана при уведомлении</string>
-
-    <string name="doze_shake_title">Настройки встряхивания</string>
-    <string name="doze_shake_mode_title">Режим встряхивания</string>
-    <string name="doze_shake_mode_summary">>Использовать сенсор для активации действия</string>
-    <string name="doze_shake_mode_test_summary">Хотите протестировать работу сенсора?</string>
-    <string name="doze_shake_mode_test_result">Применить значение?</string>
-    <string name="doze_shake_test">Потрясите устройство</string>
-    <string name="doze_shake_it">Обнаружено!</string>
-
-    <string name="doze_shake_acc_threshold_title">Чувствительность встряхивания</string>
-    <string name="doze_shake_acc_threshold_summary">Настроить силу встряхивания для активации действия</string>
-
-    <string name="doze_time_mode_title">Показывать дату и время</string>
-    <string name="doze_time_mode_summary">Принудительно показывать время, когда нет уведомлений</string>
-
-    <string name="twohundred_ms">200 мс</string>
-    <string name="fivehundred_ms">500 мс</string>
-    <string name="one_second">1 сек</string>
-    <string name="one_second_default">1 сек (по умолчанию)</string>
-    <string name="onehalf_second">1.5 сек</string>
-    <string name="two_second">2 сек</string>
-    <string name="twohalf_second">2.5 сек</string>
-    <string name="three_second">3 сек</string>
-    <string name="three_second_default">3 сек (по умолчанию)</string>
-    <string name="threehalf_second">3.5 сек</string>
-    <string name="four_second">4 сек</string>
-    <string name="fourhalf_second">4.5 сек</string>
-    <string name="five_second">5 сек</string>
-
-    <string name="veryeasy_shake">Очень легко</string>
-    <string name="easy_shake">>Легко</string>
-    <string name="medium_shake">По умолчанию</string>
-    <string name="hard_shake">Сильно</string>
-    <string name="veryhard_shake">Очень сильно</string>
-    <string name="strong_shake">Со всей силы</string>
-
-    <string name="fully_mode">Полный режим</string>
-    <string name="pocket_shake_mode">В кармане и потрясти</string>
-    <string name="pocket_pulse_mode">В кармане и пульсировать экраном</string>
-    <string name="pocket_only_mode">В кармане</string>
-    <string name="shake_pulse_mode">Потрясти и пульсировать экраном</string>
-    <string name="pulse_only_mode">Пульсировать экраном (по умолчанию)</string>
 
     <!-- QS tiles -->
     <string name="qs_category_title">Плитки быстрых настроек</string>
@@ -387,7 +323,7 @@
 
     <!-- Quick settings advance location -->
     <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
-    <string name="qs_advanced_location_summary">>Включить отображение расширенных настроек местоположения</string>
+    <string name="qs_advanced_location_summary">Включить отображение расширенных настроек местоположения</string>
     <string name="qs_tile_wifi">Wi-FI</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
     <string name="qs_tile_cellular_data">Передача данных</string>
@@ -430,7 +366,7 @@
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Ярлыки навигационного кольца</string>
     <string name="navigation_ring_summary">Редактировать ярлыки кольца панели навигации</string>
-<string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык для настройки его поведения.\n\nНажмите the \'\u2713\' для сохранения изменений, или \'Восстановить \' для сброса настроек по умолчанию.</string>
+<string name="navigation_ring_message">Коснитесь значка правки для изменения навигационного кольца.\n\nВыберите ярлык для настройки его поведения.\n\nНажмите \'\u2713\' для сохранения изменений, или \'Восстановить \' для сброса настроек по умолчанию.</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Экран блокировки</string>
@@ -523,6 +459,42 @@
     <string name="lockscreen_enable_power_menu_summary">Эта опция будет отключать меню выключения на защищённом экране блокировки</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">None is Silent mode</string>
-    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
+    <string name="none_is_silent_title">Беззвучный режим</string>
+    <string name="none_is_silent_summary">В беззвучном режиме не будет отключаться звук будильника</string>
+    
+    <string name="app_security_title">Безопасность приложений</string>
+
+   <!-- Blacklist preferences -->
+    <string name="blacklist_title">Чёрный список</string>
+    <string name="blacklist_edit_dialog_title">Редактировать чёрный список</string>
+    <string name="blacklist_prefs">Настройки</string>
+    <string name="blacklist_button_delete">Удалить</string>
+    <string name="blacklist_empty_text">You don\'t have any blacklisted numbers. Add an entry by touching the Add (+) button.</string>
+    <string name="blacklist_disabled_empty_text">To blacklist calls and/or messages from certain numbers, enable the blacklist.</string>
+    <string name="blacklist_summary_disabled">Disabled</string>
+    <string name="blacklist_summary">Incoming calls and messages from phone numbers in the blacklist will be blocked</string>
+    <string name="blacklist_notify">Показывать уведомление</string>
+    <string name="blacklist_private_numbers_title">Приватные номера</string>
+    <string name="blacklist_private_numbers_summary_disabled">Не отклонять звонки от приватных номеров</string>
+    <string name="blacklist_private_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> от приватных номеров</string>
+    <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать звонки или сообщения от номеров не из книги контактов</string>
+    <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> от номеров не из книги контактов</string>
+    <string name="blacklist_summary_type_calls_only">звонки</string>
+    <string name="blacklist_summary_type_messages_only">сообщения</string>
+    <string name="blacklist_summary_type_calls_and_messages">звонки и сообщения</string>
+    <string name="blacklist_regex_title">Use wildcards</string>
+    <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
+    <string name="blacklist_policy_block_calls">Блокировать входящие звонки</string>
+    <string name="blacklist_policy_block_messages">Блокировать входящие сообщения</string>
+    <string name="blacklist_bad_number_add">Невозможно добавить неверный номер в черный список</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">Добавить номер</string>
+    <string name="remove_blacklist_number_title">Удалить номер</string>
+    <string name="remove_blacklist_entry">Хотите очисить чёрный список?</string>
+    <string name="select_contact">Выбрать контакт</string>
+
+    <string name="allow_lights_title">Allow notification lights</string>
+
 </resources>
