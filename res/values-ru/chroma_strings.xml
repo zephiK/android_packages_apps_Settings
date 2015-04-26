@@ -545,4 +545,14 @@
     <string name="remove_blacklist_number_title">Удалить номер</string>
     <string name="remove_blacklist_entry">Вы хотите удалить запись черного списка?</string>
     <string name="select_contact">Выбрать контакт</string>
+
+    <!-- Silent mode -->
+    <string name="none_is_silent_title">Не беспокоить — беззвучный режим</string>
+    <string name="none_is_silent_summary">В беззвучном режиме всегда звучит будильник</string>
+    <string name="allow_lights_title">Разрешить световой индикатор уведомления</string>
+    
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Всплывающие уведомления</string>
+    <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>
+    <string name="summary_heads_up_disabled">Всплывающие уведомления выключены</string>
 </resources>
