@@ -25,12 +25,6 @@
             android:key="notification_light_pulse"
             android:title="@string/notification_light_title" />
 
-        <com.android.settings.notificationlight.ApplicationLightPreference
-            android:key="default"
-            android:title="@string/notification_light_default_value"
-            android:persistent="false"
-            android:dependency="notification_light_pulse" />
-
 	<!-- Whether to allow notification lights in zen mode -->
         <!-- This is set to true to match the default state in Android 5.1 -->
         <com.android.settings.chroma.SystemSettingSwitchPreference
@@ -42,6 +36,12 @@
         <com.android.settings.chroma.SystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
+            android:dependency="notification_light_pulse" />
+
+        <com.android.settings.notificationlight.ApplicationLightPreference
+            android:key="default"
+            android:title="@string/notification_light_default_value"
+            android:persistent="false"
             android:dependency="notification_light_pulse" />
 
     </PreferenceCategory>
