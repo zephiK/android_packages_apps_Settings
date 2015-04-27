@@ -50,4 +50,15 @@
 	        android:persistent="false"
 	        android:title="@string/volume_key_cursor_control_title" />
     </PreferenceCategory>
+
+     <PreferenceCategory
+            android:key="category_cursor_options"
+            android:title="@string/volume_rocker_other_title">
+
+     <SwitchPreference
+        android:key="camera_sounds"
+        android:title="@string/camera_sounds_title"
+        android:summary="@string/camera_sounds_summary"
+        android:defaultValue="true" />
+    </PreferenceCategory>
 </PreferenceScreen>
