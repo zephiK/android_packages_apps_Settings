@@ -65,7 +65,8 @@
     <string name="reset_string">Réinitialiser</string>
     <string name="reset">Réinitialiser</string>
     <string name="empty_string">Aucun</string>
-     <string name="ok">Ok</string>
+    <string name="ok">Ok</string>
+    <string name="attention">Attention</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Sélecteur de couleur</string>
@@ -340,7 +341,8 @@
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
-    <string name="qs_tile_headsup">Notification flottante</string>
+    <string name="qs_tile_headsup">Notifications flottantes</string>
+    <string name="qs_tile_lte">LTE</string> 
     <string name="qs_music_play_tile">Jouer</string>
 	
     <!-- Network traffic -->
@@ -414,6 +416,8 @@
     <!--  Volume rocker -->
     <string name="volume_rocker_cursor_title">Options du curseur</string>
     <string name="volume_button_toggle_info">Le réveil par le volume doit être désactivé</string>
+    <string name="volume_rocker_other_title">Autres</string>
+    
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Contrôle du curseur par les touches volume</string>
     <string name="volume_key_cursor_control_off">Désactivé</string>
@@ -496,4 +500,20 @@
     <string name="select_contact">Sélectionner un contact</string>
     
     <string name="allow_lights_title">Autoriser les voyants de notification</string>
+
+    <string name="notification_led_header">LED de notification</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">Son de l\'obturateur de l\'appareil photo</string>
+    <string name="camera_sounds_summary">Activer le son système pour l\'obturateur de l\'appareil photo</string>
+    <string name="camera_sound_warning_dialog_text">La désactivation du son de l\'obturateur est illégal dans certains pays ! merci de vérifier la législation applicable dans votre pays</string>
+    
+    <string name="app_notification_show_on_keyguard_title">Afficher sur l\'écran de verrouillage</string>
+    <string name="app_notification_show_on_keyguard_summary">Afficher les notifications de cette application sur l\'écran de verrouillage</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Désactiver les notifications persistantes sur l\'écran de verrouillage</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Ne jamais montrer les notifications persistantes de cette application sur l\'écran de verrouillage</string>
+    
+    <!-- Volume Keys Media Control -->
+    <string name="volume_keys_control_media_stream">Contrôle des médias</string>
+    <string name="volume_keys_control_media_stream_summary">Contrôler le volume des médias plutôt que des notifications avec les touches de volume.</string>
 </resources>
