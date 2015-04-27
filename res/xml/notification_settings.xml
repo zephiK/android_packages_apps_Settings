@@ -97,18 +97,6 @@
         android:key="notification"
         android:title="@string/notification_section_header" >
 
-        <!-- Pulse notification light -->
-        <PreferenceScreen
-                android:key="notification_light"
-                android:title="@string/notification_light_title"
-                android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
-
-        <!-- Battery light -->
-        <PreferenceScreen
-                android:key="battery_light"
-                android:title="@string/battery_light_title"
-                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
-
          <!-- When device is locked -->
         <com.android.settings.notification.DropDownPreference
                 android:key="lock_screen_notifications"
@@ -136,4 +124,20 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="notification_led"
+        android:title="@string/notification_led_header" >
+
+        <!-- Pulse notification light -->
+        <PreferenceScreen
+                android:key="notification_light"
+                android:title="@string/notification_light_title"
+                android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
+
+        <!-- Battery light -->
+        <PreferenceScreen
+                android:key="battery_light"
+                android:title="@string/battery_light_title"
+                android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+</PreferenceCategory>
 </PreferenceScreen>

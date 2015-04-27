@@ -496,4 +496,6 @@
     <string name="select_contact">Select contact</string>
 
     <string name="allow_lights_title">Allow notification lights</string>
+
+    <string name="notification_led_header">Notification LED</string>
 </resources>
