@@ -63,9 +63,7 @@
     <string name="disabled_string">Désactivé</string>
     <string name="general_string">Général</string>
     <string name="reset_string">Réinitialiser</string>
-    <string name="reset">Réinitialiser</string>
     <string name="empty_string">Aucun</string>
-    <string name="ok">Ok</string>
     <string name="attention">Attention</string>
 
     <!-- Color Picker -->
@@ -342,7 +340,6 @@
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
     <string name="qs_tile_headsup">Notifications flottantes</string>
-    <string name="qs_tile_lte">LTE</string> 
     <string name="qs_music_play_tile">Jouer</string>
 	
     <!-- Network traffic -->
