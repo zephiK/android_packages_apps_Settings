@@ -84,8 +84,6 @@
     <string name="clock_title_enable">Выравнивание</string>
     <string name="clock_enabled">Включено</string>
     <string name="clock_disabled">Отключено</string>
-    <string name="clock_color_title">Цвет</string>
-    <string name="status_bar_clock_style_reset">Сбросить цвет</string>
     <string name="status_bar_show_clock_title">Показывать часы &amp; дату</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">24-ой формат времени включен</string>
@@ -111,7 +109,6 @@
     <string name="clock_date_style_lowercase">Строчные буквы</string>
     <string name="clock_date_style_uppercase">Прописные буквы</string>
     <string name="clock_date_format_custom">Пользовательский java формат</string>
-    <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
     
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Настройки пробуждения</string>

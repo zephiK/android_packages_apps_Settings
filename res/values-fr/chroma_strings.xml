@@ -83,8 +83,6 @@
     <string name="clock_title_enable">Alignement</string>
     <string name="clock_enabled">Activée</string>
     <string name="clock_disabled">Désactivée</string>
-    <string name="clock_color_title">Couleur</string>
-    <string name="status_bar_clock_style_reset">Réinitialisée la couleur</string>
     <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
     <string name="status_bar_am_pm_title">AM / PM</string>
     <string name="status_bar_am_pm_info">Le format 24 heures est activé</string>
@@ -110,7 +108,6 @@
     <string name="clock_date_style_lowercase">Minuscule</string>
     <string name="clock_date_style_uppercase">Majuscule</string>
     <string name="clock_date_format_custom">Personnaliser le format</string>
-    <string name="status_bar_clock_style_reset_message">Réinitialiser la couleur ?</string>
     
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Options de réveil</string>
