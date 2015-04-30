@@ -474,4 +474,8 @@
     <!-- Navring targets (enable/disable) -->
     <string name="navigation_ring_enable_title">Enable navigation rings</string>
 
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Advanced reboot</string>
+    <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
+
 </resources>
