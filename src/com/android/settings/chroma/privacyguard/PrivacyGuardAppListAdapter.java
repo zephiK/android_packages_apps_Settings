@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.simpleaosp.privacyguard;
+package com.android.settings.chroma.privacyguard;
 
 import android.app.AppOpsManager;
 import android.content.Context;
@@ -30,7 +30,7 @@ import android.widget.SectionIndexer;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.android.settings.simpleaosp.privacyguard.PrivacyGuardManager.AppInfo;
+import com.android.settings.chroma.privacyguard.PrivacyGuardManager.AppInfo;
 
 import java.util.Arrays;
 import java.util.List;

@@ -43,7 +43,7 @@
                 android:title="@string/ring_volume_option_title" />
 
         <!-- Increasing ring -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.android.settings.chroma.SystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:title="@string/increasing_ring_volume_option_title" />
 
