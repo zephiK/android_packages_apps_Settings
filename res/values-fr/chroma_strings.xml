@@ -511,6 +511,15 @@
     <string name="volume_keys_control_media_stream">Contrôle des médias</string>
     <string name="volume_keys_control_media_stream_summary">Contrôler le volume des médias plutôt que des notifications avec les touches de volume.</string>
 
+    <!-- Battery saver color -->
+    <string name="battery_saver_color_title">Couleur d\'alerte</string>
+    <string name="battery_saver_color_summary">Activer la barre de statut et de navigation orange quand l\'économiseur de batterie est activé</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Sonnerie progressive</string>
+    <string name="increasing_ring_min_volume_title">Volume de départ</string>
+    <string name="increasing_ring_ramp_up_time_title">Temps de progression</string>
+
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Activer la protection de la vie privée ?</string>
     <string name="privacy_guard_enable_dlg_text">Quand la protection est activé, %s n\'est pas en mesure d\'accéder aux données personnelles telles que les contacts, les messages, la localisation ou le journal d\'appels.</string>
@@ -531,4 +540,6 @@
     <string name="privacy_guard_app_ops_detail_reset_dialog_text">Réinitialiser toutes les permissions ?</string>
     <string name="app_ops_btn_text">Modifier</string>
     <string name="app_ops_no_item_text">Cette application n\'a pas de permissions modifiables</string>
+    
+    <string name="model_name">Nom du modèle</string>
 </resources>
