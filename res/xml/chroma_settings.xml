@@ -3,10 +3,15 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/chroma_settings_title" >
 
-    <PreferenceScreen
-        android:key="about_chroma"
-        android:fragment="com.android.settings.chroma.ChromaAbout"
-        android:title="@string/chroma_menu_about" />
+        <!-- Updater -->
+        <PreferenceScreen
+                android:key="update_settings"
+                android:title="@string/updater_title"
+                android:summary="@string/updater_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.chroma.ota"
+                    android:targetClass="com.chroma.center.OTACenter" />
+        </PreferenceScreen>
 
     <PreferenceCategory
         android:key="category_chroma_personalization"
