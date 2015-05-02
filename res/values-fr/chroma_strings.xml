@@ -542,4 +542,8 @@
     <string name="app_ops_no_item_text">Cette application n\'a pas de permissions modifiables</string>
     
     <string name="model_name">Nom du modèle</string>
+    
+    <!-- Updater -->
+    <string name="updater_title">Mises à jour</string>
+    <string name="updater_summary">Vérifier les mises à jour et plus</string>
 </resources>
