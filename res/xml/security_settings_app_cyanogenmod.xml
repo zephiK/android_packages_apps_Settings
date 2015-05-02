@@ -21,15 +21,16 @@
         android:key="app_security"
         android:title="@string/app_security_title">
 
-    <Preference android:key="privacy_guard_manager"
-            android:title="@string/privacy_guard_manager_title"
-            android:summary="@string/privacy_guard_manager_summary"
-            android:fragment="com.android.settings.chroma.privacyguard.PrivacyGuardManager" />
-
         <PreferenceScreen
             android:key="blacklist"
             android:title="@string/blacklist_title"
             android:fragment="com.android.settings.blacklist.BlacklistSettings" />
+
+        <Preference
+            android:key="privacy_guard_manager"
+            android:title="@string/privacy_guard_manager_title"
+            android:summary="@string/privacy_guard_manager_summary"
+            android:fragment="com.android.settings.chroma.privacyguard.PrivacyGuardManager" />
 
     </PreferenceCategory>
 
