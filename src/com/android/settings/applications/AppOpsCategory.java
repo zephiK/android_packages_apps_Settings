@@ -54,6 +54,9 @@ public class AppOpsCategory extends ListFragment implements
     private AppOpsState mState;
 
     public AppOpsCategory() {
+        final Bundle args = new Bundle();
+        args.putParcelable("template", AppOpsState.OPERATIONS);
+        setArguments(args);
     }
 
     /**
@@ -93,20 +96,23 @@ public class AppOpsCategory extends ListFragment implements
     public static class AppListLoader extends AsyncTaskLoader<List<AppOpEntry>> {
         private final Configuration mLastConfiguration = new Configuration();
         private final AppOpsState mState;
+        private final AppOpsState.OpsTemplate mTemplate;
 
         private List<AppOpEntry> mApps = null;
         private int mLastDensity = 0;
         private PackageIntentReceiver mPackageObserver = null;
 
-        public AppListLoader(final Context context, final AppOpsState state) {
+        public AppListLoader(final Context context, final AppOpsState state,
+                final AppOpsState.OpsTemplate template) {
             super(context);
 
             mState = state;
+            mTemplate = template;
         }
 
         @Override
         public List<AppOpEntry> loadInBackground() {
-            return mState.buildState();
+            return mState.buildState(mTemplate);
         }
 
         /**
@@ -300,7 +306,9 @@ public class AppOpsCategory extends ListFragment implements
 
     @Override
     public Loader<List<AppOpEntry>> onCreateLoader(final int id, final Bundle args) {
-        return new AppListLoader(getActivity(), mState);
+        final Bundle fargs = getArguments();
+        return new AppListLoader(getActivity(), mState, fargs == null ? null :
+                (AppOpsState.OpsTemplate) fargs.getParcelable("template"));
     }
 
     @Override
