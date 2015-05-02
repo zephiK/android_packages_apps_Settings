@@ -16,7 +16,7 @@
 
 package com.android.settings;
 
-import com.android.settings.applications.AppOpsCategory;
+import com.android.settings.applications.AppOpsSummary;
 import com.android.settings.chroma.DisplayRotation;
 import com.android.settings.blacklist.BlacklistSettings;
 
@@ -52,7 +52,7 @@ public class Settings extends SettingsActivity {
     public static class AppOpsSummaryActivity extends SettingsActivity {
         @Override
         public boolean isValidFragment(String className) {
-            if (AppOpsCategory.class.getName().equals(className)) {
+            if (AppOpsSummary.class.getName().equals(className)) {
                 return true;
             }
             return super.isValidFragment(className);
