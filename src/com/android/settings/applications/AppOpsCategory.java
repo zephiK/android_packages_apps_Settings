@@ -47,48 +47,65 @@ public class AppOpsCategory extends ListFragment implements
 
     private static final int RESULT_APP_DETAILS = 1;
 
-    private AppListAdapter mAdapter;
+    AppOpsState mState;
 
-    private String mCurrentPkgName;
+    // This is the Adapter being used to display the list's data.
+    AppListAdapter mAdapter;
 
-    private AppOpsState mState;
+    String mCurrentPkgName;
 
     public AppOpsCategory() {
     }
 
-    public AppOpsCategory(final AppOpsState.OpsTemplate template) {
-        final Bundle args = new Bundle();
+    public AppOpsCategory(AppOpsState.OpsTemplate template) {
+        Bundle args = new Bundle();
         args.putParcelable("template", template);
         setArguments(args);
     }
 
     /**
-     * Helper receiver set up to listen to changes in the application list and forward the change
-     * event on to the appropriate sections.
+     * Helper for determining if the configuration has changed in an interesting
+     * way so we need to rebuild the app list.
+     */
+    public static class InterestingConfigChanges {
+        final Configuration mLastConfiguration = new Configuration();
+        int mLastDensity;
+
+        boolean applyNewConfig(Resources res) {
+            int configChanges = mLastConfiguration.updateFrom(res.getConfiguration());
+            boolean densityChanged = mLastDensity != res.getDisplayMetrics().densityDpi;
+            if (densityChanged || (configChanges&(ActivityInfo.CONFIG_LOCALE
+                    |ActivityInfo.CONFIG_UI_MODE|ActivityInfo.CONFIG_SCREEN_LAYOUT)) != 0) {
+                mLastDensity = res.getDisplayMetrics().densityDpi;
+                return true;
+            }
+            return false;
+        }
+    }
+
+    /**
+     * Helper class to look for interesting changes to the installed apps
+     * so that the loader can be updated.
      */
     public static class PackageIntentReceiver extends BroadcastReceiver {
-        private final AppListLoader mLoader;
+        final AppListLoader mLoader;
 
-        public PackageIntentReceiver(final AppListLoader loader) {
+        public PackageIntentReceiver(AppListLoader loader) {
             mLoader = loader;
-
-            // Events related to appliation installation
-            final IntentFilter filter = new IntentFilter();
-            filter.addAction(Intent.ACTION_PACKAGE_ADDED);
+            IntentFilter filter = new IntentFilter(Intent.ACTION_PACKAGE_ADDED);
             filter.addAction(Intent.ACTION_PACKAGE_REMOVED);
             filter.addAction(Intent.ACTION_PACKAGE_CHANGED);
             filter.addDataScheme("package");
-            loader.getContext().registerReceiver(this, filter);
-
-            // Events related to applications on the SD card
-            final IntentFilter sdFilter = new IntentFilter();
+            mLoader.getContext().registerReceiver(this, filter);
+            // Register for events related to sdcard installation.
+            IntentFilter sdFilter = new IntentFilter();
             sdFilter.addAction(Intent.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE);
             sdFilter.addAction(Intent.ACTION_EXTERNAL_APPLICATIONS_UNAVAILABLE);
-            loader.getContext().registerReceiver(this, sdFilter);
+            mLoader.getContext().registerReceiver(this, sdFilter);
         }
 
-        @Override
-        public void onReceive(final Context context, final Intent intent) {
+        @Override public void onReceive(Context context, Intent intent) {
+            // Tell the loader about the change.
             mLoader.onContentChanged();
         }
     }
@@ -97,238 +114,261 @@ public class AppOpsCategory extends ListFragment implements
      * A custom Loader that loads all of the installed applications.
      */
     public static class AppListLoader extends AsyncTaskLoader<List<AppOpEntry>> {
-        private final Configuration mLastConfiguration = new Configuration();
-        private final AppOpsState mState;
-        private final AppOpsState.OpsTemplate mTemplate;
+        final InterestingConfigChanges mLastConfig = new InterestingConfigChanges();
+        final AppOpsState mState;
+        final AppOpsState.OpsTemplate mTemplate;
 
-        private List<AppOpEntry> mApps = null;
-        private int mLastDensity = 0;
-        private PackageIntentReceiver mPackageObserver = null;
+        List<AppOpEntry> mApps;
+        PackageIntentReceiver mPackageObserver;
 
-        public AppListLoader(final Context context, final AppOpsState state,
-                final AppOpsState.OpsTemplate template) {
+        public AppListLoader(Context context, AppOpsState state, AppOpsState.OpsTemplate template) {
             super(context);
-
             mState = state;
             mTemplate = template;
         }
 
-        @Override
-        public List<AppOpEntry> loadInBackground() {
+        @Override public List<AppOpEntry> loadInBackground() {
             return mState.buildState(mTemplate);
         }
 
         /**
-         * Delivers data to the client. The super implementation will take care of actually
-         * delivering it. This implementation simply adds special handling and caring logic.
+         * Called when there is new data to deliver to the client.  The
+         * super class will take care of delivering it; the implementation
+         * here just adds a little more logic.
          */
-        @Override
-        public void deliverResult(final List<AppOpEntry> apps) {
+        @Override public void deliverResult(List<AppOpEntry> apps) {
             if (isReset()) {
-                // This load has been reset so the new List can be released.
+                // An async query came in while the loader is stopped.  We
+                // don't need the result.
                 if (apps != null) {
                     onReleaseResources(apps);
                 }
             }
-
-            final List<AppOpEntry> oldApps = mApps;
+            List<AppOpEntry> oldApps = apps;
             mApps = apps;
 
             if (isStarted()) {
-                // If this Loader is currently started, we can deliver the List right away.
+                // If the Loader is currently started, we can immediately
+                // deliver its results.
                 super.deliverResult(apps);
             }
 
-            // The old List is no longer in use so it can be released.
+            // At this point we can release the resources associated with
+            // 'oldApps' if needed; now that the new result is delivered we
+            // know that it is no longer in use.
             if (oldApps != null) {
                 onReleaseResources(oldApps);
             }
         }
 
-        @Override
-        protected void onStartLoading() {
-            // Force a reload here as changes are not monitored when loading is stopped.
+        /**
+         * Handles a request to start the Loader.
+         */
+        @Override protected void onStartLoading() {
+            // We don't monitor changed when loading is stopped, so need
+            // to always reload at this point.
             onContentChanged();
 
             if (mApps != null) {
-                // Deliver results immediately, if they are available.
+                // If we currently have a result available, deliver it
+                // immediately.
                 deliverResult(mApps);
             }
 
-            // Start watching for changes in the application data.
+            // Start watching for changes in the app data.
             if (mPackageObserver == null) {
                 mPackageObserver = new PackageIntentReceiver(this);
             }
 
-            // Check for interesting changes in the configuration.
-            boolean hasConfigChanged = false;
-            final Resources res = getContext().getResources();
-            final boolean hasDensityChanged = mLastDensity != res.getDisplayMetrics().densityDpi;
-            final int configChanges = mLastConfiguration.updateFrom(res.getConfiguration());
-            if (hasDensityChanged || (configChanges & (ActivityInfo.CONFIG_LOCALE |
-                    ActivityInfo.CONFIG_UI_MODE | ActivityInfo.CONFIG_SCREEN_LAYOUT)) != 0) {
-                mLastDensity = res.getDisplayMetrics().densityDpi;
-                hasConfigChanged = true;
-            }
+            // Has something interesting in the configuration changed since we
+            // last built the app list?
+            boolean configChange = mLastConfig.applyNewConfig(getContext().getResources());
 
-            if (takeContentChanged() || hasConfigChanged || mApps == null) {
-                // Start a load now, if anything has changed or no data is available.
+            if (takeContentChanged() || mApps == null || configChange) {
+                // If the data has changed since the last time it was loaded
+                // or is not currently available, start a load.
                 forceLoad();
             }
         }
 
-        @Override
-        protected void onStopLoading() {
+        /**
+         * Handles a request to stop the Loader.
+         */
+        @Override protected void onStopLoading() {
+            // Attempt to cancel the current load task if possible.
             cancelLoad();
         }
 
-        @Override
-        public void onCanceled(final List<AppOpEntry> apps) {
+        /**
+         * Handles a request to cancel a load.
+         */
+        @Override public void onCanceled(List<AppOpEntry> apps) {
             super.onCanceled(apps);
+
+            // At this point we can release the resources associated with 'apps'
+            // if needed.
             onReleaseResources(apps);
         }
 
-        @Override
-        protected void onReset() {
+        /**
+         * Handles a request to completely reset the Loader.
+         */
+        @Override protected void onReset() {
             super.onReset();
 
-            // Ensure the loader is stopped.
+            // Ensure the loader is stopped
             onStopLoading();
 
-            // Stop watching for changes.
-            if (mPackageObserver != null) {
-                getContext().unregisterReceiver(mPackageObserver);
-                mPackageObserver = null;
-            }
-
-            // Release all the resources!
+            // At this point we can release the resources associated with 'apps'
+            // if needed.
             if (mApps != null) {
                 onReleaseResources(mApps);
                 mApps = null;
             }
+
+            // Stop monitoring for changes.
+            if (mPackageObserver != null) {
+                getContext().unregisterReceiver(mPackageObserver);
+                mPackageObserver = null;
+            }
         }
 
-        protected void onReleaseResources(final List<AppOpEntry> apps) {
-            // no-op: a List<?> has nothing to close or release or do.
+        /**
+         * Helper function to take care of releasing resources associated
+         * with an actively loaded data set.
+         */
+        protected void onReleaseResources(List<AppOpEntry> apps) {
+            // For a simple List<> there is nothing to do.  For something
+            // like a Cursor, we would close it here.
         }
     }
 
     public static class AppListAdapter extends BaseAdapter {
-        private final LayoutInflater mInflater;
         private final Resources mResources;
+        private final LayoutInflater mInflater;
         private final AppOpsState mState;
 
-        private List<AppOpEntry> mList;
+        List<AppOpEntry> mList;
 
-        public AppListAdapter(final Context context, final AppOpsState state) {
-            mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        public AppListAdapter(Context context, AppOpsState state) {
             mResources = context.getResources();
+            mInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             mState = state;
         }
 
-        public void setData(final List<AppOpEntry> data) {
+        public void setData(List<AppOpEntry> data) {
             mList = data;
             notifyDataSetChanged();
         }
 
         @Override
         public int getCount() {
-            return mList == null ? 0 : mList.size();
+            return mList != null ? mList.size() : 0;
         }
 
         @Override
-        public AppOpEntry getItem(final int position) {
+        public AppOpEntry getItem(int position) {
             return mList.get(position);
         }
 
         @Override
-        public long getItemId(final int position) {
+        public long getItemId(int position) {
             return position;
         }
 
-        @Override
-        public View getView(final int position, final View convertView, final ViewGroup parent) {
-            final AppOpEntry item = getItem(position);
-            final View view = convertView == null ?
-                    mInflater.inflate(R.layout.app_ops_item, parent, false) : convertView;
+        /**
+         * Populate new items in the list.
+         */
+        @Override public View getView(int position, View convertView, ViewGroup parent) {
+            View view;
 
-            ((ImageView) view.findViewById(R.id.app_icon))
-                    .setImageDrawable(item.getAppEntry().getIcon());
+            if (convertView == null) {
+                view = mInflater.inflate(R.layout.app_ops_item, parent, false);
+            } else {
+                view = convertView;
+            }
 
-            ((TextView) view.findViewById(R.id.app_name))
-                    .setText(item.getAppEntry().getLabel());
-
-            ((TextView) view.findViewById(R.id.op_name))
-                    .setText(item.getSummaryText(mState));
-
-            ((TextView) view.findViewById(R.id.op_time))
-                    .setText(item.getTimeText(mResources, false));
+            AppOpEntry item = getItem(position);
+            ((ImageView)view.findViewById(R.id.app_icon)).setImageDrawable(
+                    item.getAppEntry().getIcon());
+            ((TextView)view.findViewById(R.id.app_name)).setText(item.getAppEntry().getLabel());
+            ((TextView)view.findViewById(R.id.op_name)).setText(item.getSummaryText(mState));
+            ((TextView)view.findViewById(R.id.op_time)).setText(
+                    item.getTimeText(mResources, false));
 
             return view;
         }
     }
 
     @Override
-    public void onCreate(final Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mState = new AppOpsState(getActivity());
     }
 
-    @Override
-    public void onActivityCreated(final Bundle savedInstanceState) {
+    @Override public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        // Show a message to the user if there are no appliations to display. (Unlikely, but hey!)
-        setEmptyText("No applications"); // TODO Pull this string from a resource instead.
+        // Give some text to display if there is no data.  In a real
+        // application this would come from a resource.
+        setEmptyText("No applications");
 
-        // Ensure the system knows that we can provide an options menu.
+        // We have a menu item to show in action bar.
         setHasOptionsMenu(true);
 
-        // Construct an empty adapter to use for displaying the loaded data.
-        setListAdapter(mAdapter = new AppListAdapter(getActivity(), mState));
+        // Create an empty adapter we will use to display the loaded data.
+        mAdapter = new AppListAdapter(getActivity(), mState);
+        setListAdapter(mAdapter);
 
-        // Kick the UI off with a progress indicator.
+        // Start out with a progress indicator.
         setListShown(false);
 
         // Prepare the loader.
         getLoaderManager().initLoader(0, null, this);
     }
-    
-    @Override
-    public void onListItemClick(final ListView l, final View v, final int position, final long id) {
-        final AppOpEntry item = mAdapter.getItem(position);
-        if (item != null) {
-            mCurrentPkgName = item.getAppEntry().getApplicationInfo().packageName;
 
-            final Bundle args = new Bundle();
-            args.putString(AppOpsDetails.ARG_PACKAGE_NAME, mCurrentPkgName);
-            ((SettingsActivity) getActivity()).startPreferencePanel(AppOpsDetails.class.getName(),
-                    args, R.string.app_ops_settings, null, this, RESULT_APP_DETAILS);
+    // utility method used to start sub activity
+    private void startApplicationDetailsActivity() {
+        // start new fragment to display extended information
+        Bundle args = new Bundle();
+        args.putString(AppOpsDetails.ARG_PACKAGE_NAME, mCurrentPkgName);
+
+        SettingsActivity sa = (SettingsActivity) getActivity();
+        sa.startPreferencePanel(AppOpsDetails.class.getName(), args,
+                R.string.app_ops_settings, null, this, RESULT_APP_DETAILS);
+    }
+    
+    @Override public void onListItemClick(ListView l, View v, int position, long id) {
+        AppOpEntry entry = mAdapter.getItem(position);
+        if (entry != null) {
+            mCurrentPkgName = entry.getAppEntry().getApplicationInfo().packageName;
+            startApplicationDetailsActivity();
         }
     }
 
-    @Override
-    public Loader<List<AppOpEntry>> onCreateLoader(final int id, final Bundle args) {
-        final Bundle fargs = getArguments();
-        return new AppListLoader(getActivity(), mState, fargs == null ? null :
-                (AppOpsState.OpsTemplate) fargs.getParcelable("template"));
+    @Override public Loader<List<AppOpEntry>> onCreateLoader(int id, Bundle args) {
+        Bundle fargs = getArguments();
+        AppOpsState.OpsTemplate template = null;
+        if (fargs != null) {
+            template = (AppOpsState.OpsTemplate)fargs.getParcelable("template");
+        }
+        return new AppListLoader(getActivity(), mState, template);
     }
 
-    @Override
-    public void onLoadFinished(final Loader<List<AppOpEntry>> loader, final List<AppOpEntry> data) {
+    @Override public void onLoadFinished(Loader<List<AppOpEntry>> loader, List<AppOpEntry> data) {
+        // Set the new data in the adapter.
         mAdapter.setData(data);
 
+        // The list should now be shown.
         if (isResumed()) {
-            // We want to look good when we are visible.
             setListShown(true);
         } else {
-            // "No animation" mode on when we ain't visible.
             setListShownNoAnimation(true);
         }
     }
 
-    @Override
-    public void onLoaderReset(final Loader<List<AppOpEntry>> loader) {
+    @Override public void onLoaderReset(Loader<List<AppOpEntry>> loader) {
+        // Clear the data in the adapter.
         mAdapter.setData(null);
     }
 }

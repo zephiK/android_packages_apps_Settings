@@ -30,7 +30,15 @@ import android.view.ViewGroup;
 import com.android.settings.R;
 
 public class AppOpsSummary extends Fragment {
-    private final static AppOpsState.OpsTemplate[] PAGE_TEMPLATES = new AppOpsState.OpsTemplate[] {
+    // layout inflater object used to inflate views
+    private LayoutInflater mInflater;
+    
+    private ViewGroup mContentContainer;
+    private View mRootView;
+    private ViewPager mViewPager;
+
+    CharSequence[] mPageNames;
+    static AppOpsState.OpsTemplate[] sPageTemplates = new AppOpsState.OpsTemplate[] {
         AppOpsState.LOCATION_TEMPLATE,
         AppOpsState.PERSONAL_TEMPLATE,
         AppOpsState.MESSAGING_TEMPLATE,
@@ -38,53 +46,71 @@ public class AppOpsSummary extends Fragment {
         AppOpsState.DEVICE_TEMPLATE
     };
 
-    private CharSequence[] mPageNames = null;
+    int mCurPos;
 
-    private class AppOpsSummaryAdapter extends FragmentPagerAdapter {
-        private final AppOpsCategory[] mCategories = new AppOpsCategory[PAGE_TEMPLATES.length];
+    class MyPagerAdapter extends FragmentPagerAdapter implements ViewPager.OnPageChangeListener {
 
-        public AppOpsSummaryAdapter(final FragmentManager fm) {
+        public MyPagerAdapter(FragmentManager fm) {
             super(fm);
-
-            for (int i = 0; i < PAGE_TEMPLATES.length; i++) {
-                mCategories[i] = new AppOpsCategory(PAGE_TEMPLATES[i]);
-            }
         }
 
         @Override
-        public Fragment getItem(final int position) {
-            return mCategories[position];
+        public Fragment getItem(int position) {
+            return new AppOpsCategory(sPageTemplates[position]);
         }
 
         @Override
         public int getCount() {
-            return PAGE_TEMPLATES.length;
+            return sPageTemplates.length;
         }
 
         @Override
-        public CharSequence getPageTitle(final int position) {
-            return mPageNames == null ? null : mPageNames[position];
+        public CharSequence getPageTitle(int position) {
+            return mPageNames[position];
+        }
+
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+        }
+
+        @Override
+        public void onPageSelected(int position) {
+            mCurPos = position;
+        }
+
+        @Override
+        public void onPageScrollStateChanged(int state) {
+            if (state == ViewPager.SCROLL_STATE_IDLE) {
+                //updateCurrentTab(mCurPos);
+            }
         }
     }
 
     @Override
-    public View onCreateView(final LayoutInflater inflater, final ViewGroup container,
-            final Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // initialize the inflater
+        mInflater = inflater;
+
+        View rootView = mInflater.inflate(R.layout.app_ops_summary,
+                container, false);
+        mContentContainer = container;
+        mRootView = rootView;
+
         mPageNames = getResources().getTextArray(R.array.app_ops_categories);
 
-        final View view = inflater.inflate(R.layout.app_ops_summary, container, false);
-
-        final ViewPager viewPager = (ViewPager) view.findViewById(R.id.pager);
-        viewPager.setAdapter(new AppOpsSummaryAdapter(getChildFragmentManager()));
-
-        final PagerTabStrip tabs = (PagerTabStrip) view.findViewById(R.id.tabs);
+        mViewPager = (ViewPager) rootView.findViewById(R.id.pager);
+        MyPagerAdapter adapter = new MyPagerAdapter(getChildFragmentManager());
+        mViewPager.setAdapter(adapter);
+        mViewPager.setOnPageChangeListener(adapter);
+        PagerTabStrip tabs = (PagerTabStrip) rootView.findViewById(R.id.tabs);
         tabs.setTabIndicatorColorResource(R.color.theme_accent);
 
+        // We have to do this now because PreferenceFrameLayout looks at it
+        // only when the view is added.
         if (container instanceof PreferenceFrameLayout) {
-            // We force the PreferenceFrameLayout to look at us by doing this magic.
-            ((PreferenceFrameLayout.LayoutParams) view.getLayoutParams()).removeBorders = true;
+            ((PreferenceFrameLayout.LayoutParams) rootView.getLayoutParams()).removeBorders = true;
         }
 
-        return view;
+        return rootView;
     }
 }
