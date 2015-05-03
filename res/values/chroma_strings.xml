@@ -10,7 +10,7 @@
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Chroma Options</string>
+    <string name="chroma_menu_personalizaton">Chroma options</string>
     <string name="chroma_menu_about">About Chroma</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
