@@ -42,4 +42,6 @@
         Setting to false will disable Volume Rocker Wake support -->
     <bool name="config_show_volumeRockerWake">true</bool>
 
+    <!-- The default value of whether to check "Show password" in the WiFi AP dialog -->
+    <bool name="config_showWifiApPasswordDefault">false</bool>
 </resources>
