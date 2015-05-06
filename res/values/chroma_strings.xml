@@ -37,5 +37,8 @@
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
+
+   <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">No need, development settings are enabled by default.</string>
 </resources>
 
