@@ -257,231 +257,231 @@
     <string name="status_bar_show_weather_summary">Mostra il meteo nella barra di stato</string>
 
      <!--- Lock clock -->
-    <string name="lock_clock_title">Clock widget</string>
-    <string name="lock_clock_summary">View or change how the \'cLock\' widget will display</string>
-    <string name="weather_clock_title">Status bar weather</string>
+    <string name="lock_clock_title">Widget cLock</string>
+    <string name="lock_clock_summary">Vedi o modifica come il widget \'cLock\' si mostrerà sullo schermo</string>
+    <string name="weather_clock_title">Meteo barra di stato</string>
 
     <!-- Power menu -->
-    <string name="power_menu_title">Power menu</string>
-    <string name="power_menu_reboot_title">Reboot menu</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_airplane_title">Airplane mode</string>
-    <string name="power_menu_users_title">User switcher</string>
-    <string name="power_menu_settings_title">Settings shortcut</string>
-    <string name="power_menu_lockdown_title">Device lockdown</string>
-    <string name="power_menu_bug_report_title">Bug report</string>
-    <string name="power_menu_sound_title">Sound panel</string>
-    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <string name="power_menu_title">Menu spegnimento</string>
+    <string name="power_menu_reboot_title">Menu riavvio</string>
+    <string name="power_menu_screenshot_title">Cattura schermo</string>
+    <string name="power_menu_airplane_title">Modalità aereo</string>
+    <string name="power_menu_users_title">Cambia utente</string>
+    <string name="power_menu_settings_title">Scorciatoia impostazioni</string>
+    <string name="power_menu_lockdown_title">Blocca dispositivo</string>
+    <string name="power_menu_bug_report_title">Segnala bug</string>
+    <string name="power_menu_sound_title">Pannello suoni</string>
+    <string name="power_menu_bug_report_disabled">La segnalazione di bug è disattivata nelle opzioni sviluppatore</string>
 
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
-    <string name="debug_LAN_category">LAN Settings</string>
+    <string name="debug_LAN_category">Impostazioni LAN</string>
     <!-- Hostname setting -->
-    <string name="device_hostname">Device hostname</string>
+    <string name="device_hostname">Hostname dispositivo</string>
 
     <!-- Navigation bar cursor -->
-    <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
-    <string name="navigation_bar_arrow_keys_summary">Display left and right cursor buttons while typing. Overrides IME switcher.</string>
+    <string name="navigation_bar_arrow_keys_title">Mostra frecce cursore durante la digitazione</string>
+    <string name="navigation_bar_arrow_keys_summary">Mostra delle frecce cursore a destra e a sinistra della barra di stato durante la digitazione. Sovrascrive l'IME switcher.</string>
  
     <!-- Navigation bar button color -->
-    <string name="navbar_button_tint_title">Navigation button tint</string>
+    <string name="navbar_button_tint_title">Colore pulsanti navigazione</string>
 
     <!-- Display settings screen, setting options for LCD density -->
-    <string name="lcd_density">LCD density</string>
+    <string name="lcd_density">Densità LCD</string>
     <string name="lcd_density_summary">%d DPI</string>
-    <string name="lcd_density_default">Device default</string>
-    <string name="lcd_density_unsupported">Unsupported</string>
-    <string name="restarting_ui">Restarting</string>
-    <string name="custom_density_title">Change to whatever you like</string>
-    <string name="custom_density_summary">If you ever have compatibility issues with the Play Store, be sure to doublecheck if a Multi-DPI Play Store is installed</string>
-    <string name="custom_density_summary_invalid">"INVALID DENSITY!"</string>
-    <string name="custom_density">Custom</string>
-    <string name="set_custom_density_title">Set custom density</string>
-    <string name="set_custom_density_set">Set</string>
-    <string name="custom_density_dialog_title">WARNING!</string>
-    <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
+    <string name="lcd_density_default">Predefinito dispositivo</string>
+    <string name="lcd_density_unsupported">Non supportato</string>
+    <string name="restarting_ui">Riavvio in corso</string>
+    <string name="custom_density_title">Cambia con un valore personalizzato</string>
+    <string name="custom_density_summary">Se hai mai avuto problemi di compatibilità con il Play Store, assicurati di controllare se è installato un Play Store Multi-DPI</string>
+    <string name="custom_density_summary_invalid">"DENSITÀ NON VALIDA!"</string>
+    <string name="custom_density">Personalizzata</string>
+    <string name="set_custom_density_title">Imposta densità personalizzata</string>
+    <string name="set_custom_density_set">Imposta</string>
+    <string name="custom_density_dialog_title">ATTENZIONE!</string>
+    <string name="custom_density_dialog_summary">Cambiare la densità LCD predefinita può portare problemi di compatibilità con alcune app e/o far risultare al Play Store alcune app essere incompatibili con il tuo dispositivo"</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density">Custom</string>
+    <string name="custom_density">Personalizzata</string>
 
     <!-- QS tiles -->
-    <string name="qs_category_title">Quick Settings</string>
-    <string name="qs_order_title">Select and order tiles</string>
-    <string name="add_qs">Add new tile</string>
-    <string name="qs_action_delete">Delete</string>
-    <string name="qs_action_add">Add</string>
-    <string name="qs_action_no_more_tiles">No more tiles available</string>
-    <string name="qs_main_tiles_title">Enlarge first row</string>
-    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-    <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
+    <string name="qs_category_title">Impstazioni rapide</string>
+    <string name="qs_order_title">Seleziona e ordina caselle</string>
+    <string name="add_qs">Aggiungi nuova casella</string>
+    <string name="qs_action_delete">Elimina</string>
+    <string name="qs_action_add">Aggiungi</string>
+    <string name="qs_action_no_more_tiles">Nessun'altra casella disponibile</string>
+    <string name="qs_main_tiles_title">Allarga la prima fila</string>
+    <string name="qs_main_tiles_summary_on">Due caselle principali nella prima fila</string>
+    <string name="qs_main_tiles_summary_off">Tre caselle in ogni fila</string>
 
     <!-- QuickSettings brightness slider -->
-    <string name="qs_brightness_slider_title">Show brightness slider</string>
-    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+    <string name="qs_brightness_slider_title">Mostra cursore luminosità</string>
+    <string name="qs_brightness_slider_summary">Mostra un cursore per la luminosità nel pannello delle impostazioni rapide</string>
 
     <!-- Quick settings advance location -->
-    <string name="qs_advanced_location_title">Advanced location tile</string>
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+    <string name="qs_advanced_location_title">Casella geolocalizzazione avanzata</string>
+    <string name="qs_advanced_location_summary">Abilita impostazioni avanzate per la geolocalizzazione nel pannello delle impostazioni rapide</string>
     <string name="qs_tile_wifi">Wi\u2011Fi</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_cellular_data">Data connection</string>
-    <string name="qs_tile_airplane_mode">Airplane mode</string>
-    <string name="qs_tile_display_rotation">Rotation</string>
-    <string name="qs_tile_flashlight">Flashlight</string>
-    <string name="qs_tile_location">Location</string>
-    <string name="qs_tile_cast_screen">Cast screen</string>
+    <string name="qs_tile_cellular_data">Connessione dati</string>
+    <string name="qs_tile_airplane_mode">Modalità aereo</string>
+    <string name="qs_tile_display_rotation">Rotazione</string>
+    <string name="qs_tile_flashlight">Torcia</string>
+    <string name="qs_tile_location">Geolocalizzazione</string>
+    <string name="qs_tile_cast_screen">Trasmetti schermo</string>
     <string name="qs_tile_hotspot">Hotspot</string>
-    <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_battery_saver_tile">Battery saver</string>
-    <string name="qs_brightness_tile">Brightness</string>
-    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
-    <string name="qs_screenshot_tile">Screenshot</string>
-    <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_notifications">Notifiche</string>
+    <string name="qs_tile_screen_timeout">Timeout schermo</string>
+    <string name="qs_battery_saver_tile">Risparmio energetico</string>
+    <string name="qs_brightness_tile">Lumninosità</string>
+    <string name="qs_expanded_desktop_tile">Modalità immersiva</string>
+    <string name="qs_screenshot_tile">Cattura schermo</string>
+    <string name="qs_sync_tile">Sincronizzazione</string>
     <string name="qs_tile_headsup">Heads up</string>
-    <string name="qs_music_play_tile">Play</string>
+    <string name="qs_music_play_tile">Lettore musicale</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="show_network_traffic_state">Traffico di rete barra di stato</string>
+    <string name="network_traffic_summary">Abilità varie opzioni di traffico di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità da mostrare</string>
+    <string name="show_network_traffic_frequency">Aggiornamento intervallo</string>
+    <string name="show_network_traffic_disable">Disabilito</string>
+    <string name="show_network_traffic_up">In uscita</string>
+    <string name="show_network_traffic_down">In entrata</string>
+    <string name="show_network_traffic_all">In uscita e in entrata</string>
+    <string name="show_network_traffic_bit">Bit al secondo</string>
+    <string name="show_network_traffic_byte">Byte al secondo</string>
     <string name="show_network_traffic_500">500 ms</string>
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il traffico di rete quando non c'è attività</string>
+    <string name="network_traffic_autohide_threshold">Soglia inattività</string> 
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Navigation ring targets</string>
-    <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
-<string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
+    <string name="navigation_ring_title">Scorciatoie anello di navigazione</string>
+    <string name="navigation_ring_summary">Modifica e riorganizza le scorciatoie dell'anello di navigazione</string>
+<string name="navigation_ring_message">Tocca l'icona modifica per aprire e modificare l'anello di navigazione .\n\nSeleziona una scorciatoia per configurare il suo funzionamento.\n\nTocca l'icona \'\u2713\' per salvare le tue modifiche, o \'Ripristina predefinite\' per reimpostare le impostazioni predefinite.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
-    <string name="lockscreen_default_target">Default</string>
-    <string name="lockscreen_none_target">None</string>
-    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
-    <string name="lockscreen_choose_action_title">Choose action</string>
+    <string name="lockscreen_settings_title">Schermata di blocco</string>
+    <string name="lockscreen_targets_message">Scorciatoie schermata di blocco</string>
+    <string name="lockscreen_default_target">Predefinite</string>
+    <string name="lockscreen_none_target">Nessuna</string>
+    <string name="lockscreen_message">Tocca un'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
+    <string name="lockscreen_choose_action_title">Sceglia azione</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_four_columns_title">Mostra quattro caselle per fila</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ring and notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-    <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
+    <string name="link_volume_option_title">Collega volume notifiche e suoneria</string>
+    <string name="notification_volume_option_title">Volume notifiche</string>
+    <string name="ring_notification_volume_option_tile">Volume notifiche e suoneria</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_hide_nothing">Hide nothing</string>
-    <string name="expanded_hide_status">Hide status bar</string>
-    <string name="expanded_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_hide_both">Hide both</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Expanded state</string>
-    <string name="expanded_enabled_for_all">Enabled for all</string>
-    <string name="expanded_user_configurable">User configurable</string>
-    <string name="expanded_desktop_style">Expanded desktop style</string>
-    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-    <string name="expanded_desktop_title">Expanded desktop options</string>
+    <string name="power_menu_expanded_desktop">Modalità immersiva</string>
+    <string name="expanded_hide_nothing">Non nascondere niente</string>
+    <string name="expanded_hide_status">Nascondi la barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi la barra di navigazione</string>
+    <string name="expanded_hide_both">Nascondi entrambe</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata , disattiva il pulsante \'Abilita per tutte\'</string>
+    <string name="expanded_desktop_state">Modalità immersiva</string>
+    <string name="expanded_enabled_for_all">Abilita per tutte</string>
+    <string name="expanded_user_configurable">Configurabile dall'utente</string>
+    <string name="expanded_desktop_style">Stile modalità immersiva</string>
+    <string name="expanded_desktop_style_description">Scegli lo stile di modalità immersiva predefinito</string>
+    <string name="expanded_desktop_title">Opzioni modalità immersiva</string>
 
     <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Quicksettings</string>
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+    <string name="qs_category">Impostazioni rapide</string>
+    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di blocco</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva le impostazioni rapide nella schermata di blocco protetta.</string>
 
     <!--Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando è inserito/a il PIN o la password corretto/a</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Mischia layout PIN</string>
+    <string name="unlock_scramble_pin_layout_summary">Mischia il layout del PIN quando il dispositivo è sbloccato</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_cursor_title">Cursor options</string>
-    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
-    <string name="volume_rocker_other_title">Miscellaneous</string>
+    <string name="volume_rocker_cursor_title">Opzioni cursore</string>
+    <string name="volume_button_toggle_info">Il risveglio con i tasti del volume deve essere disattivato</string>
+    <string name="volume_rocker_other_title">Varie</string>
 
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Controllo cursore con i tasti del volume</string>
+    <string name="volume_key_cursor_control_off">Disabilitato</string>
+    <string name="volume_key_cursor_control_on">Volume su/giù muove il cursore a sinistra/destra</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume su/giù muove il cursore a destra/sinistra</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Doppio tocco per sospendere</string>
+    <string name="double_tap_sleep_nav_bar_summary">Tocca due volte la barra di stato per sospendere il dispositivo</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up notifications</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
+    <string name="category_heads_up">Notifiche Heads up</string>
+    <string name="summary_heads_up_enabled">Le notifiche pop-up sono abilitate</string>
+    <string name="summary_heads_up_disabled">Le notifiche pop-up sono disabilitate</string>
+    <string name="add_heads_up_package">Aggiungi app</string>
+    <string name="add_heads_up_dnd_summary">Non mostrare le notifiche Heads up in queste applicazioni</string>
+    <string name="add_heads_up_blacklist_summary">Non mostrare le notifiche Heads up da queste applicazioni</string>
+    <string name="heads_up_dnd_title">Non disturbare</string>
     <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+    <string name="heads_up_disabled_notice">Per permettere alle applicazioni di mostrare sul tuo schermo notifiche interattive in una finestra pop-up, abilita le notifiche Heads up.</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_never_summary">Notification will show until it is dismissed</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_summary">Le notifiche si mostreranno per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_never_summary">Le notifiche si mostreranno finchè non saranno rimosse</string>
+    <string name="heads_up_time_out_2sec">2 secondi</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_time_out_never">Mai</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_enable_title">Enable navigation rings</string>
+    <string name="navigation_ring_enable_title">Abilita anello di navigazione</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="proximity_wake_title">Previeni risvegli accidentali</string>
+    <string name="proximity_wake_summary">Consente al sensore di prossimità di verificare se è opportuno risvegliare lo schermo.\nNOTA: Questo potrebbe far sì che lo schermo del telefono si riaccenda più lentamente.</string>
 
     <!-- Hide power menu on lockscreen -->
-    <string name="power_category">Power menu</string>
-    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+    <string name="power_category">Menu spegnimento</string>
+    <string name="lockscreen_enable_power_menu_title">Mostra il menu spegnimento nella schermata di blocco</string>
+    <string name="lockscreen_enable_power_menu_summary">Questa opzione disabiliterà il menu spegnimento solo nella schermata di blocco protetta</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">None is Silent mode</string>
-    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
+    <string name="none_is_silent_title">Allarmi in modalità silenziosa</string>
+    <string name="none_is_silent_summary">Selezionare per non permettere allarmi in modalità silenziosa</string>
 
-    <string name="app_security_title">App security</string>
+    <string name="app_security_title">Sicurezza app</string>
 
    <!-- Blacklist preferences -->
     <string name="blacklist_title">Blacklist</string>
-    <string name="blacklist_edit_dialog_title">Edit blacklist entry</string>
-    <string name="blacklist_prefs">Settings</string>
-    <string name="blacklist_button_delete">Delete</string>
-    <string name="blacklist_empty_text">You don\'t have any blacklisted numbers. Add an entry by touching the Add (+) button.</string>
-    <string name="blacklist_disabled_empty_text">To blacklist calls and/or messages from certain numbers, enable the blacklist.</string>
-    <string name="blacklist_summary_disabled">Disabled</string>
-    <string name="blacklist_summary">Incoming calls and messages from phone numbers in the blacklist will be blocked</string>
-    <string name="blacklist_notify">Show notification</string>
-    <string name="blacklist_private_numbers_title">Private numbers</string>
-    <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
-    <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
-    <string name="blacklist_unknown_numbers_title">Unknown numbers</string>
-    <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
-    <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-    <string name="blacklist_summary_type_calls_only">calls</string>
-    <string name="blacklist_summary_type_messages_only">messages</string>
-    <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
-    <string name="blacklist_regex_title">Use wildcards</string>
+    <string name="blacklist_edit_dialog_title">Modifica voce blacklist</string>
+    <string name="blacklist_prefs">Impostazioni</string>
+    <string name="blacklist_button_delete">Elimina</string>
+    <string name="blacklist_empty_text">Non hai nessun numero nella blacklist. Aggiungi una voce toccando il pulsante Aggiungi (+).</string>
+    <string name="blacklist_disabled_empty_text">Per inserire nella blacklist chiamate e/o messaggi da certi numeri, abilita la blacklist.</string>
+    <string name="blacklist_summary_disabled">Disabilitata</string>
+    <string name="blacklist_summary">Le chiamate e i messaggi in entrata dai numeri nella blacklist saranno bloccati</string>
+    <string name="blacklist_notify">Mostra notifica</string>
+    <string name="blacklist_private_numbers_title">Numeri privati</string>
+    <string name="blacklist_private_numbers_summary_disabled">Non bloccare chiamate dai numeri privati</string>
+    <string name="blacklist_private_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> in entrata dai numeri privati</string>
+    <string name="blacklist_unknown_numbers_title">Numeri sconosciuti</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Non bloccare chiamate o messaggi dai numeri che non sono presenti nella lista dei contatti</string>
+    <string name="blacklist_unknown_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> in entrata dai numeri che non sono presenti nella lista dei contatti</string>
+    <string name="blacklist_summary_type_calls_only">chiamate</string>
+    <string name="blacklist_summary_type_messages_only">messaggi</string>
+    <string name="blacklist_summary_type_calls_and_messages">chiamate e messaggi</string>
+    <string name="blacklist_regex_title">Usa jolly</string>
     <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
     <string name="blacklist_policy_block_calls">Block incoming calls</string>
     <string name="blacklist_policy_block_messages">Block incoming messages</string>
