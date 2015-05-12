@@ -22,10 +22,16 @@
         android:data="https://www.pushbullet.com/channel?tag=chroma"/>
 </PreferenceScreen>
 
-<PreferenceScreen android:title="View changelog">
+<PreferenceScreen android:title="Google+">
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
+        android:data="https://plus.google.com/communities/100877567555105149232" />
+</PreferenceScreen>
+
+<PreferenceScreen android:title="Website">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://zephik.com" />
 </PreferenceScreen>
 
 	<!-- Developers -->
@@ -50,6 +56,6 @@
        	android:summary="Graphics - bootanimations, wallpapers"/>
     <Preference
         android:title="franciscofranco"
-       	android:summary="for Franco Kernel"/>
+       	android:summary="Franco Kernel base"/>
     </PreferenceCategory>
     </PreferenceScreen>
