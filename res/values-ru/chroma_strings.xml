@@ -542,8 +542,5 @@
     <string name="app_ops_no_item_text">Это приложение не имеет сменные разрешения</string>
 
     <string name="model_name">Название модели</string>
-    <!-- Updater -->
-    <string name="updater_title">Обновления</string>
-    <string name="updater_summary">Проверить обновления</string>
 
 </resources>

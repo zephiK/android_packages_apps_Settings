@@ -542,9 +542,6 @@
     <string name="app_ops_no_item_text">This app has no changeable permissions</string>
 
     <string name="model_name">Model name</string>
-    <!-- Updater -->
-    <string name="updater_title">Updates</string>
-    <string name="updater_summary">Check for updates and more</string>
 
     <!-- App ops -->
     <string name="app_ops_summaries_coarse_location">coarse location</string>

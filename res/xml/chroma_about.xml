@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Chroma
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="About Chroma"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+<PreferenceScreen android:title="OTA notifications">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.pushbullet.com/channel?tag=chroma"/>
+</PreferenceScreen>
+
+<PreferenceScreen android:title="View changelog">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://docs.google.com/document/d/1c7wNrT0khaipv-M0Z35OPQ8sxPHO-e9-Rk945fo4iJE/edit?usp=sharing" />
+</PreferenceScreen>
+
+	<!-- Developers -->
+    <PreferenceCategory
+        android:key="category_chroma_developers"
+        android:title="Developers">
+
+    <Preference
+        android:title="zephiK"
+	    android:summary="Lead Developer for Chroma"/>
+    <Preference
+        android:title="Sykopompos"
+	    android:summary="Device maintainer and developer"/>
+    </PreferenceCategory>
+
+	<!-- Honorable mentions -->
+    <PreferenceCategory
+        android:key="category_chroma_mentions"
+        android:title="Honorable mentions" >
+    <Preference
+        android:title="boysetsfire"
+       	android:summary="Graphics - bootanimations, wallpapers"/>
+    <Preference
+        android:title="franciscofranco"
+       	android:summary="for Franco Kernel"/>
+    </PreferenceCategory>
+    </PreferenceScreen>
