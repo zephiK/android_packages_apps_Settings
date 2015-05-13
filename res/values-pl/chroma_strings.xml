@@ -28,7 +28,7 @@
     <!-- Power menu category -->
     <string name="display_category_power_options_title">Opcje menu zasilania</string>
     <!-- QS Tiles -->
-    <string name="qs_category_title">Syzbkie ustawienia</string>
+    <string name="qs_category_title">Szybkie ustawienia</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
@@ -38,7 +38,7 @@
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Obrót</string>
-    <string name="display_rotation_disabled">Wyłaczony</string>
+    <string name="display_rotation_disabled">Wyłączony</string>
     <string name="display_rotation_unit">stopni</string>
     <string name="display_rotation_category_title">Tryb obrotu</string>
     <string name="display_rotation_0_title">0 stopni</string>
@@ -81,7 +81,7 @@
     <string name="status_bar_clock_title">Styl zegara &amp; daty</string>
     <string name="status_bar_clock_summary">Zmień opcje zegara &amp; daty</string> 
     <string name="clock_title_enable">Wyrównanie</string>
-    <string name="clock_enabled">Właczone</string>
+    <string name="clock_enabled">Włączone</string>
     <string name="clock_disabled">Wyłączone</string>
     <string name="status_bar_show_clock_title">Pokaż zegar &amp; datę</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
@@ -96,7 +96,7 @@
     <string name="clock_date_display_summary">Wyświetl własną datę przed zegarem</string>
     <string name="clock_date_style">Styl daty</string>
     <string name="clock_date_format">Format daty</string>
-    <string name="clock_date_string_edittext_title">Musi bz w formacie: MM/dd/yy</string>
+    <string name="clock_date_string_edittext_title">Musi być w formacie: MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Wprowadź ciąg</string>
     <string name="am_pm_clock_normal">Normalna czcionka</string>
     <string name="am_pm_clock_small">Mała czcionka</string>
@@ -164,7 +164,7 @@
     <string name="volume_rocker_wake_summary">Naciśnięcie przycisków głośności wybudzi urządzenie\nNadpisuje kontrole odtwarzania</string>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Kontrola odtwarzania</string>
-    <string name="volume_rocker_music_controls_summary">Kiedy ekran jest wyłaczony, długie przytrzymanie przycisków głośności będzie przewijać muzykę</string>
+    <string name="volume_rocker_music_controls_summary">Kiedy ekran jest wyłączony, długie przytrzymanie przycisków głośności będzie przewijać muzykę</string>
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Dźwięk zmiany głośności</string>
     <string name="volume_key_adjust_sound_summary">Odtwarza dźwięk przy zmianie głośności przyciskami</string>
@@ -186,8 +186,8 @@
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (ukryj)</string>
     <string name="navigation_bar_title">Przyciski i układ</string>
-    <string name="navigation_bar_settings_summary">Edytuj i organizauj przycisku nawigacji</string>
-    <string name="navigation_bar_help_text">Aby rozpocząć naciśnij ikonę edycji.\n\nMożesz naciśnąc ikonę aby zmienić jej skrót lub przytrzymać aby zmienić położenie.\n\nNaciśnij \'Zapisz\' aby zachować zmiany, lub \'Przywróć domyślne\' aby przywrócić domyślne ustawienia.</string>
+    <string name="navigation_bar_settings_summary">Edytuj i organizuj przyciski nawigacji</string>
+    <string name="navigation_bar_help_text">Aby rozpocząć naciśnij ikonę edycji.\n\nMożesz nacisnąć ikonę aby zmienić jej skrót lub przytrzymać aby zmienić położenie.\n\nNaciśnij \'Zapisz\' aby zachować zmiany, lub \'Przywróć domyślne\' aby przywrócić domyślne ustawienia.</string>
     <string name="navigation_restore_button_text">Przywróć\ndomyślne</string>
     <string name="navigation_edit_button_text">Edytuj</string>
     <string name="navigation_save_button_text">Zapisz</string>
@@ -201,7 +201,7 @@
     <string name="recents_clear_all_location_top_left">Lewy górny róg</string>
     <string name="recents_clear_all_location_top_center">Wyśrodkowany na górze</string>
     <string name="recents_clear_all_location_bottom_right">Prawy dolny róg</string>
-    <string name="recents_clear_all_location_bottom_left">Lewz dolny róg</string>
+    <string name="recents_clear_all_location_bottom_left">Lewy dolny róg</string>
     <string name="recents_clear_all_location_bottom_center">Wyśrodkowany na dole</string>
 
    <!-- useless strings -->
@@ -210,7 +210,7 @@
     <string name="profile_reset_title">Przywróć</string>
     <string name="profile_applist_title">Aplikacje</string>
     <string name="picker_activities">Aktywności</string>
-    <string name="select_custom_app_title">Wybierz włąsną aplikację</string>
+    <string name="select_custom_app_title">Wybierz własną aplikację</string>
     <string name="select_custom_activity_title">Wybierz własną aktywność</string>
 
     <!-- Notification light dialogs -->
@@ -270,7 +270,7 @@
     <string name="power_menu_settings_title">Skrót ustawień</string>
     <string name="power_menu_lockdown_title">Zablokuj urządzenie</string>
     <string name="power_menu_bug_report_title">Raport błędu</string>
-    <string name="power_menu_sound_title">Panel dźwieku</string>
+    <string name="power_menu_sound_title">Panel dźwięku</string>
     <string name="power_menu_bug_report_disabled">Raportowanie błędów jest wyłączone w opcjach programistycznych</string>
 
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
@@ -308,7 +308,7 @@
     <string name="add_qs">Dodaj nowy przełącznik</string>
     <string name="qs_action_delete">Usuń</string>
     <string name="qs_action_add">Dodaj</string>
-    <string name="qs_action_no_more_tiles">Nie ma więcej dostępnych przełaczników</string>
+    <string name="qs_action_no_more_tiles">Nie ma więcej dostępnych przełączników</string>
     <string name="qs_main_tiles_title">Powiększ pierwszy rząd</string>
     <string name="qs_main_tiles_summary_on">Dwa główne przełącznik w pierwszym rzędzie</string>
     <string name="qs_main_tiles_summary_off">Trzy przełączniki w każdym rzędzie</string>
@@ -361,7 +361,7 @@
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Skróty pierścienia nawigacji</string>
-    <string name="navigation_ring_summary">Edytuj i organizuj skróty pierscienia nawigacji</string>
+    <string name="navigation_ring_summary">Edytuj i organizuj skróty pierścienia nawigacji</string>
     <string name="navigation_ring_message">Aby rozpocząć naciśnij ikonę edycji.\n\nWybierz cel i ustaw jego działanie.\n\nNaciśnij ikonę \'\u2713\' aby zapisać zmiany lub \'Przywróć domyślne\' aby przywrócić domyślne ustawienia.</string>
 
     <!-- Lockscreen shortcuts -->
@@ -388,7 +388,7 @@
     <string name="expanded_hide_both">Ukryj oba</string>
     <string name="expanded_nothing_to_show">Aby ustawiać rozszerzony pulpit dla każdej aplikacji indywidualnie, wyłącz opcję \'Właczone dla wszystkich\'</string>
     <string name="expanded_desktop_state">Status rozszerzonego pulpitu</string>
-    <string name="expanded_enabled_for_all">Właczony dla wszystkich</string>
+    <string name="expanded_enabled_for_all">Włączony dla wszystkich</string>
     <string name="expanded_user_configurable">Ustawienia użytkownika</string>
     <string name="expanded_desktop_style">Styl rozszerzonego pulpitu</string>
     <string name="expanded_desktop_style_description">Wybierz domyślny styl rozszerzonego pulpitu</string>
@@ -414,7 +414,7 @@
 
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
-    <string name="volume_key_cursor_control_off">Wyłaczona</string>
+    <string name="volume_key_cursor_control_off">Wyłączona</string>
     <string name="volume_key_cursor_control_on">Głośność w górę/dół przesunie kursor w lewo/prawo</string>
     <string name="volume_key_cursor_control_on_reverse">Głośność w górę/dół przesunie kursor w prawo/lewo</string>
 
@@ -482,7 +482,7 @@
     <string name="blacklist_summary_type_messages_only">wiadomości</string>
     <string name="blacklist_summary_type_calls_and_messages">połączenie i wiadomości</string>
     <string name="blacklist_regex_title">Użyj wieloznacznika</string>
-    <string name="blacklist_regex_summary">Użyj . jako wiloznacznika i * dla powtórzenia. Np. 123.* zablokuje numery zaczynające się od 123 a .*123.* zablokuje numery zawierające 123</string>
+    <string name="blacklist_regex_summary">Użyj . jako wieloznacznika i * dla powtórzenia. Np. 123.* zablokuje numery zaczynające się od 123 a .*123.* zablokuje numery zawierające 123</string>
     <string name="blacklist_policy_block_calls">Blokuj połączenia przychodzące</string>
     <string name="blacklist_policy_block_messages">Blokuj wiadomości przychodzące</string>
     <string name="blacklist_bad_number_add">Nie można dodać numeru do listy</string>
@@ -617,7 +617,7 @@
     <string name="app_ops_labels_read_calendar">Odczytywanie kalendarza</string>
     <string name="app_ops_labels_modify_calendar">Modyfikowanie kalendarza</string>
     <string name="app_ops_labels_notification_toast">Powiadomienia</string>
-    <string name="app_ops_labels_call_phone">Połaczenia</string>
+    <string name="app_ops_labels_call_phone">Połączenia</string>
     <string name="app_ops_labels_read_sms_db">Odczytywanie BD SMS</string>
     <string name="app_ops_labels_write_sms_db">Zapisywanie BD SMS</string>
     <string name="app_ops_labels_receive_sms">Odbieranie SMS</string>
@@ -655,7 +655,7 @@
     <string name="app_ops_labels_nfc_change">Zmiana NFC</string>
     <string name="app_ops_labels_delete_sms">Usuwanie MMS</string>
     <string name="app_ops_labels_delete_mms">Usuwanie MMS</string>
-    <string name="app_ops_labels_delete_contacts">Usuwanie kontaktówe</string>
+    <string name="app_ops_labels_delete_contacts">Usuwanie kontaktów</string>
     <string name="app_ops_labels_delete_call_log">Usuwanie rejestru połączeń</string>
     <string name="app_ops_labels_data_change">Zmiana danych</string>
 
