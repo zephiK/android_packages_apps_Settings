@@ -623,7 +623,7 @@
     <string name="app_ops_labels_draw_on_top">Draw on top</string>
     <string name="app_ops_labels_access_notifications">Доступ к уведомлениям</string>
     <string name="app_ops_labels_camera">Камера</string>
-    <string name="app_ops_labels_record_audio"Запись аудио</string>
+    <string name="app_ops_labels_record_audio">Запись аудио</string>
     <string name="app_ops_labels_play_audio">Воспроизведение аудио</string>
     <string name="app_ops_labels_read_clipboard">Чтение буфера обмена</string>
     <string name="app_ops_labels_modify_clipboard">Изменение буфера обмена</string>
