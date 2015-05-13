@@ -138,8 +138,8 @@
     <string name="quick_pulldown_right">Prawa</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Dotknij dwukrotnie aby uśpić</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Dwukrotne dotknięcie paska stanu usypia urządzenie</string>
+    <string name="status_bar_double_tap_to_sleep_title">Dotknij dwukrotnie aby wygasić</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Dwukrotne dotknięcie paska stanu wygasi urządzenie</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Kontrola jasności</string>
@@ -340,333 +340,333 @@
     <string name="qs_music_play_tile">Play</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="network_traffic_title">Ruch sieciowy</string>
+    <string name="show_network_traffic_state">Monitorowanie ruchu sieciowego na pasku stanu</string>
+    <string name="network_traffic_summary">Włącz monitorowanie ruchu sieciowego w pasku stanu</string>
+    <string name="show_network_traffic_unit">Wyświetlane jednostki</string>
+    <string name="show_network_traffic_frequency">Częstotliwość odświeżania</string>
+    <string name="show_network_traffic_disable">Wyłączone</string>
+    <string name="show_network_traffic_up">Wychodzący</string>
+    <string name="show_network_traffic_down">Przychodzący</string>
+    <string name="show_network_traffic_all">Wychodzący i przychodzący</string>
+    <string name="show_network_traffic_bit">Bitów na sekundę</string>
+    <string name="show_network_traffic_byte">Bajtów na sekundę</string>
     <string name="show_network_traffic_500">500 ms</string>
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_autohide">Auto ukrywanie</string>
+    <string name="network_traffic_autohide_summary">Ukryj ruch sieciowy kiedy brak jest aktywności</string>
+    <string name="network_traffic_autohide_threshold">Próg braku aktywności</string> 
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Navigation ring targets</string>
-    <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
-<string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
+    <string name="navigation_ring_title">Skróty pierścienia nawigacji</string>
+    <string name="navigation_ring_summary">Edytuj i organizuj skróty pierscienia nawigacji</string>
+    <string name="navigation_ring_message">Aby rozpocząć naciśnij ikonę edycji.\n\nWybierz cel i ustaw jego działanie.\n\nNaciśnij ikonę \'\u2713\' aby zapisać zmiany lub \'Przywróć domyślne\' aby przywrócić domyślne ustawienia.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
-    <string name="lockscreen_default_target">Default</string>
-    <string name="lockscreen_none_target">None</string>
-    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
-    <string name="lockscreen_choose_action_title">Choose action</string>
+    <string name="lockscreen_settings_title">Ekran blokady</string>
+    <string name="lockscreen_targets_message">Skróty ekranu blokady</string>
+    <string name="lockscreen_default_target">Domyślne</string>
+    <string name="lockscreen_none_target">Żadne</string>
+    <string name="lockscreen_message">Naciśnij ikonę po lewej lub prawej aby ustawić skróty ekranu blokady.</string>
+    <string name="lockscreen_choose_action_title">Wybierz akcję</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_four_columns_title">Pokaż cztery przełączniki w rzędzie</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ring and notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-    <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
+    <string name="link_volume_option_title">Połącz głośność dzwonka i powiadomień</string>
+    <string name="notification_volume_option_title">Głośność powiadomień</string>
+    <string name="ring_notification_volume_option_tile">Głośność dzwonka i powiadomień</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_hide_nothing">Hide nothing</string>
-    <string name="expanded_hide_status">Hide status bar</string>
-    <string name="expanded_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_hide_both">Hide both</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Expanded state</string>
-    <string name="expanded_enabled_for_all">Enabled for all</string>
-    <string name="expanded_user_configurable">User configurable</string>
-    <string name="expanded_desktop_style">Expanded desktop style</string>
-    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-    <string name="expanded_desktop_title">Expanded desktop options</string>
+    <string name="power_menu_expanded_desktop">Rozszerzony  pulpit</string>
+    <string name="expanded_hide_nothing">Nic nie ukrywaj</string>
+    <string name="expanded_hide_status">Ukryj pasek stanu</string>
+    <string name="expanded_hide_navigation">Ukryj pasek nawigacji</string>
+    <string name="expanded_hide_both">Ukryj oba</string>
+    <string name="expanded_nothing_to_show">Aby ustawiać rozszerzony pulpit dla każdej aplikacji indywidualnie, wyłącz opcję \'Właczone dla wszystkich\'</string>
+    <string name="expanded_desktop_state">Status rozszerzonego pulpitu</string>
+    <string name="expanded_enabled_for_all">Właczony dla wszystkich</string>
+    <string name="expanded_user_configurable">Ustawienia użytkownika</string>
+    <string name="expanded_desktop_style">Styl rozszerzonego pulpitu</string>
+    <string name="expanded_desktop_style_description">Wybierz domyślny styl rozszerzonego pulpitu</string>
+    <string name="expanded_desktop_title">Opcje rozszerzonego pulpitu</string>
 
     <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Quicksettings</string>
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+    <string name="qs_category">Szybkie ustawienia</string>
+    <string name="block_on_secure_keyguard_title">Wyłącz na ekranie blokady</string>
+    <string name="block_on_secure_keyguard_summary">Wyłącz szybkie ustawienia na zabezpieczonym ekranie blokady.</string>
 
     <!--Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
+    <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie kiedy zostanie wprowadzony prawidłowy PIN/hasło</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Wymieszaj układ</string>
+    <string name="unlock_scramble_pin_layout_summary">Wymieszaj układ klawiatury PIN po odblokowaniu ekranu</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_cursor_title">Cursor options</string>
-    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
-    <string name="volume_rocker_other_title">Miscellaneous</string>
+    <string name="volume_rocker_cursor_title">Opcje wskaźnika</string>
+    <string name="volume_button_toggle_info">Wybudzanie przyciskami głośności musi być wyłączone</string>
+    <string name="volume_rocker_other_title">Różne</string>
 
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Kontrola kursora przyciskami głośności</string>
+    <string name="volume_key_cursor_control_off">Wyłaczona</string>
+    <string name="volume_key_cursor_control_on">Głośność w górę/dół przesunie kursor w lewo/prawo</string>
+    <string name="volume_key_cursor_control_on_reverse">Głośność w górę/dół przesunie kursor w prawo/lewo</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Dotknij dwukrotnie aby wygasić</string>
+    <string name="double_tap_sleep_nav_bar_summary">Dwukrotne dotknięcie paska nawigacji wygasi urządzenie</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up notifications</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+    <string name="category_heads_up">Wyskakujące powiadomienia</string>
+    <string name="summary_heads_up_enabled">Wyskakujące powiadomienia są włączone</string>
+    <string name="summary_heads_up_disabled">Wyskakujące powiadomienia są wyłączone</string>
+    <string name="add_heads_up_package">Dodaj aplikację</string>
+    <string name="add_heads_up_dnd_summary">Nie wyświetlaj wyskakujących powiadomień w tych aplikacjach</string>
+    <string name="add_heads_up_blacklist_summary">Nie wyświetlaj wyskakujących powiadomień z tych aplikacji</string>
+    <string name="heads_up_dnd_title">Nie przeszkadzaj</string>
+    <string name="heads_up_blacklist_title">Blokowanie powiadomień</string>
+    <string name="heads_up_disabled_notice">Aby zezwolić aplikacjom wyświetlać interaktywne wyskakujące powiadomienia, włącz Wyskakujące powiadomienia.</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_never_summary">Notification will show until it is dismissed</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_title">Czas wyświetlania</string>
+    <string name="heads_up_time_out_summary">Powiadomienie będzie widoczne przez <xliff:g id="number">%d</xliff:g> sekundy</string>
+    <string name="heads_up_time_out_never_summary">Powiadomienie będzie widoczne do czasu jego usunięcia</string>
+    <string name="heads_up_time_out_2sec">2 sekundy</string>
+    <string name="heads_up_time_out_4sec">4 sekundy</string>
+    <string name="heads_up_time_out_6sec">6 sekund</string>
+    <string name="heads_up_time_out_8sec">8 sekund</string>
+    <string name="heads_up_time_out_10sec">10 sekund</string>
+    <string name="heads_up_time_out_never">Nigdy</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_enable_title">Enable navigation rings</string>
+    <string name="navigation_ring_enable_title">Włącz skróty pierścienia nawigacji</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="proximity_wake_title">Zapobiegaj przypadkowym wybudzeniom</string>
+    <string name="proximity_wake_summary">Sprawdza czujnik zbliżeniowy przed wybudzeniem ekranu.\nUWAGA: To może powodować wolniejsze wybudzanie ekranu.</string>
 
     <!-- Hide power menu on lockscreen -->
-    <string name="power_category">Power menu</string>
-    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+    <string name="power_category">Menu zasilania</string>
+    <string name="lockscreen_enable_power_menu_title">Wyświetl menu zasilania na ekranie blokady</string>
+    <string name="lockscreen_enable_power_menu_summary">Ta opcja wyłączy menu zasilania jedynie na zabezpieczonym ekranie blokady</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">None is Silent mode</string>
-    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
+    <string name="none_is_silent_title">Żadne w Trybie cichym</string>
+    <string name="none_is_silent_summary">Dźwięki alarmów zawsze w Trybie cichym</string>
 
-    <string name="app_security_title">App security</string>
+    <string name="app_security_title">Zabezpieczenia aplikacji</string>
 
    <!-- Blacklist preferences -->
-    <string name="blacklist_title">Blacklist</string>
-    <string name="blacklist_edit_dialog_title">Edit blacklist entry</string>
-    <string name="blacklist_prefs">Settings</string>
-    <string name="blacklist_button_delete">Delete</string>
-    <string name="blacklist_empty_text">You don\'t have any blacklisted numbers. Add an entry by touching the Add (+) button.</string>
-    <string name="blacklist_disabled_empty_text">To blacklist calls and/or messages from certain numbers, enable the blacklist.</string>
-    <string name="blacklist_summary_disabled">Disabled</string>
-    <string name="blacklist_summary">Incoming calls and messages from phone numbers in the blacklist will be blocked</string>
-    <string name="blacklist_notify">Show notification</string>
-    <string name="blacklist_private_numbers_title">Private numbers</string>
-    <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
-    <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
-    <string name="blacklist_unknown_numbers_title">Unknown numbers</string>
-    <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
-    <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-    <string name="blacklist_summary_type_calls_only">calls</string>
-    <string name="blacklist_summary_type_messages_only">messages</string>
-    <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
-    <string name="blacklist_regex_title">Use wildcards</string>
-    <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
-    <string name="blacklist_policy_block_calls">Block incoming calls</string>
-    <string name="blacklist_policy_block_messages">Block incoming messages</string>
-    <string name="blacklist_bad_number_add">Unable to add invalid number to blacklist</string>
+    <string name="blacklist_title">Blokowanie połączeń</string>
+    <string name="blacklist_edit_dialog_title">Edytuj wpisy Blokowania połączeń</string>
+    <string name="blacklist_prefs">Ustawienia</string>
+    <string name="blacklist_button_delete">Usuń</string>
+    <string name="blacklist_empty_text">Brak numerów do blokowania. Dodaj wpis naciskając przycisk (+)</string>
+    <string name="blacklist_disabled_empty_text">Aby zablokować połączenia/wiadomości z numerów, włącz Blokowanie połączeń.</string>
+    <string name="blacklist_summary_disabled">Wyłaczone</string>
+    <string name="blacklist_summary">Połączenia przychodzące i wiadomości dodane do listy będą blokowane</string>
+    <string name="blacklist_notify">Pokaż powiadomienie</string>
+    <string name="blacklist_private_numbers_title">Numery zastrzeżone</string>
+    <string name="blacklist_private_numbers_summary_disabled">Nie blokuj połączeń z numerów zastrzeżonych</string>
+    <string name="blacklist_private_numbers_summary">Zablokuj <xliff:g id="type">%s</xliff:g> przychodzące z numerów zastrzeżonych</string>
+    <string name="blacklist_unknown_numbers_title">Nieznane numery</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Nie blokuj połączeń i wiadomości z numerów niezapisanych w kontaktach</string>
+    <string name="blacklist_unknown_numbers_summary">Zablokuj <xliff:g id="type">%s</xliff:g> przychodzące z numerów niezapisanych w kontaktach</string>
+    <string name="blacklist_summary_type_calls_only">połączenia</string>
+    <string name="blacklist_summary_type_messages_only">wiadomości</string>
+    <string name="blacklist_summary_type_calls_and_messages">połączenie i wiadomości</string>
+    <string name="blacklist_regex_title">Użyj wieloznacznika</string>
+    <string name="blacklist_regex_summary">Użyj . jako wiloznacznika i * dla powtórzenia. Np. 123.* zablokuje numery zaczynające się od 123 a .*123.* zablokuje numery zawierające 123</string>
+    <string name="blacklist_policy_block_calls">Blokuj połączenia przychodzące</string>
+    <string name="blacklist_policy_block_messages">Blokuj wiadomości przychodzące</string>
+    <string name="blacklist_bad_number_add">Nie można dodać numeru do listy</string>
 
     <!-- Blacklist management -->
-    <string name="add_blacklist_number">Add number</string>
-    <string name="remove_blacklist_number_title">Remove number</string>
-    <string name="remove_blacklist_entry">Do you want to remove this blacklist entry?</string>
-    <string name="select_contact">Select contact</string>
+    <string name="add_blacklist_number">Dodaj numer</string>
+    <string name="remove_blacklist_number_title">Usuń numer</string>
+    <string name="remove_blacklist_entry">Czy chcesz usunąć wpis listy?</string>
+    <string name="select_contact">Wybierz kontakt</string>
 
-    <string name="allow_lights_title">Allow notification lights</string>
+    <string name="allow_lights_title">Włącz diodę powiadomień</string>
 
-    <string name="notification_led_header">Notification LED</string>
+    <string name="notification_led_header">Dioda powiadomień</string>
 
     <!-- Camera sound switch -->
-    <string name="camera_sounds_title">Camera shutter sound</string>
-    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
-    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="camera_sounds_title">Dźwięk migawki</string>
+    <string name="camera_sounds_summary">Włącz systemowy dźwięki migawki aparatu</string>
+    <string name="camera_sound_warning_dialog_text">Wyłączenie dźwięku migawki jest nielegalne w niektórych miejscach! Sprawdź odpowiednie przepisy w swoim kraju.</string>
 
-    <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
-    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+    <string name="app_notification_show_on_keyguard_title">Wyświetl na ekranie blokady</string>
+    <string name="app_notification_show_on_keyguard_summary">Wyświetlaj powiadomienia z tej aplikacji na ekranie blokady</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Wyłącz stałe powiadomienia na ekranie blokady</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Nigdy nie wyświetlaj stałych powiadomień z tej aplikacji na ekranie blokady</string>
 
     <!-- Volume Keys Media Control -->
-    <string name="volume_keys_control_media_stream">Media control</string>
-    <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+    <string name="volume_keys_control_media_stream">Kontrola mediów</string>
+    <string name="volume_keys_control_media_stream_summary">Przyciski głośności zmienią głośność mediów zamiast powiadomień</string>
 
     <!-- Battery saver color -->
-    <string name="battery_saver_color_title">Warning color</string>
-    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+    <string name="battery_saver_color_title">Kolor ostrzeżenia</string>
+    <string name="battery_saver_color_summary">Włącz pomarańczowy pasek stanu i nawigacji przy włączonym Oszczędzaniu baterii</string>
 
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-    <string name="increasing_ring_min_volume_title">Start volume</string>
-    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+    <string name="increasing_ring_volume_option_title">Narastający dzwonek</string>
+    <string name="increasing_ring_min_volume_title">Wartość początkowa</string>
+    <string name="increasing_ring_ramp_up_time_title">Czas narastania</string>
 
     <!-- Privacy Guard -->
-    <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
-    <string name="privacy_guard_enable_dlg_text">When privacy guard is enabled, %s will not be able to access personal data such as contacts, messages, location or call logs.</string>
-    <string name="privacy_guard_enable_dlg_system_app_text">When enabling privacy guard for the built-in app %s, the app will not be able to access personal data such as contacts, messages, location or call logs. This may cause other apps to misbehave.</string>
-    <string name="privacy_guard_default_title">Enabled by default</string>
-    <string name="privacy_guard_default_summary">Do not access personal data by default for newly-installed apps</string>
-    <string name="privacy_guard_notification_title">Notification</string>
-    <string name="privacy_guard_notifiation_summary">Show notification if privacy guard is active</string>
-    <string name="privacy_guard_manager_title">Privacy guard</string>
-    <string name="privacy_guard_manager_summary">Manage which apps have access to your personal data and other apps permissions</string>
-    <string name="privacy_guard_no_user_apps">No apps are installed</string>
-    <string name="privacy_guard_filter_does_not_match">No apps with relevant permissions are installed</string>
-    <string name="privacy_guard_help_text">In this screen you can choose for which apps Privacy Guard should be active by simply tapping on them. Selected apps will not be able to access your personal data, such as contacts, messages, location or call logs. Long pressing on an entry allows to set specifically app permissions.\n\nBy default built-in apps are not shown. If you want to show them or filter apps to show only the ones requesting access to personal data by their permissions, select the respective options in the menu.</string>
-    <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
-    <string name="privacy_guard_manager_filter_permissions">Permission filter</string>
-    <string name="privacy_guard_app_ops_detail_dialog_title">Attention</string>
-    <string name="privacy_guard_app_ops_detail_dialog_text">Selected app does not request permissions which access personal data. Do you want to modify the other permissions?</string>
-    <string name="privacy_guard_app_ops_detail_reset_dialog_text">Reset all permissions back to default?</string>
-    <string name="app_ops_btn_text">Modify</string>
-    <string name="app_ops_no_item_text">This app has no changeable permissions</string>
+    <string name="privacy_guard_dlg_title">Właczyć ochronę prywatności?</string>
+    <string name="privacy_guard_enable_dlg_text">Kiedy ochrona prywatności jest włączona, %s nie będzie miał dostępu do danych osobistych takich jak kontakty, wiadomości, lokalizacja lub historia połączeń.</string>
+    <string name="privacy_guard_enable_dlg_system_app_text">Włączając ochronę dla aplikacji systemowej %s, nie będzie miał dostępu do danych osobistych takich jak kontakty, wiadomości, lokalizacja lub historia połączeń. To może spowodować błędy w działaniu tej aplikacji.</string>
+    <string name="privacy_guard_default_title">Domyślnie włączona</string>
+    <string name="privacy_guard_default_summary">Brak dostępu do danych osobistych dla nowo zainstalowanych aplikacji</string>
+    <string name="privacy_guard_notification_title">Powiadomienia</string>
+    <string name="privacy_guard_notifiation_summary">Pokazuj powiadomienia kiedy Ochrona prywatności jest włączona</string>
+    <string name="privacy_guard_manager_title">Ochrona prywatności</string>
+    <string name="privacy_guard_manager_summary">Zarządzaj które aplikacje mają dostęp do danych osobistych i innych uprawnień</string>
+    <string name="privacy_guard_no_user_apps">Brak zainstalowanych aplikacji</string>
+    <string name="privacy_guard_filter_does_not_match">Brak zainstalowanych aplikacji z odpowiednimi uprawnieniami</string>
+    <string name="privacy_guard_help_text">W tym oknie możesz wybrać aplikacje, dla których Ochrona Prywatności ma być włączona. Wybrane aplikacje nie będą miały dostępu do danych osobistych takich jak kontakty, wiadomości, lokalizacja lub historia połączeń. Poprzez długie naciśnięcie możesz ustawić poszczególne uprawnienia aplikacji.\n\nDomyślnie aplikacje systemowe nie są widoczne. Jeśli chcesz żeby były widoczne lub wyświetlić tylko te aplikacje, które żądają dostępu do danych osobistych, wybierz odpowiednią opcję w menu.</string>
+    <string name="privacy_guard_manager_show_system_apps">Pokaż aplikacje systemowe</string>
+    <string name="privacy_guard_manager_filter_permissions">Filtr uprawnień</string>
+    <string name="privacy_guard_app_ops_detail_dialog_title">Uwaga</string>
+    <string name="privacy_guard_app_ops_detail_dialog_text">Wybrana aplikacja nie potrzebuje dostępu do danych osobistych. Czy chcesz zmienić inne uprawnienia?</string>
+    <string name="privacy_guard_app_ops_detail_reset_dialog_text">Przywrócić domyślne ustawienia wszystkich uprawnień?</string>
+    <string name="app_ops_btn_text">Zmień</string>
+    <string name="app_ops_no_item_text">Ta aplikacje nie ma żadnych uprawnień, które można zmienić.</string>
 
-    <string name="model_name">Model name</string>
+    <string name="model_name">Nazwa urządzenia</string>
     <!-- Updater -->
-    <string name="updater_title">Updates</string>
-    <string name="updater_summary">Check for updates and more</string>
+    <string name="updater_title">Aktualizacje</string>
+    <string name="updater_summary">Sprawdź aktualizacje i więcej</string>
 
     <!-- App ops -->
-    <string name="app_ops_summaries_coarse_location">coarse location</string>
-    <string name="app_ops_summaries_fine_location">fine location</string>
+    <string name="app_ops_summaries_coarse_location">przybliżona lokalizacja</string>
+    <string name="app_ops_summaries_fine_location">dokładna lokalizacja</string>
     <string name="app_ops_summaries_gps">GPS</string>
-    <string name="app_ops_summaries_vibrate">vibrate</string>
-    <string name="app_ops_summaries_read_contacts">read contacts</string>
-    <string name="app_ops_summaries_modify_contacts">modify contacts</string>
-    <string name="app_ops_summaries_read_call_log">read call log</string>
-    <string name="app_ops_summaries_modify_call_log">modify call log</string>
-    <string name="app_ops_summaries_read_calendar">read calendar</string>
-    <string name="app_ops_summaries_modify_calendar">modify calendar</string>
-    <string name="app_ops_summaries_wifi_scan">wi-fi scan</string>
-    <string name="app_ops_summaries_notification">notification</string>
-    <string name="app_ops_summaries_cell_scan">cell scan</string>
-    <string name="app_ops_summaries_call_phone">call phone</string>
-    <string name="app_ops_summaries_read_sms">read SMS</string>
-    <string name="app_ops_summaries_write_sms">write SMS</string>
-    <string name="app_ops_summaries_receive_sms">receive SMS</string>
-    <string name="app_ops_summaries_receive_emergency_sms">receive emergency SMS</string>
-    <string name="app_ops_summaries_receive_mms">receive MMS</string>
-    <string name="app_ops_summaries_receive_wap_push">receive WAP push</string>
-    <string name="app_ops_summaries_send_sms">send SMS</string>
-    <string name="app_ops_summaries_read_icc_sms">read ICC SMS</string>
-    <string name="app_ops_summaries_write_icc_sms">write ICC SMS</string>
-    <string name="app_ops_summaries_modify_settings">modify settings</string>
-    <string name="app_ops_summaries_draw_on_top">draw on top</string>
-    <string name="app_ops_summaries_access_notifications">access notifications</string>
-    <string name="app_ops_summaries_camera">camera</string>
-    <string name="app_ops_summaries_record_audio">record audio</string>
-    <string name="app_ops_summaries_play_audio">play audio</string>
-    <string name="app_ops_summaries_read_clipboard">read clipboard</string>
-    <string name="app_ops_summaries_modify_clipboard">modify clipboard</string>
-    <string name="app_ops_summaries_media_buttons">media buttons</string>
-    <string name="app_ops_summaries_audio_focus">audio focus</string>
-    <string name="app_ops_summaries_master_volume">master volume</string>
-    <string name="app_ops_summaries_voice_volume">voice volume</string>
-    <string name="app_ops_summaries_ring_volume">ring volume</string>
-    <string name="app_ops_summaries_media_volume">media volume</string>
-    <string name="app_ops_summaries_alarm_volume">alarm volume</string>
-    <string name="app_ops_summaries_notification_volume">notification volume</string>
-    <string name="app_ops_summaries_bluetooth_volume">bluetooth volume</string>
-    <string name="app_ops_summaries_keep_awake">keep awake</string>
-    <string name="app_ops_summaries_monitor_location">monitor location</string>
-    <string name="app_ops_summaries_monitor_high_power_location">monitor high power location</string>
-    <string name="app_ops_summaries_get_usage_stats">get app usage stats</string>
-    <string name="app_ops_summaries_mute_unmute_microphone">mute/unmute microphone</string>
-    <string name="app_ops_summaries_toast_window">display toasts</string>
-    <string name="app_ops_summaries_project_media">project media</string>
-    <string name="app_ops_summaries_activate_vpn">activate vpn</string>
-    <string name="app_ops_summaries_wifi_change">wi-fi change</string>
-    <string name="app_ops_summaries_bluetooth_change">bluetooth change</string>
-    <string name="app_ops_summaries_send_mms">send MMS</string>
-    <string name="app_ops_summaries_read_mms">read MMS</string>
-    <string name="app_ops_summaries_write_mms">write MMS</string>
+    <string name="app_ops_summaries_vibrate">wibracja</string>
+    <string name="app_ops_summaries_read_contacts">odczytywanie kontaktów</string>
+    <string name="app_ops_summaries_modify_contacts">modyfikowanie kontaktów</string>
+    <string name="app_ops_summaries_read_call_log">odczytywanie rejestru połączeń</string>
+    <string name="app_ops_summaries_modify_call_log">modyfikowanie rejestru połączeń</string>
+    <string name="app_ops_summaries_read_calendar">odczytywanie kalendarza</string>
+    <string name="app_ops_summaries_modify_calendar">modyfikowanie kalendarza</string>
+    <string name="app_ops_summaries_wifi_scan">skanowanie wi-fi</string>
+    <string name="app_ops_summaries_notification">powiadomienia</string>
+    <string name="app_ops_summaries_cell_scan">skanowanie sieci</string>
+    <string name="app_ops_summaries_call_phone">wykonywanie połączeń</string>
+    <string name="app_ops_summaries_read_sms">odczytywanie SMS</string>
+    <string name="app_ops_summaries_write_sms">pisanie SMS</string>
+    <string name="app_ops_summaries_receive_sms">odbieranie SMS</string>
+    <string name="app_ops_summaries_receive_emergency_sms">odbieranie alarmowych SMS</string>
+    <string name="app_ops_summaries_receive_mms">odbieranie MMS</string>
+    <string name="app_ops_summaries_receive_wap_push">odbieranie WAP push</string>
+    <string name="app_ops_summaries_send_sms">wysyłanie SMS</string>
+    <string name="app_ops_summaries_read_icc_sms">odbieranie ICC SMS</string>
+    <string name="app_ops_summaries_write_icc_sms">pisanie ICC SMS</string>
+    <string name="app_ops_summaries_modify_settings">zmiana ustawień</string>
+    <string name="app_ops_summaries_draw_on_top">rysowanie na powierzchni</string>
+    <string name="app_ops_summaries_access_notifications">dostęp do powiadomień</string>
+    <string name="app_ops_summaries_camera">aparat</string>
+    <string name="app_ops_summaries_record_audio">nagrywanie audio</string>
+    <string name="app_ops_summaries_play_audio">odtwarzanie audio</string>
+    <string name="app_ops_summaries_read_clipboard">odczytywanie schowka</string>
+    <string name="app_ops_summaries_modify_clipboard">modyfikowanie schowka</string>
+    <string name="app_ops_summaries_media_buttons">przyciski mediów</string>
+    <string name="app_ops_summaries_audio_focus">ostrość dźwięku</string>
+    <string name="app_ops_summaries_master_volume">główna głośność</string>
+    <string name="app_ops_summaries_voice_volume">głośność mikrofonu</string>
+    <string name="app_ops_summaries_ring_volume">głośność dzwonka</string>
+    <string name="app_ops_summaries_media_volume">głośność mediów</string>
+    <string name="app_ops_summaries_alarm_volume">głośność alarmu</string>
+    <string name="app_ops_summaries_notification_volume">głośność powiadomień</string>
+    <string name="app_ops_summaries_bluetooth_volume">głośność bluetooth</string>
+    <string name="app_ops_summaries_keep_awake">wybudzanie</string>
+    <string name="app_ops_summaries_monitor_location">monitorowanie lokalizacji</string>
+    <string name="app_ops_summaries_monitor_high_power_location">monitorowanie dokładnej lokalizacji</string>
+    <string name="app_ops_summaries_get_usage_stats">dostęp do statystyk użycia aplikacji</string>
+    <string name="app_ops_summaries_mute_unmute_microphone">wyciszanie mikrofonu</string>
+    <string name="app_ops_summaries_toast_window">wyświetlanie powiadomień</string>
+    <string name="app_ops_summaries_project_media">wyświetlanie mediów</string>
+    <string name="app_ops_summaries_activate_vpn">aktywowanie vpn</string>
+    <string name="app_ops_summaries_wifi_change">zmiana wi-fi</string>
+    <string name="app_ops_summaries_bluetooth_change">zmiana bluetooth</string>
+    <string name="app_ops_summaries_send_mms">wysyłanie MMS</string>
+    <string name="app_ops_summaries_read_mms">odczyt MMS</string>
+    <string name="app_ops_summaries_write_mms">pisanie MMS</string>
     <string name="app_ops_summaries_auto_start">auto start</string>
-    <string name="app_ops_summaries_nfc_change">nfc change</string>
-    <string name="app_ops_summaries_delete_sms">delete MMS</string>
-    <string name="app_ops_summaries_delete_mms">delete MMS</string>
-    <string name="app_ops_summaries_delete_contacts">delete contacts</string>
-    <string name="app_ops_summaries_delete_call_log">delete call log</string>
-    <string name="app_ops_summaries_data_change">data change</string>
+    <string name="app_ops_summaries_nfc_change">zmiana nfc</string>
+    <string name="app_ops_summaries_delete_sms">usuwanie MMS</string>
+    <string name="app_ops_summaries_delete_mms">usuwanie MMS</string>
+    <string name="app_ops_summaries_delete_contacts">usuwanie kontaktów</string>
+    <string name="app_ops_summaries_delete_call_log">usuwanie rejestru połączeń</string>
+    <string name="app_ops_summaries_data_change">zmiana danych</string>
 
-    <string name="app_ops_labels_location">Location</string>
-    <string name="app_ops_labels_vibrate">Vibrate</string>
-    <string name="app_ops_labels_read_contacts">Read contacts</string>
-    <string name="app_ops_labels_modify_contacts">Modify contacts</string>
-    <string name="app_ops_labels_read_call_log">Read call log</string>
-    <string name="app_ops_labels_modify_call_log">Modify call log</string>
-    <string name="app_ops_labels_read_calendar">Read calendar</string>
-    <string name="app_ops_labels_modify_calendar">Modify calendar</string>
-    <string name="app_ops_labels_notification_toast">Notification/Toast</string>
-    <string name="app_ops_labels_call_phone">Call phone</string>
-    <string name="app_ops_labels_read_sms_db">Read SMS DB</string>
-    <string name="app_ops_labels_write_sms_db">Write SMS DB</string>
-    <string name="app_ops_labels_receive_sms">Receive SMS</string>
-    <string name="app_ops_labels_receive_mms">Receive MMS</string>
-    <string name="app_ops_labels_send_sms">Send SMS</string>
-    <string name="app_ops_labels_modify_settings">Modify settings</string>
-    <string name="app_ops_labels_draw_on_top">Draw on top</string>
-    <string name="app_ops_labels_access_notifications">Access notifications</string>
-    <string name="app_ops_labels_camera">Camera</string>
-    <string name="app_ops_labels_record_audio">Record audio</string>
-    <string name="app_ops_labels_play_audio">Play audio</string>
-    <string name="app_ops_labels_read_clipboard">Read clipboard</string>
-    <string name="app_ops_labels_modify_clipboard">Modify clipboard</string>
-    <string name="app_ops_labels_media_buttons">Media buttons</string>
-    <string name="app_ops_labels_audio_focus">Audio focus</string>
-    <string name="app_ops_labels_master_volume">Master volume</string>
-    <string name="app_ops_labels_voice_volume">Voice volume</string>
-    <string name="app_ops_labels_ring_volume">Ring volume</string>
-    <string name="app_ops_labels_media_volume">Media volume</string>
-    <string name="app_ops_labels_alarm_volume">Alarm volume</string>
-    <string name="app_ops_labels_notification_volume">Notification volume</string>
-    <string name="app_ops_labels_bluetooth_volume">Bluetooth volume</string>
-    <string name="app_ops_labels_keep_awake">Keep awake</string>
-    <string name="app_ops_labels_get_usage_stats">Get app usage stats</string>
-    <string name="app_ops_labels_mute_unmute_microphone">Mute/unmute microphone</string>
-    <string name="app_ops_labels_toast_window">Display toasts</string>
-    <string name="app_ops_labels_project_media">Project media</string>
-    <string name="app_ops_labels_activate_vpn">Activate VPN</string>
-    <string name="app_ops_labels_wifi_change">Wi-Fi change</string>
-    <string name="app_ops_labels_bluetooth_change">Bluetooth change</string>
-    <string name="app_ops_labels_send_mms">Send MMS</string>
-    <string name="app_ops_labels_read_mms">Read MMS</string>
-    <string name="app_ops_labels_write_mms">Write MMS</string>
+    <string name="app_ops_labels_location">Lokalizacja</string>
+    <string name="app_ops_labels_vibrate">Wibracja</string>
+    <string name="app_ops_labels_read_contacts">Odczytywanie kontaktów</string>
+    <string name="app_ops_labels_modify_contacts">Modyfikowanie kontaktów</string>
+    <string name="app_ops_labels_read_call_log">Odczytywanie rejestru połączeń</string>
+    <string name="app_ops_labels_modify_call_log">Modyfikowanie rejestru połączeń</string>
+    <string name="app_ops_labels_read_calendar">Odczytywanie kalendarza</string>
+    <string name="app_ops_labels_modify_calendar">Modyfikowanie kalendarza</string>
+    <string name="app_ops_labels_notification_toast">Powiadomienia</string>
+    <string name="app_ops_labels_call_phone">Połaczenia</string>
+    <string name="app_ops_labels_read_sms_db">Odczytywanie BD SMS</string>
+    <string name="app_ops_labels_write_sms_db">Zapisywanie BD SMS</string>
+    <string name="app_ops_labels_receive_sms">Odbieranie SMS</string>
+    <string name="app_ops_labels_receive_mms">Odbieranie MMS</string>
+    <string name="app_ops_labels_send_sms">Wysyłanie SMS</string>
+    <string name="app_ops_labels_modify_settings">Modyfikowanie ustawień</string>
+    <string name="app_ops_labels_draw_on_top">Rysowanie na powierzchni</string>
+    <string name="app_ops_labels_access_notifications">Dostęp do powiadomień</string>
+    <string name="app_ops_labels_camera">Aparat</string>
+    <string name="app_ops_labels_record_audio">Nagrywanie audio</string>
+    <string name="app_ops_labels_play_audio">Odtwarzanie audio</string>
+    <string name="app_ops_labels_read_clipboard">Odczytywyanie schowka</string>
+    <string name="app_ops_labels_modify_clipboard">Modyfikowanie schowka</string>
+    <string name="app_ops_labels_media_buttons">Przyciski mediów</string>
+    <string name="app_ops_labels_audio_focus">Ostrość dźwięku</string>
+    <string name="app_ops_labels_master_volume">Główna głośność</string>
+    <string name="app_ops_labels_voice_volume">Głośność mikrofonu</string>
+    <string name="app_ops_labels_ring_volume">Głośność dzwonka</string>
+    <string name="app_ops_labels_media_volume">Głośność mediów</string>
+    <string name="app_ops_labels_alarm_volume">Głosność alarmu</string>
+    <string name="app_ops_labels_notification_volume">Głośność powiadomień</string>
+    <string name="app_ops_labels_bluetooth_volume">Głośność bluetooth</string>
+    <string name="app_ops_labels_keep_awake">Wybudzanie</string>
+    <string name="app_ops_labels_get_usage_stats">Dostęp do statystyk użycia aplikacji</string>
+    <string name="app_ops_labels_mute_unmute_microphone">Wyciszanie mikrofonu</string>
+    <string name="app_ops_labels_toast_window">Wyświetlanie powiadomień</string>
+    <string name="app_ops_labels_project_media">Wyświetlanie mediów</string>
+    <string name="app_ops_labels_activate_vpn">Aktywowanie VPN</string>
+    <string name="app_ops_labels_wifi_change">Zmiana Wi-Fi</string>
+    <string name="app_ops_labels_bluetooth_change">Zmiana Bluetooth</string>
+    <string name="app_ops_labels_send_mms">Wysyłanie MMS</string>
+    <string name="app_ops_labels_read_mms">Odczytywanie MMS</string>
+    <string name="app_ops_labels_write_mms">Pisanie MMS</string>
     <string name="app_ops_labels_auto_start">Auto start</string>
-    <string name="app_ops_labels_nfc_change">NFC change</string>
-    <string name="app_ops_labels_delete_sms">Delete MMS</string>
-    <string name="app_ops_labels_delete_mms">Delete MMS</string>
-    <string name="app_ops_labels_delete_contacts">Delete contacts</string>
-    <string name="app_ops_labels_delete_call_log">Delete call log</string>
-    <string name="app_ops_labels_data_change">Data change</string>
+    <string name="app_ops_labels_nfc_change">Zmiana NFC</string>
+    <string name="app_ops_labels_delete_sms">Usuwanie MMS</string>
+    <string name="app_ops_labels_delete_mms">Usuwanie MMS</string>
+    <string name="app_ops_labels_delete_contacts">Usuwanie kontaktówe</string>
+    <string name="app_ops_labels_delete_call_log">Usuwanie rejestru połączeń</string>
+    <string name="app_ops_labels_data_change">Zmiana danych</string>
 
     <!-- App ops categories -->
-    <string name="app_ops_categories_location">Location</string>
-    <string name="app_ops_categories_personal">Personal</string>
-    <string name="app_ops_categories_messaging">Messaging</string>
+    <string name="app_ops_categories_location">Lokalizacja</string>
+    <string name="app_ops_categories_personal">Osobiste</string>
+    <string name="app_ops_categories_messaging">Wiadomości</string>
     <string name="app_ops_categories_media">Media</string>
-    <string name="app_ops_categories_device">Device</string>
-    <string name="app_ops_categories_bootup">Bootup</string>
+    <string name="app_ops_categories_device">Urządzenie</string>
+    <string name="app_ops_categories_bootup">Uruchamiane na starcie</string>
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-    <string name="bluetooth_accept_all_files">Accept all file types</string>
+    <string name="bluetooth_accept_all_files">Akceptuj wszystki pliki</string>
 </resources>
