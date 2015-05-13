@@ -42,9 +42,6 @@
     <Preference
         android:title="zephiK"
 	    android:summary="Lead Developer for Chroma"/>
-    <Preference
-        android:title="Sykopompos"
-	    android:summary="Device maintainer and developer"/>
     </PreferenceCategory>
 
 	<!-- Honorable mentions -->
@@ -53,9 +50,12 @@
         android:title="Honorable mentions" >
     <Preference
         android:title="boysetsfire"
-       	android:summary="Graphics - bootanimations, wallpapers"/>
+       	android:summary="All things Graphics related!"/>
     <Preference
         android:title="franciscofranco"
        	android:summary="Franco Kernel base"/>
+    <Preference
+        android:title="jolinnard"
+       	android:summary="Providing web hosting"/>
     </PreferenceCategory>
     </PreferenceScreen>
