@@ -202,7 +202,7 @@
     <string name="recents_clear_all_location_top_center">Top center</string>
     <string name="recents_clear_all_location_bottom_right">Bottom right</string>
     <string name="recents_clear_all_location_bottom_left">Bottom left</string>
-    <string name="recents_clear_all_location_bottom_center">Bottoms center</string>
+    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
 
    <!-- useless strings -->
     <string name="profiles_add">Add</string>
