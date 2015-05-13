@@ -10,8 +10,8 @@
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Расширенные настройки</string>
-    <string name="chroma_menu_about">О прошивке</string>
+    <string name="chroma_menu_personalizaton">Chroma настройки</string>
+    <string name="chroma_menu_about">О Chroma</string>
     <string name="status_bar_screen_title">Строка состояния</string>
     <string name="navigation_bar_screen_title">Панель навигации</string>
     <string name="power_menu_title">Меню выключения</string>
@@ -38,7 +38,7 @@
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Поворот экрана</string>
-    <string name="display_rotation_disabled">Отлючен</string>
+    <string name="display_rotation_disabled">Отключен</string>
     <string name="display_rotation_unit">градусов</string>
     <string name="display_rotation_category_title">Настройки поворота экрана</string>
     <string name="display_rotation_0_title">0 градусов</string>
@@ -57,7 +57,7 @@
     <string name="kill_app_longpress_back_summary">Закрытие приложения долгим удержанием кнопки назад</string>
 
     <!-- Generic strings -->
-    <string name="ok_string">Ok</string>
+    <string name="ok_string">Ок</string>
     <string name="default_string">По умолчанию</string>
     <string name="enabled_string">Включено</string>
     <string name="disabled_string">Выключено</string>
@@ -167,7 +167,7 @@
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие кнопок громкости будет переключать композиции</string>
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Звук нажатия кнопок</string>
-    <string name="volume_key_adjust_sound_summary">Воспроизводить звук когда нажимаются кнопки громкости</string>
+    <string name="volume_key_adjust_sound_summary">Воспроизводить звук при нажатии кнопок громкости</string>
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Менять расположение кнопок громкости</string>
     <string name="swap_volume_buttons_summary">Менять расположение кнопок громкости согласно ориентации экрана</string>
@@ -291,7 +291,7 @@
     <string name="lcd_density_default">По умолчанию</string>
     <string name="lcd_density_unsupported">Не поддерживается</string>
     <string name="restarting_ui">Перезагрузка</string>
-    <string name="custom_density_title">Измнените всё как Вам нравится</string>
+    <string name="custom_density_title">Измените всё, что Вы хотите</string>
     <string name="custom_density_summary">Если Вы столкнетесь с проблемами совместимости ПО в Play Store, перепроверьте стоит ли у Вас, модифицированный Play Store</string>
     <string name="custom_density_summary_invalid">"Неверное значение!"</string>
     <string name="custom_density">Нестандартное</string>
@@ -370,7 +370,7 @@
     <string name="lockscreen_default_target">По умолчанию</string>
     <string name="lockscreen_none_target">Нет</string>
     <string name="lockscreen_message">Нажмите на иконку слева или справа, чтобы изменить ярлык.</string>
-    <string name="lockscreen_choose_action_title">Выбирите действие</string>
+    <string name="lockscreen_choose_action_title">Выберите действие</string>
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
@@ -384,7 +384,7 @@
     <string name="power_menu_expanded_desktop">Расширенный экран</string>
     <string name="expanded_hide_nothing">Не скрывать</string>
     <string name="expanded_hide_status">Скрывать строку состояния</string>
-    <string name="expanded_hide_navigation">Скрывать нанель навигации</string>
+    <string name="expanded_hide_navigation">Скрывать панель навигации</string>
     <string name="expanded_hide_both">Скрывать всё</string>
     <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
     <string name="expanded_desktop_state">Статус расширенного экрана</string>
@@ -423,12 +423,12 @@
     <string name="double_tap_sleep_nav_bar_summary">Двойное нажатие по панели навигации выключит экран</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Всплювающие уведомления</string>
-    <string name="summary_heads_up_enabled">Всплювающие уведомления включены</string>
-    <string name="summary_heads_up_disabled">Всплювающие уведомления отключены</string>
+    <string name="category_heads_up">Всплывающие уведомления</string>
+    <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>
+    <string name="summary_heads_up_disabled">Всплывающие уведомления отключены</string>
     <string name="add_heads_up_package">Добавить приложение</string>
-    <string name="add_heads_up_dnd_summary">Не показывать всплювающие уведомления в этих приложениях</string>
-    <string name="add_heads_up_blacklist_summary">Не показывать всплювающие уведомления от этих приложений</string>
+    <string name="add_heads_up_dnd_summary">Не показывать всплывающие уведомления в этих приложениях</string>
+    <string name="add_heads_up_blacklist_summary">Не показывать всплывающие уведомления от этих приложений</string>
     <string name="heads_up_dnd_title">Не беспокоить</string>
     <string name="heads_up_blacklist_title">Черный список</string>
     <string name="heads_up_disabled_notice">Для отображения интерактивных уведомлений от приложений, включите всплывающие уведомления.</string>
@@ -449,7 +449,7 @@
     
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Предотвращение случайного пробуждения</string>
-    <string name="proximity_wake_summary">Проверьте датчик приближения до пробуждения экрана.\nNOTE: Это может сделать включение экрана более медленным.</string>
+    <string name="proximity_wake_summary">Проверьте датчик приближения до пробуждения экрана.\nПРИМЕЧАНИЕ: Это может сделать включение экрана более медленным.</string>
 
     <!-- Hide power menu on lockscreen -->
     <string name="power_category">Меню выключения</string>
@@ -471,12 +471,12 @@
     <string name="blacklist_disabled_empty_text">Чтобы предотвратить звонки или сообщения от нежелательных контактов, включите черный список.</string>
     <string name="blacklist_summary_disabled">Выключен</string>
     <string name="blacklist_summary">Вы не будете получать входящие вызовы или сообщения от телефонных номеров из черного списка</string>
-    <string name="blacklist_notify">Показывать уведомленние</string>
+    <string name="blacklist_notify">Показывать уведомление</string>
     <string name="blacklist_private_numbers_title">Скрытые номера</string>
     <string name="blacklist_private_numbers_summary_disabled">Блокировать звонки со скрытых номеров</string>
     <string name="blacklist_private_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> со скрытых номеров</string>
     <string name="blacklist_unknown_numbers_title">Неизвестные номера</string>
-    <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать звонки и сообщения от тех, кто не добвлен в контакты</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Не блокировать звонки и сообщения от тех, кто не добавлен в контакты</string>
     <string name="blacklist_unknown_numbers_summary">Блокировать входящие <xliff:g id="type">%s</xliff:g> от номеров, которые не добавлены в контакты</string>
     <string name="blacklist_summary_type_calls_only">звонки</string>
     <string name="blacklist_summary_type_messages_only">сообщения</string>
@@ -503,7 +503,7 @@
     
     <string name="app_notification_show_on_keyguard_title">Показывать на экране блокировки</string>
     <string name="app_notification_show_on_keyguard_summary">Показывать уведомления от этого приложения на экране блокировки</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Не показывать постоянные уведоления</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Не показывать постоянные уведомления</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Никогда не показывать постоянные уведомления от этого приложения на экране блокировки</string>
     
     <!-- Volume Keys Media Control -->
@@ -517,7 +517,7 @@
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Нарастающая громкость звонка</string>
     <string name="increasing_ring_min_volume_title">Начало громкости</string>
-    <string name="increasing_ring_ramp_up_time_title">Время увелечения</string>
+    <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
     
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Включить защищённый режим?</string>
@@ -584,7 +584,7 @@
     <string name="app_ops_summaries_notification_volume">громкость уведомления</string>
     <string name="app_ops_summaries_bluetooth_volume">громкость bluetooth</string>
     <string name="app_ops_summaries_keep_awake">бодрствовать</string>
-    <string name="app_ops_summaries_monitor_location">следить за местопожением</string>
+    <string name="app_ops_summaries_monitor_location">следить за местоположением</string>
     <string name="app_ops_summaries_monitor_high_power_location">следить за местоположением по всем источникам</string>
     <string name="app_ops_summaries_get_usage_stats">получать статистику использования</string>
     <string name="app_ops_summaries_mute_unmute_microphone">выключить/включить микрофон</string>
