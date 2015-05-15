@@ -31,7 +31,7 @@
     <string name="qs_category_title">Настройка плиток</string>
 
     <!-- BitSyko Layers -->
-    <string name="bitsyko_layers">Оформление</string>
+    <string name="bitsyko_layers">Темы</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">Суперпользователь</string>
@@ -161,7 +161,7 @@
     <string name="media_options_title">Настройки медиа</string>
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Пробуждение кнопками громкости</string>
-    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости включит устройство\nOverrides playback control</string>
+    <string name="volume_rocker_wake_summary">Нажатие кнопок громкости включит устройство\nЗаменяет управление воспроизведением</string>
     <!-- Volume rocker music control -->
     <string name="volume_rocker_music_controls_title">Контроль воспроизведением</string>
     <string name="volume_rocker_music_controls_summary">Когда экран выключен, долгое нажатие кнопок громкости будет переключать композиции</string>
@@ -279,8 +279,8 @@
     <string name="device_hostname">Хост-имя устройства</string>
 
     <!-- Navigation bar cursor -->
-    <string name="navigation_bar_arrow_keys_title">Показывать стрелки ввода при наборе</string>
-    <string name="navigation_bar_arrow_keys_summary">Отображать справа и слева кнопки перемещения курсора. Overrides IME switcher.</string>
+    <string name="navigation_bar_arrow_keys_title">Перемещение курсора</string>
+    <string name="navigation_bar_arrow_keys_summary">Отображать кнопки перемещения курсора влево или вправо при вводе. Кнопка выбора метода ввода отображаться не будет.</string>
  
     <!-- Navigation bar button color -->
     <string name="navbar_button_tint_title">Оттенок панели навигации</string>
@@ -386,7 +386,7 @@
     <string name="expanded_hide_status">Скрывать строку состояния</string>
     <string name="expanded_hide_navigation">Скрывать панель навигации</string>
     <string name="expanded_hide_both">Скрывать всё</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
+    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для отдельных приложений, переведите переключатель «Включить для всех» в отключенное состояние.</string>
     <string name="expanded_desktop_state">Статус расширенного экрана</string>
     <string name="expanded_enabled_for_all">Включен для всех</string>
     <string name="expanded_user_configurable">Пользовательские настройки</string>
@@ -404,8 +404,8 @@
     <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, если введён корректный PIN-код</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
+    <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
 
     <!--  Volume rocker -->
     <string name="volume_rocker_cursor_title">Настройки курсора</string>
@@ -567,7 +567,7 @@
     <string name="app_ops_summaries_read_icc_sms">чтение ICC SMS</string>
     <string name="app_ops_summaries_write_icc_sms">написание ICC SMS</string>
     <string name="app_ops_summaries_modify_settings">изменение настроек</string>
-    <string name="app_ops_summaries_draw_on_top">draw on top</string>
+    <string name="app_ops_summaries_draw_on_top">отображение поверх других элементов</string>
     <string name="app_ops_summaries_access_notifications">доступ уведомлений</string>
     <string name="app_ops_summaries_camera">камера</string>
     <string name="app_ops_summaries_record_audio">запись аудио</string>
@@ -620,7 +620,7 @@
     <string name="app_ops_labels_receive_mms">Принимать ММС</string>
     <string name="app_ops_labels_send_sms">Отсылать СМС</string>
     <string name="app_ops_labels_modify_settings">Изменять настройки</string>
-    <string name="app_ops_labels_draw_on_top">Draw on top</string>
+    <string name="app_ops_labels_draw_on_top">Отображение поверх других элементов</string>
     <string name="app_ops_labels_access_notifications">Доступ к уведомлениям</string>
     <string name="app_ops_labels_camera">Камера</string>
     <string name="app_ops_labels_record_audio">Запись аудио</string>
@@ -640,7 +640,7 @@
     <string name="app_ops_labels_get_usage_stats">Получать статистику использования</string>
     <string name="app_ops_labels_mute_unmute_microphone">Выключить/включить микрофон</string>
     <string name="app_ops_labels_toast_window">Показывать уведомления</string>
-    <string name="app_ops_labels_project_media">Project media</string>
+    <string name="app_ops_labels_project_media">Трансляция контента</string>
     <string name="app_ops_labels_activate_vpn">Включение VPN</string>
     <string name="app_ops_labels_wifi_change">Изменение Wi-Fi</string>
     <string name="app_ops_labels_bluetooth_change">Изменение Bluetooth</string>
@@ -665,4 +665,5 @@
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
+    <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка соединения; возможно Bluetooth-модем включен на этом устройстве?</string> 
 </resources>
