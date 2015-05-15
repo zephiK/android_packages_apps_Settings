@@ -666,4 +666,5 @@
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+    <string name="bluetooth_pan_profile_summary_use_for_error">Erreur de connexion, le modem Bluetooth est-il activé sur cet appareil ?</string> 
 </resources>
