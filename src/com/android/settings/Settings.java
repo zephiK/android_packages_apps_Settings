@@ -104,5 +104,6 @@ public class Settings extends SettingsActivity {
     public static class DisplayRotationActivity extends SettingsActivity { /* empty */ }
     public static class HeadsUpSettingsActivity extends SettingsActivity { /* empty */ }
     public static class BlacklistSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class QSSettingsActivity extends SettingsActivity { /* empty */ }
 }
 

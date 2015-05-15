@@ -1832,6 +1832,23 @@
                 android:resource="@id/display_settings" />
 	</activity>
 
+        <!-- QS tiles  -->
+        <activity android:name="Settings$QSSettingsActivity"
+                android:label="@string/qs_category_title"
+                android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.settings.QS_TILE_SETTINGS" />
+                <action android:name="com.android.settings.QS_TILE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.cyanogenmod.qs.QSTiles" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/notification_settings" />
+        </activity>
+
         <!-- "Blacklist settings" UI, used only on voice-capable phone devices. -->
         <activity android:name="Settings$BlacklistSettingsActivity"
                 android:uiOptions="splitActionBarWhenNarrow"
