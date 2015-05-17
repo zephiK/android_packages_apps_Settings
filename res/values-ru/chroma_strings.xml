@@ -121,6 +121,7 @@
     <string name="status_bar_battery_style_icon_portrait">Вертикальная</string>
     <string name="status_bar_battery_style_icon_landscape">Горизонтальная</string>
     <string name="status_bar_battery_style_circle">Круглая</string>
+    <string name="status_bar_battery_style_circle_dotted">Круглая (пунктир)</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыта</string>
 
