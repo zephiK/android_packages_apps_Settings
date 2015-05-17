@@ -121,6 +121,7 @@
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_circle_dotted">Cercle (pointillé)</string>
     <string name="status_bar_battery_style_text">Texte</string>
     <string name="status_bar_battery_style_hidden">Cacher</string>
 
