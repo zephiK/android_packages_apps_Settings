@@ -332,7 +332,6 @@
     <string name="qs_tile_notifications">Powiadomienia</string>
     <string name="qs_tile_screen_timeout">Wygaszanie ekranu</string>
     <string name="qs_battery_saver_tile">Oszczędzanie baterii</string>
-    <string name="qs_brightness_tile">Jasność</string>
     <string name="qs_expanded_desktop_tile">Rozszerzony pulpit</string>
     <string name="qs_screenshot_tile">Zrzut ekranu</string>
     <string name="qs_sync_tile">Synchronizacja</string>

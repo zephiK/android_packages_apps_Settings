@@ -121,6 +121,7 @@
     <string name="status_bar_battery_style_icon_portrait">Вертикальная</string>
     <string name="status_bar_battery_style_icon_landscape">Горизонтальная</string>
     <string name="status_bar_battery_style_circle">Круглая</string>
+    <string name="status_bar_battery_style_circle_dotted">Круглая (пунктир)</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыта</string>
 
@@ -332,7 +333,6 @@
     <string name="qs_tile_notifications">Уведомления</string>
     <string name="qs_tile_screen_timeout">Время отключения экрана</string>
     <string name="qs_battery_saver_tile">Энергосбережение</string>
-    <string name="qs_brightness_tile">Яркость</string>
     <string name="qs_expanded_desktop_tile">Расширенный экран</string>
     <string name="qs_screenshot_tile">Скриншот</string>
     <string name="qs_sync_tile">Синхронизация</string>
