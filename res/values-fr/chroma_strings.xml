@@ -333,12 +333,12 @@
     <string name="qs_tile_notifications">Sons de notification</string>
     <string name="qs_tile_screen_timeout">Mise en veille de l\'écran</string>
     <string name="qs_battery_saver_tile">Économiseur de batterie</string>
-    <string name="qs_brightness_tile">Luminosité</string>
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
     <string name="qs_tile_headsup">Notifications flottantes</string>
     <string name="qs_music_play_tile">Jouer</string>
+    <string name="qs_tile_lte">LTE</string>
 	
     <!-- Network traffic -->
     <string name="network_traffic_title">Trafic réseau</string>
