@@ -332,12 +332,12 @@
     <string name="qs_tile_notifications">Powiadomienia</string>
     <string name="qs_tile_screen_timeout">Wygaszanie ekranu</string>
     <string name="qs_battery_saver_tile">Oszczędzanie baterii</string>
-    <string name="qs_brightness_tile">Jasność</string>
     <string name="qs_expanded_desktop_tile">Rozszerzony pulpit</string>
     <string name="qs_screenshot_tile">Zrzut ekranu</string>
     <string name="qs_sync_tile">Synchronizacja</string>
     <string name="qs_tile_headsup">Wyskakujące powiadomienia</string>
     <string name="qs_music_play_tile">Play</string>
+    <string name="qs_tile_lte">LTE</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Ruch sieciowy</string>
