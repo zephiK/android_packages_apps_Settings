@@ -92,7 +92,7 @@ public class QSTileHolder {
                 break;
             case QSConstants.TILE_SYNC:
                 resourceName = "ic_qs_sync_on";
-                stringId = R.string.qs_sync_tile;
+                stringId = R.string.qs_tile_sync;
                 break;
             default:
                 return null;

@@ -278,8 +278,7 @@
     <string name="qs_tile_cast_screen">Cast screen</string>
     <string name="qs_tile_hotspot">Hotspot</string>
     <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_nfc">NFC</string>
-    <string name="qs_tile_compass">Compass</string>
+    <string name="qs_tile_sync">Sync</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>
