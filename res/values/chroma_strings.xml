@@ -337,4 +337,7 @@
     <string name="navigation_save_button_text">Save</string>
     <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
  
+    <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 </resources>
