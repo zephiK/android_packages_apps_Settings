@@ -19,8 +19,6 @@ import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.PhoneConstants;
 import com.android.internal.telephony.PhoneFactory;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -30,7 +28,6 @@ import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.view.MenuItem;
 import android.util.Log;
 
 import com.android.settings.R;
@@ -55,12 +52,6 @@ public class ImeiInformation extends PreferenceActivity {
         final TelephonyManager telephonyManager =
             (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
         initPreferenceScreen(telephonyManager.getSimCount());
-
-        ActionBar actionBar = getActionBar();
-        if (actionBar != null) {
-            // android.R.id.home will be triggered in onOptionsItemSelected()
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
     }
 
     // Since there are multiple phone for dsds, therefore need to show information for different
@@ -162,24 +153,6 @@ public class ImeiInformation extends PreferenceActivity {
         if (preference != null) {
             getPreferenceScreen().removePreference(preference);
         }
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        final int itemId = item.getItemId();
-        switch (itemId) {
-            case android.R.id.home:
-                goUpToTopLevelSetting(this);
-                return true;
-            default:
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * Finish current Activity and go up to the top level Settings.
-     */
-    private static void goUpToTopLevelSetting(Activity activity) {
-        activity.finish();
     }
 
 }
