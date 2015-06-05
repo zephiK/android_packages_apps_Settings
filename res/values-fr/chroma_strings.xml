@@ -668,4 +668,8 @@
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
     <string name="bluetooth_pan_profile_summary_use_for_error">Erreur de connexion, le modem Bluetooth est-il activé sur cet appareil ?</string> 
+
+    <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Taper deux fois n\'importe où pour mettre en veille</string>
+    <string name="double_tap_sleep_anywhere_summary">Taper deux fois n\'importe où sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
 </resources>

@@ -666,4 +666,8 @@
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Принимать все типы файлов</string>
     <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка соединения; возможно Bluetooth-модем включен на этом устройстве?</string> 
+
+    <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Выключение экрана двойным нажатием</string>
+    <string name="double_tap_sleep_anywhere_summary">Дважды нажмите в любом месте экрана блокировки чтобы отключить экран</string>
 </resources>
