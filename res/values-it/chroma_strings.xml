@@ -293,26 +293,26 @@
     <string name="lcd_density_unsupported">Non supportato</string>
     <string name="restarting_ui">Riavvio</string>
     <string name="custom_density_title">Cambia come vuoi</string>
-    <string name="custom_density_summary">Se avessi dei problemi con il Play Store, controlla di avere installato un Play Store Multi-DPI</string>
-    <string name="custom_density_summary_invalid">"INVALID DENSITY!"</string>
-    <string name="custom_density">Custom</string>
-    <string name="set_custom_density_title">Set custom density</string>
-    <string name="set_custom_density_set">Set</string>
-    <string name="custom_density_dialog_title">WARNING!</string>
-    <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
+    <string name="custom_density_summary">Se avessi dei problemi con il Play Store, assicurati di avere installato un Play Store Multi-DPI</string>
+    <string name="custom_density_summary_invalid">"Densità non supportata!"</string>
+    <string name="custom_density">Personalizzata</string>
+    <string name="set_custom_density_title">Imposta densità personalizzata</string>
+    <string name="set_custom_density_set">Imposta</string>
+    <string name="custom_density_dialog_title">Attenzione!</string>
+    <string name="custom_density_dialog_summary">A volte alcune app non funzionano correttamente cambiando la densità predefinita o il Play Store potrebbe dire che l\'app non è compatibile</string>
     <string name="dpi">DPI</string>
-    <string name="custom_density">Custom</string>
+    <string name="custom_density">Personalizzata</string>
 
     <!-- QS tiles -->
-    <string name="qs_category_title">Quick Settings</string>
-    <string name="qs_order_title">Select and order tiles</string>
-    <string name="add_qs">Add new tile</string>
-    <string name="qs_action_delete">Delete</string>
-    <string name="qs_action_add">Add</string>
-    <string name="qs_action_no_more_tiles">No more tiles available</string>
-    <string name="qs_main_tiles_title">Enlarge first row</string>
-    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-    <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
+    <string name="qs_category_title">Quick settings</string>
+    <string name="qs_order_title">Seleziona e ordina tile</string>
+    <string name="add_qs">Aggiungi tile</string>
+    <string name="qs_action_delete">Elimina</string>
+    <string name="qs_action_add">Aggiungi</string>
+    <string name="qs_action_no_more_tiles">Non ci sono più tile disponibili</string>
+    <string name="qs_main_tiles_title">Allarga prima riga</string>
+    <string name="qs_main_tiles_summary_on">Mostra due tile principali più grandi nella prima fila</string>
+    <string name="qs_main_tiles_summary_off">Tre tile su ogni fila</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>
