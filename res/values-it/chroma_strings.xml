@@ -12,7 +12,7 @@
     <!-- Chroma Menu -->
     <string name="chroma_menu_personalizaton">Opzioni Chroma</string>
     <string name="chroma_menu_about">Info su Chroma</string>
-    <string name="status_bar_screen_title">Menu notifiche</string>
+    <string name="status_bar_screen_title">Barra di stato</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="power_menu_title">Menu spegnimento</string>
     <string name="volume_rocker_screen_title">Pulsanti volume</string>
@@ -22,7 +22,7 @@
     <string name="display_category_navbar_options_title">Opzioni navigation bar</string>
     <string name="display_category_navring_options_title">Opzioni anello</string>
     <!-- Status bar category -->
-    <string name="display_category_statusbar_options_title">Opzioni menu notifiche</string>
+    <string name="display_category_statusbar_options_title">Opzioni barra di stato</string>
     <!-- Recent apps category -->
     <string name="display_category_recents_options_title">Opzioni app recenti</string>
     <!-- Power menu category -->
@@ -48,7 +48,7 @@
 
     <!-- Statusbar native battery percent -->
     <string name="general_string">Generali</string>
-    <string name="status_bar_title">Menu notifiche</string>
+    <string name="status_bar_title">Barra di stato</string>
     <string name="status_bar_native_battery_percentage_title">Percentuale batteria</string>
     <string name="status_bar_native_battery_percentage_summary">Mostra percentuale batteria nascosta</string>
 
@@ -140,11 +140,11 @@
 
     <!-- Status bar double-tap to sleep -->
     <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per spegnere</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sul menu delle notifiche per spegnere lo schermo</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Controllo luminosità</string>
-    <string name="status_bar_toggle_brightness_summary">Regola la luminosità strisciando col dito sul menu delle notifiche</string>
+    <string name="status_bar_toggle_brightness_summary">Regola la luminosità strisciando col dito sulla barra di stato</string>
 
     <!-- Show notification count -->
     <string name="status_bar_notif_count_title">Mostra contatore notifiche</string>
@@ -255,12 +255,12 @@
 
     <!-- Weather in status bar -->
     <string name="status_bar_show_weather_title">Mostra meteo</string>
-    <string name="status_bar_show_weather_summary">Mostra meteo nel menu delle notifiche</string>
+    <string name="status_bar_show_weather_summary">Mostra meteo nella barra di stato</string>
 
      <!--- Lock clock -->
     <string name="lock_clock_title">Widget orologio</string>
     <string name="lock_clock_summary">Vedi o cambia il funzionamento del widget \'cLock\'</string>
-    <string name="weather_clock_title">Meteo menu notifiche</string>
+    <string name="weather_clock_title">Meteo barra di stato</string>
 
     <!-- Power menu -->
     <string name="power_menu_title">Menu spegnimento</string>
@@ -315,141 +315,141 @@
     <string name="qs_main_tiles_summary_off">Tre tile su ogni fila</string>
 
     <!-- QuickSettings brightness slider -->
-    <string name="qs_brightness_slider_title">Show brightness slider</string>
-    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
+    <string name="qs_brightness_slider_title">Slider luminosità</string>
+    <string name="qs_brightness_slider_summary">Mostra lo slider della luminosità nel pannello dei quick settings</string>
 
     <!-- Quick settings advance location -->
-    <string name="qs_advanced_location_title">Advanced location tile</string>
-    <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
+    <string name="qs_advanced_location_title">Tile geolocalizzazione avanzato</string>
+    <string name="qs_advanced_location_summary">Attiva impostazioni avanzate per il tile della geolocalizzazione</string>
     <string name="qs_tile_wifi">Wi\u2011Fi</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_cellular_data">Data connection</string>
-    <string name="qs_tile_airplane_mode">Airplane mode</string>
-    <string name="qs_tile_display_rotation">Rotation</string>
-    <string name="qs_tile_flashlight">Flashlight</string>
-    <string name="qs_tile_location">Location</string>
-    <string name="qs_tile_cast_screen">Cast screen</string>
-    <string name="qs_tile_hotspot">Hotspot</string>
-    <string name="qs_tile_notifications">Notifications</string>
-    <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_battery_saver_tile">Battery saver</string>
-    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_tile_cellular_data">Dati mobili</string>
+    <string name="qs_tile_airplane_mode">Modalità aereo</string>
+    <string name="qs_tile_display_rotation">Rotazione</string>
+    <string name="qs_tile_flashlight">Torcia</string>
+    <string name="qs_tile_location">Geolocalizzazione</string>
+    <string name="qs_tile_cast_screen">Trasmetti schermo</string>
+    <string name="qs_tile_hotspot">Hotspot personale</string>
+    <string name="qs_tile_notifications">Notifiche</string>
+    <string name="qs_tile_screen_timeout">Sospensione schermo</string>
+    <string name="qs_battery_saver_tile">Risparmio batteria</string>
+    <string name="qs_expanded_desktop_tile">Modalità estesa</string>
     <string name="qs_screenshot_tile">Screenshot</string>
-    <string name="qs_sync_tile">Sync</string>
+    <string name="qs_sync_tile">Sincronizzazione</string>
     <string name="qs_tile_headsup">Heads up</string>
-    <string name="qs_music_play_tile">Play</string>
+    <string name="qs_music_play_tile">Riproduci</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="show_network_traffic_state">Monitor del traffico nella barra di stato</string>
+    <string name="network_traffic_summary">Attiva varie opzioni per il monitor del traffico di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità di misura</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disattivato</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Entrambi</string>
+    <string name="show_network_traffic_bit">Bit per secondo</string>
+    <string name="show_network_traffic_byte">Byte per secondo</string>
     <string name="show_network_traffic_500">500 ms</string>
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il monitor del traffico di rete quando non c\'è attività</string>
+    <string name="network_traffic_autohide_threshold">Durata inattività</string> 
 
     <!-- Navigation ring shortcuts -->
-    <string name="navigation_ring_title">Navigation ring targets</string>
-    <string name="navigation_ring_summary">Edit and re-arrange navigation ring shortcuts</string>
-<string name="navigation_ring_message">Tap the edit icon to open the navigation ring for editing.\n\nSelect a target to configure its behavior.\n\nTap the \'\u2713\' icon to save your changes, or \'Restore defaults\' to reset the settings to defaults.</string>
+    <string name="navigation_ring_title">Scorciatoie anello</string>
+    <string name="navigation_ring_summary">Modifica e cambia la posizione delle scorciatoie sull\'anello di navigazione</string>
+    <string name="navigation_ring_message">Clicca sull\'icona di modifica per aprire l\'anello.\n\nSeleziona un elemento per configurare il suo funzionamento.\n\nClicca sull\'icona \'\u2713\' per salvare i cambiamenti, o su \'Ripristina predefinite\' per ripristinare le scorciatoie predefinite.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Lock screen</string>
-    <string name="lockscreen_targets_message">Lockscreen shortcuts</string>
-    <string name="lockscreen_default_target">Default</string>
-    <string name="lockscreen_none_target">None</string>
-    <string name="lockscreen_message">Tap an icon on the left or right to reassign a lock screen shortcut.</string>
-    <string name="lockscreen_choose_action_title">Choose action</string>
+    <string name="lockscreen_settings_title">Schermata di sblocco</string>
+    <string name="lockscreen_targets_message">Scorciatoie</string>
+    <string name="lockscreen_default_target">Predefinita</string>
+    <string name="lockscreen_none_target">Nessuna</string>
+    <string name="lockscreen_message">Clicca su un\'icona a destra o a sinistra per modificare la scorciatoia.</string>
+    <string name="lockscreen_choose_action_title">Scegli azione</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_four_columns_title">Mostra quattro tile per fila</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Link ring and notification volumes</string>
-    <string name="notification_volume_option_title">Notification volume</string>
-    <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
+    <string name="link_volume_option_title">Collega volume suoneria e notifiche</string>
+    <string name="notification_volume_option_title">Volume notifiche</string>
+    <string name="ring_notification_volume_option_tile">Volume suoneria e notifiche</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_hide_nothing">Hide nothing</string>
-    <string name="expanded_hide_status">Hide status bar</string>
-    <string name="expanded_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_hide_both">Hide both</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Expanded state</string>
-    <string name="expanded_enabled_for_all">Enabled for all</string>
-    <string name="expanded_user_configurable">User configurable</string>
-    <string name="expanded_desktop_style">Expanded desktop style</string>
-    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-    <string name="expanded_desktop_title">Expanded desktop options</string>
+    <string name="power_menu_expanded_desktop">Modalità estesa</string>
+    <string name="expanded_hide_nothing">Non nascondere</string>
+    <string name="expanded_hide_status">Nascondi la barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi la navigation bar</string>
+    <string name="expanded_hide_both">Nascondi entrambe</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata per-app per la modalità estesa, spegni l\'opzione \'Attiva per tutte\'</string>
+    <string name="expanded_desktop_state">Modalità estesa</string>
+    <string name="expanded_enabled_for_all">Attiva per tutte</string>
+    <string name="expanded_user_configurable">Configurabile dall\'utente</string>
+    <string name="expanded_desktop_style">Stile modalità estesa</string>
+    <string name="expanded_desktop_style_description">Scegli una modalità predefinita per la modalità estesa</string>
+    <string name="expanded_desktop_title">Opzioni modalità estesa</string>
 
     <!-- Quicksettings block on secure lockscreen -->
-    <string name="qs_category">Quicksettings</string>
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+    <string name="qs_category">Quick settings</string>
+    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di sblocco</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una schermata di sblocco sicura</string>
 
     <!--Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
+    <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando il PIN o la password vengono inseriti correttamente</string>
 
     <!-- Lockscreen pin shuffle -->
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_scramble_pin_layout_title">Disposizione casuale</string>
+    <string name="unlock_scramble_pin_layout_summary">Cambia la disposizione dei numeri del PIN</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_cursor_title">Cursor options</string>
-    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
-    <string name="volume_rocker_other_title">Miscellaneous</string>
+    <string name="volume_rocker_cursor_title">Opzioni cursori</string>
+    <string name="volume_button_toggle_info">L\'opzione risveglio tasti volume deve essere spenta</string>
+    <string name="volume_rocker_other_title">Varie</string>
 
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Conrollo cursori volume</string>
+    <string name="volume_key_cursor_control_off">Disattivato</string>
+    <string name="volume_key_cursor_control_on">Il pulsante del volume su/giù sposta il cursore a sinistra/destra</string>
+    <string name="volume_key_cursor_control_on_reverse">Il pulsante del volume su/giù sposta il cursore a destra/sinistra</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Doppio tocco per spegnere</string>
+    <string name="double_tap_sleep_nav_bar_summary">Doppio tocco sulla navigation bar per spegnere lo schermo</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up notifications</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
+    <string name="category_heads_up">Notifiche heads up</string>
+    <string name="summary_heads_up_enabled">Le notifiche heads up sono attivate</string>
+    <string name="summary_heads_up_disabled">Le notifiche heads up sono disattivate</string>
+    <string name="add_heads_up_package">Aggiungi app</string>
+    <string name="add_heads_up_dnd_summary">Non mostrare heads up in queste app</string>
+    <string name="add_heads_up_blacklist_summary">Non mostrare heads up da queste app</string>
+    <string name="heads_up_dnd_title">Non disturbare</string>
     <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable Heads up.</string>
+    <string name="heads_up_disabled_notice">Per permettere alle app di mostrare le notfiche interattive con heads up sullo schermo, attiva heads up.</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_never_summary">Notification will show until it is dismissed</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_title">Durata</string>
+    <string name="heads_up_time_out_summary">La notifica sarà mostrata per <xliff:g id="number">%d</xliff:g> secondi</string>
+    <string name="heads_up_time_out_never_summary">La notifica sarà mostrata fino a quando non sarà rimossa</string>
+    <string name="heads_up_time_out_2sec">2 secondi</string>
+    <string name="heads_up_time_out_4sec">4 secondi</string>
+    <string name="heads_up_time_out_6sec">6 secondi</string>
+    <string name="heads_up_time_out_8sec">8 secondi</string>
+    <string name="heads_up_time_out_10sec">10 secondi</string>
+    <string name="heads_up_time_out_never">Mai</string>
 
     <!-- Navring targets (enable/disable) -->
-    <string name="navigation_ring_enable_title">Enable navigation rings</string>
+    <string name="navigation_ring_enable_title">Attiva anello di navigazione</string>
 
     <!-- Proximity wake -->
-    <string name="proximity_wake_title">Prevent accidental wake-up</string>
-    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen.\nNOTE: This may cause your phone screen to wake up slower.</string>
+    <string name="proximity_wake_title">Previeni risveglio accidentale</string>
+    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo del dispositivo.\nNota: Lo schermo potrebbe metterci più tempo ad accendersi</string>
 
     <!-- Hide power menu on lockscreen -->
     <string name="power_category">Power menu</string>
