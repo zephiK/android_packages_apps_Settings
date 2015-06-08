@@ -365,7 +365,7 @@
     <string name="navigation_ring_message">Clicca sull\'icona di modifica per aprire l\'anello.\n\nSeleziona un elemento per configurare il suo funzionamento.\n\nClicca sull\'icona \'\u2713\' per salvare i cambiamenti, o su \'Ripristina predefinite\' per ripristinare le scorciatoie predefinite.</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Schermata di sblocco</string>
+    <string name="lockscreen_settings_title">Lockscreen</string>
     <string name="lockscreen_targets_message">Scorciatoie</string>
     <string name="lockscreen_default_target">Predefinita</string>
     <string name="lockscreen_none_target">Nessuna</string>
@@ -396,8 +396,8 @@
 
     <!-- Quicksettings block on secure lockscreen -->
     <string name="qs_category">Quick settings</string>
-    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di sblocco</string>
-    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una schermata di sblocco sicura</string>
+    <string name="block_on_secure_keyguard_title">Disattiva nella lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una lockscreen sicura</string>
 
     <!--Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Sblocco veloce</string>
@@ -449,79 +449,79 @@
 
     <!-- Proximity wake -->
     <string name="proximity_wake_title">Previeni risveglio accidentale</string>
-    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo del dispositivo.\nNota: Lo schermo potrebbe metterci più tempo ad accendersi</string>
+    <string name="proximity_wake_summary">Controlla il sensore di prossimità prima di accendere lo schermo del dispositivo.\nNota: Lo schermo potrebbe impiegare più tempo ad accendersi</string>
 
     <!-- Hide power menu on lockscreen -->
-    <string name="power_category">Power menu</string>
-    <string name="lockscreen_enable_power_menu_title">Show power menu lock screen</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will only disable the power menu on secure lock screens</string>
+    <string name="power_category">Menu spegnimento</string>
+    <string name="lockscreen_enable_power_menu_title">Menu spegnimento lockscreen</string>
+    <string name="lockscreen_enable_power_menu_summary">Quest\'opzione abilita il menu di spegnimento nella lockscreen</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">None is Silent mode</string>
-    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
+    <string name="none_is_silent_title">\'Nessuna\' è \'silenzioso\'</string>
+    <string name="none_is_silent_summary">Nella modalità silenzioso le sveglie suonano sempre</string>
 
-    <string name="app_security_title">App security</string>
+    <string name="app_security_title">Sicurezza app</string>
 
     <!-- Blacklist preferences -->
-    <string name="blacklist_title">Blocked caller list</string>
-    <string name="blacklist_edit_dialog_title">Edit blocked phone number</string>
-    <string name="blacklist_prefs">Settings</string>
-    <string name="blacklist_button_delete">Delete</string>
-    <string name="blacklist_empty_text">You don\'t have any blocked numbers. Add an entry by touching the Add (+) button.</string>
-    <string name="blacklist_disabled_empty_text">To prevent phone numbers from calling or messaging you, enable the blocked caller list.</string>
-    <string name="blacklist_summary_disabled">Disabled</string>
-    <string name="blacklist_summary">You will not receive incoming calls or messages from phone numbers on the blocked caller list</string>
-    <string name="blacklist_notify">Show notification</string>
-    <string name="blacklist_private_numbers_title">Private numbers</string>
-    <string name="blacklist_private_numbers_summary_disabled">Don\'t block calls from private numbers</string>
-    <string name="blacklist_private_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from private numbers</string>
-    <string name="blacklist_unknown_numbers_title">Unknown numbers</string>
-    <string name="blacklist_unknown_numbers_summary_disabled">Don\'t block calls or messages from numbers not in the contact list</string>
-    <string name="blacklist_unknown_numbers_summary">Block incoming <xliff:g id="type">%s</xliff:g> from numbers not in the contact list</string>
-    <string name="blacklist_summary_type_calls_only">calls</string>
-    <string name="blacklist_summary_type_messages_only">messages</string>
-    <string name="blacklist_summary_type_calls_and_messages">calls and messages</string>
-    <string name="blacklist_regex_title">Use wildcards</string>
-    <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
-    <string name="blacklist_policy_block_calls">Block incoming calls</string>
-    <string name="blacklist_policy_block_messages">Block incoming messages</string>
-    <string name="blacklist_bad_number_add">Unable to add invalid phone number to blocked caller list</string>
+    <string name="blacklist_title">blacklist</string>
+    <string name="blacklist_edit_dialog_title">Modifica numeri bloccati</string>
+    <string name="blacklist_prefs">Impostazioni</string>
+    <string name="blacklist_button_delete">Elimina</string>
+    <string name="blacklist_empty_text">Non ci sono contatti bloccati. Clicca sul pulsante aggiungi (+) per iniziare.</string>
+    <string name="blacklist_disabled_empty_text">Per evitare che dei numeri ti chiamino o ti inviino messaggi, attiva la blacklist.</string>
+    <string name="blacklist_summary_disabled">Disattivata</string>
+    <string name="blacklist_summary">Non riceverai chiamate o messaggi da questi numeri nella blacklist</string>
+    <string name="blacklist_notify">Mostra notifica</string>
+    <string name="blacklist_private_numbers_title">Numeri privati</string>
+    <string name="blacklist_private_numbers_summary_disabled">Non bloccare le chiamate dai numeri privati</string>
+    <string name="blacklist_private_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> dai numeri privati</string>
+    <string name="blacklist_unknown_numbers_title">Numeri sconosciuti</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Non bloccare le chiamate dai numeri sconosciuti</string>
+    <string name="blacklist_unknown_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> dai numeri sconosciuti</string>
+    <string name="blacklist_summary_type_calls_only">chiamate</string>
+    <string name="blacklist_summary_type_messages_only">messaggi</string>
+    <string name="blacklist_summary_type_calls_and_messages">chiamate e messaggi</string>
+    <string name="blacklist_regex_title">Usa caratteri speciali</string>
+    <string name="blacklist_regex_summary">Usa . come carattere speciale e * per la ripetizione. Es.: 123.* blocca i numeri che iniziano con 123 e .*123.* blocca i numeri che contengono 123</string>
+    <string name="blacklist_policy_block_calls">Blocca chiamate</string>
+    <string name="blacklist_policy_block_messages">Blocca messaggi</string>
+    <string name="blacklist_bad_number_add">Impossibile aggiungere il numero alla blacklist</string>
 
     <!-- Blacklist management -->
-    <string name="remove_blacklist_number_title">Remove number</string>
-    <string name="remove_blacklist_entry">Do you want to remove this blocked phone number?</string>
-    <string name="select_contact">Select contact</string>
+    <string name="remove_blacklist_number_title">Rimuovi numero</string>
+    <string name="remove_blacklist_entry">Vuoi rimuovere questo numero dalla blacklist?</string>
+    <string name="select_contact">Seleziona contatto</string>
 
-    <string name="allow_lights_title">Allow notification lights</string>
+    <string name="allow_lights_title">Permetti uso del LED</string>
 
-    <string name="notification_led_header">Notification LED</string>
+    <string name="notification_led_header">LED notifiche</string>
 
     <!-- Camera sound switch -->
-    <string name="camera_sounds_title">Camera shutter sound</string>
-    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
-    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="camera_sounds_title">Suono scatto fotocamera</string>
+    <string name="camera_sounds_summary">Attiva suono di sistema di scatto della fotocamera</string>
+    <string name="camera_sound_warning_dialog_text">Disattivare il suono della scatto della fotocamera è illegale in alcune zone! Per favore controlla la legge nel tuo paese</string>
 
-    <string name="app_notification_show_on_keyguard_title">Show on lockscreen</string>
-    <string name="app_notification_show_on_keyguard_summary">Show notifications from this app on the lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
+    <string name="app_notification_show_on_keyguard_title">Mostra nella lockscreen</string>
+    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche da questa app nella lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disattiva \'in corso\' nella lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Non mostrare le notifiche non rimovibili da questa app nella lockscreen</string>
 
     <!-- Volume Keys Media Control -->
-    <string name="volume_keys_control_media_stream">Media control</string>
-    <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+    <string name="volume_keys_control_media_stream">Controllo media</string>
+    <string name="volume_keys_control_media_stream_summary">I pulsanti del volume controllano il volume dei media invece che quello delle notifiche</string>
 
     <!-- Battery saver color -->
-    <string name="battery_saver_color_title">Warning color</string>
-    <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
+    <string name="battery_saver_color_title">Colore avviso</string>
+    <string name="battery_saver_color_summary">Attiva il colore arancione per la barra di stato e la navigation bar quando è attivo il risparmio batteria</string>
 
     <!-- Increasing ring tone volume -->
-    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
-    <string name="increasing_ring_min_volume_title">Start volume</string>
-    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+    <string name="increasing_ring_volume_option_title">Suoneria incrementale</string>
+    <string name="increasing_ring_min_volume_title">Volume inizio</string>
+    <string name="increasing_ring_ramp_up_time_title">Tempo crescita</string>
 
     <!-- Privacy Guard -->
-    <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
-    <string name="privacy_guard_enable_dlg_text">When privacy guard is enabled, %s will not be able to access personal data such as contacts, messages, location or call logs.</string>
+    <string name="privacy_guard_dlg_title">Attivare privacy guard?</string>
+    <string name="privacy_guard_enable_dlg_text">Quando privacy guard è attivo, %s non potrà accedere a dati personali come contatti, messaggi, posizione o registro chiamate.</string>
     <string name="privacy_guard_enable_dlg_system_app_text">When enabling privacy guard for the built-in app %s, the app will not be able to access personal data such as contacts, messages, location or call logs. This may cause other apps to misbehave.</string>
     <string name="privacy_guard_default_title">Enabled by default</string>
     <string name="privacy_guard_default_summary">Do not access personal data by default for newly-installed apps</string>
@@ -656,12 +656,12 @@
     <string name="app_ops_labels_data_change">Data change</string>
 
     <!-- App ops categories -->
-    <string name="app_ops_categories_location">Location</string>
-    <string name="app_ops_categories_personal">Personal</string>
-    <string name="app_ops_categories_messaging">Messaging</string>
+    <string name="app_ops_categories_location">Posizione</string>
+    <string name="app_ops_categories_personal">Personale</string>
+    <string name="app_ops_categories_messaging">Messaggi</string>
     <string name="app_ops_categories_media">Media</string>
-    <string name="app_ops_categories_device">Device</string>
-    <string name="app_ops_categories_bootup">Bootup</string>
+    <string name="app_ops_categories_device">Dispositivo</string>
+    <string name="app_ops_categories_bootup">Accensione</string>
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accept all file types</string>
