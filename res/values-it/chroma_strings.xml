@@ -516,8 +516,8 @@
 
     <!-- Increasing ring tone volume -->
     <string name="increasing_ring_volume_option_title">Suoneria incrementale</string>
-    <string name="increasing_ring_min_volume_title">Volume inizio</string>
-    <string name="increasing_ring_ramp_up_time_title">Tempo crescita</string>
+    <string name="increasing_ring_min_volume_title">Volume iniziale</string>
+    <string name="increasing_ring_ramp_up_time_title">Intervallo incremento</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Attivare privacy guard?</string>
