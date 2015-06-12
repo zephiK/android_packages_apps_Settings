@@ -13,8 +13,10 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
 OnPreferenceChangeListener {
 
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
     private ListPreference mNavigationBarHeight;
+    private SwitchPreference mKillAppLongpressBack;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,10 +31,22 @@ OnPreferenceChangeListener {
                 Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
         mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
+
+        // kill-app long press back
+        mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
+        mKillAppLongPressBack.setOnPreferenceChangeListener(this);
+        int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
+                KILL_APP_LONGPRESS_BACK, 0);
+        mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mNavigationBarHeight) {
+        if (preference == mKillAppLongPressBack) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putInt(getContentResolver(), KILL_APP_LONGPRESS_BACK,
+                    value ? 1 : 0);
+            return true;
+        } else if (preference == mNavigationBarHeight) {
             int statusNavigationBarHeight = Integer.valueOf((String) objValue);
             int index = mNavigationBarHeight.findIndexOfValue((String) objValue);
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
