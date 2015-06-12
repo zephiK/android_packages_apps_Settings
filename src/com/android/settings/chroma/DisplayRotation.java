@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.simpleaosp;
+package com.android.settings.chroma;
 
 import android.content.Context;
 import android.database.ContentObserver;
