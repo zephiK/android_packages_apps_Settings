@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.simpleaosp;
+package com.android.settings.chroma;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
