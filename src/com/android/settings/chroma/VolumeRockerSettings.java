@@ -118,7 +118,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), VOLUME_KEY_ADJUST_SOUND,
                     value ? 1: 0);
             return true;
-        } else if (preference == mVolBtnMusicCtrl)
+        } else if (preference == mVolBtnMusicCtrl) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_MUSIC_CONTROLS,
                     (Boolean) objValue ? 1 : 0);

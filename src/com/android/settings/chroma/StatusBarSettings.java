@@ -36,6 +36,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final int STATUS_BAR_BATTERY_STYLE_HIDDEN = 4;
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
 
+    private PreferenceScreen mClockStyle;
     private ListPreference mQuickPulldown;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
@@ -45,30 +46,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.chroma_settings_statusbar);
-    // Battery percentage
-        ContentResolver resolver = getActivity().getContentResolver();
-
- 	    mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_BATTERY_STYLE);
-        mStatusBarBatteryShowPercent =
-                (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
-
-        int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_BATTERY_STYLE, 0);
-        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
-        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
-        mStatusBarBattery.setOnPreferenceChangeListener(this);
-
-        int batteryShowPercent = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
-        mStatusBarBatteryShowPercent.setValue(String.valueOf(batteryShowPercent));
-        mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntry());
-        mStatusBarBatteryShowPercent.setOnPreferenceChangeListener(this);
-	    enableStatusBarBatteryDependents(batteryStyle);
-
-    // Clock summary
-	PreferenceScreen prefSet = getPreferenceScreen();
-	mClockStyle = (PreferenceScreen) prefSet.findPreference(KEY_STATUS_BAR_CLOCK);
-        updateClockStyleDescription();
 
     // Quick pulldown
+	PreferenceScreen prefSet = getPreferenceScreen();
 	mQuickPulldown = (ListPreference) findPreference(PRE_QUICK_PULLDOWN);
         if (!Utils.isPhone(getActivity())) {
             prefSet.removePreference(mQuickPulldown);
@@ -91,24 +71,9 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN,
                     statusQuickPulldown);
-            updateQuickPulldownSummary(statusQuickPulldown);
+                    updateQuickPulldownSummary(statusQuickPulldown);
             return true;
-        } else if (preference == mStatusBarBattery) {
-            int batteryStyle = Integer.valueOf((String) newValue);
-            int index = mStatusBarBattery.findIndexOfValue((String) newValue);
-            Settings.System.putInt(
-                    cr, Settings.System.STATUS_BAR_BATTERY_STYLE, batteryStyle);
-            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
-            enableStatusBarBatteryDependents(batteryStyle);
-            return true;
-        } else if (preference == mStatusBarBatteryShowPercent) {
-            int batteryShowPercent = Integer.valueOf((String) newValue);
-            int index = mStatusBarBatteryShowPercent.findIndexOfValue((String) newValue);
-            Settings.System.putInt(
-                    cr, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
-            mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntries()[index]);
-            return true;
-        }
+         }
         return false;
     }
 

@@ -20,6 +20,15 @@
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
+    <!-- Chroma categories -->
+    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_navbar_options_title">Navigation bar options</string>
+    <string name="display_category_navring_options_title">Navigation ring options</string>
+    <string name="display_category_statusbar_options_title">Status bar options</string>
+    <string name="display_category_recents_options_title">Recent apps options</string>
+    <string name="display_category_power_options_title">Power menu options</string>
+    <string name="volume_rocker_other_title">Miscellaneous</string>
+
     <!-- Navigation Bar -->
     <string name="navigation_bar_title">Navigation bar</string>
 
@@ -112,8 +121,6 @@
     <string name="camera_sounds_title">Camera shutter sound</string>
     <string name="camera_sounds_summary">Enable system camera shutter sound</string>
     <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
-
-    <string name="volume_rocker_other_title">Miscellaneous</string>
 
     <!-- Generic strings -->
     <string name="ok_string">Ok</string>
@@ -212,7 +219,9 @@
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
     <!-- Status bar - Battery -->
+    <string name="status_bar_battery_title">Battery icons</string>
     <string name="status_bar_battery_style_title">Battery status style</string>
+    <string name="status_bar_battery_summary">Change battery icons</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
     <string name="status_bar_battery_style_circle">Circle</string>

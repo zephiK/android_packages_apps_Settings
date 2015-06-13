@@ -3,6 +3,10 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="category_navigation_options"
+        android:title="@string/display_category_navbar_options_title" >
+
     <ListPreference
         android:key="navigation_bar_height"
         android:dialogTitle="@string/navigation_bar_height"
@@ -12,28 +16,29 @@
         android:defaultValue="48"
         android:persistent="false" />
 
-        <SwitchPreference
-            android:key="kill_app_longpress_back"
-            android:title="@string/kill_app_longpress_back"
-            android:summary="@string/kill_app_longpress_back_summary"/>
+    <SwitchPreference
+        android:key="kill_app_longpress_back"
+        android:title="@string/kill_app_longpress_back"
+        android:summary="@string/kill_app_longpress_back_summary"/>
+    </PreferenceCategory>
 
 	<PreferenceCategory
 	    android:key="recents_panel"
 	    android:title="@string/recents_panel_settings" >
 
-        <SwitchPreference
-            android:key="show_clear_all_recents"
-            android:title="@string/show_clear_all_recents_button_title"
-            android:summary="@string/show_clear_all_recents_button_summary"
-            android:defaultValue="true" />
+    <SwitchPreference
+        android:key="show_clear_all_recents"
+        android:title="@string/show_clear_all_recents_button_title"
+        android:summary="@string/show_clear_all_recents_button_summary"
+        android:defaultValue="true" />
 
-        <ListPreference
-            android:key="recents_clear_all_location"
-            android:title="@string/recents_clear_all_location_title"
-            android:entries="@array/recents_clear_all_location_entries"
-            android:entryValues="@array/recents_clear_all_location_values"
-            android:defaultValue="0"
-            android:dependency="show_clear_all_recents" />
-
+    <ListPreference
+        android:key="recents_clear_all_location"
+        android:title="@string/recents_clear_all_location_title"
+        android:entries="@array/recents_clear_all_location_entries"
+        android:entryValues="@array/recents_clear_all_location_values"
+        android:defaultValue="0"
+        android:dependency="show_clear_all_recents" />
     </PreferenceCategory>
+
 </PreferenceScreen>
