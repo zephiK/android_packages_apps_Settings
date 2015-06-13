@@ -101,4 +101,14 @@
     <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
 
     <string name="volume_rocker_other_title">Miscellaneous</string>
+
+    <!-- Generic strings -->
+    <string name="ok_string">Ok</string>
+    <string name="default_string">Default</string>
+    <string name="enabled_string">Enabled</string>
+    <string name="disabled_string">Disabled</string>
+    <string name="general_string">General</string>
+    <string name="reset_string">Reset</string>
+    <string name="empty_string">Empty</string>
+    <string name="attention">Attention</string>
 </resources>

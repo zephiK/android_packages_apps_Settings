@@ -83,6 +83,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                showDialogInner(DLG_CAMERA_SOUND);
                return true;
            }
+        }
         return false;
     }
 
