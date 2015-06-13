@@ -73,7 +73,7 @@ import com.android.settings.applications.InstalledAppDetails;
 import com.android.settings.applications.ManageApplications;
 import com.android.settings.applications.ProcessStatsUi;
 import com.android.settings.bluetooth.BluetoothSettings;
-import com.android.settings.simpleaosp.DisplayRotation;
+import com.android.settings.chroma.DisplayRotation;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -1169,12 +1169,6 @@ public class SettingsActivity extends Activity
                 } else if (id == R.id.bluetooth_settings) {
                     // Remove Bluetooth Settings if Bluetooth service is not available.
                     if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
-                        removeTile = true;
-                    }
-                } else if (id == R.id.mobile_networks) {
-                    if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_TELEPHONY)) {
-                        removeTile = true;
-                    } else if (TelephonyManager.getDefault().getPhoneCount() > 1) {
                         removeTile = true;
                     }
                 } else if (id == R.id.data_usage_settings) {
