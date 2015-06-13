@@ -24,7 +24,7 @@
     <string name="navigation_bar_title">Navigation bar</string>
 
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Height</string>
+    <string name="navigation_bar_height">Navigation bar height</string>
     <string name="navigation_bar_height_48">48dp (default)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
@@ -114,6 +114,8 @@
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
+    <string name="pref_volume_wake_title">Volume rocker wake</string>
+    <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 </resources>

@@ -3,6 +3,18 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="category_wakeup_options"
+        android:title="@string/display_category_wakeup_options_title" >
+
+    <SwitchPreference
+        android:key="pref_volume_wake"
+        android:title="@string/pref_volume_wake_title"
+        android:summary="@string/pref_volume_wake_summary"
+        android:defaultValue="false"
+        android:persistent="false" />
+    </PreferenceCategory>
+
     <SwitchPreference
         android:key="volume_keys_control_media_stream"
         android:title="@string/volume_keys_control_media_stream"

@@ -27,21 +27,29 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOL_MEDIA = "volume_keys_control_media_stream";
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
+    private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
 
     private SwitchPreference mCameraSounds;
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mVolumeKeysControlMedia;
+    private SwitchPreference mVolumeWake;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_navigation);
+        addPreferencesFromResource(R.xml.chroma_settings_volume);
 
         // camera sound
         mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
         mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
         mCameraSounds.setOnPreferenceChangeListener(this);
+
+        // volume wake options
+        mVolumeWake = (SwitchPreference) findPreference(KEY_VOLUME_WAKE);
+        mVolumeWake.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.VOLUME_ROCKER_WAKE, 0) == 1);
+        mVolumeWake.setOnPreferenceChangeListener(this);
 
 	// volume cursor control
 	mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
@@ -70,7 +78,12 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             int volumeKeyCursorControlIndex = mVolumeKeyCursorControl.findIndexOfValue(volumeKeyCursorControl);
             mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntries()[volumeKeyCursorControlIndex]);
             return true;
-    } else if (preference == mVolumeKeysControlMedia) {
+        } else if (preference == mVolumeWake) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.VOLUME_ROCKER_WAKE,
+                    (Boolean) objValue ? 1 : 0);
+            return true;
+        } else if (preference == mVolumeKeysControlMedia) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM,
                     (Boolean) objValue ? 1 : 0);

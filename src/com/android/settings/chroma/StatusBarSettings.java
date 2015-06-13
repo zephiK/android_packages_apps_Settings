@@ -19,7 +19,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.chroma_settings_navigation);
+        addPreferencesFromResource(R.xml.chroma_settings_statusbar);
     }
 
     @Override
