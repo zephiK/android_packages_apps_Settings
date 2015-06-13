@@ -126,4 +126,9 @@
     <!-- Status bar double-tap to sleep -->
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Enable or disable to toggle double-tap to sleep on status bar</string>
+
+    <!-- Status bar pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">One finger QS pull down</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Whether to allow one finger quick settings\nexpansion on the right side of the statusbar.</string>
+ 
 </resources>
