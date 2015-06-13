@@ -28,11 +28,13 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
+    private static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
 
     private SwitchPreference mCameraSounds;
     private ListPreference mVolumeKeyCursorControl;
     private SwitchPreference mVolumeKeysControlMedia;
     private SwitchPreference mVolumeWake;
+    private SwitchPreference mVolumeKeyAdjustSound;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,8 +53,8 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
                 Settings.System.VOLUME_ROCKER_WAKE, 0) == 1);
         mVolumeWake.setOnPreferenceChangeListener(this);
 
-	// volume cursor control
-	mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
+	    // volume cursor control
+	    mVolumeKeyCursorControl = (ListPreference) findPreference(VOLUME_KEY_CURSOR_CONTROL);
         if (mVolumeKeyCursorControl != null) {
             mVolumeKeyCursorControl.setOnPreferenceChangeListener(this);
             mVolumeKeyCursorControl.setValue(Integer.toString(Settings.System.getInt(getActivity()
@@ -60,11 +62,17 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             mVolumeKeyCursorControl.setSummary(mVolumeKeyCursorControl.getEntry());
         }
 
-    // volume key adjust media
+        // volume key adjust media
         mVolumeKeysControlMedia = (SwitchPreference) findPreference(KEY_VOL_MEDIA);
         mVolumeKeysControlMedia.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM, 0) != 0);
         mVolumeKeysControlMedia.setOnPreferenceChangeListener(this);
+
+        // volume adjust sound
+        mVolumeKeyAdjustSound = (SwitchPreference) findPreference(VOLUME_KEY_ADJUST_SOUND);
+        mVolumeKeyAdjustSound.setOnPreferenceChangeListener(this);
+        mVolumeKeyAdjustSound.setChecked(Settings.System.getInt(getContentResolver(),
+                VOLUME_KEY_ADJUST_SOUND, 1) != 0);
     }
 
     @Override
@@ -87,6 +95,11 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.VOLUME_KEYS_CONTROL_MEDIA_STREAM,
                     (Boolean) objValue ? 1 : 0);
+            return true;
+        } else if (preference == mVolumeKeyAdjustSound) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getContentResolver(), VOLUME_KEY_ADJUST_SOUND,
+                    value ? 1: 0);
             return true;
         } else if (preference == mCameraSounds) {
            if ((Boolean) objValue) {
