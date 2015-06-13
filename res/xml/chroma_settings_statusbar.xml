@@ -3,10 +3,19 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:key="category_statusbar_options"
+        android:title="@string/display_category_statusbar_options_title" >
+
+     <com.android.settings.chroma.SystemSettingSwitchPreference
+    	android:key="double_tap_sleep_gesture"
+    	android:title="@string/status_bar_double_tap_to_sleep_title"
+    	android:summary="@string/status_bar_double_tap_to_sleep_summary" />
+
         <PreferenceScreen
 	  	android:key="network_traffic_state"
 		android:fragment="com.android.settings.chroma.NetworkTraffic"
 	 	android:summary="@string/network_traffic_summary"
 		android:title="@string/network_traffic_title" />
-
+    </PreferenceCategory>
 </PreferenceScreen>
