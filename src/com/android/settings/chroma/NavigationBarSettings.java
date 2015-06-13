@@ -27,13 +27,13 @@ OnPreferenceChangeListener {
     private ListPreference mRecentsClearAllLocation;
 
     private ListPreference mNavigationBarHeight;
-    private SwitchPreference mKillAppLongpressBack;
+    private SwitchPreference mKillAppLongPressBack;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.navigation_bar_settings);
+        addPreferencesFromResource(R.xml.chroma_settings_navigation);
 
 	PreferenceScreen prefSet = getPreferenceScreen();
 	ContentResolver resolver = getActivity().getContentResolver();

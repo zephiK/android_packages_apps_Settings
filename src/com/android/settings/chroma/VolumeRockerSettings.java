@@ -38,7 +38,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
 
     if (preference == mVolumeKeyCursorControl) {
-            String volumeKeyCursorControl = (String) value;
+            String volumeKeyCursorControl = (String) objValue;
             int volumeKeyCursorControlValue = Integer.parseInt(volumeKeyCursorControl);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.VOLUME_KEY_CURSOR_CONTROL, volumeKeyCursorControlValue);
