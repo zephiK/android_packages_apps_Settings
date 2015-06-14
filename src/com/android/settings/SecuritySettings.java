@@ -112,11 +112,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     // Only allow one trust agent on the platform.
     private static final boolean ONLY_ONE_TRUST_AGENT = true;
-<<<<<<< HEAD
-=======
+
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String KEY_POWER_MENU_LOCKSCREEN = "lockscreen_enable_power_menu";
->>>>>>> a7cfcb1... Show power menu option only in secured lockscreen
 
     private DevicePolicyManager mDPM;
     private SubscriptionManager mSubscriptionManager;
@@ -140,14 +138,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private boolean mIsPrimary;
 
     private Intent mTrustAgentClickIntent;
-<<<<<<< HEAD
-=======
-    // CyanogenMod Additions
-    private PreferenceScreen mBlacklist;
 
-    private SwitchPreference mBlockOnSecureKeyguard;
+    // CyanogenMod Additions
     private SystemSettingSwitchPreference mPowerMenuLockscreen;
->>>>>>> a7cfcb1... Show power menu option only in secured lockscreen
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -326,26 +320,14 @@ public class SecuritySettings extends SettingsPreferenceFragment
                     getResources().getString(R.string.switch_on_text));
         }
 
-<<<<<<< HEAD
-=======
 	final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 	PreferenceScreen prefSet = getPreferenceScreen();
-        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
-        if (lockPatternUtils.isSecure()) {
-            mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 0) == 1);
-            mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
-        } else if (mBlockOnSecureKeyguard != null) {
-            prefSet.removePreference(mBlockOnSecureKeyguard);
-        }
-
         mPowerMenuLockscreen = (SystemSettingSwitchPreference) findPreference(KEY_POWER_MENU_LOCKSCREEN);
 	final PreferenceScreen prefScreen = getPreferenceScreen();
         if (!lockPatternUtils.isSecure() && mPowerMenuLockscreen != null) {
             prefScreen.removePreference(mPowerMenuLockscreen);
         }
 
->>>>>>> a7cfcb1... Show power menu option only in secured lockscreen
         // Show password
         mShowPassword = (SwitchPreference) root.findPreference(KEY_SHOW_PASSWORD);
         mResetCredentials = root.findPreference(KEY_RESET_CREDENTIALS);
