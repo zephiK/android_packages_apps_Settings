@@ -27,8 +27,8 @@ import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.ListPreference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.SwitchPreference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
 
 import com.android.settings.R;
@@ -44,15 +44,10 @@ import java.util.List;
 public class PowerMenuActions extends SettingsPreferenceFragment {
     final static String TAG = "PowerMenuActions";
 
+    private SwitchPreference mPowerPref;
     private SwitchPreference mRebootPref;
     private SwitchPreference mScreenshotPref;
-    private SwitchPreference mScreenRecordPref;
     private SwitchPreference mAirplanePref;
-    private SwitchPreference mUsersPref;
-    private SwitchPreference mSettingsPref;
-    private SwitchPreference mLockdownPref;
-    private SwitchPreference mBugReportPref;
-    private SwitchPreference mSilentPref;
 
     Context mContext;
     private ArrayList<String> mLocalUserConfig = new ArrayList<String>();
@@ -77,33 +72,26 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 continue;
             }
 
-            if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
+            if (action.equals(GLOBAL_ACTION_KEY_POWER)) {
+                mPowerPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_POWER);
+            } else if (action.equals(GLOBAL_ACTION_KEY_REBOOT)) {
                 mRebootPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_REBOOT);
             } else if (action.equals(GLOBAL_ACTION_KEY_SCREENSHOT)) {
                 mScreenshotPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENSHOT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SCREENRECORD)) {
-                mScreenRecordPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SCREENRECORD);
             } else if (action.equals(GLOBAL_ACTION_KEY_AIRPLANE)) {
                 mAirplanePref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_AIRPLANE);
-            } else if (action.equals(GLOBAL_ACTION_KEY_USERS)) {
-                mUsersPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_USERS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SETTINGS)) {
-                mSettingsPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SETTINGS);
-            } else if (action.equals(GLOBAL_ACTION_KEY_LOCKDOWN)) {
-                mLockdownPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_LOCKDOWN);
-            } else if (action.equals(GLOBAL_ACTION_KEY_BUGREPORT)) {
-                mBugReportPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_BUGREPORT);
-            } else if (action.equals(GLOBAL_ACTION_KEY_SILENT)) {
-                mSilentPref = (SwitchPreference) findPreference(GLOBAL_ACTION_KEY_SILENT);
             }
         }
-
         getUserConfig();
     }
 
     @Override
     public void onStart() {
         super.onStart();
+
+        if (mPowerPref != null) {
+            mPowerPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_POWER));
+        }
 
         if (mRebootPref != null) {
             mRebootPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_REBOOT));
@@ -113,56 +101,26 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             mScreenshotPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENSHOT));
         }
 
-        if (mScreenRecordPref != null) {
-            mScreenRecordPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SCREENRECORD));
-        }
-
+ 
         if (mAirplanePref != null) {
             mAirplanePref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_AIRPLANE));
         }
-
-        if (mUsersPref != null) {
-            if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
-                getPreferenceScreen().removePreference(findPreference(GLOBAL_ACTION_KEY_USERS));
-            } else {
-                List<UserInfo> users = ((UserManager) mContext.getSystemService(
-                        Context.USER_SERVICE)).getUsers();
-                boolean enabled = (users.size() > 1);
-                mUsersPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_USERS) && enabled);
-                mUsersPref.setEnabled(enabled);
-            }
-        }
-
-        if (mSettingsPref != null) {
-            mSettingsPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SETTINGS));
-        }
-
-        if (mLockdownPref != null) {
-            mLockdownPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_LOCKDOWN));
-        }
-
-        if (mBugReportPref != null) {
-            mBugReportPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_BUGREPORT));
-        }
-
-        if (mSilentPref != null) {
-            mSilentPref.setChecked(settingsArrayContains(GLOBAL_ACTION_KEY_SILENT));
-        }
-
-        updatePreferences();
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        updatePreferences();
     }
 
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;
 
-        if (preference == mRebootPref) {
+        if (preference == mPowerPref) {
+            value = mPowerPref.isChecked();
+            updateUserConfig(value, GLOBAL_ACTION_KEY_POWER);
+
+        } else if (preference == mRebootPref) {
             value = mRebootPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_REBOOT);
 
@@ -170,33 +128,9 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             value = mScreenshotPref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENSHOT);
 
-        } else if (preference == mScreenRecordPref) {
-            value = mScreenRecordPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SCREENRECORD);
-
         } else if (preference == mAirplanePref) {
             value = mAirplanePref.isChecked();
             updateUserConfig(value, GLOBAL_ACTION_KEY_AIRPLANE);
-
-        } else if (preference == mUsersPref) {
-            value = mUsersPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_USERS);
-
-        } else if (preference == mSettingsPref) {
-            value = mSettingsPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SETTINGS);
-
-        } else if (preference == mLockdownPref) {
-            value = mLockdownPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_LOCKDOWN);
-
-        } else if (preference == mBugReportPref) {
-            value = mBugReportPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_BUGREPORT);
-
-        } else if (preference == mSilentPref) {
-            value = mSilentPref.isChecked();
-            updateUserConfig(value, GLOBAL_ACTION_KEY_SILENT);
 
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -226,19 +160,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             }
         }
         saveUserConfig();
-    }
-
-    private void updatePreferences() {
-        boolean bugreport = Settings.Secure.getInt(getContentResolver(),
-                Settings.Secure.BUGREPORT_IN_POWER_MENU, 0) != 0;
-        if (mBugReportPref != null) {
-            mBugReportPref.setEnabled(bugreport);
-            if (bugreport) {
-                mBugReportPref.setSummary(null);
-            } else {
-                mBugReportPref.setSummary(R.string.power_menu_bug_report_disabled);
-            }
-        }
     }
 
     private void getUserConfig() {
@@ -279,7 +200,6 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
                 s.append("|");
             }
         }
-
         Settings.Global.putStringForUser(getContentResolver(),
                  Settings.Global.POWER_MENU_ACTIONS, s.toString(), UserHandle.USER_CURRENT);
         updatePowerMenuDialog();
