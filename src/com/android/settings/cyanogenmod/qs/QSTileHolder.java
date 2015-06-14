@@ -58,10 +58,6 @@ public class QSTileHolder {
                 resourceName = "ic_qs_bluetooth_on";
                 stringId = R.string.qs_tile_bluetooth;
                 break;
-            case QSConstants.TILE_INVERSION:
-                resourceName = "ic_qs_inversion_on";
-                stringId = R.string.qs_tile_display_inversion;
-                break;
             case QSConstants.TILE_CELLULAR:
                 resourceName = "ic_qs_signal_full_4";
                 stringId = R.string.qs_tile_cellular_data;
