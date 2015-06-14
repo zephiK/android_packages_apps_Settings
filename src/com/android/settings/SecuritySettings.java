@@ -140,6 +140,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private Intent mTrustAgentClickIntent;
 
     // CyanogenMod Additions
+    private SwitchPreference mBlockOnSecureKeyguard;
     private SystemSettingSwitchPreference mPowerMenuLockscreen;
 
 
@@ -322,6 +323,15 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
 	final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
 	PreferenceScreen prefSet = getPreferenceScreen();
+        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
+        if (lockPatternUtils.isSecure()) {
+            mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 0) == 1);
+            mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
+        } else if (mBlockOnSecureKeyguard != null) {
+            prefSet.removePreference(mBlockOnSecureKeyguard);
+        }
+
         mPowerMenuLockscreen = (SystemSettingSwitchPreference) findPreference(KEY_POWER_MENU_LOCKSCREEN);
 	final PreferenceScreen prefScreen = getPreferenceScreen();
         if (!lockPatternUtils.isSecure() && mPowerMenuLockscreen != null) {
@@ -714,8 +724,12 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 result = false;
             } else {
                 setNonMarketAppsAllowed(false);
-            }
-        }
+		}
+        } else if (preference == mBlockOnSecureKeyguard) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
+                    (Boolean) value ? 1 : 0);
+	}
         return result;
     }
 
