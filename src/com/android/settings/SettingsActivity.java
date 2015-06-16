@@ -308,7 +308,7 @@ public class SettingsActivity extends Activity
             QuickLaunchSettings.class.getName(),
             ApnSettings.class.getName(),      
             DisplayRotation.class.getName(),
-    	    HeadsUpSettings.class.getName()
+    	    HeadsUpSettings.class.getName(),
             BlacklistSettings.class.getName()
     };
 
