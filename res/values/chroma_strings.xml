@@ -282,6 +282,7 @@
     <string name="qs_tile_sync">Sync</string>
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_tile_heads_up">Heads up</string>
+    <string name="qs_battery_saver_tile">Battery saver</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>
