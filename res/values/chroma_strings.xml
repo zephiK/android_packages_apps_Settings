@@ -399,8 +399,8 @@
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
-    <string name="swap_volume_buttons_title">Volume key swap on rotation</string>
-    <string name="swap_volume_buttons_summary">Adjust volume buttons action based on current rotation</string>
+    <string name="swap_volume_buttons_title">Reorient</string>
+    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
