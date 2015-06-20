@@ -6,35 +6,35 @@
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Chroma build date</string>
+    <string name="build_date">Data build Chroma</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Chroma Options</string>
-    <string name="chroma_menu_about">About Chroma</string>
-    <string name="status_bar_screen_title">Status bar</string>
+    <string name="chroma_menu_personalizaton">Opzioni Chroma</string>
+    <string name="chroma_menu_about">Info su Chroma</string>
+    <string name="status_bar_screen_title">Barra di stato</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
-    <string name="power_menu_title">Power menu</string>
-    <string name="volume_rocker_screen_title">Volume rocker</string>
+    <string name="power_menu_title">Menu spegnimento</string>
+    <string name="volume_rocker_screen_title">Pulsanti volume</string>
 
     <!-- Chroma categories -->
-    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
-    <string name="display_category_navbar_options_title">Navigation bar options</string>
-    <string name="display_category_navring_options_title">Navigation ring options</string>
-    <string name="display_category_statusbar_options_title">Status bar options</string>
-    <string name="display_category_recents_options_title">Recent apps options</string>
-    <string name="display_category_power_options_title">Power menu options</string>
-    <string name="volume_rocker_other_title">Miscellaneous</string>
+    <string name="display_category_batteryclock_options_title">Opzioni batteria ed orologio</string>
+    <string name="display_category_navbar_options_title">Opzioni navigation bar</string>
+    <string name="display_category_navring_options_title">Opzioni anello di navigazione</string>
+    <string name="display_category_statusbar_options_title">Opzioni barra di stato</string>
+    <string name="display_category_recents_options_title">Opzioni app recenti</string>
+    <string name="display_category_power_options_title">Opzioni menu spegnimento</string>
+    <string name="volume_rocker_other_title">Varie</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_title">Navigation bar</string>
 
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Navigation bar height</string>
-    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height">Altezza navigation bar</string>
+    <string name="navigation_bar_height_48">48dp (predefinito)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
     <string name="navigation_bar_height_36">36dp</string>
@@ -42,167 +42,167 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
-    <string name="navigation_bar_height_0">0dp (hide)</string>
+    <string name="navigation_bar_height_0">0dp (nascosta)</string>
 
     <!--  Volume rocker -->
-    <string name="volume_rocker_screen_title">Volume rocker</string>
+    <string name="volume_rocker_screen_title">Pulsanti volume</string>
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Conrollo cursori volume</string>
+    <string name="volume_key_cursor_control_off">Disattivato</string>
+    <string name="volume_key_cursor_control_on">Il pulsante del volume su/giù sposta il cursore a sinistra/destra</string>
+    <string name="volume_key_cursor_control_on_reverse">Il pulsante del volume su/giù sposta il cursore a destra/sinistra</string>
 
     <!-- Volume adjust sound -->
-    <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
-    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
+    <string name="volume_key_adjust_sound_title">Suono regolazione volume</string>
+    <string name="volume_key_adjust_sound_summary">Emetti un suono quando il volume viene regolato con i pulsanti del volume</string>
 
     <!-- Developer options - kill app long press back -->
-    <string name="kill_app_longpress_back">Kill app back button</string>
-    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+    <string name="kill_app_longpress_back">Pulsante indietro chiudi app</string>
+    <string name="kill_app_longpress_back_summary">Chiudi l\'app in uso tenendo premuto il pulsante indietro</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="show_network_traffic_state">Monitor del traffico</string>
+    <string name="network_traffic_summary">Attiva varie opzioni per il monitor del traffico di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità di misura</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disattivato</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Entrambi</string>
+    <string name="show_network_traffic_bit">Bit per secondo</string>
+    <string name="show_network_traffic_byte">Byte per secondo</string>
     <string name="show_network_traffic_500">500 ms</string>
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_autohide">Nascondi automaticamente</string>
+    <string name="network_traffic_autohide_summary">Nascondi il monitor del traffico di rete quando non c\'è attività</string>
+    <string name="network_traffic_autohide_threshold">Durata inattività</string> 
 
-   <!-- Generic strings -->
-    <string name="ok_string">OK</string>
-    <string name="default_string">Default</string>
-    <string name="enabled_string">Enabled</string>
-    <string name="disabled_string">Disabled</string>
-    <string name="general_string">General</string>
-    <string name="reset_string">Reset</string>
-    <string name="reset">Reset</string>
-    <string name="empty_string">Empty</string>
-    <string name="ok">OK</string>
-   <string name="font_size_sample">Sample</string>
+    <!-- Generic strings -->
+    <string name="ok_string">Ok</string>
+    <string name="default_string">Predefinito</string>
+    <string name="enabled_string">Attivato</string>
+    <string name="disabled_string">Disattivato</string>
+    <string name="general_string">Generali</string>
+    <string name="reset_string">Ripristina</string>
+    <string name="reset">Ripristina</string>
+    <string name="empty_string">Vuoto</string>
+    <string name="ok">Ok</string>
+    <string name="font_size_sample">Esempio</string>
 
     <!-- Display : Rotation -->
-    <string name="display_rotation_title">Rotation</string>
-    <string name="display_rotation_disabled">Disabled</string>
-    <string name="display_rotation_unit">degrees</string>
-    <string name="display_rotation_category_title">Rotation modes</string>
-    <string name="display_rotation_0_title">0 degrees</string>
-    <string name="display_rotation_90_title">90 degrees</string>
-    <string name="display_rotation_180_title">180 degrees</string>
-    <string name="display_rotation_270_title">270 degrees</string>
+    <string name="display_rotation_title">Rotazione</string>
+    <string name="display_rotation_disabled">Disattivata</string>
+    <string name="display_rotation_unit">gradi</string>
+    <string name="display_rotation_category_title">Modalità di rotazione</string>
+    <string name="display_rotation_0_title">0 gradi</string>
+    <string name="display_rotation_90_title">90 gradi</string>
+    <string name="display_rotation_180_title">180 gradi</string>
+    <string name="display_rotation_270_title">270 gradi</string>
 
     <!-- Recents panel settings -->
-    <string name="recents_panel_settings">Recents panel settings</string>
-    <string name="show_clear_all_recents_button_title">Clear all recents button</string>
-    <string name="show_clear_all_recents_button_summary">Show clear all button on recents panel</string>
-    <string name="recents_clear_all_location_title">Clear all recents location</string>
-    <string name="recents_clear_all_location_top_right">Top right</string>
-    <string name="recents_clear_all_location_top_left">Top left</string>
-    <string name="recents_clear_all_location_top_center">Top center</string>
-    <string name="recents_clear_all_location_bottom_right">Bottom right</string>
-    <string name="recents_clear_all_location_bottom_left">Bottom left</string>
-    <string name="recents_clear_all_location_bottom_center">Bottom center</string>
+    <string name="recents_panel_settings">Pannello app recenti</string>
+    <string name="show_clear_all_recents_button_title">Pulsante chiudi tutte</string>
+    <string name="show_clear_all_recents_button_summary">Mostra il pulsante per chiudere tutte le app recenti</string>
+    <string name="recents_clear_all_location_title">Posizione pulsante chiudi tutte</string>
+    <string name="recents_clear_all_location_top_right">In alto a destra</string>
+    <string name="recents_clear_all_location_top_left">In alto a sinistra</string>
+    <string name="recents_clear_all_location_top_center">In alto al centro</string>
+    <string name="recents_clear_all_location_bottom_right">In basso a destra</string>
+    <string name="recents_clear_all_location_bottom_left">In basso a sinistra</string>
+    <string name="recents_clear_all_location_bottom_center">In basso al centro</string>
 
     <!-- BitSyko Layers -->
     <string name="bitsyko_layers">Layers</string>
 
     <!-- Volume Keys Media Control -->
-    <string name="volume_keys_control_media_stream">Media control</string>
-    <string name="volume_keys_control_media_stream_summary">Volume keys control media volume rather than notifications</string>
+    <string name="volume_keys_control_media_stream">Controllo media</string>
+    <string name="volume_keys_control_media_stream_summary">I pulsanti del volume controllano il volume dei media invece che quello delle notifiche</string>
 
     <!-- Camera sound switch -->
-    <string name="camera_sounds_title">Camera shutter sound</string>
-    <string name="camera_sounds_summary">Enable system camera shutter sound</string>
-    <string name="camera_sound_warning_dialog_text">Disabling the camera shutter sound is illegal in some areas! Please check the applicable law in your country</string>
+    <string name="camera_sounds_title">Suono scatto</string>
+    <string name="camera_sounds_summary">Attiva suono di sistema di scatto della fotocamera</string>
+    <string name="camera_sound_warning_dialog_text">Disattivare il suono della scatto della fotocamera è illegale in alcuni paesi! Per favore controlla la legge nel tuo paese</string>
 
     <!-- Generic strings -->
     <string name="ok_string">Ok</string>
-    <string name="default_string">Default</string>
-    <string name="enabled_string">Enabled</string>
-    <string name="disabled_string">Disabled</string>
-    <string name="general_string">General</string>
-    <string name="reset_string">Reset</string>
-    <string name="empty_string">Empty</string>
-    <string name="attention">Attention</string>
+    <string name="default_string">Predefinito</string>
+    <string name="enabled_string">Attivato</string>
+    <string name="disabled_string">Disattivato</string>
+    <string name="general_string">Generali</string>
+    <string name="reset_string">Ripristina</string>
+    <string name="empty_string">Vuoto</string>
+    <string name="attention">Attenzione</string>
 
     <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">Wakeup options</string>
-    <string name="pref_volume_wake_title">Volume rocker wake</string>
-    <string name="pref_volume_wake_summary">Pressing the volume rocker up/down will wake the device</string>
-    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
-    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+    <string name="display_category_wakeup_options_title">Opzioni risveglio</string>
+    <string name="pref_volume_wake_title">Risveglio pulsanti volume</string>
+    <string name="pref_volume_wake_summary">Premendo i pulsanti del volume il dispositivo si risveglierà</string>
+    <string name="wakeup_when_plugged_unplugged_title">Risveglio alla carica</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Risveglia il dispositivo quando il caricabatterie viene connesso/disconnesso</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Enable or disable to toggle double-tap to sleep on status bar</string>
+    <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per spegnere</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
 
     <!-- Status bar pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">One finger QS pull down</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Whether to allow one finger quick settings\nexpansion on the right side of the statusbar.</string>
+    <string name="status_bar_quick_qs_pulldown_title">Quick settings veloci</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Strisciando dal lato destro si andrà nei quick settings</string>
  
     <!-- Status bar brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
-    <string name="status_bar_toggle_info">Automatic brightness must be disabled</string>
+    <string name="status_bar_toggle_brightness">Controllo luminosità</string>
+    <string name="status_bar_toggle_brightness_summary">Regola la luminosità strisciando con un dito sulla barra di stato</string>
+    <string name="status_bar_toggle_info">La luminosità adattiva deve essere disattivata</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Scegli colore</string>
+    <string name="press_color_to_apply">Clicca sul colore per applicarlo</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
+    <string name="set">Imposta</string>
+    <string name="color_default">Predefinito</string>
 
     <!-- Profiles -->
-    <string name="profile_reset_title">Reset</string>
-    <string name="profiles_add">Add</string>
-    <string name="profile_choose_app">Choose app</string>
+    <string name="profile_reset_title">Ripristina</string>
+    <string name="profiles_add">Aggiungi</string>
+    <string name="profile_choose_app">Scegli app</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Clock &amp; date</string>
-    <string name="status_bar_clock_title">Clock &amp; date style</string>
-    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock">Orologio &amp; data</string>
+    <string name="status_bar_clock_title">Stile orologio &amp; data</string>
+    <string name="status_bar_clock_summary">Cambia varie opzioni per orologio &amp; data</string> 
+    <string name="clock_title_enable">Posizione</string>
+    <string name="clock_enabled">Attivato</string>
+    <string name="clock_disabled">Disattivato</string>
+    <string name="status_bar_show_clock_title">Mostra orologio &amp; data</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="left_clock">Left clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
-    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="status_bar_am_pm_info">L\'orologio a 24 ore è attivato</string>
+    <string name="enable_clock_weekday">Giorno della settimana</string>
+    <string name="enable_clock_weekday_summary">Giorno della settimana abbreviato prima dell\'orologio</string>
+    <string name="right_clock">Orologio a destra</string>
+    <string name="center_clock">Orologio al centro</string>
+    <string name="left_clock">Orologio a sinistra</string>
+    <string name="dont_show">Non mostrare</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostra data personalizzata prima dell\'orologio</string>
+    <string name="clock_date_style">Stile data</string>
+    <string name="clock_date_format">Formattazione data</string>
+    <string name="clock_date_string_edittext_title">Deve essere in DateFormat come gg/mm/aa</string>
+    <string name="clock_date_string_edittext_summary">Inserisci stringa</string>
+    <string name="am_pm_clock_normal">Grandezza font normale</string>
+    <string name="am_pm_clock_small">Grandezza font piccola</string>
+    <string name="am_pm_clock_none">Non mostrare</string>
+    <string name="clock_date_display_none">Non mostrare</string>
+    <string name="clock_date_display_small">Grandezza font piccola</string>
+    <string name="clock_date_display_normal">Grandezza font normale</string>
+    <string name="clock_date_style_normal">Normale</string>
+    <string name="clock_date_style_lowercase">Minuscolo</string>
+    <string name="clock_date_style_uppercase">Maiuscolo</string>
+    <string name="clock_date_format_custom">Formattazione personalizzata Java</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
