@@ -278,7 +278,7 @@
     <string name="qs_tile_cast_screen">Trasmetti schermo</string>
     <string name="qs_tile_hotspot">Hotspot portatile</string>
     <string name="qs_tile_notifications">Notifiche</string>
-    <string name="qs_tile_screen_timeout">Sospensione schermo</string>
+    <string name="qs_tile_screen_timeout">Sospensione</string>
     <string name="qs_tile_sync">Sincronizzazione</string>
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_tile_heads_up">Heads up</string>
