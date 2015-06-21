@@ -377,7 +377,7 @@ public class PrivacyGuardManager extends Fragment
             switch (id) {
                 case DLG_RESET:
                     return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.reset)
+                    .setTitle(R.string.reset_string)
                     .setMessage(R.string.privacy_guard_app_ops_detail_reset_dialog_text)
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
