@@ -463,4 +463,6 @@
     <string name="battery_saver_color_title">Kolor ostrzeżenia</string>
     <string name="battery_saver_color_summary">Włącz pomarańczowy pasek stanu i nawigacji przy włączonym Oszczędzaniu baterii</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Pokaż cztery przełączniki w rzędzie</string>
 </resources>

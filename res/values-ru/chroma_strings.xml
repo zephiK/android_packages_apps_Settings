@@ -465,4 +465,6 @@
     <string name="battery_saver_color_title">Цвет предупреждения</string>
     <string name="battery_saver_color_summary">Включить оранжевый цвет строки состояния и панели навигации, когда режим энергосбережения включен</string>
 
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
 </resources>

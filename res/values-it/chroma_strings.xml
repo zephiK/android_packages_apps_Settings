@@ -482,4 +482,6 @@
     <string name="battery_saver_color_title">Colore di avvertimento</string>
     <string name="battery_saver_color_summary">Attiva il colore arancione per la barra di stato e la navigation bar quando è attivo il risparmio batteria</string>
 
+    <!-- Quick Settings 4 columns -->
+    <string name="qs_four_columns_title">Mostra quattro quick settings per fila</string>
 </resources>

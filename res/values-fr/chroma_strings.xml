@@ -461,4 +461,6 @@
     <string name="battery_saver_color_title">Couleur d\'alerte</string>
     <string name="battery_saver_color_summary">Activer la barre de statut et de navigation orange quand l\'économiseur de batterie est activé</string>
  
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Afficher quatre tuiles par rangée</string>
 </resources>
