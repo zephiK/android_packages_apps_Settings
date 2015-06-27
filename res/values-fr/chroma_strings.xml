@@ -87,6 +87,7 @@
     <string name="reset_string">Réinitialiser</string>
     <string name="empty_string">Aucun</string>
     <string name="font_size_sample">Exemple</string>
+    <string name="attention">Attention</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>

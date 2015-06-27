@@ -86,7 +86,8 @@
     <string name="general_string">General</string>
     <string name="reset_string">Reset</string>
     <string name="empty_string">Empty</string>
-   <string name="font_size_sample">Sample</string>
+    <string name="font_size_sample">Sample</string>
+    <string name="attention">Attention</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
