@@ -199,7 +199,7 @@
     <string name="volume_button_toggle_info">Wybudzanie przyciskami głośności musi być wyłączone</string>
 
     <!-- Show notification count -->
-    <string name="status_bar_notif_count_title">Pokaz licznik powiadomień</string>
+    <string name="status_bar_notif_count_title">Pokaż licznik powiadomień</string>
     <string name="status_bar_notif_count_summary">Wyświetla liczbę oczekujących powiadomień</string>
 	
     <!-- Status bar - Battery -->
@@ -382,7 +382,7 @@
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Zamień</string>
-    <string name="swap_volume_buttons_summary">Dwukrotne dotknięcie gdziekolwiek na ekranie blokady uśpi urządzenie</string>
+    <string name="swap_volume_buttons_summary">Zamień przyciski głośności przy obracaniu ekranu</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Właczyć ochronę prywatności?</string>
