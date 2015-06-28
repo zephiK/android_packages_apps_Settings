@@ -339,7 +339,7 @@
     <string name="power_menu_bug_report_disabled">Звіт про помилки відключений в налаштуваннях розробника</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Зв'язати гучність дзвінка і сповіщень</string>
+    <string name="link_volume_option_title">Зв\'язати гучність дзвінка і сповіщень</string>
     <string name="notification_volume_option_title">Гучність сповіщень</string>
     <string name="ring_notification_volume_option_tile">Гучність дзвінка і сповіщень</string>
 
