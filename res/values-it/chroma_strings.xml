@@ -318,6 +318,7 @@
     <string name="battery_light_full_color_title">Completamente carica</string>
 
     <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_category">Opzioni LED</string>
     <string name="notification_light_title">LED notifiche</string>
     <string name="notification_light_general_title">Generali</string>
     <string name="notification_light_applist_title">App</string>
