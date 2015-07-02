@@ -235,7 +235,7 @@
     <string name="weather_clock_title">Погода в строке состояния</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Выключить панель поиска</string>
+    <string name="recents_show_searchbar">Строка поиска в меню кн. «Обзор»</string>
     <string name="recents_show_searchbar_summary">Выключить или включить панель поиска в панели недавно запущенных приложений</string>
 
     <!-- QS tiles -->

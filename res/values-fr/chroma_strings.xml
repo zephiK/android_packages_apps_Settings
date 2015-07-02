@@ -231,7 +231,7 @@
     <string name="weather_clock_title">Météo dans la barre de statut</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Visibilité de la barre de recherche</string>
+    <string name="recents_show_searchbar">Afficher la barre de recherche dans le menu des applications récentes</string>
     <string name="recents_show_searchbar_summary">Désactiver la barre de recherche dans le menu récents</string>
 
     <!-- QS tiles -->

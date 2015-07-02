@@ -235,7 +235,7 @@
     <string name="weather_clock_title">Status bar weather</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Disable search bar in recents menu</string>
+    <string name="recents_show_searchbar">Show search bar in recents menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the search bar in the recents menu</string>
 
     <!-- QS tiles -->

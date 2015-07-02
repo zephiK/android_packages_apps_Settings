@@ -252,7 +252,7 @@
     <string name="weather_clock_title">Meteo barra di stato</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Barra di ricerca app recenti</string>
+    <string name="recents_show_searchbar">Barra di ricerca in app recenti</string>
     <string name="recents_show_searchbar_summary">Disattiva la barra di ricerca nel pannello delle app recenti</string>
 
     <!-- QS tiles -->

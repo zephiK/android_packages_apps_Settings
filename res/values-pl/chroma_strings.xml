@@ -234,7 +234,7 @@
     <string name="weather_clock_title">Pogoda w pasku stanu</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Wyłącz pasek wyszukiwania w panelu ostatnich aplikacji</string>
+    <string name="recents_show_searchbar">Pokaż przyciski wyszukiwania w pasku ostatnich aplikacji</string>
     <string name="recents_show_searchbar_summary">Włącz lub wyłącz pasek wyszukiwania w panelu ostatnich aplikacji</string>
 
     <!-- QS tiles -->
