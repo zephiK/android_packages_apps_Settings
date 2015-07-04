@@ -47,7 +47,7 @@
     <!--  Volume rocker -->
     <string name="volume_rocker_screen_title">Pulsanti volume</string>
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Conrollo cursori volume</string>
+    <string name="volume_key_cursor_control_title">Controllo cursori volume</string>
     <string name="volume_key_cursor_control_off">Disattivato</string>
     <string name="volume_key_cursor_control_on">Il pulsante del volume su/giù sposta il cursore a sinistra/destra</string>
     <string name="volume_key_cursor_control_on_reverse">Il pulsante del volume su/giù sposta il cursore a destra/sinistra</string>
@@ -256,7 +256,7 @@
     <string name="weather_clock_title">Meteo barra di stato</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Barra di ricerca in app recenti</string>
+    <string name="recents_show_searchbar">Barra di ricerca nelle app recenti</string>
     <string name="recents_show_searchbar_summary">Disattiva la barra di ricerca nel pannello delle app recenti</string>
 
     <!-- QS tiles -->
