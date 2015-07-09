@@ -78,7 +78,7 @@
     <string name="network_traffic_autohide_summary">Masquer le moniteur lorsqu\'il n\'y a pas d\'activité</string>
     <string name="network_traffic_autohide_threshold">Seuil d\'inactivité</string>
 
-   <!-- Generic strings -->
+    <!-- Generic strings -->
     <string name="ok_string">OK</string>
     <string name="default_string">Par défaut</string>
     <string name="enabled_string">Activé</string>
@@ -125,6 +125,8 @@
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Options de réveil</string>
+    <string name="pref_volume_wake_title">Réveil par les boutons de volume</string>
+    <string name="pref_volume_wake_summary">Appuyer sur les boutons haut et bas réveillera l\'appareil.</string>
     <string name="wakeup_when_plugged_unplugged_title">Réveil par le chargeur</string>
     <string name="wakeup_when_plugged_unplugged_summary">Réveil l\'appareil si le chargeur est branché / débranché.</string>
 
@@ -135,6 +137,7 @@
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Réglage de la luminosité</string>
     <string name="status_bar_toggle_brightness_summary">Ajuster la luminosité en faisant glisser le doigt sur la barre de statut</string>
+    <string name="status_bar_toggle_info">La luminosité automatique doit être désactivée</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Sélecteur de couleur</string>
@@ -203,6 +206,7 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_title">Icône de la batterie</string>
     <string name="status_bar_battery_style_title">Style du niveau de batterie</string>
+    <string name="status_bar_battery_summary">Changer l\'icône de la batterie</string>
     <string name="status_bar_battery_style_icon_portrait">Icône portrait</string>
     <string name="status_bar_battery_style_icon_landscape">Icône paysage</string>
     <string name="status_bar_battery_style_circle">Cercle</string>
@@ -218,7 +222,7 @@
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
     <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le PIN / mot de passe correct est entré</string>
-        <string name="unlock_scramble_pin_layout_title">Mise en page Scramble</string>
+    <string name="unlock_scramble_pin_layout_title">Mise en page Scramble</string>
     <string name="unlock_scramble_pin_layout_summary">La mise en page PIN Scramble déverrouillera le dispositif</string>
 
     <!-- Weather in status bar -->
@@ -464,4 +468,9 @@
  
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Afficher quatre tuiles par rangée</string>
+
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Configurations LAN</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
 </resources>
