@@ -170,6 +170,10 @@
     <string name="profile_reset_title">Ripristina</string>
     <string name="profiles_add">Aggiungi</string>
     <string name="profile_choose_app">Scegli app</string>
+    <string name="profile_applist_title">App</string>
+    <string name="picker_activities">Attività</string>
+    <string name="select_custom_app_title">Seleziona app personalizzata</string>
+    <string name="select_custom_activity_title">Seleziona attività personalizzata</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Orologio &amp; data</string>
@@ -485,4 +489,12 @@
 
     <!-- Quick Settings 4 columns -->
     <string name="qs_four_columns_title">Mostra quattro tile per fila</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_settings_title">Schermata di blocco</string>
+    <string name="lockscreen_targets_message">Scorciatoie schermata di blocco</string>
+    <string name="lockscreen_default_target">Predefinite</string>
+    <string name="lockscreen_none_target">Nessuna</string>
+    <string name="lockscreen_message">Tocca un'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
+    <string name="lockscreen_choose_action_title">Sceglia azione</string>
 </resources>

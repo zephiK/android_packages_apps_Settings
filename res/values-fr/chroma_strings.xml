@@ -153,6 +153,10 @@
     <string name="profile_reset_title">réinitialiser</string>
     <string name="profiles_add">Ajouter</string>
     <string name="profile_choose_app">Choisir l\'application</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="picker_activities">Activités</string>
+    <string name="select_custom_app_title">Sélectionner une application personnalisée</string>
+    <string name="select_custom_activity_title">Sélectionner une activité personnalisée</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Heure et date</string>
@@ -473,4 +477,13 @@
     <string name="debug_LAN_category">Configurations LAN</string>    
     <!-- Hostname setting -->
     <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_settings_title">Écran de verrouillage</string>
+    <string name="lockscreen_targets_summary">Voir ou changer les raccourcis de l\'écran de verrouillage</string>
+    <string name="lockscreen_targets_message">Raccourcis de l\'écran de verrouillage</string>
+    <string name="lockscreen_default_target">Par défaut</string>
+    <string name="lockscreen_none_target">Aucun</string>
+    <string name="lockscreen_message">Appuyer sur une des icônes de la gauche ou la droite pour attribuer un raccourci sur l\'écran de verrouillage.</string>
+    <string name="lockscreen_choose_action_title">Choisir une action</string>
 </resources>

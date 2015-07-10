@@ -152,6 +152,10 @@
     <string name="profile_reset_title">Przywróć</string>
     <string name="profiles_add">Dodaj</string>
     <string name="profile_choose_app">Wybierz aplikacje</string>
+    <string name="profile_applist_title">Aplikacje</string>
+    <string name="picker_activities">Aktywności</string>
+    <string name="select_custom_app_title">Wybierz własną aplikację</string>
+    <string name="select_custom_activity_title">Wybierz własną aktywność</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Zegar &amp; data</string>
@@ -465,4 +469,12 @@
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Pokaż cztery przełączniki w rzędzie</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_settings_title">Ekran blokady</string>
+    <string name="lockscreen_targets_message">Skróty ekranu blokady</string>
+    <string name="lockscreen_default_target">Domyślne</string>
+    <string name="lockscreen_none_target">Żadne</string>
+    <string name="lockscreen_message">Naciśnij ikonę po lewej lub prawej aby ustawić skróty ekranu blokady.</string>
+    <string name="lockscreen_choose_action_title">Wybierz akcję</string>
 </resources>

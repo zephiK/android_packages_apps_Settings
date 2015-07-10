@@ -153,6 +153,10 @@
     <string name="profile_reset_title">Сбросить</string>
     <string name="profiles_add">Добавить</string>
     <string name="profile_choose_app">Выбрать приложение</string>
+    <string name="profile_applist_title">Приложения</string>
+    <string name="picker_activities">Действия</string>
+    <string name="select_custom_app_title">Выбрать свое приложение</string>
+    <string name="select_custom_activity_title">Выбрать свое действие</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Часы и дата</string>
@@ -467,4 +471,14 @@
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Показывать четыре плитки в ряд</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="lockscreen_settings_title">Экран блокировки</string>
+    <string name="lockscreen_targets_summary">Настройка ярлыков экрана блокировки</string>
+    <string name="lockscreen_targets_message">Ярлыки экрана блокировки</string>
+    <string name="lockscreen_default_target">По умолчанию</string>
+    <string name="lockscreen_none_target">Нет</string>
+    <string name="lockscreen_message">Нажмите значок слева или справа для изменения ярлыка экрана блокировки.</string>
+    <string name="lockscreen_choose_action_title">Выберите действие</string>
+
 </resources>
