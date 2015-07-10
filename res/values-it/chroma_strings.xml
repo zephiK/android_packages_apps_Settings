@@ -495,6 +495,6 @@
     <string name="lockscreen_targets_message">Scorciatoie schermata di blocco</string>
     <string name="lockscreen_default_target">Predefinite</string>
     <string name="lockscreen_none_target">Nessuna</string>
-    <string name="lockscreen_message">Tocca un'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
+    <string name="lockscreen_message">Tocca un\'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
     <string name="lockscreen_choose_action_title">Sceglia azione</string>
 </resources>
