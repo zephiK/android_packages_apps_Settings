@@ -31,6 +31,11 @@
             android:persistent="false"
             android:dependency="notification_light_pulse" />
 
+         <com.android.settings.chroma.SystemSettingSwitchPreference
+            android:key="notification_light_screen_on_enable"
+            android:title="@string/notification_light_screen_on"
+            android:dependency="notification_light_pulse" />
+
         <com.android.settings.chroma.SystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
