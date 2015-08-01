@@ -486,4 +486,7 @@
     <string name="lockscreen_none_target">Aucun</string>
     <string name="lockscreen_message">Appuyer sur une des icônes de la gauche ou la droite pour attribuer un raccourci sur l\'écran de verrouillage.</string>
     <string name="lockscreen_choose_action_title">Choisir une action</string>
+    
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Fond d\'écran du verrouillage de l\'écran</string>
 </resources>
