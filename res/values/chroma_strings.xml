@@ -17,11 +17,13 @@
     <string name="chroma_menu_about">About Chroma</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="lockscreen_title">Lock screen</string>
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_lockscreen_options_title">Lockscreen options</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <string name="display_category_navring_options_title">Navigation ring options</string>
     <string name="display_category_statusbar_options_title">Status bar options</string>
