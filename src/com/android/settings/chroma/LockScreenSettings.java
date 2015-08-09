@@ -26,6 +26,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
+import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -60,6 +61,8 @@ public class LockScreenSettings extends SettingsPreferenceFragment {
             return true;
         } else if (preference == mClearWallpaper) {
             clearKeyguardWallpaper();
+            Toast.makeText(getView().getContext(), getString(R.string.reset_lockscreen_wallpaper),
+            Toast.LENGTH_LONG).show();
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

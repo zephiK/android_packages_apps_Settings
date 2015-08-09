@@ -181,5 +181,5 @@
     <string name="lockscreen_wallpaper_title">Wallpaper</string>
     <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
     <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
-
+    <string name="reset_lockscreen_wallpaper">Lockscreen cleared</string>
 </resources>
