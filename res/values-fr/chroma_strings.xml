@@ -17,14 +17,14 @@
     <string name="chroma_menu_about">À propos de la Chroma</string>
     <string name="status_bar_screen_title">Barre de statut</string>
     <string name="navigation_bar_screen_title">Barre de navigation</string>
-    <string name="lockscreen_title">Écran de verrouillage</string>
+	<string name="lockscreen_title">Écran de verrouillage</string>
     <string name="power_menu_title">Menu d\'alimentation</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Options de la batterie et de l\'horloge</string>
-    <string name="display_category_lockscreen_options_title">Options de l\écran de verrouillage</string>
     <string name="display_category_navbar_options_title">Options de la barre de navigation</string>
+	<string name="display_category_lockscreen_options_title">Options de l\écran de verrouillage</string>
     <string name="display_category_navring_options_title">Options des anneaux de navigation</string>
     <string name="display_category_statusbar_options_title">Options de la barre de statut</string>
     <string name="display_category_recents_options_title">Options des applications récentes</string>
@@ -307,6 +307,7 @@
     <string name="battery_light_full_color_title">Complètement chargée</string>
 
     <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_category">Notification LED</string>
     <string name="notification_light_title">Voyant de notification</string>
     <string name="notification_light_general_title">Général</string>
     <string name="notification_light_applist_title">Applications</string>
@@ -334,7 +335,6 @@
     <string name="double_tap_sleep_nav_bar_summary">Taper deux fois dans la barre de statut pour mettre l\'appareil en veille</string>
 
     <!-- Power menu -->
-    <string name="power_menu_title">Menu d\'alimentation</string>
     <string name="power_menu_reboot_title">Menu de redémarrage</string>
     <string name="power_menu_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_airplane_title">Mode avion</string>
@@ -365,7 +365,6 @@
     <string name="heads_up_dnd_title">Ne pas déranger</string>
     <string name="heads_up_blacklist_title">Liste noire</string>
     <string name="heads_up_disabled_notice">Pour permettre aux applications d\'afficher des notifications interactives dans une fenêtre contextuel sur votre écran, activer les notifications flottantes.</string>
-
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Temporisation</string>
@@ -491,4 +490,5 @@
     
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Fond d\'écran du verrouillage de l\'écran</string>
+
 </resources>
