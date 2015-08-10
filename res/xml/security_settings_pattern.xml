@@ -50,6 +50,12 @@
             android:title="@string/double_tap_sleep_anywhere_title"
             android:summary="@string/double_tap_sleep_anywhere_summary"/>
 
+	<SwitchPreference
+	        android:key="block_on_secure_keyguard"
+	        android:title="@string/block_on_secure_keyguard_title"
+	        android:summary="@string/block_on_secure_keyguard_summary"
+	        android:persistent="false" />
+
     	<com.android.settings.chroma.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"
             android:title="@string/lockscreen_enable_power_menu_title"
@@ -64,9 +70,4 @@
 
     </PreferenceCategory>
 
-	<SwitchPreference
-	        android:key="block_on_secure_keyguard"
-	        android:title="@string/block_on_secure_keyguard_title"
-	        android:summary="@string/block_on_secure_keyguard_summary"
-	        android:persistent="false" />
 </PreferenceScreen>

@@ -52,6 +52,12 @@
             android:key="power_button_instantly_locks"
             android:title="@string/lockpattern_settings_enable_power_button_instantly_locks"/>
 
+	<SwitchPreference
+	        android:key="block_on_secure_keyguard"
+	        android:title="@string/block_on_secure_keyguard_title"
+	        android:summary="@string/block_on_secure_keyguard_summary"
+	        android:persistent="false" />
+
 	    <com.android.settings.chroma.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"
             android:title="@string/lockscreen_enable_power_menu_title"
@@ -65,11 +71,5 @@
             android:summary="@string/owner_info_settings_summary"/>
 
     </PreferenceCategory>
-
-	<SwitchPreference
-	        android:key="block_on_secure_keyguard"
-	        android:title="@string/block_on_secure_keyguard_title"
-	        android:summary="@string/block_on_secure_keyguard_summary"
-	        android:persistent="false" />
 
 </PreferenceScreen>
