@@ -17,11 +17,13 @@
     <string name="chroma_menu_about">关于 Chroma</string>
     <string name="status_bar_screen_title">状态栏</string>
     <string name="navigation_bar_screen_title">导航栏</string>
+    <string name="lockscreen_title">锁屏界面</string>
     <string name="power_menu_title">电源菜单</string>
     <string name="volume_rocker_screen_title">音量键唤醒</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">电池和时钟选项</string>
+    <string name="display_category_lockscreen_options_title">锁屏选项</string>
     <string name="display_category_navbar_options_title">导航栏选项</string>
     <string name="display_category_navring_options_title">导航环选项</string>
     <string name="display_category_statusbar_options_title">状态栏选项</string>
@@ -298,7 +300,7 @@
 
     <!-- Battery light settings -->
     <string name="battery_light_title">电池指示灯</string>
-    <string name="battery_low_pulse_title">电量低是闪烁</string>
+    <string name="battery_low_pulse_title">电量低时闪烁</string>
     <string name="battery_light_list_title">颜色</string>
     <string name="battery_light_low_color_title">电量低</string>
     <string name="battery_light_medium_color_title">正在充电</string>
