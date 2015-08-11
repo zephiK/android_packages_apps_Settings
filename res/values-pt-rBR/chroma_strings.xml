@@ -6,16 +6,16 @@
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Data da criação</string>
+    <string name="build_date">Data de criação</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Opções da Chroma ROM</string>
-    <string name="chroma_menu_about">Sobre a Chroma ROM</string>
-    <string name="status_bar_screen_title">Barra de Status</string>
+    <string name="chroma_menu_personalizaton">Opções da Chroma</string>
+    <string name="chroma_menu_about">Sobre a Chroma</string>
+    <string name="status_bar_screen_title">Barra de status</string>
     <string name="navigation_bar_screen_title">Barra de navegação</string>
     <string name="power_menu_title">Menu de energia</string>
     <string name="volume_rocker_screen_title">Botão de volume</string>
@@ -24,7 +24,7 @@
     <string name="display_category_batteryclock_options_title">Opções de bateria e relógio</string>
     <string name="display_category_navbar_options_title">Opções da barra de navegação</string>
     <string name="display_category_navring_options_title">Opção do toque de navegação</string>
-    <string name="display_category_statusbar_options_title">Opções da Status bar</string>
+    <string name="display_category_statusbar_options_title">Opções da barra de status</string>
     <string name="display_category_recents_options_title">Opções dos aplicativos recentes</string>
     <string name="display_category_power_options_title">Opções do menu de energia</string>
     <string name="volume_rocker_other_title">Outros</string>
@@ -33,7 +33,7 @@
     <string name="navigation_bar_title">Barra de navegação</string>
 
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Altura da barra de Navegação</string>
+    <string name="navigation_bar_height">Altura da barra de navegação</string>
     <string name="navigation_bar_height_48">48dp (Padrão)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
@@ -45,23 +45,23 @@
     <string name="navigation_bar_height_0">0dp (Oculto)</string>
 
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Controle de cursor da tecla de volume</string>
+    <string name="volume_key_cursor_control_title">Controle de cursor da tecla volume</string>
     <string name="volume_key_cursor_control_off">Desabilitado</string>
     <string name="volume_key_cursor_control_on">Volume para cima/baixo move o cursor para a esquerda/direita</string>
     <string name="volume_key_cursor_control_on_reverse">Volume para cima/baixo move o cursor para a direita/esquerda</string>
 
     <!-- Volume adjust sound -->
-    <string name="volume_key_adjust_sound_title">Som de ajuste da tecla de volume</string>
+    <string name="volume_key_adjust_sound_title">Som de ajuste da tecla volume</string>
     <string name="volume_key_adjust_sound_summary">Reproduzir som ao ajustar o volume com teclas de volume</string>
 
     <!-- Developer options - kill app long press back -->
-    <string name="kill_app_longpress_back">Botão voltar encerra app</string>
+    <string name="kill_app_longpress_back">Botão voltar encerra aplicativo</string>
     <string name="kill_app_longpress_back_summary">Encerra o aplicativo de primeiro plano se a tecla voltar for pressionada por longo tempo</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Tráfego de rede</string>
-    <string name="show_network_traffic_state">Monitor de tráfego da status bar</string>
-    <string name="network_traffic_summary">Habilita várias opções de tráfego de rede na status bar</string>
+    <string name="show_network_traffic_state">Monitor de tráfego da barra de status</string>
+    <string name="network_traffic_summary">Habilita várias opções de tráfego de rede na barra de status</string>
     <string name="show_network_traffic_unit">Unidade de exibição</string>
     <string name="show_network_traffic_frequency">Intervalo de atualização</string>
     <string name="show_network_traffic_disable">Desabilitado</string>
@@ -100,10 +100,10 @@
     <string name="display_rotation_270_title">270 graus</string>
 
     <!-- Recents panel settings -->
-    <string name="recents_panel_settings">Configurações do painel de aplicativos recentes</string>
-    <string name="show_clear_all_recents_button_title">Botão de limpar todos aplicativos recentes</string>
-    <string name="show_clear_all_recents_button_summary">Mostrar botão "limpar tudo" no painel de aplicativos recentes</string>
-    <string name="recents_clear_all_location_title">Localização do botão de limpar todos aplicativos recentes</string>
+    <string name="recents_panel_settings">Configurações do painel apps recentes</string>
+    <string name="show_clear_all_recents_button_title">Botão limpar todos apps recentes</string>
+    <string name="show_clear_all_recents_button_summary">Mostrar botão "limpar tudo" no painel aplicativos recentes</string>
+    <string name="recents_clear_all_location_title">Localização do botão limpar apps recentes</string>
     <string name="recents_clear_all_location_top_right">Canto superior direito</string>
     <string name="recents_clear_all_location_top_left">canto superior esquerdo</string>
     <string name="recents_clear_all_location_top_center">Centro superior</string>
@@ -125,9 +125,9 @@
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Opções de despertar</string>
-    <string name="pref_volume_wake_title">Botão de volume acende a tela do dispositivo</string>
-    <string name="pref_volume_wake_summary">Pressionando o botão de volume para cima/baixo acende a tela do dispositivo</string>
-    <string name="wakeup_when_plugged_unplugged_title">Desperta na carga</string>
+    <string name="pref_volume_wake_title">Botão volume acende tela do dispositivo</string>
+    <string name="pref_volume_wake_summary">Pressionando o botão volume para cima/baixo acende a tela do dispositivo</string>
+    <string name="wakeup_when_plugged_unplugged_title">Despertar na carga</string>
     <string name="wakeup_when_plugged_unplugged_summary">Liga a tela do dispositivo se o carregador estiver ligado/desligado.</string>
 
     <!-- Status bar double-tap to sleep -->
@@ -192,14 +192,14 @@
     <string name="clock_date_format_custom">Formato personalizado</string>
 
     <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="title_quick_pulldown">Acesso as configurações rápidas</string>
     <string name="summary_quick_pulldown">Borda %1$s da barra de status puxa para baixo</string>
     <string name="quick_pulldown_off">Desligado</string>
     <string name="quick_pulldown_left">Esquerdo</string>
     <string name="quick_pulldown_right">Direito</string>
 
     <!-- Volume rocker music seek options -->
-    <string name="volbtn_music_controls_title">Botão de volume controla música</string>
+    <string name="volbtn_music_controls_title">Botão volume controla música</string>
     <string name="volbtn_music_controls_summary">Quando a tela estiver desligada os botões de volume se mantiverem pressionados vão procurar faixas de música</string>
     <string name="volume_button_toggle_info">Acordar com botões de volume precisa estar desativado</string>
 
@@ -221,7 +221,7 @@
     <string name="status_bar_battery_percentage_title">Porcetagem da bateria</string>
     <string name="status_bar_battery_percentage_default">Oculto (Padrão)</string>
     <string name="status_bar_battery_percentage_text_inside">Dentro do ícone</string>
-    <string name="status_bar_battery_percentage_text_next">Proximo ao ícone</string>
+    <string name="status_bar_battery_percentage_text_next">Próximo ao ícone</string>
 
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
@@ -239,7 +239,7 @@
     <string name="weather_clock_title">Clima na Status bar</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Desativar barra de pesquisa do google no menu de aplicativos recentes</string>
+    <string name="recents_show_searchbar">Desativar barra de pesquisa do google no menu de apps recentes</string>
     <string name="recents_show_searchbar_summary">Ativar ou desativar a barra de pesquisa do google no menu de aplicativos recentes</string>
 
     <!-- QS tiles -->
@@ -273,7 +273,7 @@
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Mostrar controle de brilho deslizante</string>
-    <string name="qs_brightness_slider_summary">Mostrar uma barra de brilho no painel de configurações rápidas</string>
+    <string name="qs_brightness_slider_summary">Mostrar uma barra de brilho no painel configurações rápidas</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Editar configurações de luz</string>
@@ -297,8 +297,8 @@
     <string name="pulse_speed_very_slow">Muito lento</string>
 
     <!-- Battery light settings -->
-    <string name="battery_light_title">Luz da bateria</string>
-    <string name="battery_low_pulse_title">Pulso da bateria baixa</string>
+    <string name="battery_light_title">Luz de bateria</string>
+    <string name="battery_low_pulse_title">Pulso de bateria baixa</string>
     <string name="battery_light_list_title">Cores</string>
     <string name="battery_light_low_color_title">Bateria baixa</string>
     <string name="battery_light_medium_color_title">Carregando</string>
@@ -325,15 +325,15 @@
     <string name="navigation_bar_reset_message">Excluir configurações atuais e restaurar o layout padrão?</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Toque duas vezes para apagar a tela em qualquer lugar</string>
-    <string name="double_tap_sleep_anywhere_summary">Toque duas vezes em qualquer lugar na tela de bloqueio para apagar a tela do dispositivo</string>
+    <string name="double_tap_sleep_anywhere_title">Toque duas vezes para apagar tela em qualquer lugar</string>
+    <string name="double_tap_sleep_anywhere_summary">Toque duas vezes em qualquer lugar na tela de bloqueio para apagar tela do dispositivo</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Toque duas vezes para apagar a tela</string>
-    <string name="double_tap_sleep_nav_bar_summary">Duplo toque na barra de navegação para apagar a tela do aparelho</string>
+    <string name="double_tap_sleep_nav_bar_title">Toque duas vezes para apagar tela</string>
+    <string name="double_tap_sleep_nav_bar_summary">Duplo toque na barra de navegação para apagar tela do aparelho</string>
 
      <!-- Power menu -->
-    <string name="power_menu_reboot_title">Menu de Reboot</string>
+    <string name="power_menu_reboot_title">Menu de reinicialização</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_airplane_title">Modo avião</string>
     <string name="power_menu_users_title">Trocar de usuário</string>
@@ -344,7 +344,7 @@
     <string name="power_menu_bug_report_disabled">Relatório de erro está desativado nas configurações de desenvolvimento</string>
 
     <!-- Linked / unlinked notification volume -->
-    <string name="link_volume_option_title">Unir volume de toque e notificação</string>
+    <string name="link_volume_option_title">Combinar volume de toque e notificação</string>
     <string name="notification_volume_option_title">Volume de notificação</string>
     <string name="ring_notification_volume_option_tile">Volume de toque e notificação</string>
 
@@ -365,7 +365,7 @@
     <string name="heads_up_disabled_notice">Para permitir que os aplicativos exibam notificações interativas em uma janela pop-up na tela, habilitar heads up.</string>
 
     <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Time out</string>
+    <string name="heads_up_time_out_title">Duração</string>
     <string name="heads_up_time_out_summary">Notificações serão mostradas por <xliff:g id="number">%d</xliff:g> segundos</string>
     <string name="heads_up_time_out_never_summary">Notificações serão exibidas até que ela seja retirada manualmente</string>
     <string name="heads_up_time_out_2sec">2 segundos</string>
@@ -376,10 +376,10 @@
     <string name="heads_up_time_out_never">Nunca</string>
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-    <string name="bluetooth_accept_all_files">Aceitar todos os tipos de arquivo</string>
+    <string name="bluetooth_accept_all_files">Aceitar todos os tipos de arquivos</string>
 
     <!--Power menu -->
-    <string name="lockscreen_enable_power_menu_title">Mostrar menu de energia na tela de bloqueio</string>
+    <string name="lockscreen_enable_power_menu_title">Menu de energia na tela de bloqueio</string>
     <string name="lockscreen_enable_power_menu_summary">Esta opção irá desativar o menu de energia em telas de bloqueio seguros</string>
 
     <!-- Quick settings disable on lockscreen -->
@@ -392,10 +392,10 @@
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Ativar privacy guard?</string>
-    <string name="privacy_guard_enable_dlg_text">Quando o privacy guard é habilitado,%s não será capaz de acessar dados pessoais, como contatos, mensagens, localização ou registros de chamadas.</string>
+    <string name="privacy_guard_enable_dlg_text">Quando o privacy guard estiver habilitado, o app %s não será capaz de acessar dados pessoais, como contatos, mensagens, localização ou registros de chamadas.</string>
     <string name="privacy_guard_enable_dlg_system_app_text">Ao ativar o privacy guard para o built-in app %s, o aplicativo não será capaz de acessar os dados pessoais, tais como contatos, mensagens, localização ou registros de chamadas. Isso pode causar outros aplicativos a se comportar mal.</string>
     <string name="privacy_guard_default_title">Habilitado por padrão</string>
-    <string name="privacy_guard_default_summary">Não acessar a dados pessoais por padrão para aplicativos recém-instalados</string>
+    <string name="privacy_guard_default_summary">Não acessar dados pessoais por padrão para aplicativos recém-instalados</string>
     <string name="privacy_guard_notification_title">Notificação</string>
     <string name="privacy_guard_notifiation_summary">Mostrar notificação se o privacy guard estiver ativo</string>
     <string name="privacy_guard_manager_title">Privacy guard</string>
@@ -425,13 +425,13 @@
     <string name="blacklist_notify">Mostrar notificação</string>
     <string name="blacklist_private_numbers_title">Números privados</string>
     <string name="blacklist_private_numbers_summary_disabled">Não bloquear chamadas de números privados</string>
-    <string name="blacklist_private_numbers_summary">Bloquear ligações <xliff:g id="type">%s</xliff:g> a partir de números privados</string>
-    <string name="blacklist_unknown_numbers_title">Números desconhecido</string>
+    <string name="blacklist_private_numbers_summary">Bloquear <xliff:g id="type">%s</xliff:g> a partir de números privados</string>
+    <string name="blacklist_unknown_numbers_title">Números desconhecidos</string>
     <string name="blacklist_unknown_numbers_summary_disabled">Não bloquear chamadas ou mensagens de números que não estão na lista de contatos</string>
-    <string name="blacklist_unknown_numbers_summary">Bloquear ligações <xliff:g id="type">%s</xliff:g> de números que não estão na lista de contatos</string>
-    <string name="blacklist_summary_type_calls_only">Chamadas</string>
-    <string name="blacklist_summary_type_messages_only">Mensagens</string>
-    <string name="blacklist_summary_type_calls_and_messages">Chamadas e ligações</string>
+    <string name="blacklist_unknown_numbers_summary">Bloquear <xliff:g id="type">%s</xliff:g> de números que não estão na lista de contatos</string>
+    <string name="blacklist_summary_type_calls_only"cChamadas</string>
+    <string name="blacklist_summary_type_messages_only">mensagens</string>
+    <string name="blacklist_summary_type_calls_and_messages">chamadas e ligações</string>
     <string name="blacklist_regex_title">Usar wildcards</string>
     <string name="blacklist_regex_summary">Use . como um curinga e * para a repetição. Por exemplo 123.* bloqueia números começados por 123 e .*123.* Os números contendo 123 serão bloqueados</string>
     <string name="blacklist_policy_block_calls">Bloquear chamadas recebidas</string>
@@ -451,7 +451,7 @@
     <string name="app_notification_no_ongoing_on_keyguard_summary">Nunca mostrar notificações em curso a partir deste aplicativo na tela de bloqueio</string>
  
     <!-- Navigation bar cursor -->
-    <string name="navigation_bar_arrow_keys_title">Mostrar teclas de setas durante a digitação</string>
+    <string name="navigation_bar_arrow_keys_title">Mostrar teclas de setas durante digitação</string>
     <string name="navigation_bar_arrow_keys_summary">Exibição do cursor esquerdo e direito durante a digitação. Substitui IME switcher.</string>
 	
   <!-- Navigation ring shortcuts -->
@@ -487,7 +487,7 @@
     <string name="lockscreen_choose_action_title">Escolher ação</string>
 
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Papel de parede da tela de bloqueio</string>
+    <string name="lockscreen_wallpaper_title">Papel de parede</string>
 
 </resources>
 
