@@ -273,7 +273,6 @@
     <string name="qs_tile_heads_up">Heads up</string>
     <string name="qs_battery_saver_tile">Battery saver</string>
     <string name="qs_expanded_desktop_tile">Expanded desktop</string>
-    <string name="qs_screen_off_tile">Screen off</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>

@@ -315,8 +315,8 @@ public class SettingsActivity extends Activity
     	    HeadsUpSettings.class.getName(),
             BlacklistSettings.class.getName(),
      	    QSTiles.class.getName(),
-            WifiCallingSettings.class.getName(),
-            ExpandedDesktopPreferenceFragment.class.getName()
+            ExpandedDesktopPreferenceFragment.class.getName(),
+            WifiCallingSettings.class.getName()
     };
 
 
