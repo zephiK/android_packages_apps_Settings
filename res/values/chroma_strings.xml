@@ -489,9 +489,9 @@
     <string name="lockscreen_choose_action_title">Choose action</string>
 
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Lockscreen wallpaper</string>
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
     <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
     <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
-    <string name="reset_lockscreen_wallpaper">Lockscreen cleared</string>
+    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
 
 </resources>
