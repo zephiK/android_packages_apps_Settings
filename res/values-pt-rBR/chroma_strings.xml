@@ -236,10 +236,10 @@
      <!--- Lock clock -->
     <string name="lock_clock_title">Widget de relógio</string>
     <string name="lock_clock_summary">Exibir ou alterar a forma como o Widget \'cLock\' será exibido</string>
-    <string name="weather_clock_title">Clima na Status bar</string>
+    <string name="weather_clock_title">Clima na barra de status</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Desativar barra de pesquisa do google no menu de apps recentes</string>
+    <string name="recents_show_searchbar">Barra de pesquisa em apps recentes</string>
     <string name="recents_show_searchbar_summary">Ativar ou desativar a barra de pesquisa do google no menu de aplicativos recentes</string>
 
     <!-- QS tiles -->
@@ -429,7 +429,7 @@
     <string name="blacklist_unknown_numbers_title">Números desconhecidos</string>
     <string name="blacklist_unknown_numbers_summary_disabled">Não bloquear chamadas ou mensagens de números que não estão na lista de contatos</string>
     <string name="blacklist_unknown_numbers_summary">Bloquear <xliff:g id="type">%s</xliff:g> de números que não estão na lista de contatos</string>
-    <string name="blacklist_summary_type_calls_only">Chamadas</string>
+    <string name="blacklist_summary_type_calls_only">chamadas</string>
     <string name="blacklist_summary_type_messages_only">mensagens</string>
     <string name="blacklist_summary_type_calls_and_messages">chamadas e ligações</string>
     <string name="blacklist_regex_title">Usar wildcards</string>
@@ -487,10 +487,10 @@
     <string name="lockscreen_choose_action_title">Escolher ação</string>
 
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Wallpaper</string>
-    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
-    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
-    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
+    <string name="lockscreen_wallpaper_title">Papel de parede</string>
+    <string name="lockscreen_wallpaper_set_title">Definir papel de parede</string>
+    <string name="lockscreen_wallpaper_clear_title">Remover papel de parede</string>
+    <string name="reset_lockscreen_wallpaper">Papel de parede removido com sucesso</string>
 
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Área de trabalho expandida</string>
