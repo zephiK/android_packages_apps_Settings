@@ -490,10 +490,10 @@
     <string name="lockscreen_choose_action_title">Choisir une action</string>
     
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Wallpaper</string>
-    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
-    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
-    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
+    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
+    <string name="lockscreen_wallpaper_set_title">Définir le fond du verrouillage de l\'écran</string>
+    <string name="lockscreen_wallpaper_clear_title">Effacer le fond du verrouillage de l\'écran</string>
+    <string name="reset_lockscreen_wallpaper">Fond d\'écran du verrouillage supprimé</string>
 
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Bureau étendu</string>
