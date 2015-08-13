@@ -270,6 +270,7 @@
     <string name="qs_screenshot_tile">Скриншот</string>
     <string name="qs_tile_heads_up">Всплывающие уведомления</string>
     <string name="qs_battery_saver_tile">Энергосбережение</string>
+    <string name="qs_expanded_desktop_tile">Расширенный экран</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Показывать слайдер яркости</string>
@@ -487,6 +488,21 @@
     <string name="lockscreen_choose_action_title">Выберите действие</string>
 
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Обои экрана блокировки</string>
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
+    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
+    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
+    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Расширенный экран</string>
+    <string name="expanded_hide_nothing">Ничего не скрывать</string>
+    <string name="expanded_hide_status">Скрыть строку состояния</string>
+    <string name="expanded_hide_navigation">Скрыть панель навигации</string>
+    <string name="expanded_hide_both">Скрыть оба</string>
+    <string name="expanded_nothing_to_show">Для настройки параметров расширенного экрана для отдельных приложений, переведите переключатель «Включено для всех» в отключенное состояние.</string>
+    <string name="expanded_enabled_for_all">Включено для всех</string>
+    <string name="expanded_desktop_style">Стиль расширенного экрана</string>
+    <string name="expanded_desktop_style_description">Выбрать режим расширенного экрана по умолчанию</string>
+    <string name="expanded_desktop_title">Настройки расширенного экрана</string>
 
 </resources>

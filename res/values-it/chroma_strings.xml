@@ -287,6 +287,7 @@
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_tile_heads_up">Heads up</string>
     <string name="qs_battery_saver_tile">Risparmio batteria</string>
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Slider luminosità</string>
@@ -497,4 +498,23 @@
     <string name="lockscreen_none_target">Nessuna</string>
     <string name="lockscreen_message">Tocca un\'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
     <string name="lockscreen_choose_action_title">Sceglia azione</string>
+
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Wallpaper</string>
+    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
+    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
+    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Desktop esteso</string>
+    <string name="expanded_hide_nothing">Non nascondere nulla</string>
+    <string name="expanded_hide_status">Nascondi la barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi la barra di navigazione</string>
+    <string name="expanded_hide_both">Nascondi entrambi</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata di schermo esteso per ogni app, disattiva \"Attivo per tutti\"</string>
+    <string name="expanded_enabled_for_all">Attivo per tutti</string>
+    <string name="expanded_desktop_style">Stile desktop esteso</string>
+    <string name="expanded_desktop_style_description">Seleziona lo stile predefinito del desktop esteso</string>
+    <string name="expanded_desktop_title">Opzioni desktop esteso</string>
+
 </resources>
