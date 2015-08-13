@@ -429,7 +429,7 @@
     <string name="blacklist_unknown_numbers_title">Números desconhecidos</string>
     <string name="blacklist_unknown_numbers_summary_disabled">Não bloquear chamadas ou mensagens de números que não estão na lista de contatos</string>
     <string name="blacklist_unknown_numbers_summary">Bloquear <xliff:g id="type">%s</xliff:g> de números que não estão na lista de contatos</string>
-    <string name="blacklist_summary_type_calls_only"cChamadas</string>
+    <string name="blacklist_summary_type_calls_only">Chamadas</string>
     <string name="blacklist_summary_type_messages_only">mensagens</string>
     <string name="blacklist_summary_type_calls_and_messages">chamadas e ligações</string>
     <string name="blacklist_regex_title">Usar wildcards</string>
