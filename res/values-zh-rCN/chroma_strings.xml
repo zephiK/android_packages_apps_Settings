@@ -486,7 +486,20 @@
     <string name="lockscreen_message">点击左侧或右侧的图标来重新设置锁屏快捷方式</string>
     <string name="lockscreen_choose_action_title">选择活动</string>
 
-    <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">锁屏壁纸</string>
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">扩展桌面</string>
+    <string name="expanded_hide_nothing">不隐藏</string>
+    <string name="expanded_hide_status">隐藏状态栏</string>
+    <string name="expanded_hide_navigation">隐藏导航栏</string>
+    <string name="expanded_hide_both">同时隐藏</string>
+    <string name="expanded_nothing_to_show">要添加一个为单个应用配置的扩展状态，请关闭 “全部开启”</string>
+    <string name="expanded_enabled_for_all">为全部应用启用</string>
+    <string name="expanded_desktop_style">扩展桌面样式</string>
+    <string name="expanded_desktop_style_description">选择一个默认的扩展桌面样式</string>
+    <string name="expanded_desktop_title">扩展桌面选项</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">三指截屏</string>
+    <string name="three_finger_gesture_summary">从上至下滑动三根手指截屏</string>
 
 </resources>
