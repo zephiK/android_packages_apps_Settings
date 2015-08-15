@@ -82,13 +82,6 @@
                 settings:keywords="@string/keywords_display_cast_screen"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
 
-        <!-- Three-fingers-swipe to screenshot -->
-        <com.android.settings.chroma.SystemSettingSwitchPreference
-                android:key="three_finger_gesture"
-                android:title="@string/three_finger_gesture"
-                android:summary="@string/three_finger_gesture_summary"
-                android:defaultValue="true" />
-
 	<PreferenceCategory
              android:key="category_wakeup_options"
              android:title="@string/display_category_wakeup_options_title" >

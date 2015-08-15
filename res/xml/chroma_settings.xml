@@ -23,6 +23,11 @@
         android:title="@string/navigation_bar_screen_title" />
 
     <PreferenceScreen
+        android:fragment="com.android.settings.chroma.GestureSettings"
+        android:key="gestures_general_category"
+        android:title="@string/gestures_title" />
+
+    <PreferenceScreen
         android:fragment="com.android.settings.chroma.LockScreenSettings"
         android:key="lock_screen_general_category"
         android:title="@string/lockscreen_title" />

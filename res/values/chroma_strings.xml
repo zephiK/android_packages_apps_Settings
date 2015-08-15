@@ -17,6 +17,7 @@
     <string name="chroma_menu_about">About Chroma</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
@@ -29,6 +30,7 @@
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <string name="display_category_recents_options_title">Recent apps options</string>
     <string name="display_category_power_options_title">Power menu options</string>
+    <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="volume_rocker_other_title">Miscellaneous</string>
 
     <!-- Navigation Bar -->
@@ -133,8 +135,8 @@
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Enable or disable to toggle double-tap to sleep on status bar</string>
+    <string name="status_bar_double_tap_to_sleep_title">Status bar</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
@@ -328,11 +330,11 @@
     <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Double-tap to sleep anywhere</string>
+    <string name="double_tap_sleep_anywhere_title">Lock screen</string>
     <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Double-tap to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
 
      <!-- Power menu -->
@@ -511,5 +513,5 @@
 
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Three finger gesture</string>
-    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers down to take a screenshot</string>
 </resources>
