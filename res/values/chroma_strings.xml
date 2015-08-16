@@ -2,43 +2,43 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_chroma">Personalization</string>
+    <string name="header_category_chroma">Personalisieren</string>
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Chroma build date</string>
+    <string name="build_date">Chroma Erstelldatum</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Chroma options</string>
-    <string name="chroma_menu_about">About Chroma</string>
+    <string name="chroma_menu_personalizaton">Chroma Optionen</string>
+    <string name="chroma_menu_about">Über Chroma</string>
     <string name="status_bar_screen_title">Statusleiste</string>
-    <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="navigation_bar_screen_title">Navigationleiste</string>
     <string name="gestures_title">Gestures</string>
-    <string name="lockscreen_title">Lock screen</string>
-    <string name="power_menu_title">Power menu</string>
-    <string name="volume_rocker_screen_title">Volume rocker</string>
+    <string name="lockscreen_title">Sperrbildschirm</string>
+    <string name="power_menu_title">Powermenü</string>
+    <string name="volume_rocker_screen_title">Lautstärkewippe</string>
 
     <!-- Chroma categories -->
-    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
-    <string name="display_category_lockscreen_options_title">Lockscreen options</string>
-    <string name="display_category_navbar_options_title">Navigation bar options</string>
-    <string name="display_category_navring_options_title">Navigation ring options</string>
+    <string name="display_category_batteryclock_options_title">Batterie- und Uhroptionen</string>
+    <string name="display_category_lockscreen_options_title">Sperrbildschirmoptionen</string>
+    <string name="display_category_navbar_options_title">Navigationleistenoptionen</string>
+    <string name="display_category_navring_options_title">Navigationringoptionen</string>
     <string name="display_category_statusbar_options_title">Statusleistenoption</string>
     <string name="display_category_recents_options_title">Recent apps options</string>
-    <string name="display_category_power_options_title">Power menu options</string>
-    <string name="display_category_dtts_title">Double tap to sleep</string>
-    <string name="volume_rocker_other_title">Miscellaneous</string>
+    <string name="display_category_power_options_title">Powermenüoptionen</string>
+    <string name="display_category_dtts_title">Doppeltippen zum schlafen</string>
+    <string name="volume_rocker_other_title">Verschiedenes</string>
 
     <!-- Navigation Bar -->
-    <string name="navigation_bar_title">Navigation bar</string>
+    <string name="navigation_bar_title">Navigationsleiste</string>
 
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Navigation bar height</string>
-    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height">Navigationsleistenhöhe</string>
+    <string name="navigation_bar_height_48">48dp (standart)</string>
     <string name="navigation_bar_height_44">44dp</string>
     <string name="navigation_bar_height_40">40dp</string>
     <string name="navigation_bar_height_36">36dp</string>
@@ -46,41 +46,41 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
-    <string name="navigation_bar_height_0">0dp (hide)</string>
+    <string name="navigation_bar_height_0">0dp (versteckt)</string>
 
     <!--- Volume key cursor control -->
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
+    <string name="volume_key_cursor_control_title">Lautstärketasten Cursorsteuerung</string>
+    <string name="volume_key_cursor_control_off">Deaktiviert</string>
+    <string name="volume_key_cursor_control_on">Lautstärke auf/ab bewegt den Cursor nach links/rechts</string>
+    <string name="volume_key_cursor_control_on_reverse">Lautstärke auf/ab bewegt den Cursor nach links/rechts</string>
 
     <!-- Volume adjust sound -->
-    <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
-    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
+    <string name="volume_key_adjust_sound_title">Einstellung Lautstärketastesound</string>
+    <string name="volume_key_adjust_sound_summary">Wiedergabesound beim einstellen der Lautstärke mit Lautstärketasten</string>
 
     <!-- Developer options - kill app long press back -->
     <string name="kill_app_longpress_back">Zurücktaste</string>
     <string name="kill_app_longpress_back_summary">Langes drücken der Zurücktaste beendet die App im Vordergrund</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic</string>
-    <string name="show_network_traffic_state">Status bar traffic monitor</string>
-    <string name="network_traffic_summary">Enable various network traffic options in statusbar</string>
-    <string name="show_network_traffic_unit">Display unit</string>
-    <string name="show_network_traffic_frequency">Update interval</string>
-    <string name="show_network_traffic_disable">Disabled</string>
-    <string name="show_network_traffic_up">Outgoing</string>
-    <string name="show_network_traffic_down">Incoming</string>
-    <string name="show_network_traffic_all">Outgoing and incoming</string>
-    <string name="show_network_traffic_bit">Bits per second</string>
-    <string name="show_network_traffic_byte">Bytes per second</string>
+    <string name="network_traffic_title">Netzwerkverkehr</string>
+    <string name="show_network_traffic_state">Anzeige des Netzwerkverkehr in der Statusleiste</string>
+    <string name="network_traffic_summary">Aktivieren verschiedener Netzwerkverkehroptionen in der Statusleiste</string>
+    <string name="show_network_traffic_unit">Anzeigeeinheit</string>
+    <string name="show_network_traffic_frequency">Aktualisierungsintervall</string>
+    <string name="show_network_traffic_disable">Deaktivieren</string>
+    <string name="show_network_traffic_up">Ausgehend</string>
+    <string name="show_network_traffic_down">Eingehend</string>
+    <string name="show_network_traffic_all">Ausgehend und Eingehend</string>
+    <string name="show_network_traffic_bit">Bits pro Sekunde</string>
+    <string name="show_network_traffic_byte">Bytes pro Sekunde</string>
     <string name="show_network_traffic_500">500 ms</string>
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
-    <string name="network_traffic_autohide">Auto hide</string>
-    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
-    <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
+    <string name="network_traffic_autohide">Automatisch im Hintergrund</string>
+    <string name="network_traffic_autohide_summary">Blendet die Anzeige aus, wenn keine aktivität</string>
+    <string name="network_traffic_autohide_threshold">Inaktivitätsschwelle</string> 
 
    <!-- Generic strings -->
     <string name="ok_string">OK</string>
