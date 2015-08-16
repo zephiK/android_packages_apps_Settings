@@ -17,18 +17,20 @@
     <string name="chroma_menu_about">À propos de la Chroma</string>
     <string name="status_bar_screen_title">Barre de statut</string>
     <string name="navigation_bar_screen_title">Barre de navigation</string>
-	<string name="lockscreen_title">Écran de verrouillage</string>
+    <string name="gestures_title">Gestes</string>
+    <string name="lockscreen_title">Écran de verrouillage</string>
     <string name="power_menu_title">Menu d\'alimentation</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Options de la batterie et de l\'horloge</string>
     <string name="display_category_navbar_options_title">Options de la barre de navigation</string>
-	<string name="display_category_lockscreen_options_title">Options de l\écran de verrouillage</string>
+    <string name="display_category_lockscreen_options_title">Options de l\écran de verrouillage</string>
     <string name="display_category_navring_options_title">Options des anneaux de navigation</string>
     <string name="display_category_statusbar_options_title">Options de la barre de statut</string>
     <string name="display_category_recents_options_title">Options des applications récentes</string>
     <string name="display_category_power_options_title">Options du menu d\'alimentation</string>
+    <string name="display_category_dtts_title">Taper deux fois pour mettre en veille</string>
     <string name="volume_rocker_other_title">Autres</string>
 
     <!-- Navigation Bar -->
@@ -133,7 +135,7 @@
     <string name="wakeup_when_plugged_unplugged_summary">Réveil l\'appareil si le chargeur est branché / débranché.</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Taper deux fois pour mettre en veille</string>
+    <string name="status_bar_double_tap_to_sleep_title">Barre de statut</string>
     <string name="status_bar_double_tap_to_sleep_summary">Taper deux fois dans la barre de statut pour mettre l\'appareil en veille</string>
 
     <!-- Status bar brightness control -->
@@ -328,12 +330,12 @@
     <string name="navigation_bar_reset_message">Supprimer les paramètres actuels et restaurer la configuration par défaut ?</string>
 
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Taper deux fois n\'importe où pour mettre en veille</string>
+    <string name="double_tap_sleep_anywhere_title">Écran de verrouillage</string>
     <string name="double_tap_sleep_anywhere_summary">Taper deux fois n\'importe où sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Taper deux fois pour mettre en veille</string>
-    <string name="double_tap_sleep_nav_bar_summary">Taper deux fois dans la barre de statut pour mettre l\'appareil en veille</string>
+    <string name="double_tap_sleep_nav_bar_title">Barre de navigation</string>
+    <string name="double_tap_sleep_nav_bar_summary">Taper deux fois dans la barre de navigation pour mettre l\'appareil en veille</string>
 
     <!-- Power menu -->
     <string name="power_menu_reboot_title">Menu de redémarrage</string>
@@ -508,4 +510,8 @@
     <string name="expanded_desktop_style">Style du bureau étendu</string>
     <string name="expanded_desktop_style_description">Choisir le style du bureau étendu par défaut</string>
     <string name="expanded_desktop_title">Options du bureau étendu</string>
+    
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Geste à trois doigts</string>
+    <string name="three_finger_gesture_summary">Glisser à trois doigts vers le bas pour prendre une capture d\'écran</string>
 </resources>
