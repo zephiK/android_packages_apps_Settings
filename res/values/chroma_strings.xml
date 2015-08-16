@@ -15,7 +15,7 @@
     <!-- Chroma Menu -->
     <string name="chroma_menu_personalizaton">Chroma options</string>
     <string name="chroma_menu_about">About Chroma</string>
-    <string name="status_bar_screen_title">Status bar</string>
+    <string name="status_bar_screen_title">Statusleiste</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock screen</string>
@@ -27,7 +27,7 @@
     <string name="display_category_lockscreen_options_title">Lockscreen options</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <string name="display_category_navring_options_title">Navigation ring options</string>
-    <string name="display_category_statusbar_options_title">Status bar options</string>
+    <string name="display_category_statusbar_options_title">Statusleistenoption</string>
     <string name="display_category_recents_options_title">Recent apps options</string>
     <string name="display_category_power_options_title">Power menu options</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
@@ -59,8 +59,8 @@
     <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
 
     <!-- Developer options - kill app long press back -->
-    <string name="kill_app_longpress_back">Kill app back button</string>
-    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+    <string name="kill_app_longpress_back">Zurücktaste</string>
+    <string name="kill_app_longpress_back_summary">Langes drücken der Zurücktaste beendet die App im Vordergrund</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
@@ -135,13 +135,13 @@
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Status bar</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_title">Statusleiste</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppeltippen in der Statusleiste lässt Smartphone einschlafen</string>
 
     <!-- Status bar brightness control -->
-    <string name="status_bar_toggle_brightness">Brightness control</string>
-    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across status bar</string>
-    <string name="status_bar_toggle_info">Automatic brightness must be disabled</string>
+    <string name="status_bar_toggle_brightness">Helligkeitsregler</string>
+    <string name="status_bar_toggle_brightness_summary">Einstellen der Helligkeit durch wischen in der Statusleiste</string>
+    <string name="status_bar_toggle_info">Automatische Helligkeit muss deaktiviert werden</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -163,37 +163,37 @@
     <string name="select_custom_activity_title">Select custom activity</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Clock &amp; date</string>
-    <string name="status_bar_clock_title">Clock &amp; date style</string>
-    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
-    <string name="clock_title_enable">Alignment</string>
-    <string name="clock_enabled">Enabled</string>
-    <string name="clock_disabled">Disabled</string>
-    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_clock">Uhr &amp; Datum</string>
+    <string name="status_bar_clock_title">Uhr- &amp; Datumsstil style</string>
+    <string name="status_bar_clock_summary">Wechsel verschiedene Uhr- &amp; Datumsoptionen</string> 
+    <string name="clock_title_enable">Ausrichtung</string>
+    <string name="clock_enabled">Aktivieren</string>
+    <string name="clock_disabled">Deaktivieren</string>
+    <string name="status_bar_show_clock_title">Zeige Uhr und Datum</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
-    <string name="enable_clock_weekday">Day of the week</string>
-    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="left_clock">Left clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="clock_date_display">Date</string>
-    <string name="clock_date_display_summary">Display custom date before the clock</string>
-    <string name="clock_date_style">Date style</string>
-    <string name="clock_date_format">Date format</string>
+    <string name="status_bar_am_pm_info">24-Std Uhr ist aktiviert</string>
+    <string name="enable_clock_weekday">Wochentag</string>
+    <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhr</string>
+    <string name="right_clock">Uhr rechts</string>
+    <string name="center_clock">Uhr mitte</string>
+    <string name="left_clock">Uhr links</string>
+    <string name="dont_show">nicht anzeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Benutzerdefinierte Anzeige vor der Uhr</string>
+    <string name="clock_date_style">Datumsstil</string>
+    <string name="clock_date_format">Datumsformagt</string>
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
-    <string name="am_pm_clock_normal">Normal font size</string>
-    <string name="am_pm_clock_small">Small font size</string>
-    <string name="am_pm_clock_none">Don\'t show</string>
-    <string name="clock_date_display_none">Don\'t show</string>
-    <string name="clock_date_display_small">Small font size</string>
-    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Kleine Schriftgöße</string>
+    <string name="am_pm_clock_none">Nicht Anzeigen</string>
+    <string name="clock_date_display_none">Nicht Anzeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgöße</string>
+    <string name="clock_date_display_normal">Noramle Schriftgröße</string>
     <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Lowercase</string>
-    <string name="clock_date_style_uppercase">Uppercase</string>
-    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="clock_date_style_lowercase">Kleinbuchstaben</string>
+    <string name="clock_date_style_uppercase">Großbuchstaben</string>
+    <string name="clock_date_format_custom">benutzerdefiniertes java format</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
@@ -208,34 +208,34 @@
     <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
 
     <!-- Show notification count -->
-    <string name="status_bar_notif_count_title">Show notification count</string>
-    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <string name="status_bar_notif_count_title">Benachrichtigungsanzahl anzeigen</string>
+    <string name="status_bar_notif_count_summary">Zeigt die Anzahl der anstehenden Meldungen</string>
 
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_title">Battery icons</string>
-    <string name="status_bar_battery_style_title">Battery status style</string>
-    <string name="status_bar_battery_summary">Change battery icons</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_title">Batteriesymbol</string>
+    <string name="status_bar_battery_style_title">Batteriestatusstil</string>
+    <string name="status_bar_battery_summary">Wechsel Batteriesymbol</string>
+    <string name="status_bar_battery_style_icon_portrait">Symbol stehend</string>
+    <string name="status_bar_battery_style_icon_landscape">Symbol liegend</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
     <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Hidden</string>
+    <string name="status_bar_battery_style_hidden">Versteckt</string>
 
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
-    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+    <string name="status_bar_battery_percentage_title">Batterie Prozent</string>
+    <string name="status_bar_battery_percentage_default">Versteckt (standart)</string>
+    <string name="status_bar_battery_percentage_text_inside">im Symbol</string>
+    <string name="status_bar_battery_percentage_text_next">>Neben dem Symbol</string>
 
     <!-- Screen security -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
-    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
-    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <string name="unlock_quick_unlock_control_title">Schnell entsperrenn</string>
+    <string name="unlock_quick_unlock_control_summary">Entsperrt automatisch, wenn die richtige PIN/Passwort eingegeben wurde</string>
+    <string name="unlock_scramble_pin_layout_title">Pinlayout wechselmn</string>
+    <string name="unlock_scramble_pin_layout_summary">Wechselt das Pinlayout nach entsperren des Gerätes</string>
 
     <!-- Weather in status bar -->
-    <string name="status_bar_show_weather_title">Show weather</string>
-    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
+    <string name="status_bar_show_weather_title">Zeige Wetter</string>
+    <string name="status_bar_show_weather_summary">Zeige das Wetter in der Statusleiste</string>
 
      <!--- Lock clock -->
     <string name="lock_clock_title">Clock widget</string>
