@@ -282,7 +282,7 @@
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Lichteinstellung bearbeiten</string>
-    <string name="pulse_speed_title">Pulslänge und Geschindigkeit</string>
+    <string name="pulse_speed_title">Pulslänge und Geschwindigkeit</string>
     <string name="default_time">Normal</string>
     <string name="custom_time">benutzerdefiniert</string>
     <string name="dialog_delete_title">Löschen</string>
@@ -321,32 +321,32 @@
     <string name="notification_light_voicemail_title">Sprackbox</string>
 
     <!-- Nav bar customization -->
-    <string name="navigation_bar_buttons">Buttons &amp; layout</string>
-    <string name="navigation_bar_settings_summary">Edit and rearrange navigation bar buttons</string>
-    <string name="navigation_bar_help_text">To get started tap the edit icon to unlock the navigation bar for editing.\n\nYou can tap an icon to change its shortcut, or long press an icon to re-arrange the layout.\n\nTap \'Save\' to commit your changes, or \'Restore defaults\' to reset the layout to default settings.</string>
-    <string name="navigation_restore_button_text">Restore\ndefaults</string>
-    <string name="navigation_edit_button_text">Edit</string>
-    <string name="navigation_save_button_text">Save</string>
-    <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
+    <string name="navigation_bar_buttons">Schaltflächen &amp; Gestaltung</string>
+    <string name="navigation_bar_settings_summary">Bearbeiten und neuordnen der Navigationsleistenschaltflächen</string>
+    <string name="navigation_bar_help_text">Um zubeginnen tippen Sie auf das Bearbeitungssymbol, um die Navigationsleiste freizuschalten.\n\nSie können ein Symbol antippen um das Kontext ändern oder langes drücken um das Symbol zuverschieben.\n\nDrücke \'Speichern\' um Ihre Änderungen zu übernehmen oder \'Standart wiederherstellen\' um das Layout auf die Standardeinstellungen zurückzusetzen.</string>
+    <string name="navigation_restore_button_text">Standart\nwiederherstellen</string>
+    <string name="navigation_edit_button_text">Bearbeiten</string>
+    <string name="navigation_save_button_text">Speichern</string>
+    <string name="navigation_bar_reset_message">Wollen Sie die aktuellen Einstellungen löschen und das Standard-Layout wiederherstellen?</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Lock screen</string>
-    <string name="double_tap_sleep_anywhere_summary">Double tap anywhere on the lockscreen to put the device to sleep</string>
+    <string name="double_tap_sleep_anywhere_title">Sperrbildschirm</string>
+    <string name="double_tap_sleep_anywhere_summary">Tippen Sie zweimal auf eine beliebige Stelle auf dem Sperrbildschirm um das Gerät in den Ruhezustand zubringen.</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_title">Navigationsleiste</string>
+    <string name="double_tap_sleep_nav_bar_summary">Tippen Sie zweimal auf die Navigationsleiste um das Gerät in den Ruhezustand zubringen.</string>
 
      <!-- Power menu -->
-    <string name="power_menu_reboot_title">Reboot menu</string>
+    <string name="power_menu_reboot_title">Neustartmenü</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
-    <string name="power_menu_airplane_title">Airplane mode</string>
-    <string name="power_menu_users_title">User switcher</string>
-    <string name="power_menu_settings_title">Settings shortcut</string>
+    <string name="power_menu_airplane_title">Flugzeugmodus</string>
+    <string name="power_menu_users_title">Benutzerkontenwechsel</string>
+    <string name="power_menu_settings_title">Einstellungsverknüpfung</string>
     <string name="power_menu_lockdown_title">Device lockdown</string>
-    <string name="power_menu_bug_report_title">Bug report</string>
+    <string name="power_menu_bug_report_title">Fehlerbericht</string>
     <string name="power_menu_sound_title">Sound panel</string>
-    <string name="power_menu_bug_report_disabled">Bug reporting is disabled in development settings</string>
+    <string name="power_menu_bug_report_disabled">Fehlerbericht wird in Entwicklungseinstellungen deaktiviert</string>
 
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Link ring and notification volumes</string>
@@ -359,37 +359,37 @@
     <string name="allow_lights_title">Allow notification lights</string>
 
     <!-- Heads Up -->
-    <string name="category_heads_up">Heads up notifications</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
+    <string name="category_heads_up">Heads up Benachrichtungen</string>
+    <string name="summary_heads_up_enabled">Pop-up Benachrichtigungen sind aktiviert</string>
+    <string name="summary_heads_up_disabled">Pop-up Benachrichtigungen sind deaktiviert</string>
+    <string name="add_heads_up_package">App hinzufügen</string>
+    <string name="add_heads_up_dnd_summary">Zeige keine Heads up in diesen Apps</string>
+    <string name="add_heads_up_blacklist_summary">Zeige keine Heads up in diesen Apps</string>
+    <string name="heads_up_dnd_title">Nicht stören</string>
     <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="heads_up_disabled_notice">To allow applications to display interactive notifications in a pop-up window on your screen, enable heads up.</string>
+    <string name="heads_up_disabled_notice">Damit Apps interaktive Benachrichtigungen in einem Popup-Fenster auf Ihrem Bildschirm anzeigen können, aktivieren Sie Heads-up.</string>
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Time out</string>
-    <string name="heads_up_time_out_summary">Notification will show for <xliff:g id="number">%d</xliff:g> seconds</string>
-    <string name="heads_up_time_out_never_summary">Notification will show until it is dismissed</string>
-    <string name="heads_up_time_out_2sec">2 seconds</string>
-    <string name="heads_up_time_out_4sec">4 seconds</string>
-    <string name="heads_up_time_out_6sec">6 seconds</string>
-    <string name="heads_up_time_out_8sec">8 seconds</string>
-    <string name="heads_up_time_out_10sec">10 seconds</string>
-    <string name="heads_up_time_out_never">Never</string>
+    <string name="heads_up_time_out_summary">Benachrichtigungen werden für <xliff:g id="number">%d</xliff:g> Sekunden angezeigt.</string>
+    <string name="heads_up_time_out_never_summary">Benachrichtigungen werden immer angezeigt bis sie weggewischt werden.</string>
+    <string name="heads_up_time_out_2sec">2 Sekunden</string>
+    <string name="heads_up_time_out_4sec">4 Sekunden</string>
+    <string name="heads_up_time_out_6sec">6 Sekunden</string>
+    <string name="heads_up_time_out_8sec">8 Sekunden</string>
+    <string name="heads_up_time_out_10sec">10 Sekunden</string>
+    <string name="heads_up_time_out_never">Immer</string>
 
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
-    <string name="bluetooth_accept_all_files">Accept all file types</string>
+    <string name="bluetooth_accept_all_files">Alle Dateitypen akzeptieren</string>
 
     <!--Power menu -->
-    <string name="lockscreen_enable_power_menu_title">Show power menu on lock screen</string>
-    <string name="lockscreen_enable_power_menu_summary">This option will disable the power menu on secure lock screens</string>
+    <string name="lockscreen_enable_power_menu_title">Zeigt das Powermenü auf dem Sperrbildschirm</string>
+    <string name="lockscreen_enable_power_menu_summary">Diese option deaktiviert das Powermenü auf gesicherten Sperrbildschirmen</string>
 
     <!-- Quick settings disable on lockscreen -->
-    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
+    <string name="block_on_secure_keyguard_title">Im Sperrbildschirm deaktiviert</string>
+    <string name="block_on_secure_keyguard_summary">Deaktiviert die Schnelleinstellungen auf dem Sperrbildschirm</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Reorient</string>
