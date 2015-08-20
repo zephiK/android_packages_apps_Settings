@@ -503,5 +503,11 @@
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">三指截屏</string>
     <string name="three_finger_gesture_summary">从上至下滑动三根手指截屏</string>
+    
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">壁纸</string>
+    <string name="lockscreen_wallpaper_set_title">更改锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_clear_title">删除锁屏壁纸</string>
+    <string name="reset_lockscreen_wallpaper">已删除锁屏壁纸</string>
 
 </resources>
