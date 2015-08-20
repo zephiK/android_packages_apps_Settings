@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- BUILD TWEAKS -->
-    <string name="header_category_chroma">Personalization</string>
+    <string name="header_category_chroma">Personalisation</string>
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
@@ -144,8 +144,8 @@
     <string name="status_bar_toggle_info">Automatic brightness must be disabled</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="dialog_color_picker">Colour Picker</string>
+    <string name="press_color_to_apply">Press on colour below to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -472,7 +472,7 @@
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for rebooting into recovery, bootloader or performing a soft reboot</string>
 
     <!-- Battery saver color -->
-    <string name="battery_saver_color_title">Warning color</string>
+    <string name="battery_saver_color_title">Warning colour</string>
     <string name="battery_saver_color_summary">Enable orange status and navigation bars when battery saver is activated</string>
  
     <!-- QuickSettings 4 columns -->
