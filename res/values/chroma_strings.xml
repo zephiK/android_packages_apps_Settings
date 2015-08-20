@@ -514,4 +514,6 @@
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Three finger gesture</string>
     <string name="three_finger_gesture_summary">Swipe three fingers down to take a screenshot</string>
+
+    <string name="quick_settings_reset_message">Reset quick settings tiles?</string>
 </resources>
