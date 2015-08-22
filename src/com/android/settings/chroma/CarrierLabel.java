@@ -76,10 +76,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
         mCarrierColor = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
         mCarrierColor.setOnPreferenceChangeListener(this);
-        mCarrierColor.setSummary(mCarrierColor.getSummaryText() + ColorPickerPreference.convertToARGB(Settings.System.getInt(resolver,
-                     Settings.System.STATUS_BAR_CARRIER_COLOR, mCarrierColor.getPrefDefault())));
-        mCarrierColor.setNewPreviewColor(Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER_COLOR, mCarrierColor.getPrefDefault()));
-        updatecolorpreview();
+        updatepreferences();
 
         if (TelephonyManager.getDefault().isMultiSimEnabled()) {
             prefSet.removePreference(mShowCarrierLabel);
@@ -105,7 +102,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 		ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mCarrierColor) {
             Settings.System.putInt(getActivity().getContentResolver(), Settings.System.STATUS_BAR_CARRIER_COLOR, (Integer) newValue);
-            preference.setSummary(((ColorPickerPreference) preference).getSummaryText() + ColorPickerPreference.convertToARGB((Integer) newValue));
             return true;
         } else if (preference == mShowCarrierLabel) {
             int showCarrierLabel = Integer.valueOf((String) newValue);
@@ -113,7 +109,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
             Settings.System.putInt(
                     resolver, Settings.System.STATUS_BAR_CARRIER, showCarrierLabel);
             mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
-            updatecolorpreview();
+            updatepreferences();
             return true;
          }
          return false;
@@ -122,17 +118,19 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public void onResume() {
         super.onResume();
-        updatecolorpreview();
+        updatepreferences();
     }
 
-    private void updatecolorpreview() {
+    private void updatepreferences() {
         boolean carrierlabel = Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.STATUS_BAR_CARRIER, 0) == 1;
+                    Settings.System.STATUS_BAR_CARRIER, 0) !=0;
 
         if (carrierlabel) {
-            mCarrierColor.setPreviewDim(true);
+            mCustomCarrierLabel.setEnabled(true);
+            mCarrierColor.setEnabled(true);
         } else {
-            mCarrierColor.setPreviewDim(false);
+            mCustomCarrierLabel.setEnabled(false);
+            mCarrierColor.setEnabled(false);
         }
     }
 

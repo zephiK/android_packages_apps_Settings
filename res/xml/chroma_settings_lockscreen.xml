@@ -19,6 +19,12 @@
         android:key="category_lockscreen_options"
         android:title="@string/display_category_lockscreen_options_title" >
 
+    <PreferenceScreen
+        android:fragment="com.android.settings.chroma.CarrierLabel"
+        android:key="carrier_options"
+        android:title="@string/carrier_options"
+        android:summary="@string/carrier_options_summary" />
+
 	<PreferenceScreen
  	    android:key="lockscreen_shortcuts_settings"
         android:fragment="com.android.settings.cyanogenmod.LockscreenShortcuts"
