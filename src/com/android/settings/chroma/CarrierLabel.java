@@ -42,21 +42,17 @@ import android.widget.EditText;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
-
 public class CarrierLabel extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "CarrierLabel";
 
     private static final String STATUS_BAR_CARRIER = "status_bar_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
-    private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
 
     private ListPreference mShowCarrierLabel;
     private PreferenceScreen mCustomCarrierLabel;
 
     private String mCustomCarrierLabelText;
-    private ColorPickerPreference mCarrierColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,8 +70,6 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         mShowCarrierLabel.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
 
-        mCarrierColor = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
-        mCarrierColor.setOnPreferenceChangeListener(this);
         updatepreferences();
 
         if (TelephonyManager.getDefault().isMultiSimEnabled()) {
@@ -100,10 +94,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 		ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mCarrierColor) {
-            Settings.System.putInt(getActivity().getContentResolver(), Settings.System.STATUS_BAR_CARRIER_COLOR, (Integer) newValue);
-            return true;
-        } else if (preference == mShowCarrierLabel) {
+        if (preference == mShowCarrierLabel) {
             int showCarrierLabel = Integer.valueOf((String) newValue);
             int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
             Settings.System.putInt(
@@ -127,10 +118,8 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
 
         if (carrierlabel) {
             mCustomCarrierLabel.setEnabled(true);
-            mCarrierColor.setEnabled(true);
         } else {
             mCustomCarrierLabel.setEnabled(false);
-            mCarrierColor.setEnabled(false);
         }
     }
 
