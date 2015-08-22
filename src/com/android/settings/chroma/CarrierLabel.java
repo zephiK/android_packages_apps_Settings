@@ -52,7 +52,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
 
-    private SwitchPreference mStatusBarCarrier;
+    private ListPreference mShowCarrierLabel;
     private PreferenceScreen mCustomCarrierLabel;
 
     private String mCustomCarrierLabelText;
@@ -67,9 +67,11 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        mStatusBarCarrier = (SwitchPreference) prefSet.findPreference(STATUS_BAR_CARRIER);
-        mStatusBarCarrier.setChecked((Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 0) == 1));
-        mStatusBarCarrier.setOnPreferenceChangeListener(this);
+        mShowCarrierLabel = (ListPreference) findPreference(STATUS_BAR_CARRIER);
+        int showCarrierLabel = Settings.System.getInt(resolver, Settings.System.STATUS_BAR_CARRIER, 1);
+        mShowCarrierLabel.setValue(String.valueOf(showCarrierLabel));
+        mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntry());
+        mShowCarrierLabel.setOnPreferenceChangeListener(this);
         mCustomCarrierLabel = (PreferenceScreen) prefSet.findPreference(CUSTOM_CARRIER_LABEL);
 
         mCarrierColor = (ColorPickerPreference) findPreference(STATUS_BAR_CARRIER_COLOR);
@@ -80,7 +82,7 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
         updatecolorpreview();
 
         if (TelephonyManager.getDefault().isMultiSimEnabled()) {
-            prefSet.removePreference(mStatusBarCarrier);
+            prefSet.removePreference(mShowCarrierLabel);
             prefSet.removePreference(mCustomCarrierLabel);
         } else {
             updateCustomLabelTextSummary();
@@ -105,9 +107,12 @@ public class CarrierLabel extends SettingsPreferenceFragment implements OnPrefer
             Settings.System.putInt(getActivity().getContentResolver(), Settings.System.STATUS_BAR_CARRIER_COLOR, (Integer) newValue);
             preference.setSummary(((ColorPickerPreference) preference).getSummaryText() + ColorPickerPreference.convertToARGB((Integer) newValue));
             return true;
-        } else if (preference == mStatusBarCarrier) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver, Settings.System.STATUS_BAR_CARRIER, value ? 1 : 0);
+        } else if (preference == mShowCarrierLabel) {
+            int showCarrierLabel = Integer.valueOf((String) newValue);
+            int index = mShowCarrierLabel.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    resolver, Settings.System.STATUS_BAR_CARRIER, showCarrierLabel);
+            mShowCarrierLabel.setSummary(mShowCarrierLabel.getEntries()[index]);
             updatecolorpreview();
             return true;
          }
