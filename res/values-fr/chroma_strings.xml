@@ -20,7 +20,7 @@
     <string name="gestures_title">Gestes</string>
     <string name="lockscreen_title">Écran de verrouillage</string>
     <string name="power_menu_title">Menu d\'alimentation</string>
-    <string name="volume_rocker_screen_title">Volume rocker</string>
+    <string name="volume_rocker_screen_title">Contrôle du volume</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Options de la batterie et de l\'horloge</string>
@@ -235,7 +235,7 @@
 
     <!-- Weather in status bar -->
     <string name="status_bar_show_weather_title">Afficher la météo</string>
-    <string name="status_bar_show_weather_summary">Afficher la météo au-dessus du panneau de paramètre rapide</string>
+    <string name="status_bar_show_weather_summary">Afficher la météo dans le panneau des paramètres rapides</string>
 
      <!--- Lock clock -->
     <string name="lock_clock_title">Widget Horloge</string>
@@ -243,8 +243,8 @@
     <string name="weather_clock_title">Météo dans la barre de statut</string>
 
     <!-- Show/Hide Search Bar -->
-    <string name="recents_show_searchbar">Afficher la barre de recherche dans le menu des applications récentes</string>
-    <string name="recents_show_searchbar_summary">Désactiver la barre de recherche dans le menu récents</string>
+    <string name="recents_show_searchbar">Barre de recherche dans le panneau des applications récentes</string>
+    <string name="recents_show_searchbar_summary">Désactiver la barre de recherche dans le panneau récents</string>
 
     <!-- QS tiles -->
     <string name="qs_category_title">Paramètres rapides</string>
@@ -278,7 +278,7 @@
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Afficher le curseur de luminosité</string>
-    <string name="qs_brightness_slider_summary">Afficher un curseur de luminosité dans le panneau de paramètres rapide</string>
+    <string name="qs_brightness_slider_summary">Afficher le curseur de luminosité dans le panneau des paramètres rapides</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Modifier les paramètres lumineux</string>
@@ -354,7 +354,7 @@
     <string name="ring_notification_volume_option_tile">Volume de sonnerie et de notification</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">Aucun est le mode silencieux</string>
+    <string name="none_is_silent_title">Changer le mode silencieux</string>
     <string name="none_is_silent_summary">En mode silencieux l\'alarme sonne toujours</string>
     <string name="allow_lights_title">Autoriser les voyants de notification</string>
 
@@ -514,4 +514,17 @@
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Geste à trois doigts</string>
     <string name="three_finger_gesture_summary">Glisser à trois doigts vers le bas pour prendre une capture d\'écran</string>
+
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">Nom de l\'opérateur</string>
+    <string name="carrier_options_summary">Personnalisation du nom de l\'opérateur</string>
+    <string name="show_carrier_title">Nom de l\'opérateur</string>
+    <string name="show_carrier_disabled">Désactivé</string>
+    <string name="show_carrier_keyguard">Écran de verrouillage seulement</string>
+    <string name="show_carrier_statusbar">Barre de statut seulement</string>
+    <string name="show_carrier_enabled">Écran de verrouillage &amp; barre de statut</string>
+    <string name="custom_carrier_label_title">Personnaliser le nom de l\'opérateur</string>
+    <string name="custom_carrier_label_explain">Merci d\'entrer un nouveau nom. Laisser vide pour revenir au nom d\'origine</string>
+    <string name="custom_carrier_label_notset">Actuellement, le nom personnalisé n\'est pas défini</string>
+    <string name="status_bar_carrier_color">Couleur du nom de l\'opérateur</string>
 </resources>
