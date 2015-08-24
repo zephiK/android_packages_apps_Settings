@@ -13,21 +13,25 @@
     <string name="supersu_title">SuperSU</string>
 
     <!-- Chroma Menu -->
-    <string name="chroma_menu_personalizaton">Opzioni Chroma</string>
+    <string name="chroma_menu_personalizaton">Personalizzazioni Chroma</string>
     <string name="chroma_menu_about">Info su Chroma</string>
     <string name="status_bar_screen_title">Barra di stato</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="gestures_title">Gesture</string>
+    <string name="lockscreen_title">Schermata di sblocco</string>
     <string name="power_menu_title">Menu spegnimento</string>
     <string name="volume_rocker_screen_title">Pulsanti volume</string>
 
     <!-- Chroma categories -->
-    <string name="display_category_batteryclock_options_title">Opzioni batteria ed orologio</string>
-    <string name="display_category_navbar_options_title">Opzioni navigation bar</string>
-    <string name="display_category_navring_options_title">Opzioni anello di navigazione</string>
-    <string name="display_category_statusbar_options_title">Opzioni barra di stato</string>
-    <string name="display_category_recents_options_title">Opzioni app recenti</string>
-    <string name="display_category_power_options_title">Opzioni menu spegnimento</string>
-    <string name="volume_rocker_other_title">Varie</string>
+    <string name="display_category_batteryclock_options_title">Batteria ed orologio</string>
+    <string name="display_category_lockscreen_options_title">Schermata di sblocco</string>
+    <string name="display_category_navbar_options_title">Navigation bar</string>
+    <string name="display_category_navring_options_title">Anello di navigazione</string>
+    <string name="display_category_statusbar_options_title">Barra di stato</string>
+    <string name="display_category_recents_options_title">App recenti</string>
+    <string name="display_category_power_options_title">Menu spegnimento</string>
+    <string name="display_category_dtts_title">Doppio tocco per spegnere</string>
+    <string name="volume_rocker_screen_title">Pulsanti</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_title">Navigation bar</string>
@@ -44,8 +48,6 @@
     <string name="navigation_bar_height_20">20dp</string>
     <string name="navigation_bar_height_0">0dp (nascosta)</string>
 
-    <!--  Volume rocker -->
-    <string name="volume_rocker_screen_title">Pulsanti volume</string>
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Controllo cursori volume</string>
     <string name="volume_key_cursor_control_off">Disattivato</string>
@@ -87,10 +89,9 @@
     <string name="disabled_string">Disattivato</string>
     <string name="general_string">Generali</string>
     <string name="reset_string">Ripristina</string>
-    <string name="reset">Ripristina</string>
     <string name="empty_string">Vuoto</string>
-    <string name="ok">Ok</string>
     <string name="font_size_sample">Esempio</string>
+    <string name="attention">Attenzione</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotazione</string>
@@ -126,31 +127,17 @@
     <string name="camera_sounds_summary">Attiva suono di sistema di scatto della fotocamera</string>
     <string name="camera_sound_warning_dialog_text">Disattivare il suono della scatto della fotocamera è illegale in alcuni paesi! Per favore controlla la legge nel tuo paese</string>
 
-    <!-- Generic strings -->
-    <string name="ok_string">Ok</string>
-    <string name="default_string">Predefinito</string>
-    <string name="enabled_string">Attivato</string>
-    <string name="disabled_string">Disattivato</string>
-    <string name="general_string">Generali</string>
-    <string name="reset_string">Ripristina</string>
-    <string name="empty_string">Vuoto</string>
-    <string name="attention">Attenzione</string>
-
     <!-- Wakeup options -->
-    <string name="display_category_wakeup_options_title">Opzioni risveglio</string>
+    <string name="display_category_wakeup_options_title">Risveglio</string>
     <string name="pref_volume_wake_title">Risveglio pulsanti volume</string>
-    <string name="pref_volume_wake_summary">Premendo i pulsanti del volume il dispositivo si risveglierà</string>
+    <string name="pref_volume_wake_summary">Premendo i pulsanti del volume lo schermo del dispositivo si accenderà</string>
     <string name="wakeup_when_plugged_unplugged_title">Risveglio alla carica</string>
-    <string name="wakeup_when_plugged_unplugged_summary">Risveglia il dispositivo quando il caricabatterie viene connesso/disconnesso</string>
+    <string name="wakeup_when_plugged_unplugged_summary">Lo schermo del dispositivo viene acceso quando il caricabatterie viene connesso/disconnesso</string>
 
     <!-- Status bar double-tap to sleep -->
     <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per spegnere</string>
     <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
 
-    <!-- Status bar pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">Quick settings veloci</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Strisciando dal lato destro si andrà nei quick settings</string>
- 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Controllo luminosità</string>
     <string name="status_bar_toggle_brightness_summary">Regola la luminosità strisciando con un dito sulla barra di stato</string>
@@ -252,7 +239,7 @@
 
     <!--- Lock clock -->
     <string name="lock_clock_title">Widget orologio</string>
-    <string name="lock_clock_summary">Vedi o cambia il funzionamento del widget \'cLock\'</string>
+    <string name="lock_clock_summary">Vedi o cambia il funzionamento del widget \"cLock\"</string>
     <string name="weather_clock_title">Meteo barra di stato</string>
 
     <!-- Show/Hide Search Bar -->
@@ -287,7 +274,7 @@
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_tile_heads_up">Heads up</string>
     <string name="qs_battery_saver_tile">Risparmio batteria</string>
-    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_expanded_desktop_tile">Modalità estesa</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Slider luminosità</string>
@@ -323,7 +310,7 @@
     <string name="battery_light_full_color_title">Completamente carica</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="notification_light_category">Opzioni LED</string>
+    <string name="notification_light_category">LED</string>
     <string name="notification_light_title">LED notifiche</string>
     <string name="notification_light_general_title">Generali</string>
     <string name="notification_light_applist_title">App</string>
@@ -336,7 +323,7 @@
     <!-- Nav bar customization -->
     <string name="navigation_bar_buttons">Pulsanti &amp; disposizione</string>
     <string name="navigation_bar_settings_summary">Modifica e cambia la posizione dei pulsanti della navigation bar</string>
-    <string name="navigation_bar_help_text">Per iniziare clicca sull\'icona per sbloccare la navigation bar ed iniziare le modifiche.\n\nPuoi cliccare un\'icona per cambiare la sua funzione, o tenerla premuta per cambiare la disposizione.\n\nClicca su \'Salva\' per rendere effettivi i cambiamenti, o su \'Ripristina predefiniti\' per ripristinare i pulsanti e le loro posizioni.</string>
+    <string name="navigation_bar_help_text">Per iniziare clicca sull\'icona per sbloccare la navigation bar ed iniziare le modifiche.\n\nPuoi cliccare un\'icona per cambiare la sua funzione, o tenerla premuta per cambiare la disposizione.\n\nClicca su \"Salva\" per rendere effettivi i cambiamenti, o su \"Ripristina predefiniti\" per ripristinare i pulsanti e le loro posizioni.</string>
     <string name="navigation_restore_button_text">Ripristina\npredefiniti</string>
     <string name="navigation_edit_button_text">Modifica</string>
     <string name="navigation_save_button_text">Salva</string>
@@ -344,7 +331,7 @@
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
     <string name="double_tap_sleep_anywhere_title">Doppio tocco per spegnere</string>
-    <string name="double_tap_sleep_anywhere_summary">Doppio tocco ovunque nella lockscreen per spegnere lo schermo del dispositivo</string>
+    <string name="double_tap_sleep_anywhere_summary">Doppio tocco ovunque nella schermata di sblocco per spegnere lo schermo del dispositivo</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Doppio tocco per spegnere</string>
@@ -358,7 +345,7 @@
     <string name="power_menu_settings_title">Scorciatoia impostazioni</string>
     <string name="power_menu_lockdown_title">Blocca dispositivo</string>
     <string name="power_menu_bug_report_title">Segnalazione di bug</string>
-    <string name="power_menu_sound_title">Opzioni notifiche</string>
+    <string name="power_menu_sound_title">Notifiche</string>
     <string name="power_menu_bug_report_disabled">La segnalazione di bug è disattivata nelle opzioni sviuppatore</string>
 
     <!-- Linked / unlinked notification volume -->
@@ -367,8 +354,8 @@
     <string name="ring_notification_volume_option_tile">Volume suoneria e notifiche</string>
 
     <!-- Silent mode -->
-    <string name="none_is_silent_title">\'Nessuna\' è \'silenzioso\'</string>
-    <string name="none_is_silent_summary">Nella modalità \'nessuna\' le sveglie suonano sempre</string>
+    <string name="none_is_silent_title">\"Nessuna\" è \"silenzioso\"</string>
+    <string name="none_is_silent_summary">Nella modalità \"nessuna\" le sveglie suonano sempre</string>
     <string name="allow_lights_title">Permetti LED notifiche</string>
 
     <!-- Heads Up -->
@@ -397,12 +384,12 @@
     <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
 
     <!--Power menu -->
-    <string name="lockscreen_enable_power_menu_title">Menu spegnimento lockscreen</string>
-    <string name="lockscreen_enable_power_menu_summary">Disattiva il menu di spegnimento in una lockscreen sicura</string>
+    <string name="lockscreen_enable_power_menu_title">Menu spegnimento schermata di sblocco</string>
+    <string name="lockscreen_enable_power_menu_summary">Disattiva il menu di spegnimento in una schermata di sblocco sicura</string>
 
     <!-- Quick settings disable on lockscreen -->
-    <string name="block_on_secure_keyguard_title">Disattiva nella lockscreen</string>
-    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una lockscreen sicura</string>
+    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di sblocco</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una schermata di sblocco sicura</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Scambio tasti volume</string>
@@ -436,7 +423,7 @@
     <string name="blacklist_edit_dialog_title">Modifica numeri bloccati</string>
     <string name="blacklist_prefs">Impostazioni</string>
     <string name="blacklist_button_delete">Elimina</string>
-    <string name="blacklist_empty_text">Non ci sono contatti bloccati. Clicca sul pulsante \'aggiungi\' (+) per iniziare.</string>
+    <string name="blacklist_empty_text">Non ci sono contatti bloccati. Clicca sul pulsante \"aggiungi\" (+) per iniziare.</string>
     <string name="blacklist_disabled_empty_text">Per evitare che specifici numeri ti chiamino o ti inviino messaggi, attiva la blacklist.</string>
     <string name="blacklist_summary_disabled">Disattivata</string>
     <string name="blacklist_summary">Non riceverai chiamate o messaggi da questi numeri nella blacklist</string>
@@ -463,10 +450,10 @@
     <string name="select_contact">Seleziona contatto</string>
 
     <!-- per app controls for keyguard notifications -->
-    <string name="app_notification_show_on_keyguard_title">Mostra nella lockscreen</string>
-    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche da questa app nella lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disattiva \'in corso\' nella lockscreen</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Non mostrare le notifiche non rimovibili da questa app nella lockscreen</string>
+    <string name="app_notification_show_on_keyguard_title">Mostra nella schermata di sblocco</string>
+    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche da questa app nella schermata di sblocco</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disattiva "notifiche non rimovibili\"in corso\" nella schermata di sblocco</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Non mostrare le notifiche non rimovibili da questa app nella schermata di sblocco</string>
  
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Mostra frecce digitazione</string>
@@ -475,7 +462,7 @@
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Scorciatoie anello di navigazione</string>
     <string name="navigation_ring_summary">Modifica e cambia la posizione delle scorciatoie sull\'anello di navigazione</string>
-    <string name="navigation_ring_message">Clicca sull\'icona di modifica per aprire l\'anello.\n\nSeleziona un elemento per configurare il suo funzionamento.\n\nClicca sull\'icona \'\u2713\' per salvare i cambiamenti, o su \'Ripristina predefinite\' per ripristinare le scorciatoie predefinite.</string>
+    <string name="navigation_ring_message">Clicca sull\'icona di modifica per aprire l\'anello.\n\nSeleziona un elemento per configurare il suo funzionamento.\n\nClicca sull\'icona \"\u2713\" per salvare i cambiamenti, o su \"Ripristina predefinite\" per ripristinare le scorciatoie predefinite.</string>
 
     <!-- Navring targets (enable/disable) -->
     <string name="navigation_ring_enable_title">Attiva anello di navigazione</string>
@@ -490,31 +477,54 @@
 
     <!-- Quick Settings 4 columns -->
     <string name="qs_four_columns_title">Mostra quattro tile per fila</string>
+    
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Impostazioni LAN</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">Hostname dispositivo</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Schermata di blocco</string>
-    <string name="lockscreen_targets_message">Scorciatoie schermata di blocco</string>
+    <string name="lockscreen_settings_title">Schermata di sblocco</string>
+    <string name="lockscreen_targets_message">Scorciatoie schermata di sblocco</string>
     <string name="lockscreen_default_target">Predefinite</string>
     <string name="lockscreen_none_target">Nessuna</string>
     <string name="lockscreen_message">Tocca un\'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
     <string name="lockscreen_choose_action_title">Sceglia azione</string>
 
     <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Wallpaper</string>
-    <string name="lockscreen_wallpaper_set_title">Set lock screen wallpaper</string>
-    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
-    <string name="reset_lockscreen_wallpaper">Lock screen cleared</string>
+    <string name="lockscreen_wallpaper_title">Sfondo</string>
+    <string name="lockscreen_wallpaper_set_title">Imposta sfondo schermata di sblocco</string>
+    <string name="lockscreen_wallpaper_clear_title">Rimuovi sfondo schermata di sblocco</string>
+    <string name="reset_lockscreen_wallpaper">Sfondo schermata di sblocco rimosso</string>
 
     <!-- Expanded desktop -->
-    <string name="power_menu_expanded_desktop">Desktop esteso</string>
-    <string name="expanded_hide_nothing">Non nascondere nulla</string>
-    <string name="expanded_hide_status">Nascondi la barra di stato</string>
-    <string name="expanded_hide_navigation">Nascondi la barra di navigazione</string>
-    <string name="expanded_hide_both">Nascondi entrambi</string>
-    <string name="expanded_nothing_to_show">Per aggiungere una configurazione personalizzata di schermo esteso per ogni app, disattiva \"Attivo per tutti\"</string>
-    <string name="expanded_enabled_for_all">Attivo per tutti</string>
-    <string name="expanded_desktop_style">Stile desktop esteso</string>
-    <string name="expanded_desktop_style_description">Seleziona lo stile predefinito del desktop esteso</string>
-    <string name="expanded_desktop_title">Opzioni desktop esteso</string>
+    <string name="power_menu_expanded_desktop">Modalità estesa</string>
+    <string name="expanded_hide_nothing">Non nascondere</string>
+    <string name="expanded_hide_status">Nascondi barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi navigation bar</string>
+    <string name="expanded_hide_both">Nascondi entrambe</string>
+    <string name="expanded_nothing_to_show">Per configurare la modalità estesa differentemente per ogni app, disattiva l\'opzione \"Attiva per tutte\"</string>
+    <string name="expanded_desktop_state">Configurazione modalità estesa</string>
+    <string name="expanded_enabled_for_all">Attiva per tutte</string>
+    <string name="expanded_user_configurable">Configurabile dall\'utente</string>
+    <string name="expanded_desktop_style">Stile modalità estesa</string>
+    <string name="expanded_desktop_style_description">Seleziona lo stile predefinito della modalità estesa</string>
+    <string name="expanded_desktop_title">Opzioni modalità estesa</string>
+    
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Gesture a tre dita</string>
+    <string name="three_finger_gesture_summary">Facendo uno swipe con tre dita verso il basso viene effettuato uno screenshot</string>
 
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">Carrier Label</string>
+    <string name="carrier_options_summary">Customize the carrier label</string>
+    <string name="show_carrier_title">Carrier label</string>
+    <string name="show_carrier_disabled">Disabled</string>
+    <string name="show_carrier_keyguard">Lockscreen only</string>
+    <string name="show_carrier_statusbar">Statusbar only</string>
+    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
+    <string name="custom_carrier_label_title">Custom carrier label</string>
+    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
+    <string name="custom_carrier_label_notset">Custom label currently not set</string>
+    <string name="status_bar_carrier_color">Carrier label color</string>
 </resources>
