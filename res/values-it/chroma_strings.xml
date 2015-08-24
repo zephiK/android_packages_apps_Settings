@@ -516,15 +516,15 @@
     <string name="three_finger_gesture_summary">Facendo uno swipe con tre dita verso il basso viene effettuato uno screenshot</string>
 
     <!-- Custom Carrier label -->
-    <string name="carrier_options">Carrier Label</string>
-    <string name="carrier_options_summary">Customize the carrier label</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen only</string>
-    <string name="show_carrier_statusbar">Statusbar only</string>
-    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="status_bar_carrier_color">Carrier label color</string>
+    <string name="carrier_options">Operatore telefonico</string>
+    <string name="carrier_options_summary">Personalizza il nome dell\'operatore telefonico</string>
+    <string name="show_carrier_title">Nome operatore</string>
+    <string name="show_carrier_disabled">Disattivato</string>
+    <string name="show_carrier_keyguard">Schermata di sblocco</string>
+    <string name="show_carrier_statusbar">Barra di stato</string>
+    <string name="show_carrier_enabled">Sempre</string>
+    <string name="custom_carrier_label_title">Nome personalizzato</string>
+    <string name="custom_carrier_label_explain">Per favore inserisci un nuovo nome. Lasciare bianco per ritornare al nome predefinito.</string>
+    <string name="custom_carrier_label_notset">Nome personalizzato non ancora impostato</string>
+    <string name="status_bar_carrier_color">Colore nome operatore</string>
 </resources>
