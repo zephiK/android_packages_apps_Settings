@@ -17,6 +17,7 @@
 <resources>
     <!-- QS tiles -->
     <color name="qs_tile_tint_color">#FF009587</color>
+    <color name="background_color_gray">#ddd</color>
 
     <!-- Expanded desktop -->
     <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
