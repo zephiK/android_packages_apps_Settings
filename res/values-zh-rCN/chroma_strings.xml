@@ -17,6 +17,7 @@
     <string name="chroma_menu_about">关于 Chroma</string>
     <string name="status_bar_screen_title">状态栏</string>
     <string name="navigation_bar_screen_title">导航栏</string>
+    <string name="gestures_title">手势控制</string>
     <string name="lockscreen_title">锁屏设置</string>
     <string name="power_menu_title">电源菜单</string>
     <string name="volume_rocker_screen_title">音量键唤醒</string>
@@ -29,6 +30,7 @@
     <string name="display_category_statusbar_options_title">状态栏选项</string>
     <string name="display_category_recents_options_title">概览界面选项</string>
     <string name="display_category_power_options_title">电源菜单选项</string>
+    <string name="display_category_dtts_title">双击锁屏</string>
     <string name="volume_rocker_other_title">杂项</string>
 
     <!-- Navigation Bar -->
@@ -272,6 +274,7 @@
     <string name="qs_screenshot_tile">截图</string>
     <string name="qs_tile_heads_up">浮动通知</string>
     <string name="qs_battery_saver_tile">省电模式</string>
+    <string name="qs_expanded_desktop_tile">拓展桌面</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">显示亮度滑块</string>
@@ -488,6 +491,12 @@
     <string name="lockscreen_message">点击左侧或右侧的图标来重新设置锁屏快捷方式</string>
     <string name="lockscreen_choose_action_title">选择活动</string>
 
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">壁纸</string>
+    <string name="lockscreen_wallpaper_set_title">更改锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_clear_title">删除锁屏壁纸</string>
+    <string name="reset_lockscreen_wallpaper">已删除锁屏壁纸</string>
+   
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">扩展桌面</string>
     <string name="expanded_hide_nothing">不隐藏</string>
@@ -495,7 +504,9 @@
     <string name="expanded_hide_navigation">隐藏导航栏</string>
     <string name="expanded_hide_both">同时隐藏</string>
     <string name="expanded_nothing_to_show">要添加一个为单个应用配置的扩展状态，请关闭 “全部开启”</string>
+    <string name="expanded_desktop_state">扩展状态</string>
     <string name="expanded_enabled_for_all">为全部应用启用</string>
+    <string name="expanded_user_configurable">用户配置</string>
     <string name="expanded_desktop_style">扩展桌面样式</string>
     <string name="expanded_desktop_style_description">选择一个默认的扩展桌面样式</string>
     <string name="expanded_desktop_title">扩展桌面选项</string>
@@ -503,11 +514,17 @@
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">三指截屏</string>
     <string name="three_finger_gesture_summary">从上至下滑动三根手指截屏</string>
-    
-    <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">壁纸</string>
-    <string name="lockscreen_wallpaper_set_title">更改锁屏壁纸</string>
-    <string name="lockscreen_wallpaper_clear_title">删除锁屏壁纸</string>
-    <string name="reset_lockscreen_wallpaper">已删除锁屏壁纸</string>
-
+   
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">运营商名称</string>
+    <string name="carrier_options_summary">自定义运营商名称</string>
+    <string name="show_carrier_title">运营商名称</string>
+    <string name="show_carrier_disabled">禁用</string>
+    <string name="show_carrier_keyguard">仅在锁屏显示</string>
+    <string name="show_carrier_statusbar">仅在状态栏显示</string>
+    <string name="show_carrier_enabled">锁屏 &amp; 状态栏</string>
+    <string name="custom_carrier_label_title">自定义运营商名称</string>
+    <string name="custom_carrier_label_explain">请输入一个新的名称. 空白则使用默认名称.</string>
+    <string name="custom_carrier_label_notset">当前未设置自定义运营商</string>
+    <string name="status_bar_carrier_color">运营商名称颜色</string>
 </resources>
