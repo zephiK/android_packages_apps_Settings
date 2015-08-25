@@ -135,8 +135,8 @@
     <string name="wakeup_when_plugged_unplugged_summary">Lo schermo del dispositivo viene acceso quando il caricabatterie viene connesso/disconnesso</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">Doppio tocco per spegnere</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo</string>
+    <string name="status_bar_double_tap_to_sleep_title">Barra di stato</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Doppio tocco sulla barra di stato per spegnere lo schermo del dispositivo</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Controllo luminosità</string>
@@ -330,11 +330,11 @@
     <string name="navigation_bar_reset_message">Eliminare le impostazioni attuali e ripristinare i pulsanti predefiniti?</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Doppio tocco per spegnere</string>
-    <string name="double_tap_sleep_anywhere_summary">Doppio tocco ovunque nella schermata di sblocco per spegnere lo schermo del dispositivo</string>
+    <string name="double_tap_sleep_anywhere_title">Schermata di sblocco</string>
+    <string name="double_tap_sleep_anywhere_summary">Doppio tocco nella schermata di sblocco per spegnere lo schermo del dispositivo</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">Doppio tocco per spegnere</string>
+    <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
     <string name="double_tap_sleep_nav_bar_summary">Doppio tocco sulla navigation bar per spegnere lo schermo del dispositivo</string>
 
      <!-- Power menu -->
