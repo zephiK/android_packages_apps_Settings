@@ -17,17 +17,21 @@
     <string name="chroma_menu_about">Informacje o Chroma</string>
     <string name="status_bar_screen_title">Pasek stanu</string>
     <string name="navigation_bar_screen_title">Pasek nawigacji</string>
+	<string name="gestures_title">Gesty</string>
+	<string name="lockscreen_title">Ekran blokady</string>
     <string name="power_menu_title">Menu zasilania</string>
     <string name="volume_rocker_screen_title">Przyciski głośności</string>
-
+	
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Opcje baterii i zegara</string>
+	<string name="display_category_lockscreen_options_title">Opcje ekranu blokady</string>
     <string name="display_category_navbar_options_title">Opcje paska nawigacji</string>
     <string name="display_category_navring_options_title">Opcje pierścienia nawigacji</string>
     <string name="display_category_statusbar_options_title">Opcje paska stanu</string>
     <string name="display_category_recents_options_title">Opcje ostatnich aplikacji</string>
     <string name="display_category_power_options_title">Opcje menu zasilania</string>
-    <string name="volume_rocker_other_title">Różne</string>
+    <string name="display_category_dtts_title">Dotknij dwukrotnie aby uśpić</string>
+	<string name="volume_rocker_other_title">Różne</string>
 
     <!-- Navigation Bar -->
     <string name="navigation_bar_title">Przyciski i układ</string>
@@ -100,6 +104,7 @@
     <string name="display_rotation_270_title">270 stopni</string>
 
     <!-- Recents panel settings -->
+	<string name="recents_panel_settings">Ustawienia panelu ostatnich aplikacji</string>
     <string name="show_clear_all_recents_button_title">Przycisk usuń ostatnie aplikacje</string>
     <string name="show_clear_all_recents_button_summary">Pokaż przycisk usuń ostatnie aplikacje w widoku ostatnich aplikacji</string>
     <string name="recents_clear_all_location_title">Położenie przycisku</string>
@@ -158,13 +163,13 @@
     <string name="select_custom_activity_title">Wybierz własną aktywność</string>
 
     <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Zegar &amp; data</string>
-    <string name="status_bar_clock_title">Styl zegara &amp; daty</string>
-    <string name="status_bar_clock_summary">Zmień opcje zegara &amp; daty</string> 
+    <string name="status_bar_clock">Zegar i data</string>
+    <string name="status_bar_clock_title">Styl zegara i daty</string>
+    <string name="status_bar_clock_summary">Zmień opcje zegara i daty</string> 
     <string name="clock_title_enable">Wyrównanie</string>
     <string name="clock_enabled">Włączone</string>
     <string name="clock_disabled">Wyłączone</string>
-    <string name="status_bar_show_clock_title">Pokaż zegar &amp; datę</string>
+    <string name="status_bar_show_clock_title">Pokaż zegar i datę</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
     <string name="status_bar_am_pm_info">zegar 24-godzinny włączony</string>
     <string name="enable_clock_weekday">Dzień tygodnia</string>
@@ -269,6 +274,7 @@
     <string name="qs_screenshot_tile">Zrzut ekranu</string>
     <string name="qs_tile_heads_up">Wyskakujące powiadomienia</string>
     <string name="qs_battery_saver_tile">Oszczędzanie baterii</string>
+	<string name="qs_expanded_desktop_tile">Rozszerzony pulpit</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Pokaż suwak jasności</string>
@@ -304,6 +310,7 @@
     <string name="battery_light_full_color_title">Naładowana</string>
 
     <!-- Lights settings screen, notification light settings -->
+	<string name="notification_light_category">Dioda</string>
     <string name="notification_light_title">Dioda powiadomień</string>
     <string name="notification_light_general_title">Ogólne</string>
     <string name="notification_light_applist_title">Aplikacje</string>
@@ -464,12 +471,18 @@
     <string name="advanced_reboot_title">Zaawansowane uruchamianie</string>
     <string name="advanced_reboot_summary">Kiedy odblokowany, pokaż w menu zasilania opcję do ponownego uruchomienia do recovery, bootloader lub miękki restart</string>
 
+	<!-- Battery saver color -->
     <string name="battery_saver_color_title">Kolor ostrzeżenia</string>
     <string name="battery_saver_color_summary">Włącz pomarańczowy pasek stanu i nawigacji przy włączonym Oszczędzaniu baterii</string>
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Pokaż cztery przełączniki w rzędzie</string>
 
+	<!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Ustawienia LAN</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">Nazwa hosta urządzenia</string>
+	
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Ekran blokady</string>
     <string name="lockscreen_targets_message">Skróty ekranu blokady</string>
@@ -477,4 +490,41 @@
     <string name="lockscreen_none_target">Żadne</string>
     <string name="lockscreen_message">Naciśnij ikonę po lewej lub prawej aby ustawić skróty ekranu blokady.</string>
     <string name="lockscreen_choose_action_title">Wybierz akcję</string>
+	
+	<!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Tapeta</string>
+    <string name="lockscreen_wallpaper_set_title">Ustaw tapetę ekranu blokady</string>
+    <string name="lockscreen_wallpaper_clear_title">Wyczyść tapetę ekranu blokady</string>
+    <string name="reset_lockscreen_wallpaper">Ekran blokady wyczyszczony</string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">Rozszerzony pulpit</string>
+    <string name="expanded_hide_nothing">Nic nie ukrywaj</string>
+    <string name="expanded_hide_status">Ukryj pasek stanu</string>
+    <string name="expanded_hide_navigation">Ukryj pasek nawigacji</string>
+    <string name="expanded_hide_both">Ukryj oba</string>
+    <string name="expanded_nothing_to_show">Aby dodać ustawienia rozszerzonego pulpitu dla konkretnych aplikacji, wyłącz ustawienie "Włączony dla wszystkich"</string>
+    <string name="expanded_desktop_state">Stan rozszerzonego pulpitu</string>
+    <string name="expanded_enabled_for_all">Włączony dla wszystkich</string>
+    <string name="expanded_user_configurable">Ustawienia własne</string>
+    <string name="expanded_desktop_style">Styl rozszerzonego pulpitu</string>
+    <string name="expanded_desktop_style_description">Wybierz domyślny styl rozszerzonego pulpitu</string>
+    <string name="expanded_desktop_title">Opcje rozszerzonego pulpitu</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Gest trzech palców</string>
+    <string name="three_finger_gesture_summary">Przeciągnij w dół trzy palce aby zrobić zrzut ekranu</string>
+
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">Nazwa operatora</string>
+    <string name="carrier_options_summary">Dopasuj nazwę operatora</string>
+    <string name="show_carrier_title">Nazwa operatora</string>
+    <string name="show_carrier_disabled">Wyłączona</string>
+    <string name="show_carrier_keyguard">Tylko na ekranie blokady</string>
+    <string name="show_carrier_statusbar">Tylko na pasku stanu</string>
+    <string name="show_carrier_enabled">Na ekranie blokady i pasku stanu</string>
+    <string name="custom_carrier_label_title">Własna nazwa operatora</string>
+    <string name="custom_carrier_label_explain">Wprowadź nową nazwę. Zostaw puste pole aby przywrócić wyświetlanie operatora.</string>
+    <string name="custom_carrier_label_notset">Własna nazwa nie ustawiona</string>
+    <string name="status_bar_carrier_color">Kolor nazwy operatora</string>
 </resources>
