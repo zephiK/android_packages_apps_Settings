@@ -46,5 +46,7 @@
     <color name="security_settings_billing_desc_color">#ffffb060</color>
     <!-- Dashboard category title text color -->
     <color name="dashboard_category_title_text">@color/theme_accent</color>
+
+    <color name="dashboard_border_color">@color/exposed_bg_dark</color>
 </resources>
 
