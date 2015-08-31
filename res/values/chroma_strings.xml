@@ -17,20 +17,20 @@
     <string name="chroma_menu_about">About Chroma</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
-    <string name="gestures_title">Gestures</string>
-    <string name="lockscreen_title">Lock screen</string>
+    <string name="gestures_title">Gestos</string>
+    <string name="lockscreen_title">Tela de Bloqueio</string>
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
-    <string name="display_category_lockscreen_options_title">Lockscreen options</string>
+    <string name="display_category_lockscreen_options_title">Opções da tela de bloqueio</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <string name="display_category_navring_options_title">Navigation ring options</string>
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <string name="display_category_recents_options_title">Recent apps options</string>
     <string name="display_category_power_options_title">Power menu options</string>
-    <string name="display_category_dtts_title">Double tap to sleep</string>
+    <string name="display_category_dtts_title">Dois toques para dormir</string>
     <string name="volume_rocker_other_title">Miscellaneous</string>
 
     <!-- Navigation Bar -->
@@ -270,11 +270,11 @@
     <string name="qs_tile_hotspot">Hotspot</string>
     <string name="qs_tile_notifications">Notifications</string>
     <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_tile_sync">Sync</string>
-    <string name="qs_screenshot_tile">Screenshot</string>
+    <string name="qs_tile_sync">Sincronização</string>
+    <string name="qs_screenshot_tile">Captura de tela</string>
     <string name="qs_tile_heads_up">Heads up</string>
-    <string name="qs_battery_saver_tile">Battery saver</string>
-    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_battery_saver_tile">Economizador de Bateria</string>
+    <string name="qs_expanded_desktop_tile">Área de trabalho expandida</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Show brightness slider</string>
@@ -342,7 +342,7 @@
 
      <!-- Power menu -->
     <string name="power_menu_reboot_title">Reboot menu</string>
-    <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_screenshot_title">Captura de tela</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
     <string name="power_menu_users_title">User switcher</string>
     <string name="power_menu_settings_title">Settings shortcut</string>
@@ -515,21 +515,21 @@
     <string name="expanded_desktop_title">Expanded desktop options</string>
 
     <!-- Three finger screenshot gesture -->
-    <string name="three_finger_gesture">Three finger gesture</string>
-    <string name="three_finger_gesture_summary">Swipe three fingers down to take a screenshot</string>
+    <string name="three_finger_gesture">Gesto de três dedos</string>
+    <string name="three_finger_gesture_summary">Deslize três dedos para baixo para capturar a tela</string>
 
     <!-- Custom Carrier label -->
-    <string name="carrier_options">Carrier Label</string>
-    <string name="carrier_options_summary">Customize the carrier label</string>
-    <string name="show_carrier_title">Carrier label</string>
-    <string name="show_carrier_disabled">Disabled</string>
-    <string name="show_carrier_keyguard">Lockscreen only</string>
-    <string name="show_carrier_statusbar">Statusbar only</string>
-    <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="status_bar_carrier_color">Carrier label color</string>
+    <string name="carrier_options">Rótulo de Operadora</string>
+    <string name="carrier_options_summary">Personalize o rótulo de operadora</string>
+    <string name="show_carrier_title">Rótulo de operadora</string>
+    <string name="show_carrier_disabled">Desativado</string>
+    <string name="show_carrier_keyguard">Somente na tela de bloqueio</string>
+    <string name="show_carrier_statusbar">Somente na barra de status</string>
+    <string name="show_carrier_enabled">Em ambos</string>
+    <string name="custom_carrier_label_title">Rótulo de operadora personalizada</string>
+    <string name="custom_carrier_label_explain">Por favor, entre com um novo rótulo. Deixe em branco para voltar ao rótulo original.</string>
+    <string name="custom_carrier_label_notset">Rótulo personalizado atualmente não está definido</string>
+    <string name="status_bar_carrier_color">Cor do rótulo de operadora</string>
 
-    <string name="advanced_string">Advanced</string>
+    <string name="advanced_string">Avançado</string>
 </resources>
