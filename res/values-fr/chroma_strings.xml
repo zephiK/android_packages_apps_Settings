@@ -319,6 +319,9 @@
     <string name="notification_light_default_value">Défaut</string>
     <string name="notification_light_missed_call_title">Appel manqué</string>
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
+    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
+    <string name="notification_light_screen_on">Lumières avec écran allumé</string>
+    <string name="keywords_lights_brightness_level">Luminosité des leds faibles</string>
 
     <!-- Nav bar customization -->
     <string name="navigation_bar_buttons">Boutons et mise en page</string>
