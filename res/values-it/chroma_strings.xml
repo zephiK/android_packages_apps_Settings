@@ -319,6 +319,8 @@
     <string name="notification_light_default_value">Predefinito</string>
     <string name="notification_light_missed_call_title">Chiamata persa</string>
     <string name="notification_light_voicemail_title">Messaggio vocale</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="keywords_lights_brightness_level">livello luminosità LED</string>
 
     <!-- Nav bar customization -->
     <string name="navigation_bar_buttons">Pulsanti &amp; disposizione</string>
@@ -527,4 +529,6 @@
     <string name="custom_carrier_label_explain">Please enter a new label. Leave blank to revert to stock label.</string>
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
     <string name="status_bar_carrier_color">Carrier label color</string>
+    
+    <string name="advanced_string">Avanzate</string>
 </resources>
