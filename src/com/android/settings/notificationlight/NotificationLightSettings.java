@@ -102,7 +102,8 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
 
 	    // Remove of the "Allow notification light" setting if an led is not supported
             if (!getResources().getBoolean(
-                    com.android.internal.R.bool.config_intrusiveNotificationLed)) {
+                    com.android.internal.R.bool.config_intrusiveNotificationLed) &&
+                    findPreference(KEY_ALLOW_LIGHTS) != null) {
                 prefSet.removePreference(findPreference(KEY_ALLOW_LIGHTS));
             }
 
