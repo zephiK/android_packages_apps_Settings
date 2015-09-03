@@ -531,4 +531,5 @@
     <string name="status_bar_carrier_color">Carrier label color</string>
     
     <string name="advanced_string">Avanzate</string>
+    <string name="quick_settings_reset_message">Ripristinare i tile dei quick settings?</string>
 </resources>
