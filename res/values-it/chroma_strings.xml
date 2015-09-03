@@ -18,13 +18,13 @@
     <string name="status_bar_screen_title">Barra di stato</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="gestures_title">Gesture</string>
-    <string name="lockscreen_title">Schermata di sblocco</string>
+    <string name="lockscreen_title">Lockscreen</string>
     <string name="power_menu_title">Menu spegnimento</string>
     <string name="volume_rocker_screen_title">Pulsanti volume</string>
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Batteria ed orologio</string>
-    <string name="display_category_lockscreen_options_title">Schermata di sblocco</string>
+    <string name="display_category_lockscreen_options_title">Lockscreen</string>
     <string name="display_category_navbar_options_title">Navigation bar</string>
     <string name="display_category_navring_options_title">Anello di navigazione</string>
     <string name="display_category_statusbar_options_title">Barra di stato</string>
@@ -332,8 +332,8 @@
     <string name="navigation_bar_reset_message">Eliminare le impostazioni attuali e ripristinare i pulsanti predefiniti?</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">Schermata di sblocco</string>
-    <string name="double_tap_sleep_anywhere_summary">Doppio tocco nella schermata di sblocco per spegnere lo schermo del dispositivo</string>
+    <string name="double_tap_sleep_anywhere_title">Lockscreen</string>
+    <string name="double_tap_sleep_anywhere_summary">Doppio tocco nella lockscreen per spegnere lo schermo del dispositivo</string>
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
@@ -386,12 +386,12 @@
     <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
 
     <!--Power menu -->
-    <string name="lockscreen_enable_power_menu_title">Menu spegnimento schermata di sblocco</string>
-    <string name="lockscreen_enable_power_menu_summary">Disattiva il menu di spegnimento in una schermata di sblocco sicura</string>
+    <string name="lockscreen_enable_power_menu_title">Menu spegnimento nella lockscreen</string>
+    <string name="lockscreen_enable_power_menu_summary">Attiva il menu di spegnimento in una lockscreen sicura</string>
 
     <!-- Quick settings disable on lockscreen -->
-    <string name="block_on_secure_keyguard_title">Disattiva nella schermata di sblocco</string>
-    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una schermata di sblocco sicura</string>
+    <string name="block_on_secure_keyguard_title">Quick settings nella lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disattiva i quick settings in una lockscreen sicura</string>
 
     <!-- Swap volume buttons when the screen is rotated -->
     <string name="swap_volume_buttons_title">Scambio tasti volume</string>
@@ -452,10 +452,10 @@
     <string name="select_contact">Seleziona contatto</string>
 
     <!-- per app controls for keyguard notifications -->
-    <string name="app_notification_show_on_keyguard_title">Mostra nella schermata di sblocco</string>
-    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche da questa app nella schermata di sblocco</string>
-    <string name="app_notification_no_ongoing_on_keyguard_title">Disattiva "notifiche non rimovibili\"in corso\" nella schermata di sblocco</string>
-    <string name="app_notification_no_ongoing_on_keyguard_summary">Non mostrare le notifiche non rimovibili da questa app nella schermata di sblocco</string>
+    <string name="app_notification_show_on_keyguard_title">Mostra nella lockscreen</string>
+    <string name="app_notification_show_on_keyguard_summary">Mostra notifiche da questa app nella lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_title">Disattiva "notifiche non rimovibili\"in corso\" nella lockscreen</string>
+    <string name="app_notification_no_ongoing_on_keyguard_summary">Non mostrare le notifiche non rimovibili da questa app nella lockscreen</string>
  
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Mostra frecce digitazione</string>
@@ -486,8 +486,8 @@
     <string name="device_hostname">Hostname dispositivo</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="lockscreen_settings_title">Schermata di sblocco</string>
-    <string name="lockscreen_targets_message">Scorciatoie schermata di sblocco</string>
+    <string name="lockscreen_settings_title">Lockscreen</string>
+    <string name="lockscreen_targets_message">Scorciatoie lockscreen</string>
     <string name="lockscreen_default_target">Predefinite</string>
     <string name="lockscreen_none_target">Nessuna</string>
     <string name="lockscreen_message">Tocca un\'icona a destra o a sinistra per riassegnare una scorciatoia.</string>
@@ -495,9 +495,9 @@
 
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper_title">Sfondo</string>
-    <string name="lockscreen_wallpaper_set_title">Imposta sfondo schermata di sblocco</string>
-    <string name="lockscreen_wallpaper_clear_title">Rimuovi sfondo schermata di sblocco</string>
-    <string name="reset_lockscreen_wallpaper">Sfondo schermata di sblocco rimosso</string>
+    <string name="lockscreen_wallpaper_set_title">Imposta sfondo lockscreen</string>
+    <string name="lockscreen_wallpaper_clear_title">Rimuovi sfondo lockscreen</string>
+    <string name="reset_lockscreen_wallpaper">Sfondo lockscreen rimosso</string>
 
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">Modalità estesa</string>
