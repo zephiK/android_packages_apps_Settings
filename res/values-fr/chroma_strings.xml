@@ -532,4 +532,5 @@
     <string name="status_bar_carrier_color">Couleur du nom de l\'opérateur</string>
     
     <string name="advanced_string">Avancé</string>
+    <string name="quick_settings_reset_message">Réinitialiser les paramètres rapides des tuiles ?</string>
 </resources>
