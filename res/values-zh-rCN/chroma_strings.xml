@@ -6,7 +6,7 @@
     <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Chroma build date</string>
+    <string name="build_date">Chroma 编译日期</string>
     <string name="build_date_default">2015-01-01-0000</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
@@ -17,6 +17,7 @@
     <string name="chroma_menu_about">关于 Chroma</string>
     <string name="status_bar_screen_title">状态栏</string>
     <string name="navigation_bar_screen_title">导航栏</string>
+    <string name="gestures_title">手势</string>
     <string name="lockscreen_title">锁屏设置</string>
     <string name="power_menu_title">电源菜单</string>
     <string name="volume_rocker_screen_title">音量键唤醒</string>
@@ -29,6 +30,7 @@
     <string name="display_category_statusbar_options_title">状态栏选项</string>
     <string name="display_category_recents_options_title">概览界面选项</string>
     <string name="display_category_power_options_title">电源菜单选项</string>
+    <string name="display_category_dtts_title">双击休眠</string>
     <string name="volume_rocker_other_title">杂项</string>
 
     <!-- Navigation Bar -->
@@ -133,8 +135,8 @@
     <string name="wakeup_when_plugged_unplugged_summary">充电器插入/拔出时唤醒设备</string>
 
     <!-- Status bar double-tap to sleep -->
-    <string name="status_bar_double_tap_to_sleep_title">双击锁屏</string>
-    <string name="status_bar_double_tap_to_sleep_summary">启用或禁用双击状态栏锁屏</string>
+    <string name="status_bar_double_tap_to_sleep_title">状态栏</string>
+    <string name="status_bar_double_tap_to_sleep_summary">启用或禁用双击状态栏使设备休眠</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">亮度控制</string>
@@ -236,7 +238,7 @@
     <string name="status_bar_show_weather_summary">在状态栏下拉后显示天气</string>
 
      <!--- Lock clock -->
-    <string name="lock_clock_title">Clock 小部件</string>
+    <string name="lock_clock_title">时钟小部件</string>
     <string name="lock_clock_summary">预览或修改 \'cLock\' 小部件的显示</string>
     <string name="weather_clock_title">状态栏天气</string>
 
@@ -272,6 +274,7 @@
     <string name="qs_screenshot_tile">截图</string>
     <string name="qs_tile_heads_up">浮动通知</string>
     <string name="qs_battery_saver_tile">省电模式</string>
+    <string name="qs_expanded_desktop_tile">扩展桌面</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">显示亮度滑块</string>
@@ -316,6 +319,8 @@
     <string name="notification_light_default_value">默认</string>
     <string name="notification_light_missed_call_title">未接来电</string>
     <string name="notification_light_voicemail_title">语音信箱</string>
+    <string name="notification_light_screen_on">亮屏</string>
+    <string name="keywords_lights_brightness_level">亮度变暗</string>
 
     <!-- Nav bar customization -->
     <string name="navigation_bar_buttons">按键 &amp; 布局</string>
@@ -327,12 +332,12 @@
     <string name="navigation_bar_reset_message">删除当前设置并且恢复默认布局？</string>
  
     <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
-    <string name="double_tap_sleep_anywhere_title">快速双击锁屏</string>
-    <string name="double_tap_sleep_anywhere_summary">在锁屏界面双击任意位置锁定设备</string>
+    <string name="double_tap_sleep_anywhere_title">锁屏界面</string>
+    <string name="double_tap_sleep_anywhere_summary">在锁屏界面双击任意位置使设备休眠</string>
 
     <!-- Double Tap Navbar to Sleep -->
-    <string name="double_tap_sleep_nav_bar_title">双击锁屏</string>
-    <string name="double_tap_sleep_nav_bar_summary">双击导航栏锁定设备</string>
+    <string name="double_tap_sleep_nav_bar_title">导航栏</string>
+    <string name="double_tap_sleep_nav_bar_summary">双击导航栏使设备休眠</string>
 
      <!-- Power menu -->
     <string name="power_menu_reboot_title">重启菜单</string>
@@ -487,7 +492,13 @@
     <string name="lockscreen_none_target">无</string>
     <string name="lockscreen_message">点击左侧或右侧的图标来重新设置锁屏快捷方式</string>
     <string name="lockscreen_choose_action_title">选择活动</string>
-
+    
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">壁纸</string>
+    <string name="lockscreen_wallpaper_set_title">更改锁屏壁纸</string>
+    <string name="lockscreen_wallpaper_clear_title">删除锁屏壁纸</string>
+    <string name="reset_lockscreen_wallpaper">已删除锁屏壁纸</string>
+    
     <!-- Expanded desktop -->
     <string name="power_menu_expanded_desktop">扩展桌面</string>
     <string name="expanded_hide_nothing">不隐藏</string>
@@ -495,7 +506,9 @@
     <string name="expanded_hide_navigation">隐藏导航栏</string>
     <string name="expanded_hide_both">同时隐藏</string>
     <string name="expanded_nothing_to_show">要添加一个为单个应用配置的扩展状态，请关闭 “全部开启”</string>
+    <string name="expanded_desktop_state">状态</string>
     <string name="expanded_enabled_for_all">为全部应用启用</string>
+    <string name="expanded_user_configurable">用户可配置</string>
     <string name="expanded_desktop_style">扩展桌面样式</string>
     <string name="expanded_desktop_style_description">选择一个默认的扩展桌面样式</string>
     <string name="expanded_desktop_title">扩展桌面选项</string>
@@ -504,10 +517,19 @@
     <string name="three_finger_gesture">三指截屏</string>
     <string name="three_finger_gesture_summary">从上至下滑动三根手指截屏</string>
     
-    <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">壁纸</string>
-    <string name="lockscreen_wallpaper_set_title">更改锁屏壁纸</string>
-    <string name="lockscreen_wallpaper_clear_title">删除锁屏壁纸</string>
-    <string name="reset_lockscreen_wallpaper">已删除锁屏壁纸</string>
+    <!-- Custom Carrier label -->
+    <string name="carrier_options">运营商名称</string>
+    <string name="carrier_options_summary">自定义运营商名称</string>
+    <string name="show_carrier_title">运营商名称</string>
+    <string name="show_carrier_disabled">已禁用</string>
+    <string name="show_carrier_keyguard">仅锁屏界面</string>
+    <string name="show_carrier_statusbar">仅状态栏</string>
+    <string name="show_carrier_enabled">锁屏界面 &amp; 状态栏</string>
+    <string name="custom_carrier_label_title">自定义运营商名称</string>
+    <string name="custom_carrier_label_explain">请输入一个新的名称。如果留空，则设为默认。</string>
+    <string name="custom_carrier_label_notset">目前未设置自定义运营商名称</string>
+    <string name="status_bar_carrier_color">运营商名称颜色</string>
 
+    <string name="advanced_string">高级</string>
+    <string name="quick_settings_reset_message">重设快速设置瓷贴？</string>
 </resources>
