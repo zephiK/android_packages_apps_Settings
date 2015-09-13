@@ -42,6 +42,11 @@
         android:title="@string/gestures_title" >
 
         <com.android.settings.chroma.SystemSettingSwitchPreference
+            android:key="long_press_lock_icon_torch"
+            android:title="@string/longpress_lock_icon_torch_title"
+            android:summary="@string/longpress_lock_icon_torch_summary" />
+
+        <com.android.settings.chroma.SystemSettingSwitchPreference
                 android:key="three_finger_gesture"
                 android:title="@string/three_finger_gesture"
                 android:summary="@string/three_finger_gesture_summary"
