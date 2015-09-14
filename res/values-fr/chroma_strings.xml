@@ -533,4 +533,8 @@
     
     <string name="advanced_string">Avancé</string>
     <string name="quick_settings_reset_message">Réinitialiser les paramètres rapides des tuiles ?</string>
+    
+    <!-- Long press on lock screen lock icon for torch -->
+    <string name="longpress_lock_icon_torch_title">Appuie long sur l\'icône de verrouillage pour activer la torche</string>
+    <string name="longpress_lock_icon_torch_summary">Cette option ne fonctionnera pas si le Smart Lock et l\'exploration d\'accessibilité tactile sont activées</string>
 </resources>
