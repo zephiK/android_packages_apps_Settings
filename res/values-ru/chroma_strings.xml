@@ -274,6 +274,7 @@
     <string name="qs_tile_heads_up">Всплывающие уведомления</string>
     <string name="qs_battery_saver_tile">Энергосбережение</string>
     <string name="qs_expanded_desktop_tile">Расширенный экран</string>
+    <string name="qs_screen_off_tile">Éteindre l\'écran</string>
 
     <!-- QuickSettings brightness slider -->
     <string name="qs_brightness_slider_title">Показывать слайдер яркости</string>
