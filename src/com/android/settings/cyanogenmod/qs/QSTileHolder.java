@@ -105,6 +105,7 @@ public class QSTileHolder {
             case QSConstants.TILE_SCREEN_OFF:
                 resourceName = "ic_qs_power";
                 stringId = R.string.qs_screen_off_tile;
+                break;
             case QSConstants.TILE_SCREENSHOT:
                 resourceName = "ic_qs_screenshot";
                 stringId = R.string.qs_screenshot_tile;
