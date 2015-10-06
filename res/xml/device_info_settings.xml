@@ -26,12 +26,6 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
-
         <PreferenceScreen
                 android:key="regulatory_info"
                 android:title="@string/regulatory_information">
