@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Chroma
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- BUILD TWEAKS -->
+    <string name="header_category_chroma">Personalization</string>
+    <string name="chroma_settings_title">Chroma</string>
 
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">Chroma build date</string>
     <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Chroma Menu -->
+    <string name="chroma_menu_personalizaton">Chroma options</string>
+    <string name="chroma_menu_about">About chroma</string>
+    <string name="status_bar_screen_title">Status bar</string>
+    <string name="navigation_bar_screen_title">Navigation bar</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="lockscreen_title">Lock screen</string>
+    <string name="power_menu_title">Power menu</string>
+    <string name="volume_rocker_screen_title">Volume rocker</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
