@@ -24,7 +24,7 @@
 
     <!-- Chroma Menu -->
     <string name="chroma_menu_personalizaton">Chroma options</string>
-    <string name="chroma_menu_about">About chroma</string>
+    <string name="chroma_menu_about">About Chroma</string>
     <string name="status_bar_screen_title">Status bar</string>
     <string name="navigation_bar_screen_title">Navigation bar</string>
     <string name="gestures_title">Gestures</string>

@@ -1,5 +1,7 @@
 package com.android.settings.chroma;
 
+import com.android.internal.logging.MetricsLogger;
+
 import android.content.ContentResolver;
 import android.database.ContentObserver;
 import android.net.Uri;
@@ -39,5 +41,10 @@ public class ChromaAbout extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DISPLAY;
     }
 }

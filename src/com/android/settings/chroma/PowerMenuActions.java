@@ -1,5 +1,7 @@
 package com.android.settings.chroma;
 
+import com.android.internal.logging.MetricsLogger;
+
 import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -25,5 +27,10 @@ public class PowerMenuActions extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
     // preference changes here
         return false;
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DISPLAY;
     }
 }

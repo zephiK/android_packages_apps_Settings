@@ -1,5 +1,7 @@
 package com.android.settings.chroma;
 
+import com.android.internal.logging.MetricsLogger;
+
 import android.os.Bundle;
 
 import com.android.settings.R;
@@ -12,5 +14,10 @@ public class ChromaSettings extends SettingsPreferenceFragment {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.chroma_settings);
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DISPLAY;
     }
 }
