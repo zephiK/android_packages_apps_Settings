@@ -448,6 +448,7 @@
     <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro de téléphone non valide à la des appelants bloqués</string>
 
     <!-- Blacklist management -->
+    <string name="add_blacklist_number">Ajouter un numéro</string>
     <string name="remove_blacklist_number_title">Supprimer un numéro</string>
     <string name="remove_blacklist_entry">Voulez vous supprimer ce numéro des appelants bloqués ?</string>
     <string name="select_contact">Sélectionner un contact</string>
