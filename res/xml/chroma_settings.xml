@@ -18,6 +18,7 @@
 
     <PreferenceScreen
         android:key="navigation_bar_general_category"
+        android:fragment="com.android.settings.chroma.NavigationBarSettings"
         android:title="@string/navigation_bar_screen_title" />
 
     <PreferenceScreen
