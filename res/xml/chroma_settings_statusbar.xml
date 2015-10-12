@@ -74,6 +74,11 @@
         android:title="@string/display_category_qs">
 
     <com.android.settings.chroma.SecureSettingSwitchPreference
+        android:key="qs_use_four_columns"
+        android:title="@string/qs_four_columns_title"
+        android:defaultValue="false" />
+
+    <com.android.settings.chroma.SecureSettingSwitchPreference
         android:key="qs_show_brightness_slider"
         android:title="@string/qs_brightness_slider_title"
         android:summary="@string/qs_brightness_slider_summary"
