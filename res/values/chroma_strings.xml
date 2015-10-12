@@ -38,6 +38,7 @@
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_qs">Quick Settings</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
     <string name="display_category_statusbar_options_title">Status bar options</string>
@@ -277,4 +278,8 @@
 
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_summary">Show a brightness slider in the quick settings panel</string>
 </resources>
