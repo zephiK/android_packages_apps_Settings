@@ -81,4 +81,8 @@
     <string name="debug_LAN_category">LAN Settings</string>    
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 </resources>
