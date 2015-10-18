@@ -16,19 +16,36 @@
     android:title="About Chroma"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-<PreferenceScreen android:title="OTA notifications">
+<PreferenceScreen
+    android:title="Donate">
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://www.pushbullet.com/channel?tag=chroma"/>
+        android:data="http://forum.xda-developers.com/donatetome.php?u=1978554" />
 </PreferenceScreen>
 
-<PreferenceScreen android:title="Google+">
+<PreferenceScreen
+    android:title="Google+">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://plus.google.com/communities/100877567555105149232" />
 </PreferenceScreen>
 
-<PreferenceScreen android:title="Website">
+<PreferenceScreen 
+    android:title="Pushbullet">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.pushbullet.com/channel?tag=chroma"/>
+</PreferenceScreen>
+
+<PreferenceScreen 
+    android:title="Twitter">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.twitter.com/zephiK0"/>
+</PreferenceScreen>
+
+<PreferenceScreen
+    android:title="Website">
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://zephik.com" />
@@ -41,7 +58,7 @@
 
     <Preference
         android:title="zephiK"
-	    android:summary="Lead Developer for Chroma"/>
+	    android:summary="Lead developer"/>
     </PreferenceCategory>
 
 	<!-- Honorable mentions -->
