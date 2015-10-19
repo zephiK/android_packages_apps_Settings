@@ -16,6 +16,8 @@
 
 package com.android.settings.notificationlight;
 
+import com.android.internal.logging.MetricsLogger;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ContentResolver;
@@ -43,9 +45,9 @@ import android.widget.ListView;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.chroma.SystemSettingSwitchPreference;
 import com.android.settings.cyanogenmod.PackageListAdapter;
 import com.android.settings.cyanogenmod.PackageListAdapter.PackageItem;
-import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -87,6 +89,11 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
     private PackageListAdapter mPackageAdapter;
     private String mPackageList;
     private Map<String, Package> mPackages;
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.APPLICATION;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
