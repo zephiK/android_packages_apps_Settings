@@ -52,7 +52,7 @@
 
     <!-- Double Tap Navbar to Sleep -->
     <string name="double_tap_sleep_nav_bar_title">Navigation bar</string>
-    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double-tap navigation bar to put the device to sleep</string>
 
     <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
@@ -143,8 +143,8 @@
     <string name="notification_light_voicemail_title">Voicemail</string>
 
     <!-- Double tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
+    <string name="double_tap_to_sleep_title">Status bar</string>
+    <string name="double_tap_to_sleep_summary">Double-tap status bar to put the device to sleep</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
