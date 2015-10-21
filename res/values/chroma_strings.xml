@@ -286,4 +286,8 @@
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Show four tiles per row</string>
 
+    <!-- Double tap lock screen to sleep -->
+    <string name="double_tap_to_sleep_lockscreen_title">Lock screen</string>
+    <string name="double_tap_to_sleep_lockscreen_summary">Double-tap on the top third or bottom shortcut area of the lock screen to turn off the display</string>
+
 </resources>
