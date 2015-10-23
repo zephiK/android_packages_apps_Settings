@@ -31,11 +31,12 @@
         android:key="lock_screen_general_category"
         android:fragment="com.android.settings.chroma.LockScreenSettings"
         android:title="@string/lockscreen_title" />
-<!--
+
     <PreferenceScreen
         android:key="power_menu_general_category"
+        android:fragment="com.android.settings.chroma.PowerMenuActions"
         android:title="@string/power_menu_title" />
--->
+
     <PreferenceScreen
         android:key="volume_rocker_general_category"
         android:fragment="com.android.settings.chroma.VolumeRockerSettings"
