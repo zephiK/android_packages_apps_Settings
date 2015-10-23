@@ -86,7 +86,7 @@
 
     <!-- Three finger screenshot gesture -->
     <string name="three_finger_gesture">Three finger gesture</string>
-    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers downwards to take a screenshot</string>
 
     <!-- Wakeup options -->
     <string name="display_category_wakeup_options_title">Wakeup options</string>
