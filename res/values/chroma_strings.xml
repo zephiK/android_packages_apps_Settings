@@ -306,4 +306,10 @@
     <string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
 
+  <!-- Notification fragment -->
+    <string name="battery_saver_notif_title">Battery saver notification</string>
+    <string name="battery_saver_notif_summary">Show battery saver notification when enabled</string>
+    <string name="battery_low_notif_title">Low battery notification</string>
+    <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
+
 </resources>
