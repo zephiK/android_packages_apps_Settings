@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 Chroma
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- BUILD TWEAKS -->
+    <string name="header_category_chroma">个性化</string>
+    <string name="chroma_settings_title">Chroma</string>
+
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Chroma 编译日期</string>
+    <string name="build_date_default">2015-01-01-0000</string>
+
+    <!-- Chroma Menu -->
+    <string name="chroma_menu_personalizaton">Chroma 选项</string>
+    <string name="chroma_menu_about">关于 Chroma</string>
+    <string name="status_bar_screen_title">状态栏</string>
+    <string name="navigation_bar_screen_title">导航栏</string>
+    <string name="gestures_title">手势设置</string>
+    <string name="lockscreen_title">锁屏设置</string>
+    <string name="power_menu_title">电源菜单</string>
+    <string name="volume_rocker_screen_title">音量键设置</string>
+    <string name="battery_title">电池设置</string>
+    <string name="battery2_summary">自定义电池图标和电量百分比</string>
+
+    <!-- Chroma categories -->
+    <string name="display_category_batteryclock_options_title">电池和时钟设置</string>
+    <string name="display_category_dtts_title">双击使设备休眠</string>
+    <string name="display_category_navbar_options_title">导航栏选项</string>
+    <string name="display_category_statusbar_options_title">状态栏选项</string>
+    <string name="display_category_wakeup_options_title">唤醒选项</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- BitSyko Layers -->
+    <string name="bitsyko_layers">Layers</string>
+
+   <!-- Dev Options Enabled by Default -->
+    <string name="show_dev_already_enabled">开发者选项默认已开启。</string>
+
+    <!-- Double Tap Navbar to Sleep -->
+    <string name="double_tap_sleep_nav_bar_title">导航栏</string>
+    <string name="double_tap_sleep_nav_bar_summary">双击导航栏空白处使设备休眠</string>
+
+    <!-- kill app long press back -->
+    <string name="kill_app_longpress_back">长按返回键退出应用</string>
+    <string name="kill_app_longpress_back_summary">长按返回键将使当前应用退出而不驻留后台</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">音量键唤醒</string>
+    <string name="volume_rocker_wake_summary">按音量键可唤醒设备</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">状态栏电池图标风格</string>
+    <string name="status_bar_battery_style_icon_portrait">直立</string>
+    <string name="status_bar_battery_style_icon_landscape">横卧</string>
+    <string name="status_bar_battery_style_circle">圆圈</string>
+    <string name="status_bar_battery_style_dotted_circle">点圈</string>
+    <string name="status_bar_battery_style_text">文字</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
+
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">显示电量百分比</string>
+    <string name="status_bar_battery_percentage_dialog_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏（默认设置）</string>
+    <string name="status_bar_battery_percentage_text_inside">在图标内</string>
+    <string name="status_bar_battery_percentage_text_next">在图标旁</string>
+
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">局域网设置</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">主机名</string>
+
+    <!-- Three finger screenshot gesture -->
+    <string name="three_finger_gesture">三指手势</string>
+    <string name="three_finger_gesture_summary">三指滑过将截取屏幕</string>
+
+    <!-- Wakeup options -->
+    <string name="display_category_wakeup_options_title">唤醒选项</string>
+    <string name="wakeup_when_plugged_unplugged_title">充电时唤醒</string>
+    <string name="wakeup_when_plugged_unplugged_summary">连接或拔出充电器时唤醒设备。</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">屏幕内容自动旋转</string>
+    <string name="display_rotation_disabled">禁用</string>
+    <string name="display_rotation_unit">角度</string>
+    <string name="display_rotation_category_title">旋转模式</string>
+    <string name="display_rotation_0_title">0 度</string>
+    <string name="display_rotation_90_title">90 度</string>
+    <string name="display_rotation_180_title">180 度</string>
+    <string name="display_rotation_270_title">270 度</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">编辑指示灯设置</string>
+    <string name="pulse_speed_title">脉冲长度与速度</string>
+    <string name="default_time">正常</string>
+    <string name="custom_time">自定义</string>
+    <string name="dialog_delete_title">删除</string>
+    <string name="dialog_delete_message">删除已选条目？</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">总是开启</string>
+    <string name="pulse_length_very_short">非常短</string>
+    <string name="pulse_length_short">短暂</string>
+    <string name="pulse_length_normal">一般</string>
+    <string name="pulse_length_long">长久</string>
+    <string name="pulse_length_very_long">非常长</string>
+    <string name="pulse_speed_very_fast">非常快</string>
+    <string name="pulse_speed_fast">快速</string>
+    <string name="pulse_speed_normal">一般</string>
+    <string name="pulse_speed_slow">缓慢</string>
+    <string name="pulse_speed_very_slow">非常慢</string>
+
+    <!-- Battery light settings -->
+    <string name="battery_light_title">电量指示灯</string>
+    <string name="battery_low_pulse_title">电量过少时闪烁</string>
+    <string name="battery_light_list_title">颜色</string>
+    <string name="battery_light_low_color_title">电量低</string>
+    <string name="battery_light_medium_color_title">充电时</string>
+    <string name="battery_light_full_color_title">已充满</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_category">LED 灯</string>
+    <string name="notification_light_title">通知灯</string>
+    <string name="notification_light_general_title">常规</string>
+    <string name="notification_light_applist_title">应用程序列表</string>
+    <string name="notification_light_phonelist_title">电话列表</string>
+    <string name="notification_light_use_custom">自定义</string>
+    <string name="notification_light_default_value">默认值</string>
+    <string name="notification_light_missed_call_title">未接电话</string>
+    <string name="notification_light_voicemail_title">语音信箱</string>
+
+    <!-- Double tap-to-sleep -->
+    <string name="double_tap_to_sleep_title">状态栏</string>
+    <string name="double_tap_to_sleep_summary">双击状态栏使设备休眠</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">颜色拾取</string>
+    <string name="press_color_to_apply">点取并应用下面的颜色</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">设置</string>
+    <string name="color_default">默认颜色</string>
+
+    <!-- Profiles -->
+    <string name="profile_reset_title">重置</string>
+    <string name="profiles_add">添加</string>
+    <string name="profile_choose_app">选择应用程序</string>
+    <string name="profile_applist_title">应用程序列表</string>
+    <string name="picker_activities">活动列表</string>
+    <string name="select_custom_app_title">选择自定义应用程序</string>
+    <string name="select_custom_activity_title">选择自定义活动</string>
+
+    <!-- Status bar quick qs pulldown -->
+    <string name="title_quick_pulldown">状态栏快速下拉</string>
+    <string name="summary_quick_pulldown">%1$s 状态栏边缘下拉进入快速设置</string>
+    <string name="quick_pulldown_off">关闭</string>
+    <string name="quick_pulldown_left">左边</string>
+    <string name="quick_pulldown_right">右边</string>
+
+</resources>
