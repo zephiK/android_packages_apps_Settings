@@ -24,6 +24,11 @@
         android:key="category_statusbar_options"
         android:title="@string/display_category_statusbar_options_title" >
 
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"/>
+
     <ListPreference
         android:key="quick_pulldown"
         android:title="@string/title_quick_pulldown"
