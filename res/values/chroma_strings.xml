@@ -41,6 +41,7 @@
     <string name="display_category_qs">Quick Settings</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
+    <string name="display_category_onscreen">On-screen buttons</string>
     <string name="display_category_statusbar_options_title">Status bar options</string>
     <string name="display_category_wakeup_options_title">Wakeup options</string>
 
