@@ -294,7 +294,6 @@
     <string name="navbar_dimen_title">Dimensions</string>
     <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
     <string name="navigation_bar_height_title">Navigation bar height</string>
-    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
     <string name="navigation_bar_width_title">Navigation bar width</string>
     <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>

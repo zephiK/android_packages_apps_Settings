@@ -231,15 +231,4 @@
         <item>@string/navigation_bar_size_0_dp</item>
     </string-array>
 
-    <string-array name="navigation_bar_height_landscape" translatable="false">
-        <item>48</item>
-        <item>44</item>
-        <item>42</item>
-        <item>40</item>
-        <item>36</item>
-        <item>30</item>
-        <item>24</item>
-        <item>0</item>
-    </string-array>
-
 </resources>
