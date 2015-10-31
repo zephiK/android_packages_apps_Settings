@@ -18,6 +18,6 @@ public class GestureSettings extends SettingsPreferenceFragment {
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.GESTURE_SETTINGS;
     }
 }
