@@ -54,7 +54,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.APPLICATION;
+        return MetricsLogger.BATTERY_LIGHT_SETTINGS;
     }
 
     @Override
