@@ -63,6 +63,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String FILENAME_PROC_VERSION = "/proc/version";
     private static final String FILENAME_MSV = "/sys/board_properties/soc/msv";
 
+    private static final String KEY_MANUAL = "manual";
     private static final String KEY_REGULATORY_INFO = "regulatory_info";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
     private static final String PROPERTY_SELINUX_STATUS = "ro.build.selinux";
@@ -155,6 +156,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
          * Settings is a generic app and should not contain any device-specific
          * info.
          */
+
+        // Remove manual entry if none present.
+        removePreferenceIfBoolFalse(KEY_MANUAL, R.bool.config_show_manual);
+
         // Remove regulatory information if none present.
         final Intent intent = new Intent(Settings.ACTION_SHOW_REGULATORY_INFO);
         if (getPackageManager().queryIntentActivities(intent, 0).isEmpty()) {

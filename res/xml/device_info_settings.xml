@@ -26,6 +26,13 @@
                     android:targetClass="com.android.settings.deviceinfo.Status" />
         </PreferenceScreen>
 
+        <!-- Manual -->
+        <PreferenceScreen
+                android:key="manual"
+                android:title="@string/manual">
+            <intent android:action="android.settings.SHOW_MANUAL" />
+        </PreferenceScreen>
+
         <PreferenceScreen
                 android:key="regulatory_info"
                 android:title="@string/regulatory_information">
