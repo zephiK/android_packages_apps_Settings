@@ -38,6 +38,7 @@
 
     <!-- Chroma categories -->
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_lockscreen_options_title">Lockscreen options</string>
     <string name="display_category_qs">Quick Settings</string>
     <string name="display_category_dtts_title">Double tap to sleep</string>
     <string name="display_category_navbar_options_title">Navigation bar options</string>
