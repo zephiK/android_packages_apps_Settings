@@ -39,6 +39,12 @@
         android:key="category_navigation_options"
         android:title="@string/display_category_navbar_options_title" >
 
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="navigation_bar_menu_arrow_keys"
+        android:title="@string/navigation_bar_arrow_keys_title"
+        android:summary="@string/navigation_bar_arrow_keys_summary"
+        android:defaultValue="false" />
+
     <SwitchPreference
         android:key="kill_app_longpress_back"
         android:title="@string/kill_app_longpress_back"
