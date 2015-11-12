@@ -333,6 +333,8 @@
     <string name="navigation_bar_reset_message">Delete current settings and restore the default layout?</string>
 
     <!-- Status bar - Clock -->
+    <string name="status_bar_clock">Clock &amp; date</string>
+    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
     <string name="status_bar_clock_category">Clock</string>
     <string name="status_bar_clock_style_title">Clock style</string>
     <string name="status_bar_clock_style_right">Right</string>
@@ -344,9 +346,5 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Small</string>
     <string name="status_bar_am_pm_hidden">Hidden (default)</string>
-
-
-    <string name="status_bar_clock">Clock &amp; date</string>
-    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
 
 </resources>
