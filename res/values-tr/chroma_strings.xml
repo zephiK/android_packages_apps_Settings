@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2015 Chroma
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+     
           http://www.apache.org/licenses/LICENSE-2.0
+          
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -258,15 +261,15 @@
     <string name="navigation_bar_height_title">Gezinti çubuğu yüksekliği</string>
     <string name="navigation_bar_height_landscape_title">Gezinti çubuğu yüksekliği yatay</string>
     <string name="navigation_bar_width_title">Gezinti çubuğu genişliği</string>
-    <string name="navigation_bar_size_48_dp">48 dp (varsayılan)</string>
-    <string name="navigation_bar_size_44_dp">44 dp</string>
-    <string name="navigation_bar_size_42_dp_default">42 dp (varsayılan)</string>
-    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <<string name="navigation_bar_size_42_dp_default">42 dp (varsayılan)</string>
     <string name="navigation_bar_size_36_dp">36 dp</string>
-    <string name="navigation_bar_size_32_dp">32 dp</string>
-    <string name="navigation_bar_size_28_dp">28 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
     <string name="navigation_bar_size_24_dp">24 dp</string>
-    <string name="navigation_bar_size_20_dp">20 dp</string>
+    <string name="navigation_bar_size_52_dp">52 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (varsayılan)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (kapalı)</string>
 
   <!-- Notification fragment -->
@@ -330,6 +333,8 @@
     <string name="navigation_bar_reset_message">Geçerli ayarları silinip ve varsayılan düzen geri yüklensin mi?</string>
 
     <!-- Status bar - Clock -->
+    <string name="status_bar_clock">Saat &amp; tarihi</string>
+    <string name="status_bar_clock_summary">Çeşitli saat &amp; tarih seçeneklerini değiştirme</string>
     <string name="status_bar_clock_category">Saat</string>
     <string name="status_bar_clock_style_title">Saat stili</string>
     <string name="status_bar_clock_style_right">Sağ</string>
@@ -341,9 +346,9 @@
     <string name="status_bar_am_pm_normal">Normal</string>
     <string name="status_bar_am_pm_small">Küçük</string>
     <string name="status_bar_am_pm_hidden">Gizli (varsayılan)</string>
-
-
-    <string name="status_bar_clock">Saat &amp; tarihi</string>
-    <string name="status_bar_clock_summary">Çeşitli saat &amp; tarih seçeneklerini değiştirme</string> 
+    
+    <!-- Quick unlock -->
+    <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
+    <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilidi otomatik açar</string>
 
 </resources>
