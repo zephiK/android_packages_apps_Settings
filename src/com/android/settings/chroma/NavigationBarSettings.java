@@ -3,10 +3,13 @@ package com.android.settings.chroma;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.os.UserHandle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -33,12 +36,16 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
     private static final String PREF_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_NAVIGATION_BAR_HEIGHT_LANDSCAPE = "navigation_bar_height_landscape";
     private static final String PREF_NAVIGATION_BAR_WIDTH = "navigation_bar_width";
+    private static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
+    private static final String RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
     ListPreference mNavigationBarHeight;
     ListPreference mNavigationBarHeightLandscape;
     ListPreference mNavigationBarWidth;
 
+    private ListPreference mRecentsClearAllLocation;
     private SwitchPreference mKillAppLongPressBack;
+    private SwitchPreference mRecentsClearAll;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,6 +54,7 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.chroma_settings_navigation);
 
         PreferenceScreen prefSet = getPreferenceScreen();
+    ContentResolver resolver = getActivity().getContentResolver();
 
         // kill-app long press back
         mKillAppLongPressBack = (SwitchPreference) findPreference(KILL_APP_LONGPRESS_BACK);
@@ -54,6 +62,16 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         int killAppLongPressBack = Settings.Secure.getInt(getContentResolver(),
                 KILL_APP_LONGPRESS_BACK, 0);
         mKillAppLongPressBack.setChecked(killAppLongPressBack != 0);
+
+        // clear all recents
+        mRecentsClearAll = (SwitchPreference) prefSet.findPreference(SHOW_CLEAR_ALL_RECENTS);
+
+        mRecentsClearAllLocation = (ListPreference) prefSet.findPreference(RECENTS_CLEAR_ALL_LOCATION);
+        int location = Settings.System.getIntForUser(resolver,
+                Settings.System.RECENTS_CLEAR_ALL_LOCATION, 3, UserHandle.USER_CURRENT);
+        mRecentsClearAllLocation.setValue(String.valueOf(location));
+        mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntry());
+        mRecentsClearAllLocation.setOnPreferenceChangeListener(this);
 
         // navigation bar dimensions
         mNavigationBarHeight =
@@ -144,6 +162,13 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT_LANDSCAPE, Integer.parseInt((String) objValue));
             updateDimensionValues();
+            return true;
+        } else if (preference == mRecentsClearAllLocation) {
+            int location = Integer.valueOf((String) objValue);
+            int index = mRecentsClearAllLocation.findIndexOfValue((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.RECENTS_CLEAR_ALL_LOCATION, location, UserHandle.USER_CURRENT);
+            mRecentsClearAllLocation.setSummary(mRecentsClearAllLocation.getEntries()[index]);
             return true;
         }
             return false;
