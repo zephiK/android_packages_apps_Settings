@@ -76,6 +76,13 @@
         android:defaultValue="3"
         android:dependency="show_clear_all_recents" />
 
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="recents_clear_all_dismiss_all"
+        android:title="@string/recents_clear_all_dismiss_all_title"
+        android:summary="@string/recents_clear_all_dismiss_all_summary"
+        android:defaultValue="true"
+        android:dependency="show_clear_all_recents" />
+
 	<com.android.settings.chroma.SystemSettingSwitchPreference
         android:key="recents_show_search_bar"
         android:title="@string/recents_show_searchbar"
