@@ -350,5 +350,18 @@
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Hızlı kilit açma</string>
     <string name="unlock_quick_unlock_control_summary">Doğru PIN/şifre girildiğinde kilidi otomatik açar</string>
+     
+    <!-- Recents panel settings -->
+    <string name="show_clear_all_recents_button_title">Tümünü temizle tuşu</string>
+    <string name="show_clear_all_recents_button_summary">Tümünü temizle tuşunu göster</string>
+    <string name="recents_clear_all_location_title">Tümünü temizle tuşu konumu</string>
+    <string name="recents_clear_all_location_top_right">Sağ üstte</string>
+    <string name="recents_clear_all_location_top_left">Sol üstte</string>
+    <string name="recents_clear_all_location_top_center">Üst ortada</string>
+    <string name="recents_clear_all_location_bottom_right">Sağ altta</string>
+    <string name="recents_clear_all_location_bottom_left">Sol altta</string>
+    <string name="recents_clear_all_location_bottom_center">Alt ortada</string>
+    <string name="recents_clear_all_dismiss_all_title">Tüm görevleri temizle</string>
+    <string name="recents_clear_all_dismiss_all_summary">Tüm kullanılanları temizler, son kullanılan dahil</string>
 
 </resources>
