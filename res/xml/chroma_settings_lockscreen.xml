@@ -19,12 +19,19 @@
         android:key="category_lockscreen_options"
         android:title="@string/display_category_lockscreen_options_title" >
 
+    <PreferenceScreen
+        android:fragment="com.android.settings.chroma.CarrierLabel"
+        android:key="carrier_options"
+        android:title="@string/carrier_title"
+        android:summary="@string/carrier_options_summary" />
+
         <PreferenceScreen
             android:title="@string/lockscreen_targets_message" >
             <intent
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
         </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory
