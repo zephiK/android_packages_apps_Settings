@@ -24,6 +24,12 @@
         android:persistent="false"
         android:defaultValue="true" />
 
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+        android:key="swap_volume_buttons"
+        android:title="@string/swap_volume_buttons_title"
+        android:summary="@string/swap_volume_buttons_summary"
+        android:defaultValue="true"/>
+
     </PreferenceCategory>
 
      <PreferenceCategory
