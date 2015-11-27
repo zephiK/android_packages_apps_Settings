@@ -331,7 +331,7 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
 
-    <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
+    <string name="allow_lights_title">Lights in do not disturb mode</string>
 
     <!-- Navigation bar cursor -->
     <string name="navigation_bar_arrow_keys_title">Show arrow keys while typing</string>
