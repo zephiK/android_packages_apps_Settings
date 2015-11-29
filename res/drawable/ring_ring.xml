@@ -16,5 +16,5 @@ Copyright (C) 2014 The Android Open Source Project
 <!-- shrink ic_audio_ring_notif from 32dp to 24dp using insets -->
 <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
         android:src="@drawable/ic_call_white"
-        android:tint="?android:attr/colorAccent" />
+        android:tint="?android:attr/colorControlNormal" />
 
