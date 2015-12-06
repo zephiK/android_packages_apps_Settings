@@ -41,7 +41,8 @@
 
      <PreferenceCategory
             android:key="volume_rocker_settings_category"
-            android:title="@string/volume_rocker_screen_title">
+            android:title="@string/volume_rocker_other_title">
+
 	<ListPreference
 	        android:dialogTitle="@string/volume_key_cursor_control_title"
 	        android:entries="@array/volume_key_cursor_control_entries"
