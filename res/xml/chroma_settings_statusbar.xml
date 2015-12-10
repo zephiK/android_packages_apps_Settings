@@ -48,6 +48,14 @@
     	android:fragment="com.android.settings.chroma.NetworkTraffic"
 	    android:summary="@string/network_traffic_summary"
     	android:title="@string/network_traffic_title" />
+
+    <PreferenceScreen
+            android:title="@string/status_bar_icon_blacklist_title"
+            android:summary="@string/status_bar_icon_blacklist_summary" >
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.TunerActivity" />
+				</PreferenceScreen>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -73,12 +81,13 @@
     <PreferenceCategory
         android:title="@string/display_category_qs">
 
-    <com.android.settings.chroma.SecureSettingSwitchPreference
-        android:key="sysui_qs_main_tiles"
-        android:title="@string/qs_main_tiles_title"
-        android:summaryOn="@string/qs_main_tiles_summary_on"
-        android:summaryOff="@string/qs_main_tiles_summary_off"
-        android:defaultValue="true" />
+        <PreferenceScreen
+                android:title="@string/quick_settings_title"
+                android:summary="@string/quick_settings_summary" >
+            <intent android:action="android.intent.action.MAIN"
+                   android:targetPackage="com.android.systemui"
+                   android:targetClass="com.android.systemui.tuner.QsActivity" />
+        </PreferenceScreen>
 
     <com.android.settings.chroma.SecureSettingSwitchPreference
         android:key="qs_use_four_columns"
