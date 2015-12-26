@@ -23,13 +23,6 @@
         android:data="http://forum.xda-developers.com/donatetome.php?u=1978554" />
 </PreferenceScreen>
 
-<PreferenceScreen
-    android:title="Google+">
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://plus.google.com/communities/100877567555105149232" />
-</PreferenceScreen>
-
 <PreferenceScreen 
     android:title="Pushbullet">
     <intent
@@ -65,9 +58,6 @@
     <PreferenceCategory
         android:key="category_chroma_mentions"
         android:title="Honorable mentions" >
-    <Preference
-        android:title="hellsgod"
-       	android:summary="hells-Core Kernel base"/>
     <Preference
         android:title="jolinnard"
        	android:summary="Providing web hosting"/>
