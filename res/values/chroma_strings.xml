@@ -498,4 +498,8 @@
     <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
     <string name="quick_settings_reset_message">Reset quick settings tiles?</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+    <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
+
 </resources>
