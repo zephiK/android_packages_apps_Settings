@@ -61,13 +61,6 @@
                 android:title="@string/vibrate_when_ringing_title"
                 android:persistent="false" />
 
-        <!-- Camera Double-Tap vibration -->
-        <com.android.settings.chroma.SystemSettingSwitchPreference
-                android:key="double_tap_vibrate"
-                android:title="@string/dbl_tap_vib_title"
-                android:summary="@string/dbl_tap_vib_summary"
-                android:defaultValue="true" />
-
         <!-- Interruptions -->
         <PreferenceScreen
                 android:key="zen_mode"
