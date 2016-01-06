@@ -41,7 +41,7 @@
     android:title="Website">
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://zephik.com" />
+        android:data="http://zephik.com" />
 </PreferenceScreen>
 
 	<!-- Developers -->
@@ -58,6 +58,14 @@
     <PreferenceCategory
         android:key="category_chroma_mentions"
         android:title="Honorable mentions" >
+
+    <PreferenceScreen
+    android:title="EmojiOne">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="http://emojione.com" />
+    </PreferenceScreen>
+
     <Preference
         android:title="jolinnard"
        	android:summary="Providing web hosting"/>
