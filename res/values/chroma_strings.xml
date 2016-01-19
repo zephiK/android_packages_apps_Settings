@@ -345,7 +345,10 @@
     <string name="recents_clear_all_dismiss_all_summary">Include foreground task when clearing all</string>
 
     <!-- QuickSettings 4 columns -->
-    <string name="qs_four_columns_title">Show four tiles per row</string>
+    <string name="qs_num_columns_title">Number of tiles per row</string>
+    <string name="qs_num_columns_showing">%1$s tiles per row showing</string>
+
+    <!-- QS: Advanced Location -->
     <string name="qs_advanced_location_title">Advanced location quick settings</string>
     <string name="qs_advanced_location_summary">Enable advanced settings for location in quick settings</string>
 
@@ -393,8 +396,7 @@
 
     <!-- QuickSettings main tiles -->
     <string name="qs_main_tiles_title">Enlarge first row</string>
-    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-    <string name="qs_main_tiles_summary_off">Three or four tiles on each row</string>
+    <string name="qs_main_tiles_summary">Two main tiles on the first row</string>
 
      <!-- Blacklist preferences -->
     <string name="app_security_title">App security</string>
@@ -494,8 +496,6 @@
     <string name="qs_action_add">Add</string>
     <string name="qs_action_no_more_tiles">No more tiles available</string>
     <string name="qs_main_tiles_title">Enlarge first row</string>
-    <string name="qs_main_tiles_summary_on">Two main tiles on the first row</string>
-    <string name="qs_main_tiles_summary_off">Three tiles on each row</string>
     <string name="quick_settings_reset_message">Reset quick settings tiles?</string>
 
     <!-- Screenshot sound -->

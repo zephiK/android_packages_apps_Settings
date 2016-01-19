@@ -60,7 +60,7 @@ public class DraggableGridView extends ViewGroup implements
      */
     private int columnCount() {
         boolean shouldUseFourColumns = Settings.Secure.getInt(
-            mContext.getContentResolver(), Settings.Secure.QS_USE_FOUR_COLUMNS,
+            mContext.getContentResolver(), Settings.Secure.QS_NUM_TILE_COLUMNS,
                 0) == 1;
         if (shouldUseFourColumns) {
             COL_COUNT = 4;
