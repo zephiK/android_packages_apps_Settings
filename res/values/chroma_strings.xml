@@ -516,4 +516,9 @@
     <string name="app_notification_no_ongoing_on_keyguard_title">Disable ongoing on lockscreen</string>
     <string name="app_notification_no_ongoing_on_keyguard_summary">Never show ongoing notifications from this app on the lockscreen</string>
 
+   <!-- Notifications frequency --> 
+    <string name="notifications_frequency_limit_title">Limit notification frequency</string>
+    <string name="notifications_frequency_limit_never">Never</string>
+    <string name="notifications_frequency_limit_setting">"Every %1$s seconds"</string>
+
 </resources>

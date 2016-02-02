@@ -115,6 +115,12 @@
                 android:title="@string/lock_screen_notifications_title"
                 android:persistent="false" />
 
+         <!-- Notifications frequency-->
+        <com.android.settings.DropDownPreference
+                android:key="notifications_frequency_limit"
+                android:title="@string/notifications_frequency_limit_title"
+                android:persistent="false" />
+
         <!-- App notifications -->
         <PreferenceScreen
                 android:key="app_notifications"

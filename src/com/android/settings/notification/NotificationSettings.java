@@ -24,6 +24,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.res.Resources;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.database.ContentObserver;
@@ -51,6 +52,7 @@ import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import android.provider.Settings.System;
 import android.util.Log;
 
 import com.android.internal.logging.MetricsLogger;
@@ -58,6 +60,7 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.DropDownPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.notification.SettingPref;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -84,6 +87,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
+    private static final String KEY_NOTIFICATIONS_FREQUENCY_LIMIT = "notifications_frequency_limit";
     private static final String KEY_ZEN_ACCESS = "manage_zen_access";
     private static final String KEY_ZEN_MODE = "zen_mode";
     private static final String KEY_NOTIFICATION_LIGHT = "notification_light";
@@ -119,6 +123,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private TwoStatePreference mVibrateWhenRinging;
     private TwoStatePreference mNotificationPulse;
     private DropDownPreference mLockscreen;
+    private SettingPref mNotificationsFrequencyLimitPref;
     private Preference mNotificationAccess;
     private Preference mZenAccess;
     private boolean mSecure;
@@ -182,6 +187,22 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 findPreference(KEY_NOTIFICATION);
         initPulse(notification);
         initLockscreenNotifications(notification);
+
+        mNotificationsFrequencyLimitPref = new SettingPref(SettingPref.TYPE_SYSTEM,
+                KEY_NOTIFICATIONS_FREQUENCY_LIMIT,
+                System.MUTE_ANNOYING_NOTIFICATIONS_THRESHOLD,
+                0, /*default*/
+                getResources().getIntArray(R.array.notifications_frequency_limit_values)) {
+            @Override
+            protected String getCaption(Resources res, int value) {
+                if (value > 0 ) {
+                    return res.getString(R.string.notifications_frequency_limit_setting,
+                                         String.valueOf(value / 1000));
+                }
+                return res.getString(R.string.notifications_frequency_limit_never);
+            }
+        };
+        mNotificationsFrequencyLimitPref.init(this);
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         refreshNotificationListeners();
