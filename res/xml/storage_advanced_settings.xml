@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2016 Krexus
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/storage_advanced_titlebar">
+
+    <com.android.settings.chroma.SystemSettingSwitchPreference
+            android:key="usb_data_auto_unlock"
+            android:title="@string/usb_data_auto_unlock_title"
+            android:summary="@string/usb_data_auto_unlock_summary"
+            android:defaultValue="false" />
+
+    <ListPreference
+            android:key="select_usb_configuration"
+            android:title="@string/select_usb_configuration_title"
+            android:dialogTitle="@string/select_usb_configuration_dialog_title"
+            android:entries="@array/usb_configuration_titles"
+            android:entryValues="@array/usb_configuration_values"
+            android:dependency="usb_data_auto_unlock" />
+
+    <Preference
+            android:key="usb_data_auto_unlock_warning"
+            android:summary="@string/usb_data_auto_unlock_warning_summary"
+            android:persistent="false"
+            android:selectable="false" />
+
+</PreferenceScreen>

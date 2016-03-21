@@ -1577,6 +1577,23 @@
                 android:value="true" />
         </activity>
 
+        <activity android:name="Settings$AdvancedStorageSettingsActivity"
+                android:taskAffinity="com.android.settings"
+                android:label="@string/storage_advanced_titlebar"
+                android:parentActivityName="Settings$StorageSettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.deviceinfo.AdvancedStorageSettings" />
+            <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID"
+                android:resource="@id/storage_settings" />
+            <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                android:value="true" />
+        </activity>
+
         <activity android:name="Settings$PrivateVolumeSettingsActivity"
                 android:label="@string/storage_settings_title"
                 android:taskAffinity="com.android.settings"
