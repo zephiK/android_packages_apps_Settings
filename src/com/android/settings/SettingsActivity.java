@@ -284,7 +284,7 @@ public class SettingsActivity extends Activity
             R.id.home_settings,
             R.id.dashboard,
             R.id.chroma_settings,
-            R.id.bitsyko_layers,
+            R.id.substratum,
             R.id.supersu_settings
     };
 
@@ -1300,6 +1300,15 @@ public class SettingsActivity extends Activity
                     boolean hasPrintingSupport = getPackageManager().hasSystemFeature(
                             PackageManager.FEATURE_PRINTING);
                     if (!hasPrintingSupport) {
+                        removeTile = true;
+                    }
+                } else if (id == R.id.substratum) {
+                    boolean supported = false;
+                    try {
+                        supported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
+                    } catch (PackageManager.NameNotFoundException e) {
+                    }
+                    if (!supported) {
                         removeTile = true;
                     }
                 } else if (id == R.id.development_settings) {

@@ -261,6 +261,17 @@
                 android:icon="@drawable/ic_settings_development"
                 />
 
+        <!-- Substratum -->
+        <dashboard-tile
+                android:id="@+id/substratum"
+                android:icon="@drawable/ic_settings_substratum"
+                android:title="@string/substratum_title">     
+		<intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="projekt.substratum"
+                android:targetClass="projekt.substratum.LaunchActivity" />
+        </dashboard-tile>
+
         <!-- SuperSU -->
         <dashboard-tile
                 android:id="@+id/supersu_settings"
