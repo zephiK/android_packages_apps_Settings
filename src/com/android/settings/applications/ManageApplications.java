@@ -100,6 +100,7 @@ public class ManageApplications extends InstrumentedFragment
 
     private static final String EXTRA_SORT_ORDER = "sortOrder";
     private static final String EXTRA_SHOW_SYSTEM = "showSystem";
+    private static final String EXTRA_SHOW_SUBSTRATUM = "showSubstratum";
     private static final String EXTRA_HAS_ENTRIES = "hasEntries";
 
     // attributes used as keys when passing values to InstalledAppDetails activity
@@ -130,6 +131,7 @@ public class ManageApplications extends InstrumentedFragment
     public static final int FILTER_APPS_USAGE_ACCESS            = 12;
     public static final int FILTER_APPS_WITH_OVERLAY            = 13;
     public static final int FILTER_APPS_WRITE_SETTINGS          = 14;
+    public static final int FILTER_APPS_SUBSTRATUM              = 15;
 
     // This is the string labels for the filter modes above, the order must be kept in sync.
     public static final int[] FILTER_LABELS = new int[] {
@@ -148,6 +150,7 @@ public class ManageApplications extends InstrumentedFragment
         R.string.filter_all_apps,      // Usage access screen, never displayed
         R.string.filter_overlay_apps,   // Apps with overlay permission
         R.string.filter_write_settings_apps,   // Apps that can write system settings
+        R.string.filter_substratum_apps,    // Apps created by Substratum
     };
     // This is the actual mapping to filters from FILTER_ constants above, the order must
     // be kept in sync.
@@ -169,6 +172,7 @@ public class ManageApplications extends InstrumentedFragment
         AppStateUsageBridge.FILTER_APP_USAGE, // Apps with Domain URLs
         AppStateOverlayBridge.FILTER_SYSTEM_ALERT_WINDOW,   // Apps that can draw overlays
         AppStateWriteSettingsBridge.FILTER_WRITE_SETTINGS,  // Apps that can write system settings
+        ApplicationsState.FILTER_SUBSTRATUM,    // Apps created by Substratum
     };
 
     // sort order
@@ -176,6 +180,9 @@ public class ManageApplications extends InstrumentedFragment
 
     // whether showing system apps.
     private boolean mShowSystem;
+
+    // whether showing substratum overlays.
+    private boolean mShowSubstratum;
 
     private ApplicationsState mApplicationsState;
 
@@ -272,6 +279,7 @@ public class ManageApplications extends InstrumentedFragment
         if (savedInstanceState != null) {
             mSortOrder = savedInstanceState.getInt(EXTRA_SORT_ORDER, mSortOrder);
             mShowSystem = savedInstanceState.getBoolean(EXTRA_SHOW_SYSTEM, mShowSystem);
+            mShowSubstratum = savedInstanceState.getBoolean(EXTRA_SHOW_SUBSTRATUM, mShowSubstratum);
         }
 
         mInvalidSizeStr = getActivity().getText(R.string.invalid_size_value);
@@ -426,6 +434,7 @@ public class ManageApplications extends InstrumentedFragment
         mResetAppsHelper.onSaveInstanceState(outState);
         outState.putInt(EXTRA_SORT_ORDER, mSortOrder);
         outState.putBoolean(EXTRA_SHOW_SYSTEM, mShowSystem);
+        outState.putBoolean(EXTRA_SHOW_SUBSTRATUM, mShowSubstratum);
         outState.putBoolean(EXTRA_HAS_ENTRIES, mApplications.mHasReceivedLoadEntries);
     }
 
@@ -548,6 +557,11 @@ public class ManageApplications extends InstrumentedFragment
                 && mListType != LIST_TYPE_HIGH_POWER);
         mOptionsMenu.findItem(R.id.hide_system).setVisible(mShowSystem
                 && mListType != LIST_TYPE_HIGH_POWER);
+
+        mOptionsMenu.findItem(R.id.show_substratum).setVisible(!mShowSubstratum
+                && mListType != LIST_TYPE_HIGH_POWER);
+        mOptionsMenu.findItem(R.id.hide_substratum).setVisible(mShowSubstratum
+                && mListType != LIST_TYPE_HIGH_POWER);
     }
 
     @Override
@@ -564,6 +578,11 @@ public class ManageApplications extends InstrumentedFragment
             case R.id.show_system:
             case R.id.hide_system:
                 mShowSystem = !mShowSystem;
+                mApplications.rebuild(false);
+                break;
+            case R.id.show_substratum:
+            case R.id.hide_substratum:
+                mShowSubstratum = !mShowSubstratum;
                 mApplications.rebuild(false);
                 break;
             case R.id.reset_app_preferences:
@@ -837,9 +856,17 @@ public class ManageApplications extends InstrumentedFragment
             if (mOverrideFilter != null) {
                 filterObj = mOverrideFilter;
             }
-            if (!mManageApplications.mShowSystem) {
+            if (!mManageApplications.mShowSystem && !mManageApplications.mShowSubstratum) {
                 filterObj = new CompoundFilter(filterObj,
                         ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
+                filterObj = new CompoundFilter(filterObj,
+                        ApplicationsState.FILTER_SUBSTRATUM);
+            } else if (!mManageApplications.mShowSystem) {
+                filterObj = new CompoundFilter(filterObj,
+                        ApplicationsState.FILTER_DOWNLOADED_AND_LAUNCHER);
+            } else if (!mManageApplications.mShowSubstratum) {
+                filterObj = new CompoundFilter(filterObj,
+                        ApplicationsState.FILTER_SUBSTRATUM);
             }
             switch (mLastSortMode) {
                 case R.id.sort_order_size:
