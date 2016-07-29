@@ -83,6 +83,18 @@
                 android:title="@string/chroma_settings_title"
                 android:fragment="com.android.settings.chroma.ChromaSettings" 
         		android:icon="@drawable/ic_settings_chroma" />
+
+        <!-- Substratum -->
+        <dashboard-tile
+                android:id="@+id/substratum"
+                android:icon="@drawable/ic_settings_substratum"
+                android:title="@string/substratum_title">     
+		<intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="projekt.substratum"
+                android:targetClass="projekt.substratum.LaunchActivity" />
+        </dashboard-tile>
+
     </dashboard-category>
 
     <!-- DEVICE -->
@@ -260,17 +272,6 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development"
                 />
-
-        <!-- Substratum -->
-        <dashboard-tile
-                android:id="@+id/substratum"
-                android:icon="@drawable/ic_settings_substratum"
-                android:title="@string/substratum_title">     
-		<intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="projekt.substratum"
-                android:targetClass="projekt.substratum.LaunchActivity" />
-        </dashboard-tile>
 
         <!-- SuperSU -->
         <dashboard-tile
